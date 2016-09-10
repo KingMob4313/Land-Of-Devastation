@@ -1,0 +1,632 @@
+;Menu Definition file
+;
+;This file contains definitions for all of the menus in LOD. Most options may
+;be moved around from menu to menu if desired.
+;
+;NAME         - The name of the menu, not really used anywhere.
+;PROMPT       - The prompt that will be displayed to the user
+;OPT x y z    - A normal option. "x" is the key that the user must press,
+;               "y" is the option code number, and "z" is the string that will
+;               be displayed when the option is pressed.
+;DEF x y z    - A "default" option. It is like a normal option, but will also
+;               be selected if <CR> is pressed at the prompt.
+;ANSI x       - Causes ansi file "x" to be displayed (assuming EXPERT is off)
+;EGAPIC x     - Causes image file "x" to be displayed for the duration of the
+;               menu.
+;INTRO        - Strings to be displayed before the menu is entered.
+;ACMECRIPPLED - Disables ACME weapons menus if game is not registered.
+;TRADEREPORT  - Causes base trading report to be displayed prior to menu.
+;BASEFLAG     - Causes base defenses strings to be displayed.
+;BASEFIXOWNER - Sets owner to current user if base has nil owner.
+;BASEPIC      - Causes corrent base picture to be displayed for base main
+;               menu.
+;SELLPERCENT x- Percentage that will be paid for items sold at store.
+;SPQUEST x    - Grants credit for special quest #x.
+;TROYQUEST    - Fulfills part of the troy-hadley steak quest.
+;
+;Menu Option codes:
+;  0 .. 500      - Executes a specific command function
+;  500 .. 999    - Spawns submenu of the option code - 500 (i.e. 501 spawns
+;                  menu #1, 502 spawns menu #2, etc)
+;  1000 .. 1499  - Executes dialog of option code - 1000 (i.e. 1001 executes
+;                  dialog #1, etc ...)
+;  1500 .. 1599  - Specialty options (LR Combat, etc)
+;  2000 .. 3000  - Executes LGPL procedure "menucallback".
+;
+
+MENU 1
+  NAME Inventory Maintenance
+  PROMPT |&BInv. maint: [&FP&B]ack,[&FS&B]ort,[&FX&B]chg,[&FL&B]ist,[&FE&B]xchange,[&FV&B]iew,[&FQ&B]uit ? &F
+  DEF Q 1 &FQuit|
+  OPT E 101 &FSwap|
+  OPT P 102 &FPack|
+  OPT S 103 &FSort|
+  OPT X 104 &FXchg|
+  OPT L 105 &FList|
+  OPT V 106 &FView|
+
+MENU 2
+  NAME Equip
+  PROMPT |&BEquip What:|
+  PROMPT &3   &FC&3 - Close Weapon      &FA&3 - Armor             &FL&3 - Laptop|
+  PROMPT &3   &FR&3 - Ranged Weapon     &FM&3 - Medical Lining    &FX&3 - Aux Weapon (or shield)|
+  PROMPT &B|Selection ? &F
+  DEF Q 1 &FQuit.|
+  OPT C 107 &FClose Weapon.|
+  OPT R 108 &FRanged Weapon.|
+  OPT A 109 &FArmor.|
+  OPT M 110 &FMedical Lining.|
+  OPT L 111 &FLaptop.|
+  OPT X 112 &FAux Close Weapon/shield.|
+
+MENU 3
+  NAME Financial Options
+  ANSI MENU15
+  EGAPIC FINANCE
+  PROMPT &A|Investment Options Selection ]&F
+  OPT Q 1 &FQuit|
+  OPT C 2 &FView character.|
+  OPT 1 113 &FStandard Account|
+  OPT 2 114 &FGame Account|
+  OPT 3 115 &FRequest Loan|
+  OPT 4 116 &FPay Loan|
+  OPT 5 117 &FFinancial Statement|
+  OPT 6 118 &FFinancial Info|
+  OPT 7 119 &FRent Account|
+
+MENU 4
+  NAME Troop Quarters
+  ANSI MENU9
+  EGAPIC TQUART
+  PROMPT &A|Troop Quarters Selection ]&F
+  OPT Q 1 &FQuit|
+  OPT C 2 &FView character.|
+  OPT B 505 &FTeam Options|
+  OPT O 124 &FCombat Options|
+  OPT V 125 &FView Log|
+  OPT A 122 &FToggle Ansi Options|
+  OPT X 121 &FToggle Expert
+  OPT L 126 &FRank Users|
+
+MENU 5
+  NAME Team Options
+  ANSI MENU30
+  EGAPIC TEAM
+  PROMPT &A|Team Options Selection ]&F
+  OPT Q 1 &FQuit|
+  OPT C 2 &FView character.|
+  OPT J 127 &FJoin Team|
+  OPT D 128 &FQuit Team|
+  OPT M 129 &FCreate Team|
+  OPT L 130 &FList Teams|
+  OPT V 130 &FList Teams|
+
+MENU 6
+  NAME Horticulture Center
+  ANSI MENU12
+  EGAPIC HORTBIG
+  INTRO &BYou inconspicuously approach the door to the Horticulture Center. The door|
+  INTRO &Bflies open and a short, obnoxious looking person Greets you. "Welcome to|
+  INTRO &Bthe GSRZ Horticulture Center!" He escorts you up to the center's main counter|
+  INTRO &Bwhere you may perform a variety of functions.|
+  PROMPT &A|GSRZ Horticulture Selection ]&F
+  OPT Q 1 &FQuit|
+  OPT C 2 &FView character.|
+  OPT T 131 &FTalk To Manager|
+  OPT P 614 &FHort Center Store|
+
+MENU 7
+  NAME Nuclear Silo
+  ANSI MENU26
+  EGAPIC TRANBASE
+  PROMPT &A|Tranlius Center Selection ]&F
+  OPT Q 1 &FQuit|
+  OPT C 2 &FView character.|
+  OPT S 1203 &FSpeak with Tranlius.|
+  OPT R 136 &FRead Trell's note.|
+  OPT E 137 &FEnter Access Tunnel.|
+
+MENU 8
+  NAME Loki Cloud City
+  ANSI MENU38
+  EGAPIC LOKIISLE
+  PROMPT &A|Cloud City Selection ]&F
+  OPT Q 1 &FQuit|
+  OPT C 2 &FView character.|
+  OPT S 138 &FSpeak with LOKI.|
+  OPT A 139 &FAccept Sub-Patriarch's challenge.|
+
+MENU 9
+  NAME EEEE
+  ANSI MENU27
+  EGAPIC EEEEBIG
+  MODMUSIC EEEE
+  INTRO &3As you walk up to the building, two mercenaries with incredibly huge weapons|
+  INTRO turn to face you. "Let''s fry this Sacre Base scum!". You realize there is|
+  INTRO absolutely nothing you can do as they aim their huge weapons in your|
+  INTRO direction. You prepare for the inevitable. The man on the left eases his|
+  INTRO trigger finger in for the kill..... Pop! A flag with the word "bang" on it|
+  INTRO emerges from the end of the weapon. The two mercs burst into laughter. One|
+  INTRO says "Dude, you didn''t think we''d really kill you! Ed says killing our|
+  INTRO &3customers is very bad for business..... Welcome to Ed''s Exquisite Equipment|
+  INTRO Emporium. Bazookas to your right, pulse rifles to your left, grenades and|
+  INTRO anti-personnel mines in the east wing......." You decide to enter and|
+  INTRO investigate.|
+  PROMPT &A|EEEE Central Selection ]&F
+  OPT Q 1    &FQuit.|
+  OPT C 2    &FView character.|
+  OPT S 1204 &FSpeak with Ed.|
+  OPT B 616  &FBuy Something.|
+  OPT V 140  &FVortex Refueling Station.|
+
+MENU 10
+  NAME Clone Center
+  ANSI MENU23
+  EGAPIC CLONE
+  PROMPT &A|Clone Center Selection ]&F
+  OPT Q 1    &FQuit.|
+  OPT C 2    &FView character.|
+  OPT M 141  &FMake new clone.|
+  OPT V 142  &FView current clone.|
+  OPT S 143  &FSwap with clone.|
+  OPT D 144  &FDelete current clone.|
+
+MENU 11
+  NAME Acme Weapons
+  ACMECRIPPLED
+  ANSI MENU33
+  EGAPIC ACMEMAIN
+  INTRO &EAs you approach the building, four "FortSlayer Deluxe" heavy battle weapons|
+  INTRO begin tracking your position. At this distance, just one of these massive guns|
+  INTRO is enough to completely vaporize you. As you venture closer, a small door-like|
+  INTRO opening appears in the massive defense field that protects this arsenal. A|
+  INTRO robotic voice booms out "Welcome to ACME weapons, Inc. Do not make any sudden|
+  INTRO movements while within this establishment. Any potentially threatening action|
+  INTRO will be sufficient conditions for your "removal" from the premises."|
+  PROMPT &A|ACME Weapons Selection ]&F
+  OPT Q 1    &FQuit.|
+  OPT C 2    &FView character.|
+  OPT F 630  &FFortress Invasion Items.|
+  OPT A 631  &FAdvanced Weapons.|
+  OPT P 634  &FPharmaceuticals.|
+  OPT W 512  &FVisit Weaponsmith.|
+  OPT T 513  &FVisit Technician.|
+
+MENU 12
+  NAME Acme Weaponsmith
+  ACMECRIPPLED
+  ANSI MENU34
+  EGAPIC ACMESTOR
+  PROMPT &A|Weaponsmith Selection ]&F
+  OPT Q 1    &FQuit.|
+  OPT C 2    &FView character.|
+  OPT 1 145  &FAccurize 10%.|
+  OPT 2 146  &FAccurize 20%.|
+  OPT 3 147  &FAccurize 30%.|
+  OPT 4 151  &FIntensify 10%.|
+  OPT 5 152  &FIntensify 20%.|
+  OPT 6 153  &FIntensify 30%.|
+  OPT U 157  &FUni-ammo conversion.|
+  OPT S 158  &FStun conversion.|
+  OPT B 159  &FThree round burst.|
+  OPT D 160  &FDeathPulse conversion.|
+  OPT W 161  &FShockwave conversion.|
+  OPT L 162  &FGrenae Launcher.|
+  OPT A 163  &FArmor burner.|
+  OPT R 164  &FWeapsmith ROM disc.|
+
+MENU 13
+ NAME Acme Technician
+ ACMECRIPPLED
+ ANSI MENU37
+ EGAPIC ACMESTOR
+ PROMPT &A|Technician Selection ]&F
+ OPT Q 1     &FQuit.|
+ OPT C 2     &FView character.|
+ OPT 1 165   &FScanner de-cloak upgrade.|
+ OPT 2 166   &FExoskeletal Augmentation.|
+ OPT 3 167   &FTargetting Array.|
+ OPT 4 168   &FServo-Augmentation unit.|
+
+MENU 14
+ NAME Communications Post
+ ANSI MENU16
+ EGAPIC COMCENT
+ PROMPT &A|Mail Room Selection ]&F
+ OPT Q 1     &FQuit.|
+ OPT C 2     &FView character.|
+ OPT R 169   &FRead mail.|
+ OPT W 170   &FWrite mail.|
+
+MENU 15
+ NAME Puritron Room
+ ANSI MENU24
+ EGAPIC PURROOM
+ SETPURACTIVE
+ PROMPT &A|Puritron room ]&F
+ OPT Q 1     &FQuit.|
+ OPT C 2     &FView character.|
+ OPT V 171   &FView puritron status.|
+ OPT R 172   &FSet reroll status.|
+
+MENU 16
+ NAME Documentation Center
+ ANSI MENU13
+ EGAPIC DOCCENT
+ PROMPT &A|Documentaiton Center ]&F
+ OPT Q 1     &FQuit.|
+ OPT C 2     &FView character.|
+ OPT M 174   &FComplete user manual.|
+ OPT U 175   &FUpdates.|
+ OPT S 176   &FQuick start.|
+ OPT G 177   &FGterm information.|
+ OPT O 178   &FGame objective.|
+ OPT I 179   &FWorld information.|
+ OPT N 180   &FNewsletters.|
+ OPT L 181   &FList previous winners.|
+ OPT R 182   &FRegistered sysops list.|
+
+MENU 17
+ NAME Fortress Trade Menu
+ ANSI MENU18
+ EGAPIC FORTMAIN
+ MODMUSIC MYSTERY2
+ TRADEREPORT
+ PROMPT &A|Fortress Trading ]&F
+ OPT Q 1     &FQuit.|
+ OPT C 2     &FView character.|
+ OPT V 4     &FView fortress.|
+ OPT T 183   &FTeleport.|
+ OPT S 184   &FSales counter.|
+ OPT A 185   &FAttack fortress.|
+ OPT ? 186   &FTrade report.|
+ OPT L 186   &FTrade report.|
+ OPT 4 187   &FPurchase medical.|
+ OPT 5 188   &FPurchase energy.|
+ OPT B 189   &FEnter fortress.|
+ OPT E 189   &FEnter fortress.|
+
+MENU 18
+ NAME Fortress Main Menu
+ ANSI MENU19
+ BASEFLAG
+ BASEPIC
+ BASEFIXOWNER
+ MODMUSIC MYSTERY2
+ PROMPT &A|Fortress Main Menu ]&F
+ OPT W 191   &FQuit to wastelands.|
+ OPT C 2     &FView character.|
+ OPT V 4     &FView fortress.|
+ OPT M 519   &FMisc menu.|
+ OPT O 520   &FTrade management menu.|
+ OPT I 521   &FConfiguration menu.|
+ OPT F 522   &FFinance menu.|
+ OPT S 523   &FStore room menu.|
+ OPT Q 190   &FLogoff in fortress.|
+ OPT T 183   &FTeleport.|
+
+MENU 19
+ NAME Fortress Misc Menu
+ ANSI MENU29
+ BASEFLAG
+ PROMPT &A|Fortress Misc Menu ]&F
+ OPT Q 1     &FQuit.|
+ OPT C 2     &FView character.|
+ OPT V 4     &FView fortress.|
+ OPT D 202   &FSelf-destruct.|
+ OPT S 203   &FSelect password.|
+ OPT M 204   &FCreate medkit.|
+ OPT H 205   &FHeal.|
+ OPT P 206   &FCreate power pack.|
+ OPT U 223  &FUse item.|
+ OPT E 502   &FEquip.|
+
+MENU 20
+ NAME Fortress Trade Management
+ BASEFLAG
+ TRADEMANAGE
+ EGAPIC FTRADE
+ PROMPT &B|Trading Option (&FQ&B=Quit,&FL&B=List) ? &F
+ OPT Q 1     &FQuit.|
+ OPT C 2     &FView character.|
+ OPT V 4     &FView fortress.|
+ OPT 1 224   &FSet minerals trade.|
+ OPT 2 225   &FSet fuel trade.|
+ OPT 3 226   &FSet herbs trade.|
+ OPT 4 227   &FSet med sales.|
+ OPT 5 228   &FSet energy sales.|
+ OPT D 229   &FSet minerals buy.|
+ OPT E 230   &FSet fuel buy.|
+ OPT F 231   &FSet herbs buy.|
+ OPT G 232   &FSet teleporter price.|
+ OPT L 233   &FShow trade status.|
+
+MENU 21
+  NAME Fortress Configuration
+  ANSI MENU22
+  BASEFLAG
+  EGAPIC FORTCNFG
+  PROMPT &AFortress Configuration ]&F
+  OPT Q 1    &FQuit.|
+  OPT C 2    &FView character.|
+  OPT V 4    &FView fortress.|
+  OPT 1 207  &FPurchase reator.|
+  OPT 2 208  &FPurchase moat.|
+  OPT 3 209  &FPurchase defense field.|
+  OPT 4 210  &FPurchase primary weapon.|
+  OPT 5 211  &FPurchase misc item.|
+  OPT 6 212  &FPurchase factory.|
+  OPT 7 213  &FPurchase pack.|
+  OPT 8 214  &FPurchase scavenger.|
+  OPT 9 215  &FPurchase robo-defender.|
+  OPT 0 236  &FPurchase base computer.|
+  OPT D 216  &FTraders-union reg.|
+  OPT E 217  &FHolostore reg.|
+  OPT F 218  &FSet Toll Fee.|
+  OPT G 219  &FSet Teleport Fee.|
+  OPT H 220  &FDischarge ammo.|
+  OPT I 221  &FDischarge medical.|
+  OPT S 222  &FSell item.|
+  OPT U 223  &FUse item.|
+
+MENU 22
+ NAME Fortress Finances
+ ANSI MENU21
+ EGAPIC FORTFIN
+ BASEFLAG
+ PROMPT &A|Fortress Finance Selection ]&F
+ OPT Q 1     &FQuit.|
+ OPT C 2     &FView character.|
+ OPT V 4     &FView fortress.|
+ OPT D 199   &FDeposit.|
+ OPT W 200   &FWithdraw.|
+ OPT B 201   &FShow balance.|
+
+MENU 23
+ NAME Fortress Store Room
+ ANSI MENU20
+ BASEFLAG
+ PROMPT &A|Storage Room Selection ]&F
+ OPT Q 1     &FQuit.|
+ OPT C 2     &FView character.|
+ OPT V 4     &FView fortress.|
+ OPT S 192   &FView object.|
+ OPT D 193   &FDrop object to base.|
+ OPT P 194   &FPick up object from base.|
+ OPT L 195   &FList objects.|
+ OPT A 196   &FPlace object forsale.|
+ OPT R 197   &FRemove object from forsale.|
+ OPT F 198   &FList objects forsale.|
+
+MENU 24
+ NAME LR Combat Menu
+ ONCE
+ PROMPT &ALong Range Encounter ]&F
+ OPT C 2     &FView character.|
+ OPT V 5     &FView opponent.|
+ OPT F 1501  &FDepart as friends.|
+ OPT W 1502  &FUse warper.|
+ OPT Q 502   &FEquip character.|
+ OPT M 501   &FInventory maintenance.|
+ OPT H 1503  &FHand-to-Hand.|
+ OPT L 1504  &FLong range attack.|
+ OPT S 1505  &FSurrender.|
+ OPT G 1506  &FGrenade.|
+ OPT R 1507  &FRun.|
+ OPT T 1508  &FTalk to opponent.|
+ OPT B 1509  &FBuy item.|
+ OPT ? 1510  &FShow menu.|
+
+MENU 25
+ NAME Camped Player
+ ANSI MENU25
+ PROMPT &A|Player Camp Selection ]&F
+ OPT Q 1     &FQuit.|
+ OPT C 2     &FView character.|
+ OPT V 234   &FView camped player.|
+ OPT A 235   &FAttack camped player.|
+ OPT S 2000  &FSteal item.|
+
+MENU 26
+ NAME Wastelands
+ WHIRLKEY
+ WASTEFLAG
+ ONCE
+ OPT N 1550  &FNorth  &F
+ OPT 8 1550  &FNorth  &F
+ OPT S 1551  &FSouth  &F
+ OPT 2 1551  &FSouth  &F
+ OPT E 1552  &FEast   &F
+ OPT 6 1552  &FEast   &F
+ OPT W 1553  &FWest   &F
+ OPT 4 1553  &FWest   &F
+ OPT C 2     &FStatus &F
+ OPT D 1554  &FDrop   &F
+ OPT P 1555  &FPick Up&F
+ OPT Q 502   &FEquip  &F
+ OPT U 1556  &FUse Obj&F
+ OPT G 1557  &FEnter  &F
+ OPT F 1558  &FBuild  &F
+ OPT M 501   &FInv Mnt&F
+ OPT Y 1559  &FQk Heal&F
+ OPT A 1560  &FCampOut&F
+ OPT K 1561  &FKillObj&F
+ OPT L 1562  &FLaptop &F
+ OPT | 1563  &FDiags  &F
+ OPT ? 1564  &FHelp   &F
+ OPT H 1564  &FHelp   &F
+
+MENU 27
+ NAME SR Combat
+ ONCE
+ OPT C 2     &FView character|
+ OPT V 5     &FView opponent|
+ OPT B 1520  &FBerserk|
+ OPT A 1521  &FAttack|
+ OPT M 1522  &FMore|
+ OPT E 1523  &FExchange|
+ OPT W 1524  &FWarp|
+ OPT S 1525  &FSurrender|
+ OPT D 1526  &FDeathpulse|
+ OPT O 1527  &FOpp-Cstats|
+ OPT F 1528  &FFlashbomb|
+ OPT P 1529  &FParry|
+ OPT H 1530  &FHeal|
+ OPT R 1531  &FRun|
+
+MENU 100
+ NAME Generic Store Template
+ PROMPT &A|Store Selection ]&F
+ STORE
+ SELLPERCENT 25
+ BUYPROMPT &BPurchase which item number (&FQ&B=Quit,&F?&B=List,&FV&B=View) ? &F
+ OPT Q 1 &FQuit|
+ OPT C 2 &FView character.|
+ OPT L 132 &FList Items|
+ OPT B 133 &FBuy Item|
+ OPT V 134 &FShow Item|
+ OPT S 135 &FSell Item|
+
+DUPEMENU 101 100
+ NAME SR Weapon Store
+ ANSI MENU3
+ PROMPT &A|SR Weapons Store Selection ]&F
+ SELLPERCENT 50
+ BUYPROMPT &BPurchase which weapon number (&FQ&B=Quit,&F?&B=List,&FV&B=View) ? &F
+
+DUPEMENU 102 100
+ NAME Armor Store
+ ANSI MENU5
+ PROMPT &A|Armor Store Selection ]&F
+ SELLPERCENT 50
+ BUYPROMPT &BPurchase which armor number (&FQ&B=Quit,&F?&B=List,&FV&B=View) ? &F
+
+DUPEMENU 103 100
+ NAME Misc Store
+ ANSI MENU6
+ PROMPT &A|Misc. Store Selection ]&F
+ SELLPERCENT 50
+
+DUPEMENU 104 100
+ NAME Ammo Store
+ ANSI MENU7
+ PROMPT &A|Ammo Store Selection ]&F
+ BUYPROMPT &BPurchase which ammo number (&FQ&B=Quit,&F?&B=List,&FV&B=View) ? &F
+ SELLPERCENT 50
+
+DUPEMENU 110 100
+ NAME Computer Store
+ TROYQUEST
+ ANSI MENU10
+ PROMPT &A|Computer Store Selection ]&F
+ SELLPERCENT 50
+ OPT A 173 &FTalk to manager.|
+
+DUPEMENU 111 100
+ NAME LR Weapon Store
+ ANSI MENU4
+ PROMPT &A|LR Weapons Store Selection ]&F
+ SELLPERCENT 50
+ BUYPROMPT &BPurchase which LR weapon number (&FQ&B=Quit,&F?&B=List,&FV&B=View) ? &F
+
+DUPEMENU 114 100
+ NAME GSRZ Hort Center Store
+ ANSI MENU11
+ EGAPIC HORTSTOR
+ SELLPERCENT 50
+ PROMPT &A|Horticulture Center Store Selection ]&F
+
+DUPEMENU 116 100
+ NAME EEEE Store
+ ANSI MENU28
+ SELLPERCENT 50
+ PROMPT &A|EEEE Store Selection ]&F
+
+DUPEMENU 117 100
+ NAME Town Store #2
+ SELLPERCENT 52
+ ANSI MENU31
+
+DUPEMENU 118 100
+ NAME Town Store #3
+ SELLPERCENT 54
+ ANSI MENU31
+
+DUPEMENU 119 100
+ NAME Town Store #4
+ SELLPERCENT 56
+ ANSI MENU31
+
+DUPEMENU 120 100
+ NAME Town Store #5
+ SELLPERCENT 58
+ ANSI MENU31
+
+DUPEMENU 121 100
+ NAME Town Store #6
+ SELLPERCENT 60
+ ANSI MENU31
+
+DUPEMENU 122 100
+ NAME Town Store #7
+ SELLPERCENT 62
+ ANSI MENU31
+
+DUPEMENU 123 100
+ NAME Town Store #8
+ SELLPERCENT 64
+ ANSI MENU31
+
+DUPEMENU 124 100
+ NAME Town Store #9
+ SELLPERCENT 66
+ ANSI MENU31
+
+DUPEMENU 125 100
+ NAME Kill, Inc.
+ ANSI MENU32
+ EGAPIC KILLBIG
+ MODMUSIC KILL-INC
+ INTRO &3As you approach the complex, you notice two full-auto ZL-29x auto tracking|
+ INTRO phase cannons following your every step. You open the door. "Welcome to|
+ INTRO Kill, Inc", a computer synthesized voice says. This store appears to be|
+ INTRO operated entirely by computers. With the clientele a place like this probably|
+ INTRO draws, it's easy to understand why nobody would want to run this place.|
+ SPQUEST 12
+ PROMPT &A|Kill, Inc. Selection ]&F
+ SELLPERCENT 50
+
+DUPEMENU 130 100
+ NAME ACME Weapons Fort Invasion Store
+ ANSI MENU36
+ EGAPIC ACMESTOR
+ INTRO &EACME Weapons is proud to announce the FortSlayer series of heavy battle weapons|
+ INTRO designed especially for the purpose to gaining entrance to heavily defended|
+ INTRO fortresses. All FortSlayer weapons fire the advanced FortShell self-propelled|
+ INTRO rocket cartridges. We suggest taking your FortSlayer to our Weaponsmith for|
+ INTRO accurizing after purchase.|
+ PROMPT &A|Fortress invasion items store selection ]&F
+ SELLPERCENT 50
+
+DUPEMENU 131 100
+ NAME ACME Weapons Weap Store
+ ANSI MENU35
+ EGAPIC ACMESTOR
+ INTRO &EACME Weapons is proud to present our selection of advanced weapons. We have|
+ INTRO pre-war machine guns such as the M16 and AK-47, as well as a variety of high|
+ INTRO accuracy sniper weapons when you just have to make that first shot count!|
+ PROMPT &A|Advanced weapons store selection ]&F
+ SELLPERCENT 50
+
+DUPEMENU 134 100
+ NAME ACME Weapons Chem Store
+ ANSI MENU39
+ EGAPIC ACMESTOR
+ INTRO &EWelcome to the ACME Weapons pharmaceuticals divions. We have an array of|
+ INTRO advanced products available. Unfortunately, the person responsible for|
+ INTRO documenting these products has recently disappeared, along with a truckload of|
+ INTRO our labelling machines. Therefore, we have very little information on these|
+ INTRO products. We suggest you use them with caution.|
+ PROMPT &A|Pharmaceuticals selection ]&F
+ SELLPERCENT 50
+

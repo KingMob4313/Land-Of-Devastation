@@ -1,0 +1,612 @@
+;This is where I have decided to place the "isreal" monsters. It is a standard
+;monster file, just lik monster.txt. To enable it, you should have the line
+;"MONSTER ISREAL.TXT" specified in dataset.txt (you can have as many monster
+;text files as you wish)
+;
+;What are isreal? Isreal's are monsters that are tied to a record in the
+;user file ("ISREAL x" specifies that this monster is the real player in
+;record x).
+;
+;Since they function very similar to a normal player, an ISReal has the
+;following properties:
+;
+;  - Can be camped (specify the two parameters "CAMPED" and "NORANDOM")
+;
+;  - Can only be killed once.
+;
+;  - Experience increases when the isreal kills players.
+;
+;  - ISReal may gain money by accepting player surrenders.
+;---------------------------------------------------------------------------
+NAME DeathStalker
+
+DESC A solitary figure approaches from the wastelands. He makes no effort to
+DESC conceal himself and is obviously looking for a fight... "I am DeathStalker!
+DESC I roam the wastelands seeking the thrill of the kill! You will be very
+DESC entertaining."
+
+HITPTS 155
+STR 100
+DEX 100
+AGL 100
+EXP 45000
+MONEY 250000
+
+MINDIST 75
+MAXDIST 150
+
+ISREAL 200
+
+WEAPON1 A-Mk.II
+WEAPON2 SLM-9000 PulseRay
+ARMOR Phase Armor
+INV EnviroBlur
+INV10 Medkit/50
+
+TYPE 4
+COMBATPIC MEGAMERC
+
+KILLHIM As Deathstalker notices his life begin to fade, he reaches for a device
+KILLHIM on his belt, but it isn't there. "Damn... never a warper around when
+KILLHIM you need one..." His lifeless carcass collapses to the ground.
+;---------------------------------------------------------------------------
+NAME High Ronin #1
+
+DESC A solitary figure approaches from the wastelands. He is carrying himself
+DESC very low and stealthfully as he creeps through the wasted foliage. 
+DESC He sees you approaching and sighs, reaching his rifle.  "Another Sacre
+DESC Base soldier, oh well, I'll dump you off at the hospital when I am
+DESC done."
+
+HITPTS 255
+STR 75
+DEX 107
+AGL 128
+EXP 45000
+MONEY 250000
+
+MINDIST 100
+MAXDIST 300
+
+ISREAL 199
+
+NO SELL
+DISINT 50
+
+WEAPON1 Adamantium Katana
+WEAPON2 Pulse Laser Rifle
+ARMOR Composite Vest
+INV Power Pack
+INV50 Medkit/50
+INV GSRZ Rations/50
+INV GSRZ Rations/50
+INV70 Laptop
+INV65 ROM: FF2
+INV60 Technical Tools
+INV50 .40 Pistol
+
+TYPE 4
+
+KILLHIM You get another hit on this evasive fellow.  He gunts in pain
+KILLHIM and drops to the ground.  "Oh well, maybe next time." He says
+KILLHIM as he teleports away.  At least he left some of his stuff behind.
+;-----------------------------------------------------------------------------
+NAME High Ronin #2
+
+DESC A solitary figure approaches from the wastelands. He is carrying himself
+DESC very low and stealthfully as he creeps through the wasted foliage. 
+DESC He sees you approaching and chuckles reaching his SMG that hangs on
+DESC His shoulder.
+
+HITPTS 289
+STR 85
+DEX 112
+AGL 85
+EXP 450000
+MONEY 25000
+
+MINDIST 100
+MAXDIST 300
+
+ISREAL 198
+
+NO SELL
+DISINT 50
+
+WEAPON1 Adamantium Katana
+WEAPON2 Cruster Buster
+ARMOR Composite Armor
+INV Power Pack
+INV50 Medkit/50
+INV Rations/10
+INV GSRZ Rations/50
+INV GSRZ Rations/50
+INV50 9mm Pistol
+
+TYPE 4
+
+KILLHIM You get another hit on this evasive fellow.  He gunts in pain
+KILLHIM and drops to the ground.  "I'll be back, and you'll soon be dead."
+KILLHIM He says as he teleports away.  At least he left some of his stuff
+KILLHIM behind.
+;-----------------------------------------------------------------------------
+NAME Ronin #1
+
+DESC A somewhat large figure meanders about lazily in the wasteland. He appears 
+DESC to be a classic hippie, from his tie-dyed t-shirt with the embroidered 
+DESC marijuana leaf in the center, to his "Jesus" sandles. He spots you, 
+DESC grins, and lumbers over.  What doesn't seem to be right is that this
+DESC hippie is carrying a Mac 10!
+
+HITPTS 92
+STR 34
+DEX 32
+AGL 25
+EXP 2500
+MONEY 2500
+
+MINDIST 25
+MAXDIST 85
+
+TALKTO 111
+
+ISREAL 197
+
+NO SELL
+DISINT 50
+
+WEAPON1 Fireman's Axe
+WEAPON2 Mac 10 SMG
+ARMOR Kevlar Vest
+INV Pistol Clip
+INV30 Medkit/50
+INV60 Technical Tools
+INV70 Laptop
+INV65 ROM: FF2
+INV GSRZ Rations/50
+INV GSRZ Rations/50
+INV GSRZ Rations/50
+INV30 Laptop
+INV70 .357 Revolver
+INV70 Bag of Weed
+
+TYPE 4
+
+KILLHIM You get another hit on your rather slow opponent.  He grunts in
+KILLHIM pain and drops to the ground.  "I was only lookin' for a bag, man,"
+KILLHIM as he teleports away.  At least he left some of his stuff behind.
+
+;-----------------------------------------------------------------------------
+NAME Ronin #2
+
+DESC A solitary figure approaches from the wastelands. He is carrying himself
+DESC very low and stealthfully.  Suddenly as you round a dune, you lose sight
+DESC of him!  You hear a click behind you.  "If you surrender, I won't kill ya
+DESC Cruster!"
+
+HITPTS 82
+STR 26
+DEX 35 
+AGL 37
+EXP 4500
+MONEY 2500
+
+MINDIST 25
+MAXDIST 85
+
+ISREAL 196
+
+NO SELL
+DISINT 50
+
+WEAPON1 Talon Glove
+WEAPON2 Mac 10 SMG
+ARMOR Hard Vest
+INV GSRZ Rations/50
+INV Pistol Clip
+INV GSRZ Rations/50
+INV50 Medkit/50
+INV50 Knife
+
+TYPE 4
+
+KILLHIM You get another hit on this evasive fellow.  He falls backward
+KILLHIM looking at his wounds rather perplexed.  "Ouch, that hurt." he
+KILLHIM coughs as he teleports away.  At least he left some of his stuff
+KILLHIM behind.
+;-----------------------------------------------------------------------------
+NAME Ronin #3
+
+DESC A solitary figure approaches from the wastelands. The rather slight figure
+DESC alks slowly and delibately.  His long sandy blond hair hanging down in
+DESC in front of his face.  Seeing his Uzi, you hide behind a rock and wait to
+DESC ambush him. Time passes and suddenly, you hear a racking of a bolt from
+DESC behind you.  "Don't move, just hand over your equipment and I'll let you
+DESC go unharmed."
+
+HITPTS 67
+STR 22
+DEX 32 
+AGL 27
+EXP 4500
+MONEY 2500
+
+MINDIST 25
+MAXDIST 85
+
+ISREAL 195
+
+NO SELL
+DISINT 50
+
+WEAPON1 Cryo Cutlass
+WEAPON2 Uzi SMG
+ARMOR Riot Vest
+INV Pistol Clip
+INV Pistol Clip
+INV70 Laptop
+INV65 ROM: FF2
+INV GSRZ Rations/50
+INV50 Medkit/50
+
+TYPE 4
+
+KILLHIM You smash another hit on this longhaired person.  He cries out in
+KILLHIM pain and drops to the ground.  "Oh well, maybe next time." He says
+KILLHIM as he teleports away.  At least he left some of his stuff behind.
+;-----------------------------------------------------------------------------
+NAME Ronin #4
+
+DESC A solitary figure approaches from the wastelands. He walks as if he
+DESC wasn't paying attention to his surroundings.  As you get closer you
+DESC see that he is playing a game on a device which Hadely called a "game
+DESC kid" or something.  As you walk towards this raven haired man, you
+DESC Step on a twig, alerting him of your presense.  Looking at you he 
+DESC smiles and chackles "Time for fun with Mr. Big Knife".
+
+HITPTS 97
+STR 25
+DEX 42 
+AGL 36
+EXP 7500
+MONEY 2500
+
+MINDIST 45
+MAXDIST 105
+
+ISREAL 194
+
+NO SELL
+DISINT 50
+
+WEAPON1 Energy Dagger
+WEAPON2 M-16
+ARMOR Riot Jacket
+INV GSRZ Rations/50
+INV Rifle Clip
+INV Power Pack
+INV70 Laptop
+INV65 ROM: FF2
+INV50 Medkit/50
+INV50 Dagger
+INV50 Long Dagger
+
+TYPE 4
+
+KILLHIM You get score another hit, disarming him.  He steps away clutching
+KILLHIM his wounds and falls down.  "You better watch your back"  He says
+KILLHIM as he teleports away.  At least he left some of his stuff behind.
+;-----------------------------------------------------------------------------
+NAME Ronin #5
+
+DESC A solitary figure approaches from the wastelands.  He trudges deliber-
+DESC ately across the wastes with a large axe over his shoulder. Seeing you
+DESC he yells "Hey, YOU!" And levels his HMG at you!
+
+HITPTS 148
+STR 58
+DEX 48 
+AGL 35
+EXP 9500
+MONEY 6500
+
+MINDIST 60
+MAXDIST 120
+
+ISREAL 193
+
+NO SELL
+NO SURRENDER
+DISINT 50
+
+WEAPON1 Photon Axe
+WEAPON2 HMG
+ARMOR Riot Armor
+INV GSRZ Rations/50
+INV Belted Ammo
+INV Power Pack
+INV GSRZ Rations/50
+
+TYPE 4
+
+KILLHIM Exhausted, you drive your weapon into this large man one more time.
+KILLHIM In a rage he slaps you aside, stepping over you he tries to lift
+KILLHIM his axe to finish you off, but he is too wounded.  He staggers
+KILLHIM backward and falls on his back.  Walking over to him the last
+KILLHIM thing he says is "Fucker" before he teleports away.
+;-----------------------------------------------------------------------------
+NAME Ronin #6
+
+DESC A solitary figure approaches from the wastelands.  He trudges deliber-
+DESC ately across the wastes with a large axe over his shoulder. Seeing you
+DESC he yells "Lie flat on the ground and you won't get hurt!" And levels
+DESC his Galil at you!
+
+HITPTS 118
+STR 41
+DEX 32 
+AGL 35
+EXP 6500
+MONEY 4500
+
+MINDIST 45
+MAXDIST 105
+
+ISREAL 192
+
+NO SELL
+DISINT 50
+
+WEAPON1 Laser Axe
+WEAPON2 .308 Galil
+ARMOR Riot Jacket
+INV GSRZ Rations/50
+INV Rifle Clip
+INV Power Pack
+INV GSRZ Rations/50
+INV50 Medkit/50
+INV50 Knife
+
+TYPE 4
+
+KILLHIM Exhausted, you drive your weapon into this large man one more time.
+KILLHIM In a rage he slaps you aside, stepping over you he tries to lift
+KILLHIM his axe to finish you off, but he is too wounded.  He staggers
+KILLHIM backward and falls on his back.  Walking over to him the last
+KILLHIM thing he says is "Fucker" before he teleports away.
+;-----------------------------------------------------------------------------
+NAME Ronin #7
+
+DESC A solitary figure approaches from the wastelands. The rather slight
+DESC figure walks slowly and delibately.  His long tangled black hair
+DESC hanging down in front of his face.  Seeing his shotgun, you hide
+DESC behind a rock and wait to ambush him. Time passes and suddenly, you
+DESC hear a racking of a bolt from behind you.  "Sorry man, but those
+DESC are the breaks.  I don't suppose you want to surrender?"
+
+HITPTS 59
+STR 18
+DEX 34 
+AGL 25
+EXP 4500
+MONEY 2500
+
+MINDIST 25
+MAXDIST 85
+
+ISREAL 191
+
+NO SELL
+DISINT 50
+
+WEAPON1 Cryo Cutlass
+WEAPON2 12 Gauge Shotgun
+ARMOR Hard Vest
+INV GSRZ Rations/50
+INV Shotgun Shells
+INV GSRZ Rations/50
+INV70 Laptop
+INV65 ROM: FF2
+INV50 Medkit/50
+INV50 Knife
+
+TYPE 4
+
+KILLHIM You get another hit on this long haired man.  He grunts in pain
+KILLHIM and drops to the ground.  "Oh well, maybe next time." He says
+KILLHIM as he teleports away.  At least he left some of his stuff behind.
+;-----------------------------------------------------------------------------
+NAME Ronin #8
+
+DESC A solitary figure approaches from the wastelands. He is carrying himself
+DESC low and stealthfully.  However you notice that he has a slight limp.
+DESC Thinking you finally have a free lunch, you rush to attack him.
+DESC As you bound over a rock only to have your elation turn to terror
+DESC as you notice a pistol with a 3.5 inch wide bore aimed at you.  He
+DESC Cackles evilly, and asks "what's a matter, lose something?"
+
+HITPTS 109
+STR 26
+DEX 35 
+AGL 37
+EXP 4500
+MONEY 2500
+
+MINDIST 25
+MAXDIST 85
+
+ISREAL 190
+
+NO SELL
+DISINT 50
+
+WEAPON1 Tachyon Sword
+WEAPON2 Vehicle Stopper
+ARMOR Riot Jacket
+INV GSRZ Rations/50
+INV 3.5' Shells
+INV Power Pack
+INV GSRZ Rations/50
+INV50 Medkit/50
+INV50 Knife
+
+TYPE 4
+
+KILLHIM You get score another hit, disarming him.  He steps away clutching
+KILLHIM his wounds and falls down.  "You better watch your back"  He says
+KILLHIM as he teleports away.  At least he left some of his stuff behind.
+;-----------------------------------------------------------------------------
+NAME Ronin #9
+
+DESC A solitary figure approaches from the wastelands. He is carrying himself
+DESC very low and stealthfully.  Suddenly as you round a dune, you lose site
+DESC of him!  You hear a load clack of a bolt behind you.  "Maybe if you
+DESC surrender, I won't kill you!"
+
+HITPTS 75
+STR 24
+DEX 34 
+AGL 33
+EXP 6500
+MONEY 4500
+
+MINDIST 45
+MAXDIST 105
+
+ISREAL 189
+
+NO SELL
+DISINT 50
+
+WEAPON1 Energy Sword
+WEAPON2 M-16
+ARMOR Riot Vest
+INV Rifle Clip
+INV Power Pack
+INV GSRZ Rations/50
+INV50 Medkit/50
+INV50 Knife
+
+TYPE 4
+
+KILLHIM You get another hit on this evasive fellow.  He grunts in pain
+KILLHIM and drops to the ground.  "Oh well, maybe next time." He says
+KILLHIM as he teleports away.  At least he left some of his stuff behind.
+;-----------------------------------------------------------------------------
+NAME Ronin #10
+
+DESC A solitary figure approaches from the wastelands. He is carrying himself
+DESC very low and stealthfully.  Suddenly as you round a dune, you lose site
+DESC of him!  You hear a load clack of a bolt behind you.  "Maybe if you
+DESC surrender, I won't kill you!"
+
+HITPTS 72
+STR 25
+DEX 37 
+AGL 31
+EXP 6500
+MONEY 4500
+
+MINDIST 45
+MAXDIST 105
+
+ISREAL 188
+
+NO SELL
+DISINT 50
+
+WEAPON1 Force Blade
+WEAPON2 Ak-47
+ARMOR Riot Vest
+INV GSRZ Rations/50
+INV Rifle Clip
+INV Power Pack
+INV GSRZ Rations/50
+INV50 Medkit/50
+INV50 Knife
+
+TYPE 4
+
+KILLHIM You get another hit on this evasive fellow.  He grunts in pain
+KILLHIM and drops to the ground.  "Oh well, maybe next time." He says
+KILLHIM as he teleports away.  At least he left some of his stuff behind.
+;-----------------------------------------------------------------------------
+NAME Ronin #11
+
+DESC A solitary figure approaches from the wastelands. The slightly large
+DESC figure walks slowly and delibately.  Seeing his Rifle, you hide behind
+DESC a rock and wait to ambush him. Time passes and suddenly, you hear the
+DESC Piercing whine of a capacitor charging.  He yells out from behind you
+DESC behind you.  "Don't move, just hand over your equipment and I'll let
+DESC you go unharmed."
+
+HITPTS 102
+STR 32
+DEX 28 
+AGL 22
+EXP 4500
+MONEY 2500
+
+MINDIST 35
+MAXDIST 95
+
+ISREAL 187
+
+NO SELL
+DISINT 50
+
+WEAPON1 Longsword
+WEAPON2 Laser Carbine
+ARMOR Hard Vest
+INV GSRZ Rations/50
+INV Laptop
+INV Power Pack
+INV GSRZ Rations/50
+INV50 Medkit/50
+INV50 Knife
+
+TYPE 4
+
+KILLHIM You get another hit on this evasive fellow.  He grunts in pain
+KILLHIM and drops to the ground.  "Oh well, maybe next time." He says
+KILLHIM as he teleports away.  At least he left some of his stuff behind.
+;-----------------------------------------------------------------------------
+NAME Ronin #12
+
+DESC A solitary figure approaches from the wastelands. He is carrying himself
+DESC very low and stealthfully.  Suddenly as you round a dune, you lose site
+DESC of him!  You hear a load clack of a bolt behind you.  "SENGUYIA, You've
+DESC got the bite.
+
+HITPTS 76
+STR 24
+DEX 33 
+AGL 29
+EXP 4500
+MONEY 2500
+
+MINDIST 25
+MAXDIST 85
+
+ISREAL 186
+
+NO SELL
+DISINT 50
+
+WEAPON1 Longsword
+WEAPON2 Large Tazer
+ARMOR Riot Jacket
+INV GSRZ Rations/50
+INV Rifle Clip
+INV Power Pack
+INV GSRZ Rations/50
+INV50 Medkit/50
+INV50 Knife
+
+TYPE 4
+
+KILLHIM You get another hit on this evasive fellow.  He grunts in pain
+KILLHIM and drops to the ground.  "Why did you do that you wiener." He
+KILLHIM says as he teleports away.  At least he left some of his stuff
+KILLHIM behind.
+

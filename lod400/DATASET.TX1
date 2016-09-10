@@ -1,0 +1,205 @@
+;Land Of Devastation DataSet information file.
+;
+;
+;The NAME field indicates the name of this data set.
+;
+NAME Land Of Devastation "No Truth" Data Set
+;
+;The AUTHOR field is the name of the person (or group of persons) who has
+;created this custom data set.
+;
+AUTHOR Fred Bell and Ronin Inc.
+;
+;The next section, which consists of SETDESC destriptions, is a small
+;introduction to this data set. You may wish to describe your scenario
+;here, outline the types of areas in your world, etc.
+;
+SETDESC         What follows is a description of all that is currently known
+SETDESC of the wastelands surrounding Sacre Base. The total habitable
+SETDESC area of the wasteland is about 125 square sectors. Terrain beyond
+SETDESC the wasteland is believed to be completely unsuitable for life and
+SETDESC travel is not possible. Therefore, we suggest you confine your
+SETDESC wanderings to the 125x125 square area. Land beyond these dimensions
+SETDESC will appear as impassable mountains to your terrain scanner.
+SETDESC
+SETDESC         Sacre base is a human establishment, fully staffed by
+SETDESC highly trained para-military personnel. All resources of
+SETDESC Sacre Base are at your disposal, although most inventory in our
+SETDESC stores requires monitary reimbursement for your usage.
+SETDESC
+SETDESC         Other civilizations exist beyond the confines of Sacre
+SETDESC Base itself. Little information is available about these other
+SETDESC civilizations and we suggest that you use caution when encountering
+SETDESC new places.
+SETDESC
+SETDESC         The wasteland is populated by numerous extremely hostile
+SETDESC creatures of unknown intelligence and motives. Attempts to control
+SETDESC these hostile elements have been somewhat successful around Sacre
+SETDESC Base, but as the distance from Sacre Base increases, more dangerous
+SETDESC beings may be encountered.
+SETDESC
+SETDESC         More information is available from Defs Sacre and Troy
+SETDESC Hadley, who may be located in the Tavern.
+;
+;The MENUSTEM field indicates the "stem" of the ansi menus. For example,
+;the default menus are MENU1.ANS, MENU2.ANS, MENU3.ANS, etc. If you don't
+;know what this is, then don't mess with it!
+;
+MENUSTEM MENU
+;
+;The PROD1, PROD2, and PROD3 fields indicate the name of the three
+;wasteland trading commodities. Support for them is not completely
+;finished.
+;
+PROD1 Minerals
+PROD2 Fuel
+PROD3 Herbs
+;
+;The following CITY keywords identify the names of the cities in the
+;wasteland. City 5 & 6 are really special locations and not actually
+;"towns".
+;
+CITY1 Sacre Base
+CITY2 Freedom City
+CITY3 Death Warrior HQ
+CITY4 Black Widow HQ
+CITY5 Draku Base
+CITY6 Xeboc's Base
+CITY7 Frost Bite
+CITY8 Blood Lust
+CITY9 Hospital
+CITY10 ?
+
+;Salvage levels. The following are the percentages that the city will pay
+;for returned equipment. (i.e. junk the player picks up off the wasteland
+;and sells). One line is listed for each town.
+
+SALV1 50
+SALV2 45
+SALV3 40
+SALV4 35
+
+; (5&6 unused - special)
+
+SALV7 30
+SALV8 30
+SALV9 55
+
+;
+;The following keywords identify text that will be used for the words "he",
+;"she", etc in the wasteland.
+;
+HISSTR  his
+HERSTR  her
+ITSSTR  its
+HESTR   he
+SHESTR  she
+ITSTR   it
+MHIMSTR him
+FHIMSTR her
+IHIMSTR it
+;
+;The MONSTER keyword identifies the name of the file that has the definitions
+;of the wasteland monsters. Multiple MONSTER files may be used.
+;
+MONSTER MONSTER.TXT
+MONSTER ISREAL.TXT
+MONSTER ELEM.TXT
+MONSTER BOSSMON.TXT
+MONSTER ROBOMON.TXT
+;
+;The COMBAT keyword identifies the name of the file that has the definitions
+;of the strings used in combat. Multiple COMBAT files may be used.
+;
+COMBAT COMBAT.TXT
+;
+;The TALK keyword identifies the name of the file that has the definitions
+;of the dialog used in taverns, monsters, etc. Multiple TALK files may be
+;used.
+;
+TALK TALK.TXT
+;
+;The TAVERN keyword identifies the name of the file that identifies which
+;players are in which tavern. Multiple TAVERN files may be used.
+;
+TAVERN TAVERN.TXT
+;
+;The OBJECT keyword indicates the name of the text file which contains a
+;description of the games objectives. Only one object text file may
+;be used.
+;
+OBJECT OBJECT.TXT
+;
+;The OUTPUT keyword indicates the name of the file that COMPILE will create,
+;holding the compiled game definitions. Usually this is GAME.DEF. Only one
+;output file may be used.
+;
+OUTPUT GAME.DEF
+;
+;The following are names of EGA pictures that will be used from the
+;resource.002 file. Most of them are self explanatory.
+;
+EGADOCCENT DOCCENT
+EGACOMCENT COMCENT
+EGACLONE CLONE
+EGAPURROOM PURROOM
+EGAFINANCE FINANCE
+EGASURR SURR
+EGAFORTATCK FORTATCK
+EGAFORCNFG FORTCNFG
+EGATAVERN TAVERN
+EGABARTALK TAVERN
+EGAFTRADE FTRADE
+EGAFORTFIN FORTFIN
+EGAFORTRET FORTRET
+EGAFORTMM1 FORTMM1
+EGAFORTBAD FORTBAD
+EGAFORTMAIN FORTMAIN
+EGALAPTOP LAPTOP
+EGAEEEEBIG EEEEBIG
+EGAKILLBIG KILLBIG
+EGAHORTBIG HORTBIG
+EGAHORTSTOR HORTSTOR
+EGATPORT TPORT
+EGATEAM TEAM
+EGATQUART TQUART
+EGATOWN1 CITY
+EGATOWN2 CITY2
+EGATOWN3 CITY3
+EGATOWN4 BWICTY
+EGATOWN5 CITY
+EGATOWN6 CITY
+EGATOWN7 CITY
+EGATOWN8 CITY
+EGATOWN9 CITY
+EGATOWN10 CITY
+EGATELE1 TELE_P1
+EGATELE2 TELE_P2
+EGATRANLIUS TRANBASE
+EGAACMEMAIN ACMEMAIN
+EGAACMETECH ACMESTOR
+EGAACMEWEAPSMITH ACMESTOR
+EGAACMEWEAP ACMESTOR
+EGAACMEFORT ACMESTOR
+EGALOKI LOKIISLE
+EGATADSU TADSU
+
+EGAMALE DUDE
+EGAFEMALE HEROINNE
+EGAOTHER DUDE
+
+;
+;Kelp Reward - the amount of $$ the GSRZ manager provides for obtaining
+;              kelp rations for special quest #14.
+;
+KELPREWARD 10000
+;
+;
+;EMWarpMine: Defines the percentage chance that the EMWarp program will
+;            respond when the user steps on a mine. Example: 0 would
+;            be no chance to respond; 100 would be respond all the time, and
+;            80 would be respond 80% of the time.
+;
+EMWARPMINE 80
+;
+;

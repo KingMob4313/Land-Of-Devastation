@@ -1,0 +1,16 @@
+LOD: "Lite" version [Graphics & Sound disabled]
+(c) Scott M Baker
+
+The "lite" version of LOD has the sound and graphics support hardcoded
+out of the executable. By directly removing this support, approximately
+30k of memory is saved. This is useful for sysops who have very limited
+memory available when users shell to operate the door program.
+
+The lite and normal (GAME.EXE) versions can coexist together. For example,
+a sysop could use GAME.EXE to play in graphics mode locally while using
+GAMELITE.EXE for remote operation for his/her users.
+
+To use:
+
+  - Just call the GAMELITE.EXE executable whenever you would normally have
+    called GAME.EXE.

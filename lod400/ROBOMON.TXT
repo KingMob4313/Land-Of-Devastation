@@ -1,0 +1,318 @@
+;----------------------------------------------------------------------------
+
+NAME Robomine Mark II
+
+DESC It begins as a slight whizzing sound coming from the nearby mine. You
+DESC watch as a segment of the mine "transforms" itself into a robotic
+DESC killing machine. You have encountered a Robomine Mark II.
+
+HITPTS 48
+STR 36
+DEX 36
+AGL 36
+EXP 4200
+MONEY 0
+
+;ORIGZ 100 identifies this monster as a robomine
+
+ORIGZ 100
+ORIGX 1
+
+DISINT 100
+NOSELL
+
+WEAPON1 Energy Sword
+WEAPON2 Force Pistol
+ARMOR Iron Plating
+INV power pack
+
+COMBATPIC rcu
+
+KILLHIM Your final blow disables the robomine. It's wrecked frame falls
+KILLHIM to the ground, lifeless. You think to yourself "I wonder how much
+KILLHIM money the owner wasted on this piece of junk!"
+
+FLEETXT You run from the situation as fast as you can. The Robomine remains
+FLEETXT to guard its perimeter and recharge for the next attack.
+
+FLEERAN You run from the situation as fast as you can. The Robomine remains
+FLEERAN to guard its perimeter and recharge for the next attack.
+
+;----------------------------------------------------------------------------
+
+NAME Robomine Mark III
+
+DESC It begins as a slight whizzing sound coming from the nearby mine. You
+DESC watch as a segment of the mine "transforms" itself into a robotic
+DESC killing machine. You have encountered a Robomine Mark III.
+
+HITPTS 75
+STR 47
+DEX 47
+AGL 47
+EXP 8200
+MONEY 0
+
+WEAPON1 GravSword
+WEAPON2 GravBlast
+ARMOR Energy Armor
+INV GravPack
+
+COMBATPIC rcu
+
+;ORIGZ 100 identifies this monster as a robomine
+
+ORIGZ 100
+ORIGX 2
+
+DISINT 100
+NOSELL
+
+KILLHIM Your final blow disables the robomine. It's wrecked frame falls
+KILLHIM to the ground, lifeless. You think to yourself "I wonder how much
+KILLHIM money the owner wasted on this piece of junk!"
+
+FLEETXT You run from the situation as fast as you can. The Robomine remains
+FLEETXT to guard its perimeter and recharge for the next attack.
+
+FLEERAN You run from the situation as fast as you can. The Robomine remains
+FLEERAN to guard its perimeter and recharge for the next attack.
+
+;----------------------------------------------------------------------------
+
+NAME Robomine Mark IV
+
+DESC It begins as a slight whizzing sound coming from the nearby mine. You
+DESC watch as a segment of the mine "transforms" itself into a robotic
+DESC killing machine. You have encountered a Robomine Mark IV.
+
+HITPTS 98
+STR 58
+DEX 58
+AGL 58
+EXP 11500
+MONEY 0
+
+WEAPON1 WidowBlade
+WEAPON2 WidowBlaster
+ARMOR Widow Armor
+INV WidowPack
+
+COMBATPIC rcu
+
+;ORIGZ 100 identifies this monster as a robomine
+
+ORIGZ 100
+ORIGX 3
+
+DISINT 100
+NOSELL
+
+KILLHIM Your final blow disables the robomine. It's wrecked frame falls
+KILLHIM to the ground, lifeless. You think to yourself "I wonder how much
+KILLHIM money the owner wasted on this piece of junk!"
+
+FLEETXT You run from the situation as fast as you can. The Robomine remains
+FLEETXT to guard its perimeter and recharge for the next attack.
+
+FLEERAN You run from the situation as fast as you can. The Robomine remains
+FLEERAN to guard its perimeter and recharge for the next attack.
+
+;----------------------------------------------------------------------------
+
+NAME Robomine Mark V
+
+DESC It begins as a slight whizzing sound coming from the nearby mine. You
+DESC watch as a segment of the mine "transforms" itself into a robotic
+DESC killing machine. You have encountered a Robomine Mark V.
+
+HITPTS 125
+STR 74
+DEX 74
+AGL 74
+EXP 23500
+MONEY 0
+
+WEAPON1 WidowBlade
+WEAPON2 Pulse Rifle
+ARMOR Widow Armor
+INV WidowPack
+INV Trivex Pack
+
+COMBATPIC rcu
+
+;ORIGZ 100 identifies this monster as a robomine
+
+ORIGZ 100
+ORIGX 4
+
+DISINT 100
+NOSELL
+
+KILLHIM Your final blow disables the robomine. It's wrecked frame falls
+KILLHIM to the ground, lifeless. You think to yourself "I wonder how much
+KILLHIM money the owner wasted on this piece of junk!"
+
+FLEETXT You run from the situation as fast as you can. The Robomine remains
+FLEETXT to guard its perimeter and recharge for the next attack.
+
+FLEERAN You run from the situation as fast as you can. The Robomine remains
+FLEERAN to guard its perimeter and recharge for the next attack.
+
+;----------------------------------------------------------------------------
+
+NAME Robomine Mark VI
+
+DESC It begins as a slight whizzing sound coming from the nearby mine. You
+DESC watch as a segment of the mine "transforms" itself into a robotic
+DESC killing machine. You have encountered a Robomine Mark VI.
+
+HITPTS 155
+STR 86
+DEX 86
+AGL 86
+EXP 40000
+MONEY 0
+
+WEAPON1 A-Mk.II
+WEAPON2 TachyonBlaster
+ARMOR Phase Armor
+
+COMBATPIT rcu
+
+;ORIGZ 100 identifies this monster as a robomine
+
+ORIGZ 100
+ORIGX 5
+
+DISINT 100
+NOSELL
+
+KILLHIM Your final blow disables the robomine. It's wrecked frame falls
+KILLHIM to the ground, lifeless. You think to yourself "I wonder how much
+KILLHIM money the owner wasted on this piece of junk!"
+
+FLEETXT You run from the situation as fast as you can. The Robomine remains
+FLEETXT to guard its perimeter and recharge for the next attack.
+
+FLEERAN You run from the situation as fast as you can. The Robomine remains
+FLEERAN to guard its perimeter and recharge for the next attack.
+
+;----------------------------------------------------------------------------
+
+NAME Guardian Mark VI
+
+DESC It begins as a slight whizzing sound coming from the nearby mine. You
+DESC watch as a segment of the mine "transforms" itself into a robotic
+DESC killing machine. You have encountered a Guardian Mark VI.
+
+HITPTS 155
+STR 86
+DEX 86
+AGL 86
+EXP 42000
+MONEY 0
+
+WEAPON1 A-Mk.II
+WEAPON2 TachyonBlaster
+ARMOR Phase Armor
+
+COMBATPIC rcu
+
+;ORIGZ 100 identifies this monster as a robomine
+
+ORIGZ 100
+ORIGX 6
+
+DISINT 100
+NOSELL
+
+KILLHIM Your final blow disables the robomine. It's wrecked frame falls
+KILLHIM to the ground, lifeless. You think to yourself "I wonder how much
+KILLHIM money the owner wasted on this piece of junk!"
+
+FLEETXT You run from the situation as fast as you can. The Guardian remains
+FLEETXT to guard its perimeter and recharge for the next attack.
+
+FLEERAN You run from the situation as fast as you can. The Guardian remains
+FLEERAN to guard its perimeter and recharge for the next attack.
+
+;----------------------------------------------------------------------------
+
+NAME Draku RCU Mk IV
+
+DESC It begins as a slight whizzing sound coming from the nearby mine. You
+DESC watch as a segment of the mine "transforms" itself into a robotic
+DESC killing machine. You have encountered a Draku RCU (Robotic Combat
+DESC unit) Mark IV.
+HITPTS 98
+STR 58
+DEX 58
+AGL 58
+EXP 11500
+MONEY 0
+
+WEAPON1 WidowBlade
+WEAPON2 WidowBlaster
+ARMOR Widow Armor
+INV WidowPack
+
+COMBATPIC rcu
+
+;ORIGZ 100 identifies this monster as a robomine
+
+ORIGZ 100
+ORIGX 7
+
+DISINT 100
+NOSELL
+
+KILLHIM Your final blow disables the robomine. It's wrecked frame falls
+KILLHIM to the ground, lifeless. You think to yourself "I wonder how much
+KILLHIM money the owner wasted on this piece of junk!"
+
+FLEETXT You run from the situation as fast as you can. The RCU remains
+FLEETXT to guard its perimeter and recharge for the next attack.
+
+FLEERAN You run from the situation as fast as you can. The RCU remains
+FLEERAN to guard its perimeter and recharge for the next attack.
+;----------------------------------------------------------------------------
+
+NAME Xeboc RCU Mk VI
+
+DESC It begins as a slight whizzing sound coming from the nearby mine. You
+DESC watch as a segment of the mine "transforms" itself into a robotic
+DESC killing machine. You have encountered a Xeboc RCU (Robotic Combat
+DESC unit) Mark VI.
+
+HITPTS 155
+STR 86
+DEX 86
+AGL 86
+EXP 42000
+MONEY 0
+
+WEAPON1 A-Mk.II
+WEAPON2 TachyonBlaster
+ARMOR Phase Armor
+
+COMBATPIC rcu
+
+;ORIGZ 100 identifies this monster as a robomine
+
+ORIGZ 100
+ORIGX 8
+
+DISINT 100
+NOSELL
+
+KILLHIM Your final blow disables the robomine. It's wrecked frame falls
+KILLHIM to the ground, lifeless. You think to yourself "I wonder how much
+KILLHIM money the owner wasted on this piece of junk!"
+
+FLEETXT You run from the situation as fast as you can. The RCU remains
+FLEETXT to guard its perimeter and recharge for the next attack.
+
+FLEERAN You run from the situation as fast as you can. The RCU remains
+FLEERAN to guard its perimeter and recharge for the next attack.
+

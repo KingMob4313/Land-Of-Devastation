@@ -1,0 +1,95 @@
+The Draku High Council on Local Weapons Development
+Regarding: Advanced Weapons
+
+ To fullfill the Draku objective of world domination.  We have been
+"leaking" our technology to the local inhabitants in hope that with
+the highly competive nature of the Sacre Base explorers, they would
+exterminate themselves.  So many anti-Personnel devices have been 
+developed to suit this purpose.  However there seems to be a "Third
+Party" supplying information for the production of weapons that are
+superior to Draku Weapondry and even are being sold at the EEEE and
+Kill Inc. 
+
+ The following devices that we have discovered are detailed as
+follows.
+
+Mine Basics
+-----------
+       All anti-personnel mines utilize a proximity detector device. The
+proximity detector is triggered whenever a human intruder enters the
+perimeter of the mine.
+
+       Mines are available with two basic proximity detectors: The "DUMB"
+model which will detonate when any human enters the area and the more
+advanced "SMART" model which will detonate only when a human other than the
+owner of the mine enters the perimeter.
+
+       Several different charges are available:
+
+       EXPLOSIVE: All mines include the basic explosive unit. Different
+         degrees of explosives are available from a mild 5-10 damage
+         explosive to a 20-35 damage explosive.
+
+       ZAPPER: An interesting device that the Draku weapon's
+        council has Dubbed the "Energy Zapper Unit" (EZU) may
+        also be incorporated into a standard mine. The EZU will
+ 	drain all ammunition from the intruder, leaving him
+	defenseless.
+
+       TELEPORTER: The teleporter unit will send the human intruder
+         immediately back to Sacre Base.
+
+       RCU: Robotic Combat units are discussed below.
+
+Warning Systems
+---------------
+       All mines may be configured in either a warning or no-warning
+(surprise) mode. The warning mode is useful for deterrence. The human will
+be warned prior to entering a protected zone, giving the human a chance to
+back down. Our studies have shown humans to lack bravery, and thus giving
+them the chance to leave may keep from wasting a potentially expensive
+explosive device.
+
+       The no-warning (surprise) mode allows for the maximum element of
+surprise, frequently resulting in the immediate death of the intruder.
+
+
+Robomine Series
+---------------
+       The Robomines are the most complex and perplexing anti-personnel
+devices. Each Robomine includes not only a cluster of explosive charges
+which will detonate upon triggering by an intruder, but an imbedded
+robotic combat unit (RCU)
+
+       The RCU is available in several configurations, ranging from the
+Mark II RCU which roughly approximates a difficult zone 2 monster to the
+Mark VI RCU which approximates a far more difficult zone 6 monster.
+
+Guardian Model
+--------------
+       The Guardian model has been developed for the ultimate in destructive
+capability. It combines a highly effective explosive device (in the 20-35
+capacity) coupled with a zapper and a Mark VI RCU.
+
+       The 20-35 explosive charge will cause significant damage to the
+intruder. Following that will be the Zapper which will drain all of the
+attackers ammunition. The player will be virtually defenseless when he
+encounters the Mark VI RCU.
+
+Activation
+----------
+       It is important to note that the mine must in fact be "Installed"
+by "using" it. A user may not simply drop a mine in a specific location
+and expect it to be armed - the mine must first be installed by using the
+"use" command.
+
+Distribution
+------------
+       Mines are being distributed to the following entities:
+
+       Kill, Inc: For sales to humans and elite warriors. Kill, Inc is
+             located on a secret island.
+
+       EEEE: Sales to mercenaries, as well as Sacre Base soldiers. The EEEE
+             is located along a southern highway from Sacre Base.
+

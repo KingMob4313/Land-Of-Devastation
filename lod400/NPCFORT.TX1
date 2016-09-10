@@ -1,0 +1,80 @@
+;NPCFORT.TXT
+;
+;NPC Operated forts
+
+;Sacre Transport
+;
+;This is a fortress designed primarilly to allow players to transport to/from
+;the area surrounding sacre base. It uses a "Sacre Pack" which contains
+;the following:
+;   Anti-Self-Destruct (so players can't waste this base)
+;   Device Lock        (so players can't sell the Anti-Self-Destruct!)
+;   Reactor/100        (why not?)
+;   Teleporter-1       (so people can teleport to/from)
+
+NAME Sacre Transport
+
+X 4
+Y 3
+Z 1
+
+PASSWORD RANDOM
+
+MED 0
+MEDFS 0
+MEDPRICE 0
+
+ENERGY 1000
+ENERGYFS 0
+ENERGYPRICE 0
+
+MONEY 0
+
+TELEPRICE 1000
+TOLLPRICE 0
+
+SPEC Sacre Pack
+SPEC Fusion
+SPEC Neutron Zone
+SPEC Disolver
+SPEC Robograv
+
+LISTUNION
+
+;Terra Labs
+;
+;This is a special fort containing Terra Labs. It wanders around randomly
+;during maint and contains many cool items. Tuff to defeat and well
+;equipped.
+
+NAME Terra Labs
+
+X 1
+Y 1
+Z 1
+
+PASSWORD RANDOM
+
+MED 0
+MEDFS 0
+MEDPRICE 0
+
+ENERGY 2000
+ENERGYFS 0
+ENERGYPRICE 0
+
+MONEY 0
+
+TELEPRICE 0
+TOLLPRICE 0
+
+SPEC Terra Labs Pack
+SPEC Neutron Turbine
+SPEC Vitronic Shield
+SPEC Disolver
+SPEC Destructor
+SPEC Terra Seller A
+SPEC Terra Seller B
+SPEC Terra Seller C
+
+LISTHOLO

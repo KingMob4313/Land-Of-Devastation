@@ -1,0 +1,87 @@
+EGA Developers kit for LOD
+(c) Scott Baker
+
+Purpose
+
+  There are utilities included here to allow you to add your own images to the
+  EGA version of LOD and gterm. At this time, you may only add the large
+  monster pictures - inventory and map tiles are not available yet.
+
+
+Required Stuff
+
+  1) A paint program. Although a basic image editor is inclueded
+     (editimg.exe), it is virtually useless for designing images. I only
+     use it when I have to touch up a small spot. You will need to
+     appropriate some kind of image drawing program - such as PC Paintbrush.
+
+  2) A GIF converter. You'll need to get your images into the .GIF format
+     before they can be imported into LOD.
+
+  3) A scanner. Not absolutely necessary, but very helpful. All of my artists
+     draw their work out by hand, scan it, and then colorize it.
+
+How to do it
+
+  1) Make an image and get it into the .GIF format. MAKE SURE TO USE THE
+     PROPER EGA PALETTE. This is up to you - you are the artist! Some hints
+     for creating images are available in the file LODART.DOC.
+
+  2) Run GETBIG.EXE. It will prompt you for the filename. MAKE SURE YOUR
+     MOUSE DRIVER IS LOADED. Move the mouse so that the colored box appears
+     directly over your image. The arrows may be used for fine positioning.
+
+     Press SPACE to capture the image to disk. A short beep should be heard.
+
+     Press ESC to leave the conversion program.
+
+     The image will be saved to GETBIG.DAT. Rename this to whatever you
+     want (i.e. MUTANT.DAT)
+
+  3) Use EGAPUT to add your image to the resource file. The exact format
+     should be "EGAPUT ADD <FILENAME>", (i.e. EGAPUT ADD MUTANT.DAT)
+
+  4) Edit the MONSTER.TXT file and add a link to your image using the
+     COMBATPIC parameter. (i.e. "COMBATPIC MUTANT")
+
+  5) Recompile your dataset with compile.exe.
+
+Required format
+
+  1) The image must be 180 x 120 pixels in size.
+
+  2) The image must USE THE STANDARD 16 COLOR EGA PALETTE, as described
+     below.
+
+        #  R G B
+        -  - - -
+        0  0 0 0
+        1  0 0 1
+        2  0 1 0
+        3  0 1 1
+        4  1 0 0
+        5  1 0 1
+        6  1 2 0
+        7  1 1 1
+        8  2 2 2
+        9  2 2 3
+        10 2 3 2
+        11 2 3 3
+        12 3 2 2
+        13 3 2 3
+        14 3 3 2
+        15 3 3 3
+
+Notes
+
+  Yes, these docs are currently very poor. I hacked this out in a hurry to
+  get the image capture utility to those of you who need it. I have included
+  the source code to GETBIG so you can tweek it's performance if you need
+  to for some reason.
+
+  GTERM. Adding your images to the RESOURCE.002 file on the sysops end will
+  only affect the sysops display. For remote callers to see the EGA pictures,
+  you will have to give them an updated RESOURCE.002. Please DO NOT remove
+  any images from this file. It will only confuse the poor user if he calls
+  another bbs.
+

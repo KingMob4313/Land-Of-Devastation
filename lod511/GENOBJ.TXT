@@ -1,0 +1,607 @@
+;Actions:
+;
+;HEADER - text displayed immediately when object is used
+;
+;RANDOM - if available, one "random" item is displayed after header and
+;         before footer.
+;
+;FOOTER - displayed immediately after header/random
+;
+;CONVERT initem / outitem - converts initem in users inventory to outitem
+;                           (initem is removed from inventory)
+;
+;ADDITEM initem / outitem - adds outitem to users inventory
+;                           (initem is _not_ removed from inventory)
+;
+;REPLICATE - replicates any item the user wants
+;
+;FAIL - text displays if user tries to Convert/Additem an inventory item
+;       that doesn't match.
+;
+;Modifiers:
+;
+;DOQUEST x     - gives the player credit for special quest #x
+;DOSPECIAL x   - Execute special action
+;
+;Conditionals: (misc)
+;
+;IFQUEST x     - true if player has completed quest #x
+;IFNQUEST x    - true if player has not completed quest #x
+;IFPURITRON x  - true if puritron part #x has been found
+;IFNPURITRON x - true if puritron part #x has not been found
+;
+;Conditionals: (location-oriented)
+;
+;IFTERRAIN x   - true if player is standing on terrain type x
+;IFNTERRAIN x  - true if player is not standing on terrain type x
+;IFMINDIST x   - true if distance from sacre base >= x
+;IFMAXDIST x   - true if distance from sacre base <= x
+;IFTESTZ x     - true if user's z coordinate is x
+;IFTESTY x     - true if user's y coordinate is x
+;IFTESTX x     - true if user's x coordinate is x
+;IFNTESTZ x    - true if user's z coordinate is not x
+;IFNTESTY x    - true if user's y coordinate is not x
+;IFNTESTX x    - true if user's x coordinate is not x
+;
+;Conditionals: (stat-oriented)
+;
+;IFLEVEL x     - users level is >= x
+;IFNLEVEL x    - users level is < x
+;IFEXPER x     - users experience is >= x
+;IFNEXPER x    - users experience is < x
+
+
+;----------------------------------------------------------------------------
+;
+; The communicator device:
+;
+
+TAG 0
+
+FOOTER
+You switch on the Communicator, and immediately the sound of idle chatter
+is heard through the speaker.  It seems that the Ronin use these things
+to communicate with their home base and each other.  Curious to what they
+are talking about, you listen in... Suddenly it becomes clear that there
+a large number of Ronin from what it sounds, for there are at least eight
+difference voices that you can identify.
+ 
+
+RANDOM
+"Look's Pretty quiet out here today, Having fun at home Dallas?"
+     "Say alert Les, I don't want to have to stitch you back up."
+ "Well, Cohen, if you're so bored, how about we switch Sectors"
+"Nah, I'll finish my patrol, besides I think I see a possible target."
+
+RANDOM
+"Hello Wastelands...Hello Sector 14..."
+ "...It just Keeps getting better each day."
+"...Hello dead mutha's..."
+ "Reminds me of a stupid song..."
+  "Houston, we have some dead Death-chumps here, ready for pickup."
+   "Clean up Aisle 7."
+ "Oh, I've been through a desert on a horse with no name!"
+    "God, that's a horrible song, at least you could sing Kashmir..."
+
+RANDOM
+ "Dallas, you there?"
+   "Yeah, just playing some guitar to pass the time"
+ "How are the last batch of Sacre Base guys?"
+   "Pretty much healed... The electronic sedation has them down..."
+"I don't understand why we keep taking them back to the hospital"
+   "We're not thieves, not murderers..."  
+   "...We just take what we can and help them."
+ "Great, morals from a blues guitarist."
+  "Tell that to them when they get hit by a 5.56 round"
+
+RANDOM
+"The Israeli weapons are just amazing."
+ "Go to hell man, nothing beats a good German Pistol."
+"Yeah, I'm talking full-Auto's here.  The Israeli Uzi and Galil rock!"
+  "Only because they are based on the Kalishinakovs."
+   "Deuchland Uber-allis... Two words Heckler and Koch"
+  "What ever, Aaron...all the H&K's were overpriced..."
+  "...Give me a Colt Anyday."
+    "Mac-10s and Ak's... That's all I have to say, nigga.."
+"Uzi and Galil, how can you beat them?"
+ "With a German Sub-machine gun."
+"I'd rather eat a pack of rotting rations than use a H&K!"
+
+RANDOM
+"Wonderful, I love waking up with sand in my ears"
+   "You camping out there Les?"
+"It's too far to walk back some nights?"
+   "Nasty hot out here, why did we have to crash in Arizona?"
+ "I'd give anything for a swim in a clean lake.."
+  "Water... Hell, yesterday, I dropped my radio in the river."
+"Aww, poor baby."
+  "Fuck you dood, I just figured out how to make it play tones."
+     "With my help."
+  "Yeah, with Stone's help."
+   "Making a synth Teppert? Nice.  Is it digital or Analog?"
+
+RANDOM
+"Man, I'm hungry"
+ "John, you're ALWAYS Hungry. Don't you have any rations?"
+"Ugh, I'd rather eat a Travis burger than eat one of these."
+  "Yeah, I'm glad I don't have anymore Smokas, These Unspam things suck."
+ "I know, I'd do anything for a burger or a taco."
+"Yeah, White Castle."
+ "That's sick dude!"
+   "That's not even cool, at least these rations don't give you the runs."
+
+RANDOM
+"Hey it looks like there's something going on out in Sector 10"
+  "What you talking about, Kurt?"
+"I was following some large tank treads for- <Static>"
+     "Kurt, Kurt, you're breaking up!"
+"Damn, it disappeared.  It looked like Terra Labs."
+   "Terra Labs?"
+     "The Sacre base men said it was a mobile pre-war factory."
+    "Dude, with that we could build what we need to get off this planet!"
+"Yeah, but it's gone now.  We gotta get in that thing!"
+
+RANDOM
+"SENGUYIA!" 
+   "Yeah, a Lawnmower, that would be a great weapon!"
+ "Evil mon, you've got the bite."
+  "Except we need the gas to run the crane."
+"John has a long Moustache, John has a long Moustache."
+    "The Chair is against the wall, The Chair is against the wall."
+
+RANDOM
+"Man, there is some weird, WEIRD mutha's out here!" 
+ "What now, Teppert?"
+"Uhm, looks like some sort of snake man.. or something."
+  "Cool, can you bring me back it's skin?"
+   "Oh man that's gross!"
+  "What?  I just want to make boots, my combat boots are fried!"
+"Uh, I think I pass."
+
+RANDOM
+"I still say we should trade with Sacre Base." 
+   "Yeah, we're not starfleet. We don't have a non-interference rule."
+ "I know, we're having to use pre-war weapons to fight with."
+  "Well, if a certain set of twins weren't so trigger happy..."
+"Shut up Derrick, you're just happy that you got the Pulse Laser."
+  "Hey man, it's my week to patrol sector 11."
+"I know, we're getting dangerously low on energy clips."
+     "And I can't modify the feeds for our weapons fast enough."
+ "We'll discuss this later, just stay cool out there."
+
+;----------------------------------------------------------------------------
+;
+;Loki chaos medallion
+;
+
+TAG 1
+
+FOOTER
+Although the chaos medallion is presently configured in a receive-only mode,
+it may be possible with the proper tools to enable the device's transmitter.
+
+RANDOM
+"All systems fall into decay, given time.  But why wait?"
+
+RANDOM
+"Chaos is All.  Loki is Chaos.  Loki is All!"
+
+RANDOM
+"Order is a fallen concept.  Why persist in embracing it?"
+
+RANDOM
+"Only through anarchy can entropy be achieved and the world cleaned."
+
+RANDOM
+"Reality is but another orderly system, destined to collapse."
+
+RANDOM
+"The orderly nature of existance is a lie."
+
+RANDOM
+"It takes only 6 months for a butterfly's wing to change world weather."
+
+RANDOM
+"The world is essentially incomprhensible."
+
+RANDOM
+"In an information society, nobody thinks."
+
+RANDOM
+"Only that people will attempt to predict things is predictable."
+
+;----------------------------------------------------------------------------
+;
+; Ghetto Blaster strings
+;
+
+TAG 2
+
+RANDOM
+"They wasted his planet. Now they'll have to deal with him. Rambo XXVI -
+Coming to a theater near you! ..."
+
+RANDOM
+"Born in the wasteland! I was born in the wasteland! ...."
+
+RANDOM
+"Welcome to WNN, the wasteland news network. Bringing you what's left of the
+world in 30 minutes! ..."
+
+RANDOM
+"ACME weapons... Blast for blast, more brain bashing power for the buck."
+
+RANDOM
+"<Blam> <Crash> <Pow> Welcome to WNN news. With NEW management!"
+
+RANDOM
+"This is the wasteland. This is your brain on the wasteland. Any Questions?
+Buy ACME weapons!"
+
+RANDOM
+"ACME weapons. Peace through superior firepower!"
+
+RANDOM
+"Residents of Arizona rejoiced today as a fallout cloud blocked the sun,
+allowing a rare trip to the beach."
+
+RANDOM
+"Today, several villagers were killed as yet another earthquake rocked the
+island of California ..."
+
+RANDOM
+"In a related story, the death warriors gang has raised the bounty on
+politicians to $2000 ..."
+
+RANDOM
+"I am Xeboc the Almighty.... Xeboc the All-Powerful.... Surrender or be
+destroyed!"
+
+;----------------------------------------------------------------------------
+;
+; Technical Tools
+;
+
+TAG 3
+
+HEADER
+This is a set of tools designed for working with electronic devices. It can
+perform a variety of functions, including retuning communications devices of
+all sorts.
+
+CONVERT Chaos Medallion > Loki Summoner
+Using the tools, you disassemble the Chaos Medallion and locate the circuitry
+that is used for transmission. Enabling the circuitry is a simple task which
+you perform effortlessly. Reassembled, the unit is now ready for use.
+
+CONVERT Ghetto Blaster > Radio
+You skillfully disassemble the Ghetto Blaster with the tools and begin to
+muck around with it's circuitry.  After a while you figure it out and its 
+now a working Radio.
+
+CONVERT Radio > Ghetto Blaster
+You skillfully disassemble the Radio with the tools and begin to
+muck around with it's circuitry.After a while you figure it out and its 
+now a working Ghetto Blaster.
+
+CONVERT M-16 > LMG 
+You skillfully disassemble the rifle with the tools and begin to
+play with the feed mechanism and fire rate.  You soon finish, and it
+now accepts belted ammo and is a Light Machine Gun
+
+CONVERT .308 Galil > GPMG 
+You quickly disassemble the rifle with the tools and begin to play
+with the feed mechanism and fire rate.  You soon finish, and it
+now accepts belted ammo and is a General Purpose Machine Gun.
+
+FAIL
+Upon considering the act, you decide not to use your technical tools on the
+item in fear of ruining a perfectly good piece of equipment.
+
+; Worthless Junk
+;
+
+TAG 4
+
+HEADER
+Although it may have been valuable at one time, this item is now completely
+worthless. Someone has tried to alter it with a set of Technical Tools and
+utterly ruined it.
+
+;----------------------------------------------------------------------------
+;
+;Loki Summoner
+;
+
+TAG 5
+
+IFNTESTZ 1
+HEADER
+You reconsider your action and figure that this device probably only functions
+in the wastelands.
+
+IFTESTZ 1
+IFTERRAIN Loki City
+HEADER
+There is a very large dark cloud hovering over your current position. I would
+guess there are better things you should be doing now than fooling around
+with some gadget.
+
+IFTESTZ 1
+IFTERRAIN Comm Tower
+DOSPECIAL LOKI
+DOQUEST 16
+HEADER
+Patching the Loki Summoner through the tower, you attempt to transmit a signal
+to the origination source of the Loki Messages. The communications tower locks
+on to the source of the signals, but the information is confusing - It seems
+to indicate a source miles above the ground and approaching very fast. As
+you attempt to decipher this information, an ominous dark cloud fills the
+sky and an energy beam is directed towards the gound.
+~
+A loud voice booms "Step into the light!".
+
+IFTESTZ 1
+IFNTERRAIN Comm Tower
+IFNTERRAIN Loki City
+HEADER
+You attempt to use the transmitter device to send a message to the Lokis.
+Unfortunately, it seems the range of this device by itself is quite limited.
+What is needed is a large signal boost... If used in the close proximity of
+some sort of communication tower, then you may obtain better results.
+
+;----------------------------------------------------------------------------
+;
+;Sonic Whistle
+;
+
+TAG 6
+
+IFNTESTZ 1
+HEADER
+You reconsider your action and figure that this device probably only functions
+on the wastelands.
+
+IFTESTZ 1
+IFTERRAIN Serp Camp
+HEADER
+As you blow on the whistle, you notice the movement of Serpine warriors
+throught the trees that surround you. Perhaps it is time to visit them???
+
+IFTESTZ 1
+IFTERRAIN Desert
+DOSPECIAL SERPINE
+HEADER
+You blow through the whistle. Although you hear nothing, you suspect it is
+due to the high-frequency nature of the whistle. After waiting several hours,
+you are nearly ready to give up as you notice movement in the surrounding
+burush. It appears that you are surrounded by a rather sizeable Serpine war
+party.
+
+IFTESTZ 1
+IFNTERRAIN Desert
+IFNTERRAIN Serp Camp
+HEADER
+You blow on the whistle and wait several hours, but there is no response.
+Perhaps the Serpine do not regularly inhabit this area. It is common knowledge
+that the serpine are desert dwellers. Perhaps searching in the deserts would
+make more sense?
+
+;----------------------------------------------------------------------------
+;
+; FCUCC Book (Freedom City Unified Criminal Code)
+;
+
+TAG 7
+
+HEADER
+You flip to a random page in the book of the Freedom City Unified Criminal
+Code and begin reading:
+
+RANDOM
+&2"Anyone who wishes to walk within the city must apply for walking permit
+number 5008-6412-239.0 Rev C. Persons caught walking without a permit must
+serve a 24 year prison term."
+
+RANDOM
+&2"Posession of illegal devices is strictly prohibited. 'Illegal Devices'
+are defined as devices that are deemed illegal by Deputy Fife."
+
+RANDOM
+&2"Freedom city enforces a strict dress code. Persons not meeting the dress
+code will have said clothing confiscated. Dressing in a military manner will
+incur an additional criminal penalty of 34 years."
+
+RANDOM
+&2"Murder of a Freedom Cop is prohibited. Violators will be boiled in oil,
+skinned alive, keel-hauled, drawn and quartered, electrocuted, burned at the
+stake, lethally injected, shot by a firing squad, and/or hung. Exact
+punishment to be determined by Deputy Fife at the time of the incident."
+
+RANDOM
+&2"Eating of unapproved substances is prohibited. Violators will have digestive
+system removed to prevent eating of unapproved substances in the future."
+
+RANDOM
+&2"Smiling at people who do not wish to be smiled at is prohibited and violators
+will incur a jail sentence of 234 years."
+
+RANDOM
+&2"Sneezing in public is prohibited. Violators shall have nose removed."
+
+RANDOM
+&2"Looking in an unapproved direction is strictly prohibited. Approved
+directions are: North, West, and Down. Looking South or East will incur
+a manditory jail sentence of 6 years. Looking Up will incur capitol
+punishment."
+
+RANDOM
+&2"Refusing arrest is prohibited. Violators will be re-arrested."
+
+RANDOM
+&2"Arguing with a Freedom Cop is hereby deemed illegal and violators will be
+permanently 'silenced'. Freedom Cops are hereby declared to be always
+correct, and incapable of error."
+
+RANDOM
+&2"Disposing of chewed chewing gum upon the city sidewalks is strictly
+prohibited. Violators will have their lower jaw removed to render chewing
+of gum impossible"
+
+RANDOM
+&2"Explicit sexual activity in public places is prohibited. Violators will be
+Bobbittized."
+
+RANDOM
+&2"Reading without a license is hereby declared illegal. Violators will have
+eyes removed."
+
+RANDOM
+&2"Writing is hereby declared illegal under all circumstances. Attempting
+to record history in any manner is further declared immoral. All history
+shall be recorded by the official Freedom City Bureau of Official History
+and Propaganda."
+
+RANDOM
+&2"Thinking an unapproved thought is strictly prohibited and shall incur
+a jail term of one year. Believing an unapproved belief is further prohibited
+and shall incur mandatory capitol punishment."
+
+FOOTER
+A message at the bottom of the page reads, "Remember, the FCUCC has been
+provided to assist you in leading a fulfilling and rewarding life. All laws
+have been compiled with the express purpose of protecting society by experts
+in the field of thought management. The 'people' in general do not posess
+sufficient intelligence to think for themselves, therefore this guide has
+been provided to assist them in thinking only the correct thoughts."
+
+;----------------------------------------------------------------------------
+;
+; Replicator (this item is not really designed to ever be used in the game,
+;            it's just here for testing/demonstration purposes)
+;
+
+TAG 255
+
+HEADER
+The replicator device is capable of making an exact duplicate of any item
+in your inventory.
+
+REPLICATE
+The replicator samples the atomic structure of the item and after a few
+moments of work, produces an exact duplicate.
+
+;----------------------------------------------------------------------------
+;
+; MedGen (this item is not really designed to ever be used in the game,
+;        it's just here for testing/demonstration purposes)
+;
+
+TAG 254
+
+HEADER
+The MedGen will add a medkit/50 to your inventory every time you use it on
+a power pack (why? well, why not?)
+
+ADDITEM Power Pack > Medkit/50
+Using you Power Pack for some unknown reason, the MedGen produces a Medkit/50
+in your inventory.
+
+
+;Test-O-Matic
+;
+
+TAG 253
+
+HEADER
+This device is used to test the genobj system:
+
+IFQUEST 1
+HEADER
+You have completed quest #1
+
+IFNQUEST 1
+HEADER
+You have not completed quest #1
+
+IFQUEST 2
+HEADER
+You have completed quest #2
+
+IFNQUEST 2
+HEADER
+You have not completed quest #2
+
+IFPURITRON 1
+HEADER
+Puritron part #1 has been found
+
+IFNPURITRON 1
+HEADER
+Puritron part #1 has not been found
+
+IFPURITRON 2
+HEADER
+Puritron part #2 has been found
+
+IFNPURITRON 2
+HEADER
+Puritron part #2 has not been found
+
+IFLEVEL 1
+IFNLEVEL 5
+HEADER
+Your level is 1-4
+
+IFLEVEL 5
+IFNLEVEL 10
+HEADER
+Your level is 5-9
+
+IFLEVEL 10
+IFNLEVEL 15
+HEADER
+Your level is 10-15
+
+IFLEVEL 15
+HEADER
+Your level is > 15
+
+IFEXPER 1
+IFNEXPER 5000
+HEADER
+Your exper is 1-4999
+
+IFEXPER 5000
+IFNEXPER 50000
+HEADER
+Your exper is 5000-49999
+
+IFEXPER 50000
+IFNEXPER 500000
+HEADER
+Your exper is 50000-499999
+
+IFEXPER 500000
+HEADER
+Your exper is > 500000
+
+IFTESTZ 1
+IFTESTX 5
+IFTESTY 5
+HEADER
+You are at coordinates 1,5,5.
+
+IFMINDIST 0
+IFMAXDIST 29
+HEADER
+You are in zone 1.
+
+IFMINDIST 30
+IFMAXDIST 59
+HEADER
+You are in zone 2.
+
+IFMINDIST 60
+HEADER
+You are in zone 3 or greater.

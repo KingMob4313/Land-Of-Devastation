@@ -1,0 +1,322 @@
+;================= UNDER MAP ===============================================
+
+NAME Stone Golem
+
+DESC An ancient voice booms, "He who dares infiltrate the Shrine of Hercules
+DESC must die!" Oddly enough, you could swear the voice was coming form a
+DESC nearby statue. To your amazement, the statue begins to move. It picks
+DESC up a stone axe and a stone bow and prepares for combat!
+
+HITPTS 400
+STR 250
+DEX 100
+AGL 100
+EXP 15000
+MONEY 0
+
+ORIGZ 3
+ORIGX 11
+ORIGY 7
+MINDIST 0
+MAXDIST 6
+
+WEAPON1 Stone Axe
+WEAPON2 Stone Bow
+AUXWEAPON Stone Shield
+INV DreamStuff
+INV DreamStuff
+INV25 Hercules Key
+
+TYPE 4
+COMBATPIC ELEMENTE
+TRESTRICT Shrine Floor
+
+KILLHIM The earth trembles as the Stone Golem tumbles to the ground, the
+KILLHIM supernatural force that fueled it's movement drained from it's body.
+
+;================= DWHQ MAP ================================================
+
+NAME Kill-O-Matic Series 7
+
+DESC You hear the electronic squeel of a computerized voice: "You have entered
+DESC a restricted area. Access to this corridor is restricted to authorized
+DESC Death Warriors and technicians only. You will be terminated."
+
+HITPTS 200
+STR 55
+DEX 55
+AGL 55
+EXP 10000
+MONEY 12000
+
+ORIGZ 6
+NODIST
+
+WEAPON1 GravSword
+WEAPON2 (burst) GravBlast
+ARMOR Energy Armor
+INV GravPack
+INV GravPack
+
+TYPE 4
+COMBATPIC RCU
+TRESTRICT Wastelands
+
+KILLHIM "Primary power system failure. Unable to energize motor control
+KILLHIM systems. Weapons non-functional. Armor non-functional. Evasive
+KILLHIM control program halted. System shutdown imminent."
+
+;================= HELL MAP ================================================
+
+DUPEMONSTER Fang Gang Fledgling
+ORIGZ 4
+NODIST
+
+DUPEMONSTER Fang Gang Warrior
+ORIGZ 4
+NODIST
+
+DUPEMONSTER Baby Jenks
+ORIGZ 4
+NODIST
+
+DUPEMONSTER Fang Gang Elder
+ORIGZ 4
+NODIST
+
+NAME Grim Reaper
+
+DESC A cold chill passes through your bones as a high-pitched chittering
+DESC echoes down the passage. You abruptly turn at the sound of fluttering
+DESC robes, only to see images of your own horrible death reflected in the
+DESC glowing green eyes of a creature out of nightmare. Averting your eyes
+DESC from the very image of death, you note that the chittering comes not
+DESC from it, but from the air all around it.
+
+HITPTS 260
+STR 76
+DEX 76
+AGL 76
+EXP 13800
+MONEY 25750
+
+ORIGZ 4
+NODIST
+
+DISINT 80
+NOSELL
+NOSURR
+
+WEAPON1 Scythe
+AUXWEAP Stone Shield
+WEAPON2 (STUN) DreamBlaster
+ARMOR Widow Armor
+MEDLINE Zilpox Medline
+INV DreamStuff
+INV Stealth Field
+INV50 Key Ring
+INV10 Rope
+
+SEX OTHER
+TYPE 4
+COMBATPIC GRIMREPR
+
+KILLHIM The chittering stops and the robes of the enemy fall limp and
+KILLHIM empty to the ground. Searching the scene you can find no
+KILLHIM evidence of blood or footprint, nor sign that a warper had been
+KILLHIM used. Its as if it had never truly been here.
+
+;----------------------------------------------------------------------------
+
+NAME Super Gamma Tiger
+
+DESC An eerie meowing makes you abruptly assume the defensive. As an
+DESC experienced adventurer, you immediately recognize the holwing as a
+DESC gamma tiger.... However, this is no ordinary gamma tiger, it is
+DESC much larger. This must be what is referred to as a "Super Gamma Tiger".
+DESC It seems intent upon having you for dinner!
+
+HITPTS 500
+STR 100
+DEX 100
+AGL 100
+EXP 10000
+MONEY 500
+
+ORIGZ 4
+NODIST
+
+ARMOR Massive Hide
+
+COMBATPIC GAMMA2
+TYPE 3
+FISTNAME Claw
+
+KILLHIM The thing makes a friendly purring sound as it dies.  It seems
+KILLHIM almost happy to be freed of its hideous existence.
+
+;================= FREEDOM MAP =============================================
+
+NAME Bum
+
+DESC "Can you spare some cash?" Peering out of the alley is one of Freedom
+DESC City's many less-then-savory citizens. Either born in the drug-ridden
+DESC slums hidden behind the glamorous store fronts of the main drag, or
+DESC having settled after bringing in the the eye of a cyclops; many such
+DESC individuals lack either the cunning to get around the cities draconian
+DESC rules or the dedication required of a Sacre recruit. Instead they live
+DESC off those generous or scared enough to give them money for food ...
+DESC or less pleasant needs.
+
+HITPTS 66
+STR 27
+DEX 26
+AGL 28
+EXP 1350
+MONEY 100
+
+ORIGZ 5
+NODIST
+
+WEAPON1 Long Dagger
+WEAPON2 .38 Revolver
+ARMOR Leather Jacket
+INV Quick Load
+INV Quick Load
+INV90 Soda
+INV50 Ghetto Blaster
+INV10 Medkit/10
+INV5 Subway Pass
+INV5 Hormone Suppliment
+
+COMBATPIC BUM
+TYPE 4
+
+KILLHIM As the bum's bloodied corpse falls in the dirt, a cleaning crew
+KILLHIM and a Freedom Cop arrive on the scene. "Hmph", says the cop.
+KILLHIM "Since this punk is on the wanted list, I'll ignore all the
+KILLHIM blood you just spread on our nice, clean city." What a jerk.
+
+;-------------------------------------------------------------------------
+
+NAME Freedom Cop
+
+DESC "Hey! You're in violation of city regulations. Charge #1: No loitering
+DESC in the city limits. Charge #2: Walking without a license. Charge #3:
+DESC Dressing in a military manner within the city limits. Charge #4: ...",
+DESC The Freedom Cop continues for a seemingly endless amount of time
+DESC enumerating the various laws you have broken. When he finally completes,
+DESC he says, "All together, that is 814 violations of the freedom city
+DESC uniform criminal code. You have been sentanced to 314 years imprisonment,
+DESC 28 consecutive life sentences, and 1 sentence of manditory capitol
+DESC punishment. Capitol Punishment will proceed immediately."
+
+HITPTS 120
+STR 42
+DEX 42
+AGL 42
+EXP 4600
+MONEY 2000
+
+ORIGZ 5
+NODIST
+
+WEAPON1 Energy Sword
+WEAPON2 Force Carbine
+AUXWEAP Plasma Shield
+ARMOR Energy Armor
+INV Power Pack
+INV Power Pack
+INV Dunk-N-Donuts
+INV15 (V1SET 25000) Money Bag
+INV5 (V1SET 50000) Money Bag
+
+COMBATPIC LODPOLCE
+TYPE 4
+FRIENDITEM FCUCC Book
+
+FRIENDTXT You reach into your pack and show the FCUCC book to the Freedom
+FRIENDTXT Cop. The first law reads, "Deputy Fife is hereby declared the chief
+FRIENDTXT law enforcement officer and shall therefore be exempt from all
+FRIENDTXT laws." You explain that since you're carrying the FCUCC book, and
+FRIENDTXT Deputy Fife is the only one allowed to carry the FCUCC book, then
+FRIENDTXT you must be Deputy Fife. The Freedom Cop, not being very bright,
+FRIENDTXT agrees and allows you to depart without further harassment.
+
+KILLHIM The Freedom Cops last breath echos across the room, "... and one
+KILLHIM count of murder of a police officer..."
+
+;================= CASINO MAP ==============================================
+
+NAME Pit Boss
+
+DESC "Hey you! You look like a suspicious character...", echos from across
+DESC the casino. A pit boss comes running over and cautiously scans you
+DESC over, looking for any signs that you may have been cheating. "Well, I
+DESC haven't found anything illegal. You can go if you want...", groans
+DESC the Pit Boss as he realizes that he has no legitimate reason to detain
+DESC you further.
+
+HITPTS 150
+STR 47
+DEX 47
+AGL 47
+EXP 5400
+MONEY 5200
+
+COMBATPIC PITBOSS
+FRIENDLY
+ORIGZ 10
+NODIST
+
+WEAPON1 GravSword
+WEAPON2 GravBlast
+ARMOR Energy Armor
+INV GravPack
+INV Casino Key
+INV25 (V1SET 100000) Money Bag
+INV10 (V1SET 250000) Money Bag
+
+TYPE 4
+
+KILLHIM "Damn Gamblers...", exclaims the pit boss as he breaths out his
+KILLHIM last breath of life. Luckilly, nobody else in the Casino seems to
+KILLHIM have noticed that you "dispatched" one of the Pit Bosses. This guy
+KILLHIM was carrying a strange key ... You wonder what it might be for ...
+
+;================= SACRE MAP (COP) =========================================
+
+;This monster is linked via the "COP" keyword in the map definition in
+;dataset.txt.
+
+NAME Sacre Guard
+
+DESC "Theft of property is a serious offense in Sacre Base!", shouts the Sacre
+DESC Guard as he unstraps his SLM-9000. The Sacre Guards, given the assigment
+DESC of protecting Sacre Base from not only outside incursions, but internal
+DESC disruptions are heavily armed, elite troops.
+
+NORANDOM
+
+HITPTS 310
+STR 90
+DEX 90
+AGL 90
+EXP 19500
+MONEY 45000
+
+MINDIST 150
+MAXDIST 180
+
+WEAPON1 A-Mk.II
+WEAPON2 SLM-9000 PulseRay
+ARMOR Phase Armor
+AUXWEAP Cabal Shield
+INV EnviroBlur
+INV10 Medkit/50
+
+TYPE 4
+COMBATPIC LODPOLCE
+
+KILLHIM You've defeated the Sacre Guard. Hopefully nobody saw you comitting
+KILLHIM such a shamefull act.

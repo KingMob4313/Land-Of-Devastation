@@ -1,0 +1,3281 @@
+;Monster definition file
+;
+;NOTE: Changes to this file will not take effect until you have used
+;      COMPILE.EXE to compile this file into monster.def.
+;
+;Special Records:
+;   1) This is the current player descriptions.
+;   2) Player char. This is for when one player attacks another.
+;   3) Default. This record defines the defaults that are used by the DEFAULT
+;      command.
+;
+;Monster locations:
+;
+;The ORIGX,ORIGY,ORIGZ,MINDIST,and MAXDIST parameters effect where a monster
+;will be found on the main map. The ORIG parameters are the X, Y, and Z
+;coordinates that are the monsters originating point. The MINDIST and MAXDIST
+;parameters define how far away from that point that the monster will be
+;found.
+;
+;Field Identifiers (Note: These meanings for for record 4+ - records 1,2,3
+;                         are special)
+;
+;(Combat strings; one of these is picked randomly when player is in combat)
+;
+;moved to combat.def
+;
+;(Text/Description strings; The whole string is spit out to the player)
+;
+;DESC      - Description of monster
+;FLEERAN   - When player flees at ranged distance
+;FLEETXT   - When player flees at close distance
+;KILLHIM   - When player kills monster
+;
+;(stats options)
+;
+;STR       - strength
+;AGL       - agility
+;DEX       - dexterity
+;EXP       - experience
+;MONEY     - money monster is carrying
+;
+;(misc)
+;
+;SEX MALE  - Male monster
+;SEX FEMALE- Female monster
+;SEX OTHER - Not male or female
+;
+;EXCEPT0   - Means that the "0" combat strings will not match this
+;            character. Only strings that directly match the "TYPE x"
+;            statement will be displayed.
+;
+;TYPE x    - Specifies the characters type. This code is used to match
+;            combat strings in the COMBAT.TXT file.
+;
+;DISINT    - Item disintigration percentage. For inventory items with 100%
+;            chance (i.e. "INV", not "INV10") and weapons, this is the percent
+;            chance that the items will disintigrate when it falls to the
+;            ground. (for example, if 25 was specified, then there would be a
+;            25% chance that the monsters items would disintigrate).
+;
+;TALKTO    - Identifies the number of a person in the TALK.DEF file.
+;
+;COMBATPIC - Identifies EGA picture of monster for GTERM/GAMEEGA users.
+;
+;(ISReal and NPC type stuff)
+;
+ ;ISREAL x  - Utilitize user record #x for this monster (I suggest starting
+;            at 254 and working in descending order)
+;
+;NORANDOM  - Disable random encounters (use with camped)
+;
+;CAMPED    - Make monster camped at x,y,z coords (use with norandom)
+;
+;(location)
+;
+;ORIGX     - Origin of monsters existance
+;ORIGY     - "
+;ORIGZ     - "
+;
+;MINDIST   - Minimum distance from orig that monster will be
+;MAXDIST   - Maximum distance from orig that monster will be
+;
+;(inventory stuff)
+;
+;INV       - Place xxx in inventory
+;INV10     - Place xxx in inventory - 10% chance
+;INV50     - Place xxx in inventory - 50% chance
+;INV90     - Place xxx in inventory - 90% chance
+;
+;WEAPON1   - Specifies close-combat weapon
+;WEAPON2   - Specifies ranged weapon
+;ARMOR     - Specifies armor
+;
+;PRODx     - Specifies fixed amount of commodity "x" (i.e. PROD1 = minerals)
+;PRODxR    - Specifies random amount of commodity "x"
+;
+;NOSELL    - Monster will not sell any items
+;NOSURR    - Monster will not allow player to surrender
+;
+;WATERONLY - Monster will only appear in lakes and rivers
+;LANDWATER - Monster will appear in all terrain types
+;
+;NUKEALLBUT - Removes all but the specified objects from the players (users)
+;             inventory. See the Vayderr monster for an example.
+;
+
+NAME User_Char
+
+DESC You're fighting yourself, so this must be a bug.
+
+TYPE 1
+
+KILLHIM Well, looks like your last action has deprived you of your life. Too
+KILLHIM bad. You might have become the savior of the wastelands. Oh well...
+KILLHIM More will come.
+;----------------------------------------------------------------------------
+
+NAME A_User_Char
+
+DESC You see before you a human warrior, one of your own kind. It's a shame that
+DESC you have to deal with him in this manner, but life in the wasteland is
+DESC tough and the weak must perish so the strong may survive..... You creep
+DESC up to "deal with" your opponent.... As you near him, he wakes... Noticing
+DESC your obvious intentions, he reaches for an emergency medical kit does that
+DESC he was saving for just this sort of occasion. He fully heals himself in
+DESC preparation for a fight!
+
+NOSELL
+
+TYPE 2
+COMBATPIC ATTACK
+
+FLEETXT You decide to attempt a strategic withdrawal from this situtation. As
+FLEETXT you run away, %1 looks disgusted. It tries to follow you for a
+FLEETXT little while, but gives up in hope of finding a less cowardly target.
+
+KILLHIM After a ferocious battle, the warrior falls to the ground in defeat.
+KILLHIM You prepare to search his mangled body for any items that may be of
+KILLHIM use.
+;----------------------------------------------------------------------------
+
+NAME Default_1
+
+DESC Out from behind a bush jumps a %1.
+
+DISINT 35
+
+TYPE 3
+
+FLEERAN From this distance, it looks like you can safely get away from the
+FLEERAN %1. Exercising the better part of valor, you turn the other way and
+FLEERAN run like hell. You are gone before %1 can even think of chasing
+FLEERAN you.
+
+FLEETXT You decide to attempt a strategic withdrawal from this situtation. As
+FLEETXT you run away, %1 looks disgusted. It tries to follow you for a
+FLEETXT little while, but gives up in hope of finding a less cowardly target.
+
+KILLHIM After a ferocious battle, %1 falls to the ground in defeat.
+KILLHIM You prepare to search his mangled body for any items that may be of
+KILLHIM use.
+;----------------------------------------------------------------------------
+
+NAME Rabid Tribble
+
+DESC Rolling along the ground is a small ball of fur.  You smile remembering
+DESC when the first of these things was brought to Sacre Base months ago, a
+DESC source of much speculation (Where does it come from?  What doesn't it
+DESC eat?) and friendship.  Then you remember how they had to be dumped into
+DESC the wasteland before they finished off the food supply.  Then came the
+DESC reports of how they had mutated:  the tiny hooks at the end of the fur,
+DESC ability to jump extraordinary distances, the craving for blood.  Damn
+DESC the wasteland and its power to corrupt.  The mutant furball turns to
+DESC attack you.
+
+HITPTS 24
+STR 13
+AGL 10
+DEX 11
+EXP 35
+MONEY 5
+
+MINDIST 0
+MAXDIST 30
+
+COMBATPIC TRIBBLE
+TYPE 3
+
+KILLHIM Not much is left of the thing, not that they ever had much in the
+KILLHIM way of flesh.  They had once been so sweet.  Oh well.
+;----------------------------------------------------------------------------
+
+NAME Reaping Willow
+
+DESC You normally ignore the crunch of plants under you step.  But now you
+DESC realize that a bit more alertness could be in order as you narrowly
+DESC dodge a clump of sharpened leaves.  You move back a few yards as you
+DESC watch the willow pull itself out of the ground and move towards you.
+DESC Just what you need, shrubbery with an attitude.
+
+HITPTS 28
+STR 14
+DEX 11
+AGL 10
+EXP 40
+MONEY 5
+
+MINDIST 0
+MAXDIST 30
+
+COMBATPIC WILLOW
+TYPE 3
+
+KILLHIM Nothing remains of the unusual plant but a pile of twigs.  You do
+KILLHIM however find a few coins in the area, probably dropped by other
+KILLHIM travelers accosted by the thing.
+;----------------------------------------------------------------------------
+
+NAME Rad Hound
+
+DESC Upon walking into this section of land, you are greated by the howling
+DESC of a hidious creature, the Rad Hound. A product of the genetic mutations
+DESC caused by the holocost, it's size and ferocity are much stronger than
+DESC any normal hound. Furthermore, radiation poisoning makes this beast an
+DESC even greater threat.
+
+HITPTS 30
+STR 15
+DEX 12
+AGL 10
+EXP 50
+MONEY 5
+
+MINDIST 0
+MAXDIST 30
+
+COMBATPIC RADHOUND
+TYPE 3
+
+KILLHIM The creature whimpers slightly as its life ends.  So much for "Man's
+KILLHIM best friend."
+;----------------------------------------------------------------------------
+
+NAME Giant Rat
+
+DESC You have encountered one of the most interesting examples of nuclear-
+DESC induced mutation: The Giant Rat. Decendant from the common rats of
+DESC pre-war days, the radiation of the wastelands has caused this creature to
+DESC gain an unbelievable size. It prepares to attack...
+
+HITPTS 36
+STR 18
+DEX 15
+AGL 15
+EXP 75
+MONEY 5
+
+MINDIST 0
+MAXDIST 30
+
+TYPE 3
+COMBATPIC RAT
+
+KILLHIM You grin as the rodent dies.  Who needs to build a better mousetrap
+KILLHIM with you around?
+;----------------------------------------------------------------------------
+
+NAME Giant Reptile
+
+DESC From around a bend you see a giant reptile heading in your direction. The
+DESC giant reptile is a very dangerous beast. It's tough, scaly skin is hard
+DESC to penetrate and its sharp teeth and claws pierce through most types
+DESC of armor.
+
+HITPTS 36
+STR 18
+DEX 16
+AGL 10
+EXP 75
+MONEY 5
+
+MINDIST 0
+MAXDIST 30
+
+COMBATPIC REPTILE
+TYPE 3
+
+KILLHIM Your final blow tears a huge gash in the creatures scaly hide.  I
+KILLHIM guess it wasn't as hard to penetrate as you thought...
+;----------------------------------------------------------------------------
+
+NAME Gamma Tiger
+
+DESC An eerie meowing makes you abruptly assume the defensive.  Greeting
+DESC your eyes is a Gamma Tiger.  A mutated descendant of the common house
+DESC cat, the thing is the size of an ox with long sharp teeth.  Its
+DESC gigantic muscles ripple as it extends its talons.  Its reddish fur
+DESC adds a hellish look as it prepares to pounce on its prey.
+
+HITPTS 38
+STR 19
+DEX 17
+AGL 18
+EXP 80
+MONEY 5
+
+MINDIST 0
+MAXDIST 30
+
+COMBATPIC GAMMATGR
+TYPE 3
+
+KILLHIM The thing makes a friendly purring sound as it dies.  It seems
+KILLHIM almost happy to be freed of its hideous existence.
+;----------------------------------------------------------------------------
+
+NAME Ant Man
+
+DESC "What happens when you cross an ant with a human???". The joke lingers in
+DESC your mind as you come face to face with the answer. This mix between man
+DESC and beast carrier with it the strengths of both creatures. The intelligence
+DESC of a human mixed with the agility and strength of an ant make this an
+DESC especially dangerous foe.
+
+HITPTS 38
+STR 19
+DEX 17
+AGL 20
+EXP 100
+MONEY 5
+
+MINDIST 0
+MAXDIST 30
+
+COMBATPIC ANTMAN
+TYPE 3
+
+KILLHIM As your final attack deprives the beast of it's life, it staggers
+KILLHIM backward, falling into a pool of blood. Victory!
+;----------------------------------------------------------------------------
+
+NAME Giant Vulture
+
+DESC Usually Giant Vultures wait until something is dead before trying to eat
+DESC it, but this one has other ideas. It descends upon you with it's claws
+DESC poised for attack!
+
+HITPTS 38
+STR 19
+DEX 17
+AGL 20
+EXP 50
+MONEY 5
+
+MINDIST 0
+MAXDIST 30
+
+COMBATPIC VULTURE
+TYPE 3
+
+LANDWATER
+
+KILLHIM The beast flaps its broken wings a few times and then moves no more.
+;----------------------------------------------------------------------------
+
+NAME Humanoid Mutant
+
+DESC From out of the brush appears a humanoid mutant. This pour soul was most
+DESC likely a villager who unwisely ventured out into the wastelands without
+DESC protective gear. Overcome by the severe radiation, the mutant has
+DESC suffered severe deformations as well as mental disorders. Lacking the
+DESC brainpower to use weapons, it prepares for a hand-to-hand fight.
+
+HITPTS 40
+STR 20
+DEX 18
+EXP 110
+MONEY 25
+
+MINDIST 0
+MAXDIST 30
+
+COMBATPIC HUMMUTNT
+TYPE 3
+
+KILLHIM Your final blow proves to strong for the mutant to handle. His lifeless
+KILLHIM body falls to the ground in a bloody heap.
+;----------------------------------------------------------------------------
+NAME Mutant Mother-In-Law
+
+DESC From out of the wastland steps the Mutant Mother-In-Law the Dreaded
+DESC Beast of every Marriage..  Now made even worse by the mutating effects
+DESC of the severe radiation..... Better prepere your self!
+
+HITPTS 56
+STR 19
+AGL 20
+DEX 20
+EXP 150
+MONEY 50
+
+MINDIST 0
+MAXDIST 30
+
+SEX FEMALE
+
+INV50 Rations/5
+
+WEAPON1 Rolling Pin
+ARMOR Apron
+
+COMBATPIC MOTHER
+TYPE 4
+
+KILLHIM Somewere there must be a very happy Mutant Son-In-Law you think as
+KILLHIM you search her remains for valuables.
+;----------------------------------------------------------------------------
+
+NAME Valley Girl
+
+DESC A voice yells out from the brush "Like gimme like all of your money or
+DESC like I'll have to like kill you! Like do what I say, like now, ok?". It
+DESC is a mutant valley-girl. Once dreaded only as department store temporaries
+DESC during holiday seasons, the radiation has turned them into a very hideous
+DESC foe.
+
+HITPTS 40
+STR 18
+DEX 21
+AGL 21
+EXP 150
+MONEY 50
+
+SEX FEMALE
+
+MINDIST 0
+MAXDIST 30
+
+ARMOR Cheerldr Suit
+INV50 Ghetto Blaster
+
+TALKTO 100
+
+COMBATPIC VALGIRL
+TYPE 4
+
+KILLHIM As the mutant valley girl falls toward the ground, she utters "This
+KILLHIM like really sucks dude." She will trouble you no more now.
+
+;----------------------------------------------------------------------------
+NAME Bandit
+
+DESC Appearing out of nowhere, a bandit leaps from the shadows. He eyes up
+DESC your posessions and says "Surrender or face death!". Looks like it's
+DESC either give up some valuables or take him out. Your choice.
+
+HITPTS 44
+STR 21
+DEX 18
+AGL 21
+EXP 175
+MONEY 50
+
+MINDIST 0
+MAXDIST 30
+
+WEAPON1 Chain
+
+TYPE 4
+COMBATPIC BANDIT
+
+KILLHIM You thrust aside the bandit's mangled body and prepare to search his
+KILLHIM bloodied remains. Looks like he really tried to rob the wrong guy this
+KILLHIM time!
+;----------------------------------------------------------------------------
+NAME Bandito
+
+DESC Appearing out of nowhere, a bandit leaps from the shadows. He eyes up
+DESC your posessions and says "Surrender or face death!". Looks like it's
+DESC either give up some valuables or take him out. Your choice.
+
+HITPTS 44
+STR 21
+DEX 21
+AGL 21
+EXP 175
+MONEY 50
+
+MINDIST 0
+MAXDIST 30
+
+WEAPON1 Long Dagger
+ARMOR Leather Jacket
+
+TYPE 4
+COMBATPIC BANDIT
+
+KILLHIM You thrust aside the bandit's mangled body and prepare to search his
+KILLHIM bloodied remains. Looks like he really tried to rob the wrong guy this
+KILLHIM time!
+;----------------------------------------------------------------------------
+NAME Deranged Woman
+
+DESC You see a woman emerge from behind a nearby tree. She would seem quite
+DESC beautiful was it not for the dagger that she menacing towards you. The
+DESC wastelands have driven her quite mad.
+
+HITPTS 44
+STR 22
+DEX 19
+AGL 21
+EXP 200
+MONEY 10
+
+SEX FEMALE
+
+MINDIST 0
+MAXDIST 30
+
+WEAPON1 Dagger
+
+COMBATPIC WOMAN
+TYPE 4
+
+KILLHIM That last action seems to have taken care of the deranged woman. You
+KILLHIM now search through her remains for any valuables she may have been
+KILLHIM carrying.
+;----------------------------------------------------------------------------
+
+NAME Mean Dude
+
+DESC A guy comes out of the shadows, makes several rude jokes about your
+DESC mother, and prepares for a fight. This guy seems to be simply a mean
+DESC dude, not having much else to do, he just goes around beating up on
+DESC innocent travelers.
+
+HITPTS 44
+STR 22
+DEX 19
+AGL 21
+EXP 300
+MONEY 50
+
+MINDIST 0
+MAXDIST 30
+
+WEAPON1 Baseball Bat
+ARMOR Leather Jacket
+
+COMBATPIC STAB
+TYPE 4
+
+KILLHIM The mean dude makes a few more rude remarks about your family and then
+KILLHIM falls into a bloody heap in front of you. As you peer over his
+KILLHIM desecrated remains in hopes of finding some valuables, you spit on
+KILLHIM his fallen corpse.
+;----------------------------------------------------------------------------
+NAME Bart
+
+DESC A short guy jumps out from behind a bush and says "Hey man. My name's
+DESC Bart Simpson. Who the hell are you?". Obviously, this dememted youth
+DESC has watched a bit too much television.
+
+HITPTS 36
+STR 12
+DEX 22
+AGL 25
+EXP 350
+MONEY 15
+
+MINDIST 0
+MAXDIST 30
+
+WEAPON1 Baseball Bat
+WEAPON2 Slingshot
+INV10 rations/5
+INV10 Medkit/20
+
+COMBATPIC BART
+TYPE 4
+TALKTO 103
+
+KILLHIM As the Bart Simpson imitator falls you can just make out the words
+KILLHIM "Oh man!"
+;----------------------------------------------------------------------------
+NAME Hulk
+
+DESC He's Big; He's Green; And he's been exposed to high amounts of gamma
+DESC radiation. He's an incredible hulk. Although not all that bright,
+DESC the hulk posesses massive strength and instincts. He will be a tough
+DESC foe.
+
+HITPTS 50
+STR 200
+DEX 19
+AGL 19
+EXP 650
+MONEY 10
+
+MINDIST 0
+MAXDIST 30
+
+INV10 rations/5
+INV10 Medkit/20
+
+COMBATPIC HULK
+TYPE 4
+
+KILLHIM One final crushing blow and the hulk falls before your feet. As he
+KILLHIM dies, his body transmutates from that of the hulk to a former
+KILLHIM adventurer you once knew. Another demonstration of just how
+KILLHIM devastating wasteland radation can be to the unprotected.
+;----------------------------------------------------------------------------
+NAME Death Warrior
+
+DESC A man jumps out of the brush and draws his weapon. He says "The Death
+DESC Warriors demand a tribute. Pay now or die." This man is a member of the
+DESC Death Warriors, a ruthless gang of bandits who steal from undefended
+DESC travelers.
+
+HITPTS 48
+STR 22
+DEX 20
+AGL 22
+EXP 300
+MONEY 100
+
+MINDIST 10
+MAXDIST 30
+
+WEAPON1 Spear
+WEAPON2 Crossbow
+ARMOR Leather Jacket
+INV Crossbow bolts
+INV50 rations/5
+INV50 Medkit/20
+
+TALKTO 102
+
+COMBATPIC SOLDIER
+TYPE 4
+
+KILLHIM One final blow and the Death Warrior is vanquished. Although Not nearly
+KILLHIM as tough as you had assumed, you wonder if his companions will seek
+KILLHIM revenge against you.
+;----------------------------------------------------------------------------
+NAME Death Warrior
+
+DESC A man jumps out of the brush and draws his weapon. He says "The Death
+DESC Warriors demand a tribute. Pay now or die." This man is a member of the
+DESC Death Warriors, a ruthless gang of bandits who steal from undefended
+DESC travelers.
+
+HITPTS 48
+STR 22
+DEX 20
+AGL 22
+EXP 300
+MONEY 100
+
+MINDIST 10
+MAXDIST 30
+
+WEAPON1 Longsword
+WEAPON2 .357 Revolver
+ARMOR Leather Jacket
+INV Quick Load 
+INV50 rations/5
+INV50 Medkit/20
+
+TALKTO 102
+
+COMBATPIC SOLDIER
+TYPE 4
+
+KILLHIM One final blow and the Death Warrior is vanquished. Although Not nearly
+KILLHIM as tough as you had assumed, you wonder if his companions will seek
+KILLHIM revenge against you.
+;----------------------------------------------------------------------------
+
+NAME Death Warrior
+
+DESC A man jumps out of the brush and draws his weapon. He says "The Death
+DESC Warriors demand a tribute. Pay now or die." This man is a member of the
+DESC Death Warriors, a ruthless gang of bandits who steal from undefended
+DESC travelers.
+
+HITPTS 48
+STR 22
+DEX 20
+AGL 22
+EXP 700
+MONEY 150
+
+MINDIST 10
+MAXDIST 30
+
+WEAPON1 Broadsword
+WEAPON2 Bow
+ARMOR Leather Jacket
+INV Arrows
+INV50 rations/5
+INV50 Medkit/20
+
+TALKTO 102
+
+COMBATPIC SOLDIER
+TYPE 4
+
+KILLHIM One final blow and the Death Warrior is vanquished. Although Not nearly
+KILLHIM as tough as you had assumed, you wonder if his companions will seek
+KILLHIM revenge against you.
+;----------------------------------------------------------------------------
+
+NAME Insane Soldier
+
+DESC You see what was once a fellow soldier, most likely stationed at your
+DESC very base. The wastelands have taken their toll upon him, causing him
+DESC to go quite insane. With both weapons and the knowledge to use them,
+DESC the Insane Soldier is very dangerous indeed.
+
+HITPTS 50
+STR 23
+DEX 21
+AGL 23
+EXP 800
+MONEY 100
+
+MINDIST 10
+MAXDIST 30
+
+WEAPON1 Longsword
+WEAPON2 .38 Revolver
+ARMOR Leather Jacket
+INV Quick Load
+INV50 rations/5
+INV50 Medkit/20
+INV5 ROM: Commlink
+
+COMBATPIC SOLDIER
+TYPE 4
+
+KILLHIM One final blow and the Insane Soldier is vanquished. You can't help
+KILLHIM but wonder how many other of your companions have suffered this fate.
+KILLHIM Or if the same fate is in store for you......
+;----------------------------------------------------------------------------
+
+NAME Insane Soldier
+
+DESC You see what was once a fellow soldier, most likely stationed at your
+DESC very base. The wastelands have taken their toll upon him, causing him
+DESC to go quite insane. With both weapons and the knowledge to use them,
+DESC the Insane Soldier is very dangerous indeed.
+
+HITPTS 52
+STR 23
+DEX 21
+AGL 23
+EXP 800
+MONEY 100
+
+MINDIST 10
+MAXDIST 30
+
+WEAPON1 Spear
+WEAPON2 9mm Pistol
+ARMOR Chain Mail
+INV Pistol Clip
+INV50 rations/5
+INV50 Medkit/20
+INV5 ROM: Commlink
+
+COMBATPIC SOLDIER
+TYPE 4
+
+KILLHIM One final blow and the Insane Soldier is vanquished. You can't help
+KILLHIM but wonder how many other of your companions have suffered this fate.
+KILLHIM Or if the same fate is in store for you......
+;----------------------------------------------------------------------------
+
+NAME Scavenger
+
+DESC A man jumps out from behind a bush, eyes up your pack, and says "I sure
+DESC could use one of those..." This man is a scavenger, a person who roams
+DESC the wastelands in search of any valuables. Although heavily armed and
+DESC quite difficult to kill, the scavengers usually carry with them several
+DESC valuable items.
+
+HITPTS 50
+STR 24
+DEX 23
+AGL 24
+EXP 900
+MONEY 100
+
+MINDIST 15
+MAXDIST 30
+
+WEAPON1 Katana
+WEAPON2 .40 Pistol
+ARMOR Kevlar Vest
+INV Pistol Clip
+INV50 rations/5
+INV50 Medkit/20
+INV15 pylon key
+INV10 rations/10
+INV10 medkit/30
+INV10 stealth field
+INV10 Ghetto Blaster
+INV5 Laptop
+INV5 ROM: Notes
+INV5 ROM: Diet
+INV5 ROM: Commlink
+
+TYPE 4
+COMBATPIC GDUDE
+
+KILLHIM As the scavenger falls to the ground, several useful items drop
+KILLHIM from his pack. Looks like we hit the jackpot here!
+;----------------------------------------------------------------------------
+
+NAME Scavenger
+
+DESC A man jumps out from behind a bush, eyes up your pack, and says "I sure
+DESC could use one of those..." This man is a scavenger, a person who roams
+DESC the wastelands in search of any valuables. Although heavily armed and
+DESC quite difficult to kill, the scavengers usually carry with them several
+DESC valuable items.
+
+HITPTS 50
+STR 25
+DEX 27
+AGL 22
+EXP 900
+MONEY 100
+
+MINDIST 15
+MAXDIST 30
+
+WEAPON1 Fireman's Axe
+WEAPON2 .44 Revolver
+ARMOR Kevlar Vest
+INV Quick Load
+INV50 rations/5
+INV50 Medkit/20
+INV15 pylon key
+INV10 rations/10
+INV10 medkit/30
+INV10 stealth field
+INV10 Ghetto Blaster
+INV5 Laptop
+INV5 ROM: Notes
+INV5 ROM: Diet
+INV5 ROM: Commlink
+
+TYPE 4
+COMBATPIC GDUDE
+
+KILLHIM As the scavenger falls to the ground, several useful items drop
+KILLHIM from his pack. Looks like we hit the jackpot here!
+;----------------------------------------------------------------------------
+;NAME Blank 1
+
+;DESC
+
+;HITPTS ??
+;STR ??
+;DEX ??
+;AGL ??
+;EXP ??
+;MONEY ??
+
+;MINDIST ?
+;MAXDIST 30
+
+;WEAPON1 
+;WEAPON2
+;ARMOR 
+;INV 
+;INV 
+;INV15 
+;INV15 
+;INV5 
+;INV5 
+;INV25 
+
+;TYPE 4
+
+;KILLHIM 
+;----------------------------------------------------------------------------
+NAME City Rat
+
+DESC You trudge across the roads in the wasteland relentlessly.  Suddenly
+DESC from behind you a young man jumps out.  "Hand over your stuff and I
+DESC might not gank ya!"
+
+HITPTS 47
+STR 21
+DEX 24
+AGL 27
+EXP 762
+MONEY 60
+
+MINDIST 5
+MAXDIST 30
+
+WEAPON1 Baseball Bat
+WEAPON2 .25 Pistol
+ARMOR Leather Jacket
+INV Pistol Clip
+INV15 Medkit/20
+INV45 Ghetto Blaster
+
+TYPE 4
+
+KILLHIM You parry his last futile blow and cleave deeply into his side.
+KILLHIM As he dies he coughs out.  "My homies will get ya."  You wonder
+KILLHIM How many more of these gang members there are.
+;----------------------------------------------------------------------------
+NAME Knight
+
+DESC You see a steel shod man approach.  It seems that the wastelands have
+DESC a way of driving people mad, but this in new.  The person you encounter
+DESC has taken to the idea that he is a knight. Clad in Chain Mail and
+DESC brandishing a Broadsword he challenges you to combat.
+
+HITPTS 62
+STR 27
+DEX 21
+AGL 15
+EXP 850
+MONEY 50
+
+MINDIST 5
+MAXDIST 30
+
+WEAPON1 Broadsword
+WEAPON2 Bow
+ARMOR Chain Mail
+INV Arrows
+INV35 rations/10
+INV35 medkit/20
+
+TYPE 4
+
+KILLHIM You bring your weapon crashing down on him one last time.  He
+KILLHIM stumbles backward and drops.  Oh well, another victim of progress
+KILLHIM you suppose.
+;----------------------------------------------------------------------------
+NAME City Rat
+
+DESC You trudge across the roads in the wasteland relentlessly.  Suddenly
+DESC from behind you a young man jumps out.  "Hand over your stuff and I
+DESC might not gank ya."
+
+HITPTS 44
+STR 17
+DEX 23
+AGL 32
+EXP 762
+MONEY 60
+
+MINDIST 5
+MAXDIST 30
+
+WEAPON1 Long Dagger
+WEAPON2 9mm Pistol
+ARMOR Leather Jacket
+INV Pistol Clip
+INV15 Medkit/20
+INV45 Ghetto Blaster
+
+TYPE 4
+
+KILLHIM You parry his last futile blow and cleave deeply into his side.
+KILLHIM As he dies he coughs out.  "My homies will get ya."  You wonder
+KILLHIM How many more of these gang members there are.
+;----------------------------------------------------------------------------
+NAME Knight
+
+DESC You see a steel shod man approach.  It seems that the wastelands have
+DESC a way of driving people mad, but this in new.  The person you encounter
+DESC has taken to the idea that he is a knight. Clad in Chain Mail and
+DESC brandishing a Fireman's Axe he challenges you to combat.
+
+HITPTS 60
+STR 31
+DEX 15
+AGL 15
+EXP 850
+MONEY 50
+
+MINDIST 5
+MAXDIST 30
+
+WEAPON1 Fireman's Axe
+WEAPON2 Bow
+ARMOR Chain Mail
+INV Arrows
+INV35 rations/10
+INV35 medkit/20
+
+TYPE 4
+
+KILLHIM You bring your weapon crashing down on him one last time.  He
+KILLHIM stumbles backward and drops.  Oh well, another victim of progress
+KILLHIM you suppose.
+;----------------------------------------------------------------------------
+;Level 2 monsters start
+;----------------------------------------------------------------------------
+
+NAME Watcher
+
+DESC Floating around up ahead you spy a strange sphere. Stopping once in a
+DESC while to scan the wasteland, it spots you and says "POSSIBLE HOSTILE,
+DESC CHARGING WEAPONS" It circles you a few times and speaks once more:
+DESC "CHECKING: ID CONFIRMED, MARKED FOR TERMINATION.."  Having no place to
+DESC take cover from its impending attack, you draw your weapon, all the
+DESC time wondering who sent this thing.
+
+HITPTS 62
+STR 24
+DEX 25
+AGL 24
+EXP 980
+MONEY 550
+
+MINDIST 20
+MAXDIST 40
+
+WEAPON1 Energy Dagger
+WEAPON2 .45 Pistol
+ARMOR Iron Plating
+INV Pistol Clip
+INV Power Pack
+INV10 Scanner
+INV10 ROM: Commlink
+INV5 ROM: LR-Scan
+
+NOSELL
+NOSURR
+
+LANDWATER
+
+COMBATPIC WATCHER
+TYPE 4
+
+KILLHIM As your last attack strikes, the sphere explodes into shards of
+KILLHIM metal.  You take what little is left of it and travel on.
+
+;--------------------------------------------------------------------------
+
+NAME BioMutant
+
+DESC Out of the bushes jumps a BioMutant. The BioMutants are the result of
+DESC early 21st century biological weapons. The weapons were designed to
+DESC debilitate enemy troops. However, they seem to have had the opposite
+DESC effect. The BioMutant is strong and powerful. It's mutations have caused
+DESC it to adapt very well to the nuclear-devestated terrain. Unfortunately
+DESC for you, the BioMutant is smart enough to use short and long range
+DESC weapons.
+
+HITPTS 60
+STR 25
+DEX 25
+AGL 24
+EXP 1000
+MONEY 900
+
+MINDIST 20
+MAXDIST 40
+
+WEAPON1 Force Blade
+WEAPON2 .44 Revolver
+ARMOR Kevlar Vest
+INV Quick Load
+INV Power Pack
+INV5 ROM: Commlink
+
+COMBATPIC BIOMUTNT
+TYPE 4
+
+KILLHIM And another one bites the dust! Your final blow took care of the Bio-
+KILLHIM mutant. You scavenge it's body for any weapons and ammo that may have
+KILLHIM been leftover.
+;-----------------------------------------------------------------------------
+
+NAME Night Terror
+
+DESC You have come upon a hideous beast. Until now, you have only heard
+DESC legends that the "Night Terror" exists, but now you have come face to
+DESC face with it. The Night Terror is a humanoid approximately 7 feet
+DESC tall, has four arms, and it's eyes are well adapted to seeing in the
+DESC dark.
+
+HITPTS 60
+STR 25
+DEX 25
+AGL 25
+EXP 1100
+MONEY 800
+
+MINDIST 20
+MAXDIST 40
+
+WEAPON1 Energy Sword
+WEAPON2 .45 Pistol
+ARMOR Kevlar Vest
+INV Pistol Clip
+INV Power Pack
+INV5 ROM: Commlink
+
+LANDWATER
+
+COMBATPIC NIGHTTER
+TYPE 4
+
+KILLHIM That last blow has vanquished the Night Terror. Looking down at seven
+KILLHIM feet of mangled flesh, you breath a sigh of relief that this battle is
+KILLHIM finally over. Wonder what else lurks down here on level 2?
+;----------------------------------------------------------------------------
+
+NAME Cyclops
+
+DESC Something jumps out in front of you. This dude looks like something out
+DESC of a DND game - the menacing humanoid has only one large eye. It's a
+DESC cyclops! And he doesn't look very happy.....
+
+HITPTS 60
+STR 27
+DEX 25
+AGL 25
+EXP 1200
+MONEY 1000
+
+MINDIST 23
+MAXDIST 43
+
+WEAPON1 Energy Sword
+WEAPON2 .30 Carbine
+ARMOR Riot Vest
+INV Rifle Clip
+INV Power Pack
+INV Cyclops Eye
+INV10 Medkit/20
+INV5 ROM: Tcode
+
+TYPE 4
+COMBATPIC CYCLOPS
+NOSELL
+
+KILLHIM Quite a job taking care of this one. You pluck out that one large eye
+KILLHIM of his as a souvenier to show the guys back at the base.
+;----------------------------------------------------------------------------
+
+NAME Death Commando
+
+DESC Out of the bushes you hear a yell "So, you defeated some of our recruits.
+DESC Now face a full fledged Death Commando!". Looks like the news of your
+DESC killing those death warriors back on level one has spread around. Oh
+DESC well, the inconvenience of having a reputation....
+
+HITPTS 70
+STR 27
+DEX 28
+AGL 26
+EXP 1500
+MONEY 1000
+
+MINDIST 20
+MAXDIST 40
+
+WEAPON1 Cryo Cutlass
+WEAPON2 .308 Rifle
+ARMOR Riot Vest
+INV Rifle Clip
+INV Power Pack
+INV10 Medkit/20
+INV5 ROM: Tcode
+
+TYPE 4
+COMBATPIC DTHCMNDO
+
+KILLHIM As the death commando falls to the ground in defeat, he mutters to
+KILLHIM you "More will come..." and falls lifelessly to the ground. You get the
+KILLHIM impression this isn't the last of them.
+;----------------------------------------------------------------------------
+
+NAME Death Commando
+
+DESC Out of the bushes you here a yell "So, you defeated some of our recruits.
+DESC Now face a full fledged Death Commando!". Looks like the news of your
+DESC killing those death warriors back on level one has spread around. Oh
+DESC well, the inconvenience of having a reputation....
+
+HITPTS 70
+STR 25
+DEX 30
+AGL 26
+EXP 1500
+MONEY 1000
+
+MINDIST 20
+MAXDIST 40
+
+WEAPON1 Mono Sword
+WEAPON2 .223 Rifle
+ARMOR Hard Vest
+INV Rifle Clip
+INV Power Pack
+INV10 Medkit/20
+INV5 ROM: Tcode
+
+TYPE 4
+COMBATPIC DTHCMNDO
+
+KILLHIM As the death commando falls to the ground in defeat, he mutters to
+KILLHIM you "More will come..." and falls lifelessly to the ground. You get the
+KILLHIM impression this isn't the last of them.
+;----------------------------------------------------------------------------
+
+NAME Thug
+
+DESC As you round the next corner, a thug jumps out and says "Gimme all your
+DESC money or die!". Although not too bright, this guy is armed with an
+DESC Laser Axe and a scorpion SMG!
+
+HITPTS 70
+STR 32
+DEX 28
+AGL 26
+EXP 1200
+MONEY 1000
+
+MINDIST 25
+MAXDIST 55
+
+WEAPON1 Laser Axe
+WEAPON2 Scorpion SMG
+ARMOR Hard Vest
+INV Pistol Clip
+INV Power Pack
+INV10 Medkit/20
+
+TYPE 4
+COMBATPIC UTHUG
+
+KILLHIM One final thrust and the thug is vanquished. All in all, he was not
+KILLHIM as challenging a foe as you had anticipated.
+
+;----------------------------------------------------------------------------
+
+NAME A Guido
+
+DESC As you round the next corner, a thug jumps out and says "Gimme all your
+DESC money or die!". Although not too bright, this guy is armed with an
+DESC Photon Axe and a 12 gauge Shotgun!
+
+HITPTS 74
+STR 35
+DEX 22
+AGL 26
+EXP 1500
+MONEY 1000
+
+MINDIST 25
+MAXDIST 55
+
+WEAPON1 Photon Axe
+WEAPON2 12 Gauge Shotgun
+ARMOR Hard Vest
+INV Shotgun Shells
+INV Power Pack
+INV10 Medkit/20
+
+TYPE 4
+COMBATPIC UTHUG
+
+KILLHIM One final thrust and the thug is vanquished. All in all, he was not
+KILLHIM as challenging a foe as you had anticipated.
+
+;-------------------------------------------------------------------------
+
+NAME Snow Demon Scout
+
+DESC Across the bleak, icy wastes you notice a rapidly approaching form,
+DESC clad in furs.  As he nears you notice that the furs are only symbolic,
+DESC as his chest is bared to the frigid air, revealing light blue skin.
+DESC Ice flakes from his lips as he snarls, "In the name of Lord IcePick I
+DESC claim this land and guard it against you or any of your cold-fearing
+DESC kin.  Go back to the warmth you so love, while it still lasts. Or face
+DESC me and your corpse will serve as yet another marker."  He cackles
+DESC maniacally as he gestures to a row of what at first glance appear to
+DESC be statues, but are actually the bodies of his victims, frozen solid.
+
+TRESTRICT Snow Plains
+TRESTRICS Snow Hills
+
+HITPTS 76
+STR 28
+DEX 28
+AGL 27
+EXP 1850
+MONEY 1000
+
+ORIGX 7
+ORIGY 49
+ORIGZ 1
+MINDIST 0
+MAXDIST 6
+
+WEAPON1 Tachyon Sword
+WEAPON2 Uzi SMG
+ARMOR Riot Jacket
+INV Pistol Clip
+INV Power Pack
+INV25 Scanner
+INV10 ROM: History
+
+TYPE 4
+COMBATPIC SNOWDSCT
+
+KILLHIM You silently search his body, which has already begun to freeze.
+KILLHIM "While it still lasts" he had said.  What could he have meant?  A
+KILLHIM shiver passes through you that has nothing to do with the cold.
+;----------------------------------------------------------------------------
+
+NAME Spider Droid
+
+DESC You notice a glint of metal from underneath the sand next to you. As you
+DESC approach to investigate, The metal beast learches out of the ground.
+DESC Poised on eight legs, it has incredible agility. It's metal joints and
+DESC muscles are far superior to any biological life form. You prepare to
+DESC engage combat with the Spider Droid....
+
+HITPTS 80
+STR 29
+DEX 39
+AGL 29
+EXP 2000
+MONEY 1000
+
+MINDIST 40
+MAXDIST 70
+
+WEAPON1 Neutron Sword
+WEAPON2 AK-47
+ARMOR Iron Plating
+INV Neutron Pack
+INV Rifle Clip
+INV10 LR Scan
+INV10 ROM: Tcode
+
+COMBATPIC SPIDER
+TYPE 4
+TALKTO 105
+
+KILLHIM After that last blow, the Spider droid has ceased to move. It's
+KILLHIM electrical system crushed, it is of no threat any more. You search
+KILLHIM it's body for any valuables.
+;--------------------------------------------------------------------------
+
+NAME FrogMan
+
+DESC A pair of slimy arms reaches over the sides of your raft, pulling up
+DESC the figure of yet another product of the post-nuclear age-- the
+DESC murderous FrogMan!
+
+HITPTS 80
+STR 29
+DEX 29
+AGL 29
+EXP 2000
+MONEY 750
+
+MINDIST 30
+MAXDIST 60
+
+WEAPON1 Mono Sword
+WEAPON2 M-16
+ARMOR Riot Jacket
+INV Power Pack
+
+WATERONLY
+
+COMBATPIC FROG
+TYPE 4
+
+KILLHIM Upon the final blow, the slimy frog-thing lets out a large "CROAK,"
+KILLHIM then croaks for real.
+
+;----------------------------------------------------------------------------
+
+NAME Terminator
+
+DESC You see before you a massive death machine. It is covered with steel
+DESC plated armor and wields some devestatingly powerful weapons. As you stand
+DESC in sheer terror, the terminator's voice booms out "Terminate Human."
+
+HITPTS 90
+STR 600
+DEX 30
+AGL 30
+EXP 3000
+MONEY 1000
+
+MINDIST 30
+MAXDIST 60
+
+WEAPON2 Laser Pistol
+ARMOR Steel Plating
+INV Power Pack
+INV10 Scanner
+INV10 Medkit/30
+INV10 Warper
+INV10 ROM: EM-Warp
+INV10 ROM: Tcode
+INV5 ROM: History
+INV5 ROM: Windows
+
+COMBATPIC TERMNATR
+TYPE 4
+
+KILLHIM There is a large crash to the ground as the mighty terminator falls.
+KILLHIM The power has faded from his body and now only his vanquished frame
+KILLHIM remains.
+;----------------------------------------------------------------------------
+
+NAME Recon Droid
+
+DESC Out of the nearby shrubs emerges an early strange robot Recon Droid.
+DESC Def Sacre said that they are being used for reconnaissance purposes.
+DESC You wonder then, why is it armed with a Force Pistol and a Tachyon
+DESC Sword.
+
+HITPTS 74
+STR 32
+DEX 32
+AGL 32
+EXP 3500
+MONEY 1500
+
+MINDIST 30
+MAXDIST 60
+
+WEAPON1 Tachyon Sword
+WEAPON2 Force Pistol
+ARMOR Steel Plating
+INV Power Pack
+INV10 Scanner
+INV10 LR Scan
+INV10 Warper
+INV10 ROM: EM-Warp
+INV10 ROM: Tcode
+INV5 ROM: History
+INV5 ROM: Windows
+
+TYPE 4
+COMBATPIC RECON
+
+KILLHIM You have slain the mighty Recon Droid! It's mechanized body will no
+KILLHIM longer trouble you!
+;----------------------------------------------------------------------------
+
+NAME Bounty Hunter
+
+DESC A man steps out from behind a tree. He pulls out s sheet of paper, looks
+DESC at it, looks at you, and says "The Death Warriors have placed a pretty
+DESC nice price on your head. $2,000 dead or alive. I prefer dead." The bounty
+DESC hunter pulls out a Laser Pistol and sights it on you!
+
+HITPTS 84
+STR 35
+DEX 35
+AGL 35
+EXP 4000
+MONEY 2000
+
+MINDIST 30
+MAXDIST 60
+
+WEAPON1 Neutron Sword
+WEAPON2 Force Pistol
+ARMOR Riot Armor
+INV Power Pack
+INV Neutron Pack
+INV10 Scanner
+INV10 LR Scan
+INV10 Warper
+INV10 ROM: EM-Warp
+INV10 ROM: Tcode
+
+COMBATPIC BOUNTY
+TYPE 4
+
+KILLHIM "Well, I prefer DEAD also," you say as one final blow vanquishes the
+KILLHIM mighty bounty hunter. You think to yourself that these Death Warriors
+KILLHIM are getting to be quite a nuisance. Perhaps it's time to find their
+KILLHIM secret city and take care of them?
+;----------------------------------------------------------------------------
+
+NAME Bounty Hunter 
+
+DESC A man steps out from behind a tree. He pulls out s sheet of paper, looks
+DESC at it, looks at you, and says "The Death Warriors have placed a pretty
+DESC nice price on your head. $2,000 dead or alive. I prefer dead." The bounty
+DESC hunter pulls out a Laser Pistol and sights it on you!
+
+HITPTS 86
+STR 35
+DEX 35
+AGL 35
+EXP 4000
+MONEY 2000
+
+MINDIST 30
+MAXDIST 60
+
+WEAPON1 Mono Sword
+WEAPON2 Laser Pistol
+ARMOR Riot Armor
+INV Power Pack
+INV10 Scanner
+INV10 LR Scan
+INV10 Warper
+INV10 ROM: EM-Warp
+INV10 ROM: Tcode
+
+COMBATPIC BOUNTY
+TYPE 4
+
+KILLHIM "Well, I prefer DEAD also," you say as one final blow vanquishes the
+KILLHIM mighty bounty hunter. You think to yourself that these Death Warriors
+KILLHIM are getting to be quite a nuisance. Perhaps it's time to find their
+KILLHIM secret city and take care of them?
+;----------------------------------------------------------------------------
+NAME City Rat Leader
+
+DESC A man steps out from behind a wrecked car and points a loaded Mac 10
+DESC at you.  "You've been a problem to my posse for too long."
+
+HITPTS 74
+STR 25
+DEX 35
+AGL 45
+EXP 4000
+MONEY 2000
+
+MINDIST 45
+MAXDIST 75
+
+WEAPON1 Mono Sword
+WEAPON2 Mac 10 SMG
+ARMOR Hard Vest
+INV Pistol Clip
+
+COMBATPIC BOUNTY
+TYPE 4
+
+KILLHIM Laughing, you put aside a weak blow and reposte, burying your weapon
+KILLHIM in his chest. You think to yourself that these city rats are getting
+KILLHIM to be quite a nuisance.
+;----------------------------------------------------------------------------
+
+NAME City Rat  Leader
+
+DESC A man steps out from behind a wrecked car and points a loaded AK-47
+DESC at you.  "You've been a problem to my posse for too long."
+
+HITPTS 75
+STR 25
+DEX 35
+AGL 45
+EXP 4000
+MONEY 2000
+
+MINDIST 45
+MAXDIST 75
+
+WEAPON1 Mono Sword
+WEAPON2 AK-47
+ARMOR Hard Vest
+INV Rifle Clip
+
+COMBATPIC BOUNTY
+TYPE 4
+
+KILLHIM Laughing, you put aside a weak blow and reposte, burying your weapon
+KILLHIM in his chest. You think to yourself that these city rats are getting
+KILLHIM to be quite a nuisance.
+;----------------------------------------------------------------------------
+
+NAME Killer Kelp
+
+DESC Originally a simple form of aquatic life, Kelp was a valued commodity of
+DESC the sea, used by other forms of life as food. Unfortunately, this batch
+DESC soaked up a few too many rads and is now quite hostile. Poisinous
+DESC stingers and thick weed covering make the Killer Kelp a very dangerous
+DESC foe.
+
+HITPTS 49
+STR 35
+DEX 35
+AGL 35
+EXP 4000
+MONEY 0
+
+MINDIST 30
+MAXDIST 60
+
+WEAPON1 Kelp Stinger
+ARMOR Thick weeds
+
+INV99 Kelp Rations
+
+WATERONLY
+
+;Use disint 100 to get rid of kelp stinger. Since Kelp rations are INV99, the
+;disint will not affect them.
+
+DISINT 100
+
+COMBATPIC WKELP
+TYPE 4
+
+KILLHIM Finally, you have defeated the Killer Kelp. The thousands of sections
+KILLHIM of poisinous seaweed are now lifeless. Perhaps although lifeless,
+KILLHIM the Kelp is not entierly useless - the seaweed is still usable as
+KILLHIM a source of food - perhaps even considered a delicacy by some.
+
+;----------------------------------------------------------------------------
+;Level 3 monsters start
+;----------------------------------------------------------------------------
+
+NAME Guard Drone
+
+DESC A metal machine comes rumbling out from behind a nearby pile of rubble.
+DESC This thing is huge. It's armed with some kind of strange weapons
+DESC that you've never seen before. It rumbles towards you as a mechanical
+DESC voice says "Human sighted. Terminate intruder."
+
+HITPTS 110
+STR 40
+DEX 40
+AGL 40
+EXP 4500
+MONEY 2000
+
+MINDIST 60
+MAXDIST 90
+
+WEAPON1 Slicer-Dicer
+WEAPON2 Torpx Cannon
+ARMOR Steel Plating
+INV Power Pack
+INV10 Scanner
+INV10 LR Scan
+INV10 Medkit/30
+INV10 Medkit/100
+INV10 Warper
+INV10 ROM: EM-Warp
+INV10 ROM: Tcode
+INV10 ROM: Fortinv
+INV10 ROM: Bartalk
+
+COMBATPIC GARDDRON
+TYPE 4
+
+KILLHIM As the mechanical menace looses it's power reserves and at last
+KILLHIM stands still, you inspect it's odd weapondry. It's weapons are
+KILLHIM very odd. They are energy weapons, but do not appear to be powered
+KILLHIM by any sort of ammunition. They must have an internal power
+KILLHIM source.
+;----------------------------------------------------------------------------
+
+NAME Death Leader
+
+DESC "Didn't I send some men to take care of you? Oh well. You know what they
+DESC say - you want a job done, you gotta do it yourself." This dude is a
+DESC full fledged death leader - one of the higher ranking officials of the
+DESC death warriors gang. I wouldn't take his threats lightly.
+
+HITPTS 120
+STR 42
+DEX 42
+AGL 42
+EXP 5000
+MONEY 2000
+
+MINDIST 60
+MAXDIST 90
+
+WEAPON1 Tachyon Sword
+WEAPON2 Force Carbine
+ARMOR Energy Armor
+INV Power Pack
+INV Power Pack
+INV Death Badge
+INV10 Grenade Pack
+INV10 Scanner
+INV10 LR Scan
+INV10 Medkit/30
+INV10 Medkit/100
+INV10 Rations/20
+INV10 Warper
+INV10 ROM: EM-Warp
+INV10 ROM: Tcode
+INV10 ROM: Fortinv
+INV10 ROM: Bartalk
+
+COMBATPIC DEATHLDR
+TYPE 4
+
+KILLHIM Looks like even the top members of the death warriors are no match for
+KILLHIM you. As you search his body, you find many interesting items including
+KILLHIM some kind of ID badge.
+;----------------------------------------------------------------------------
+
+NAME CyberBird
+
+DESC Out of the corner of your eye, you see a massive beast descending from
+DESC the sky. It is a CyberBird! The CyberBird is a combination man/bird/
+DESC android. With a Neutron sword in one claw and Force Carbine in the other,
+DESC it' prepares to attack!
+
+HITPTS 124
+STR 43
+DEX 43
+AGL 43
+EXP 5500
+MONEY 2500
+
+MINDIST 60
+MAXDIST 90
+
+WEAPON1 Neutron Sword
+WEAPON2 Force Carbine
+ARMOR Energy Armor
+INV Power Pack
+INV Neutron Pack
+INV10 Grenade Pack
+INV10 Scanner
+INV10 LR Scan
+INV10 Medkit/30
+INV10 Medkit/100
+INV10 Rations/20
+
+LANDWATER
+
+COMBATPIC CYBRBIRD
+TYPE 4
+
+KILLHIM Your final blow nearly slashed the creature in half! The CyberBird
+KILLHIM makes a last-ditch effort to fly away, but in mid flight, it loses
+KILLHIM control and goes into a spin, sending it into a fatal crash into a
+KILLHIM nearby hill.
+;----------------------------------------------------------------------------
+
+NAME Black Widow Warrior
+
+DESC A female warrior steps out in front of you. She's armed with an ElectroLance
+DESC and Energy Armor. As she steps closer, she says "You'll make a fine addition
+DESC to the Black Widow Gang.... To our slave yard, that is!!!"
+
+HITPTS 130
+STR 44
+DEX 45
+AGL 44
+EXP 6000
+MONEY 3000
+
+SEX FEMALE
+
+MINDIST 60
+MAXDIST 90
+
+WEAPON1 Tachyon Sword
+WEAPON2 Force Carbine
+ARMOR Energy Armor
+INV Power Pack
+INV Power Pack
+INV10 Grenade Pack
+INV10 Scanner
+INV10 LR Scan
+INV10 Medkit/30
+INV10 Medkit/100
+INV10 Rations/20
+INV10 Warper
+INV10 ROM: EM-Warp
+
+TYPE 4
+
+COMBATPIC GIRL
+
+KILLHIM It looks like you are on your way to exterminating yet another
+KILLHIM wasteland gang. The Black Widows don't look like they'll be much of
+KILLHIM a challenge.
+;----------------------------------------------------------------------------
+
+NAME Initiate of Loki
+
+DESC Smoothly moving along the wasteland you spot a single figure.  He is
+DESC dressed in red and black.  As he nears you can see, much to your shock
+DESC that instead of walking along the ground he floats a meter above it.
+DESC "Chaos: That is the Way.  The Way of a Priest of Loki.  One day I to
+DESC shall bear that title."  From parched lips he emits these words, a
+DESC strange look in his eyes and his disheveled look telling you what is
+DESC obvious: You deal with a madman.
+
+HITPTS 136
+STR 45
+DEX 45
+AGL 45
+EXP 6500
+MONEY 4000
+
+MINDIST 60
+MAXDIST 90
+
+WEAPON1 Slicer-Dicer
+WEAPON2 Laser Carbine
+ARMOR Energy Armor
+INV Power Pack
+INV10 Medkit/20
+INV5 Laptop
+INV5 ROM: Commlink
+
+TYPE 4
+COMBATPIC LOKIINIT
+
+KILLHIM This guy wanted to be a Priest of Loki?  What type of crazy religion
+KILLHIM is that?  Obviously not one that produces good warriors.  But they do
+KILLHIM fly, that's interesting.  You wonder if you will encounter others of
+KILLHIM this strange order as you search his corpse.  Strange how smoke keeps
+KILLHIM poring from his mouth.
+
+;----------------------------------------------------------------------------
+
+NAME K-Terminator
+
+DESC "Optical Recognition unit detects biological presence.... Subject
+DESC identified as human target XJ294. Standing orders: Terminate. K-Force
+DESC Terminator complying."
+
+HITPTS 140
+STR 950
+DEX 45
+AGL 46
+EXP 7000
+MONEY 5000
+
+MINDIST 60
+MAXDIST 90
+
+WEAPON2 GravBlast
+ARMOR Steel Plating
+INV Power Pack
+INV GravPack
+INV10 Grenade Pack
+INV10 Scanner
+INV10 LR Scan
+INV10 Medkit/30
+INV10 Medkit/100
+INV10 Rations/20
+INV10 Warper
+INV10 ROM: EM-Warp
+
+COMBATPIC KTERMNTR
+TYPE 4
+
+KILLHIM The mighty K-Force Terminator has fallen! You wonder who sent this
+KILLHIM thing after you? Was it the Death Warrior gang? Or maybe the Black
+KILLHIM Widows? Or perhaps a competing adventurer from the base? Who knows.
+
+;----------------------------------------------------------------------------
+
+NAME Liarei
+
+DESC Some really weird looking bird like warrior comes hopping towards you.
+DESC It stands about twelve feet tall and has several menacing talons -- one
+DESC of them has an Photon Axe and a GravBlast!
+
+HITPTS 142
+STR 33
+DEX 50
+AGL 50
+EXP 7500
+MONEY 5000
+
+MINDIST 60
+MAXDIST 90
+
+WEAPON1 Photon Axe
+WEAPON2 GravBlast
+ARMOR Energy Armor
+INV Power Pack
+INV GravPack
+INV10 Grenade Pack
+INV10 Scanner
+INV10 LR Scan
+INV10 Medkit/30
+INV10 Medkit/100
+INV10 Rations/20
+INV10 Warper
+INV10 ROM: EM-Warp
+
+TYPE 4
+COMBATPIC LIAREI
+
+KILLHIM You have wasted the mighty beast. You wonder where this creature
+KILLHIM came from. It's not like anything else on the wasteland. Perhaps
+KILLHIM it's of some kind of alien origin? Or maybe a pet of Xeboc's?
+
+;----------------------------------------------------------------------------
+
+NAME Trader
+
+DESC A man steps out from behind a tree. He looks you and your posessions over
+DESC and says "How about handing some of that loot over to me and I'll let you
+DESC walk out of this in one piece?" This man is a weapons trader. He carries
+DESC with him several nice weapons which would make a nice addition to your
+DESC collection. Of course, his best weapon is sighted on your forehead!
+
+HITPTS 150
+STR 46
+DEX 46
+AGL 46
+EXP 8000
+MONEY 5000
+
+MINDIST 60
+MAXDIST 90
+
+WEAPON1 GravSword
+WEAPON2 GravBlast
+ARMOR Energy Armor
+INV GravPack
+INV10 GravPack
+INV10 GravPack
+INV10 Grenade Pack
+INV10 Scanner
+INV10 LR Scan
+INV10 Medkit/30
+INV10 Medkit/50
+INV10 Medkit/100
+INV10 Rations/20
+INV10 Warper
+INV10 ROM: EM-Warp
+INV10 ROM: Fortinv
+INV10 Pylon key
+INV5 ROM: History
+INV5 ROM: Windows
+INV5 ROM: Bartalk
+
+TYPE 4
+COMBATPIC TRADER
+
+TALKTO 101
+
+KILLHIM One final blow and the trader is dead. As you peer over his decimated
+KILLHIM corpse, you notice several nice weapons. Including a GravSword which
+KILLHIM would do very nicely in your hands.
+;----------------------------------------------------------------------------
+
+NAME Fang Gang Fledgling
+
+DESC A fairly young kid approaches. As he gets closer, you notice
+DESC something strange about his skin. It's too white to be human skin,
+DESC and it's giving off a faint glow as well! You wonder if it's the
+DESC rads, or something else...You're about to say something to him when
+DESC you notice his sharp fangs covered in blood. You also notice his
+DESC GravBlaster aimed at you!
+
+HITPTS 150
+STR 37
+DEX 47
+AGL 67
+EXP 8200
+MONEY 5200
+
+MINDIST 60
+MAXDIST 90
+
+WEAPON1 GravSword
+WEAPON2 GravBlast
+ARMOR Energy Armor
+INV GravPack
+INV10 Warper
+INV10 Ghetto Blaster
+
+TYPE 4
+
+KILLHIM As you slay this young minion, he falls, and you glance at the
+KILLHIM back of his leather jacket. A logo showing a bright red-lipped
+KILLHIM mouth with blood-drenched fangs is displayed, with the words
+KILLHIM "The Fang Gang" underneath, those too drenched in blood. He
+KILLHIM must've been a member of this gang, and a new one, considering
+KILLHIM how easy the fight was. You wonder if any other Fang Gang
+KILLHIM members are nearby...
+
+;----------------------------------------------------------------------------
+Level 4 monsters start
+;----------------------------------------------------------------------------
+
+NAME Priest of Loki
+
+DESC In the sky far ahead you see a small dot.  The dot gets larger until you
+DESC can make it out to be a humanoid figure...a flying man in a billowy
+DESC cloak of red and black.  He circles you in the air at a considerable
+DESC distance.  "I am a Priest of Loki," says the man, "I can fly.  And I can
+DESC lead you away from the road to ruin.  I can save your soul with the
+DESC blessed truth of Chaos: Loki's truth.  And if that fails....I CAN SEND
+DESC YOU TO THE GRAVE!!!"  As madness fills his eyes momentarily he pulls a
+DESC plasma blaster out from under his cloak.
+
+HITPTS 166
+STR 48
+DEX 48
+AGL 48
+EXP 8600
+MONEY 9000
+
+MINDIST 90
+MAXDIST 120
+
+WEAPON1 GravSword
+WEAPON2 Plasma Rifle
+ARMOR Widow Armor
+INV PlasmaPack
+INV GravPack
+INV10 Laptop
+INV10 Medkit/20
+INV10 Rations/10
+
+COMBATPIC PRIEST
+TYPE 4
+TALKTO 106
+
+KILLHIM The gaping hole caused by your last strike lets out plumes of smoke
+KILLHIM as the Priest of Loki slams into the ground, his ability to fly
+KILLHIM apparently disabled.  Examining the wound you see that much of his
+KILLHIM inside has been replaced by mechanical implants.  The smoke comes
+KILLHIM not from the damage you did, but from some sort of self destruct
+KILLHIM mechanism.  Your enemy immolates into a veritable bonfire.
+;----------------------------------------------------------------------------
+
+NAME Warmonger
+
+DESC "Well look what we got here. Some scum from Sacre Base. I haven't seen
+DESC any of you since I helped the widows steal that PuriTron from up above.
+DESC I've been waiting to try out my new GravSword on one of you scum!" This
+DESC unfriendly character is a warmonger. They go around stirring up trouble,
+DESC usually in favor of the highest bidder.
+
+HITPTS 190
+STR 49
+DEX 49
+AGL 49
+EXP 9000
+MONEY 10000
+
+MINDIST 90
+MAXDIST 120
+
+WEAPON1 GravSword
+WEAPON2 GravBlast
+ARMOR Energy Armor
+INV GravPack
+INV10 GravPack
+INV10 Medkit/30
+INV10 Medkit/100
+INV10 Rations/10
+
+TYPE 4
+COMBATPIC WARMONGR
+
+KILLHIM You thrust one last mighty blow into the Warmonger. "That was for my
+KILLHIM buddies who died in the PuriTron raid!" you say. With this guy's
+KILLHIM connection to the widows, you know that you must be on the track of
+KILLHIM the remaining PuriTron parts.
+;----------------------------------------------------------------------------
+
+NAME Serpine
+
+DESC "Sssssss.... Uuuummmansssss.  Tasssssty uuuummmanssssss."
+DESC You pivot quickly on your heel, to gaze full upon the hideous face of
+DESC a reptilian monstrosity.  From the sides of a gigantic snake body
+DESC protrude two long scaly arms.  Serpentine eyes regard you with cold-
+DESC blooded lack of emotion.  The top of a suit of Widow Armor rests on the
+DESC the narrow shoulders of the beast, and in flicks its forked tongue as
+DESC aims its Plasma Blaster at you.
+
+HITPTS 190
+STR 50
+DEX 50
+AGL 50
+EXP 9500
+MONEY 10000
+
+MINDIST 90
+MAXDIST 120
+
+WEAPON1 GravSword
+WEAPON2 Plasma Rifle
+ARMOR Widow Armor
+INV PlasmaPack
+INV GravPack
+INV Stealth Field
+INV10 Uni-Translator
+INV10 Medkit/30
+
+TRESTRICT DESERT
+
+COMBATPIC SERPINE
+TYPE 4
+
+KILLHIM The inhuman speed and grace of the creature astounded you.  But it
+KILLHIM failed to overcome your training and skill.  As you begin rifling
+KILLHIM through the serpine's gear you take care to avoid the chunk of
+KILLHIM flesh in its backpack.  You have a suspicion it might be all to
+KILLHIM familiar.
+;-----------------------------------------------------------------------------
+
+NAME Black Widow Leader
+
+DESC "Well, Well, Well. I sent some of our girls down to take care of you. But,
+DESC it doesn't look like they got the job done. Look's like I'll have to take
+DESC care of you myself. " The Black Widow Leader stands in attack position
+DESC with her WidowLance and WidowBlade ready to see some action.
+
+HITPTS 190
+STR 50
+DEX 50
+AGL 50
+EXP 10000
+MONEY 10000
+
+SEX FEMALE
+
+MINDIST 90
+MAXDIST 120
+
+WEAPON1 WidowBlade
+WEAPON2 WidowBlaster
+ARMOR Widow Armor
+INV WidowPack
+INV10 Medkit/30
+INV10 Medkit/100
+INV10 Rations/10
+
+TYPE 4
+COMBATPIC GIRL
+
+KILLHIM Damn! You took her out! I guess the Widow Leader wasn't so tough after
+KILLHIM all. As you search her body, you discover some very customized energy
+KILLHIM weapons. These should be a nice addition to your arsonal.
+
+;--------------------------------------------------------------------------------
+
+NAME Snow Demon Warrior
+
+DESC Chilling wind blows past, sounding for all the world like the howling
+DESC of some great beast... Or is it perhaps just that.  Instincts make you
+DESC whirl to face a strange man yelling at the wind. Though his ice-crusted
+DESC beard hangs wildly down his stomach and the tattered furs he wears do
+DESC nothing to protect his bluish skin from the cold, there is no sign of
+DESC madness in his icy glare.  "You have trespassed into Snow Demon
+DESC territory.  By order of Lord IcePick you must perish," is all he says.
+
+TRESTRICT Snow Plains
+TRESTRICT Snow Hills
+
+HITPTS 194
+STR 53
+DEX 53
+AGL 53
+EXP 10250
+MONEY 10500
+
+ORIGX 12
+ORIGY 115
+ORIGZ 1
+MINDIST 0
+MAXDIST 5
+
+WEAPON1 Frost Sceptre
+WEAPON2 Frost Cannon
+ARMOR Frost Vest
+INV WidowPack
+INV WidowPack
+INV75 Scanner
+INV25 ROM: History
+
+TYPE 4
+COMBATPIC SNOWDWAR
+
+KILLHIM By a tremendous act of will he stays standing. "Your skill earns you
+KILLHIM this warning." He chokes with his last breaths, "Abandon the warmth
+KILLHIM now or you will be unprepared.  The next Age of Ice is almost upon
+KILLHIM us."  At this he collapses into the snow and speaks no more.
+
+;----------------------------------------------------------------------------
+
+NAME Defs Sacre Clone
+
+DESC A few months ago, the Draku raided the clone center for an unknown
+DESC reason. Now, standing before you is a product of that raid. Apparently,
+DESC the Draku decided they could use the genetic make-up of the clone to
+DESC create warriors for themselves. Before you, stands a clone of Defs
+DESC Sacre, and he doesn't look like he remembers you.
+
+HITPTS 219
+STR 55
+DEX 55
+ABL 55
+EXP 10500
+MONEY 11000
+
+MINDIST 90
+MAXDIST 120
+
+WEAPON1 WidowBlade
+WEAPON2 WidowBlaster
+ARMOR Widow Armor
+INV WidowPack
+INV10 Medkit/30
+INV10 Medkit/100
+INV10 Rations/10
+INV10 ROM: SPWeap
+
+TYPE 4
+COMBATPIC DEFSACRE
+
+KILLHIM With the last swing of your weapon, you destroy the clone.  You
+KILLHIM hesitate as you search the dead body of someone that you look up
+KILLHIM to.  Hatred rises up in you as you look on this new psychological
+KILLHIM weapon.
+;----------------------------------------------------------------------------
+
+NAME Sapphire
+
+DESC You approach another of those Black Widow Warriors, but there's
+DESC something different about this one...Looking closer you notice a
+DESC striking resemblance to Patti from the Tavern in Death Warrior HQ,
+DESC and realise this must be her lost sister!
+
+HITPTS 215
+STR 55
+DEX 55
+AGL 55
+EXP 10700
+MONEY 11000
+
+SEX FEMALE
+
+MINDIST 90
+MAXDIST 120
+
+WEAPON1 WidowBlade
+WEAPON2 WidowBlaster
+ARMOR Widow Armor
+INV WidowPack
+INV WidowPack
+INV WidowPack
+INV10 Medkit/100
+INV10 Warper/5
+INV10 Laptop
+
+TYPE 4
+COMBATPIC GUNLADY
+TALKTO 108
+
+KILLHIM You feel a certain sadness as you stare at Sapphire's dead body.
+KILLHIM Her arm moves. She crawls away. She'll live, but you have no
+KILLHIM further intention of ending her life. She did leave behind all
+KILLHIM those great Widow Weapons though...
+;----------------------------------------------------------------------------
+
+NAME Fang Gang Warrior
+
+DESC Another one of those enigmatic Fang Gang Warriors approaches, this
+DESC one with an even brighter glow to the skin than those Fledglings
+DESC back in Zone 3 He's also wearing the same leather jacket as the
+DESC others, although this one's got better weapons and armour.
+
+HITPTS 211
+STR 56
+DEX 56
+AGL 56
+EXP 10900
+MONEY 11000
+
+MINDIST 90
+MAXDIST 120
+
+COMBATPIC FANGGWAR
+
+WEAPON1 WidowBlade
+WEAPON2 WidowBlaster
+ARMOR Widow Armor
+INV WidowPack
+INV Stealth Field
+
+KILLHIM Just as you're about to kill him, his EMWARP program intervenes,
+KILLHIM taking him to safety. He did, however, drop his equipment in the
+KILLHIM process. As you glance down, you notice all his weapons seem to
+KILLHIM be Widow weapons. Do the Widows and the Fang Gang have close
+KILLHIM contacts with each other?
+;----------------------------------------------------------------------------
+
+NAME Draku Warrior
+
+DESC The Drakus have long been masters of advanced weapons and advanced genetic
+DESC engineering. It is said that it was they who created the weapons that
+DESC now protect the Black Widows. You are face to face with a Draku warrior
+DESC at this moment.
+
+HITPTS 225
+STR 57
+DEX 57
+AGL 57
+EXP 11000
+MONEY 11000
+
+MINDIST 90
+MAXDIST 120
+
+WEAPON1 WidowBlade
+WEAPON2 WidowBlaster
+ARMOR Widow Armor
+INV WidowPack
+INV10 Medkit/30
+INV10 Medkit/100
+INV10 Rations/10
+INV10 ROM: SPWeap
+
+TYPE 4
+COMBATPIC DRAKU
+
+KILLHIM You wasted him! The slain Draku warrior's body melts into a puddle
+KILLHIM of black sludge, undoubtably the genetic protomatter that he was
+KILLHIM created from.
+;----------------------------------------------------------------------------
+
+NAME Draku Defender
+
+DESC You are peering at a Draku defender. A product of Draku genetic engineering,
+DESC it has only one task in life: Destruction of all those who oppose the
+DESC Drakus or the Black Widows.
+
+HITPTS 228
+STR 58
+DEX 58
+AGL 58
+EXP 11500
+MONEY 11500
+
+MINDIST 90
+MAXDIST 120
+
+WEAPON1 WidowBlade
+WEAPON2 WidowBlaster
+ARMOR Widow Armor
+INV WidowPack
+INV10 Medkit/30
+INV10 Medkit/100
+INV10 Rations/10
+INV20 ROM: SPWeap
+
+TYPE 4
+COMBATPIC DRAKUDEF
+
+KILLHIM As the Draku Defender's body is slain, it's cells implode and return
+KILLHIM to the black genetic sludge that all Draku creatures were created
+KILLHIM from.
+
+;----------------------------------------------------------------------------
+Level 5 monsters start
+;----------------------------------------------------------------------------
+
+NAME Roach Warrior
+
+DESC You notice an odd humaniod figure in the distance in front of you. You
+DESC creep up closer to take a look. What you are facing is a twelve foot
+DESC tall insect-like humaniod... It appears to be a mutated version of
+DESC the common cockroach!
+
+HITPTS 235
+STR 61
+DEX 61
+AGL 61
+EXP 15000
+MONEY 15000
+
+MINDIST 120
+MAXDIST 150
+
+WEAPON1 WidowBlade
+WEAPON2 WidowBlaster
+ARMOR Widow Armor
+INV WidowPack
+INV WidowPack
+INV10 Medkit/30
+INV10 Medkit/100
+INV10 Rations/10
+INV10 Warper
+INV10 ROM: EM-Warp
+
+COMBATPIC ROACH
+TYPE 4
+
+KILLHIM The roach warrior is finally defeated... You notice the weapons
+KILLHIM it was using - a WidowBlade and a WidowBlaster - the same type
+KILLHIM of equipment used by the infamous Black Widows and Drakus... You
+KILLHIM wonder - Did this beast simply attain these items from an
+KILLHIM unfortunate widow warrior? Or are the drakus experimenting with
+KILLHIM a new type of soldier?
+;----------------------------------------------------------------------------
+
+NAME Widow Enforcer
+
+DESC "I'm an enforcer for the black widows.... They told me you'd be arriving
+DESC and now it's time to take care of you once and for all."
+
+HITPTS 238
+STR 63
+DEX 63
+AGL 63
+EXP 16000
+MONEY 16000
+
+SEX FEMALE
+
+MINDIST 120
+MAXDIST 150
+
+WEAPON1 WidowBlade
+WEAPON2 WidowBlaster
+ARMOR Widow Armor
+INV WidowPack
+INV WidowPack
+INV10 Medkit/30
+INV10 Medkit/100
+INV10 Rations/10
+INV10 Warper
+INV10 ROM: EM-Warp
+
+TYPE 4
+COMBATPIC GIRL
+
+KILLHIM You deal a final blow to the Black Window enforcer. She won't
+KILLHIM be troubling you any longer.... Although I wonder how many other
+KILLHIM enforcers the black widows have sent after you?
+;----------------------------------------------------------------------------
+
+NAME Ronin
+
+DESC 
+DESC 
+DESC
+DESC 
+
+HITPTS 249
+STR 64
+DEX 64
+AGL 64
+EXP 17000
+MONEY 17000
+
+MINDIST 120
+MAXDIST 150
+
+WEAPON1 WidowBlade
+WEAPON2 WidowBlaster
+ARMOR Widow Armor
+INV Vortex Cell
+INV10 ROM: History
+
+COMBATPIC BUNNY
+TYPE 4
+
+KILLHIM Its fuzzy pink coating gone, the bunny is revealed for what
+KILLHIM it is, some sort of robot.  From a speaker in the shattered
+KILLHIM frame of the thing you hear the deep rasping voice coming
+KILLHIM through a speaker."NoTH<grind,wheez>INngss OU<whiz,pop>lsts
+KILLHIM the <whirrr, sizzle> eNERRrrrrrzzzzz...."  Then there is
+KILLHIM only silence. While you are admiring the energy cell set
+KILLHIM in the back of the bunny, you smell something melting.
+;----------------------------------------------------------------------------
+
+NAME Black Widow Princess
+
+DESC "What does a girl have to do to take care of you people?? Well, I must
+DESC admire you for making it this far. But, you really are becoming a problem
+DESC to us. " The Black Widow Princess draws her weapons for a fight!
+
+HITPTS 240
+STR 65
+DEX 65
+AGL 65
+EXP 18000
+MONEY 18000
+
+SEX FEMALE
+
+MINDIST 120
+MAXDIST 150
+
+WEAPON1 WidowBlade
+WEAPON2 WidowBlaster
+ARMOR Widow Armor
+INV WidowPack
+INV WidowPack
+INV10 Medkit/30
+INV10 Medkit/100
+INV10 Rations/10
+INV10 Warper
+INV10 ROM: EM-Warp
+
+TYPE 4
+COMBATPIC GIRL
+
+KILLHIM That's one less widow princess that will be causing trouble. The black
+KILLHIM widow gang must be getting very nervous about your encounters down
+KILLHIM here!
+;----------------------------------------------------------------------------
+
+NAME Draku Master
+
+DESC "I am a master soldier of the Draku army. You have invaded our territory
+DESC and will be dealt with in the traiditonal mannor. We are sorry for any
+DESC inconvenience this may cause to you ... or your next of kin!"
+
+HITPTS 254
+STR 68
+DEX 68
+AGL 68
+EXP 19000
+MONEY 19000
+
+MINDIST 120
+MAXDIST 150
+
+WEAPON1 WidowBlade
+WEAPON2 WidowBlaster
+ARMOR Widow Armor
+INV WidowPack
+INV WidowPack
+INV10 Medkit/30
+INV10 Medkit/100
+INV10 Rations/10
+INV10 Warper
+INV10 ROM: EM-Warp
+
+TYPE 4
+COMBATPIC drkldr
+
+KILLHIM One last massive blow and the Draku Master is finished. Although
+KILLHIM you are glad to defeat such an evil being, you have a sort of
+KILLHIM admiration for the Draku Master's skill.
+;----------------------------------------------------------------------------
+
+NAME Paladin Clone
+
+DESC A story from your younger days comes to your mind when you spy the
+DESC figure approaching you. Paladin, the once enemy of Xenon, heard about
+DESC Xenon's deal with the Drakus for the creation of the monster, Xenon's
+DESC Vengeance. Paladin struck a deal with one of the clone technicians to
+DESC clone himself, in hopes that the monster would kill one of the clones
+DESC instead of him. Unfortunately, for Paladin, it didn't work out. The
+DESC story was told to new recruits and you never put much faith into it
+DESC until you see the proof right in front of you, armed!
+
+HITPTS 248
+STR 70
+DEX 70
+AGL 70
+EXP 20000
+MONEY 20000
+
+MINDIST 120
+MAXDIST 150
+
+WEAPON1 WidowBlade
+WEAPON2 WidowBlaster
+ARMOR Widow Armor
+INV WidowPack
+INV50 WidowPack
+INV10 Medkit/30
+INV10 Medkit/100
+INV10 Rations/10
+INV10 Warper
+INV10 ROM: EM-Warp
+
+TYPE 4
+COMBATPIC PALADIN
+
+KILLHIM You shake your head in disbelief as you look at the remains of
+KILLHIM the Paladin Clone.  You have beaten the clone of Xenon's greatest
+KILLHIM enemy!! This bit of proof makes you wonder exactly how truthful
+KILLHIM those old campfire stories were...
+;----------------------------------------------------------------------------
+
+NAME Draku War Chief
+
+DESC You are face to face with a Draku War Chief. Given the responsibility of
+DESC over seeing the destruction of all who oppose the Drakus, he is quite
+DESC dangerous, and quite intent on killing you.
+
+HITPTS 260
+STR 70
+DEX 70
+AGL 70
+EXP 21000
+MONEY 21000
+
+MINDIST 120
+MAXDIST 150
+
+WEAPON1 WidowBlade
+WEAPON2 WidowBlaster
+ARMOR Widow Armor
+INV WidowPack
+INV WidowPack
+INV10 Medkit/30
+INV10 Medkit/100
+INV10 Rations/10
+INV10 Warper
+INV10 ROM: EM-Warp
+
+TYPE 4
+COMBATPIC Drakuchf
+
+KILLHIM The Draku war chief is dead! Unfortunately, the Draku's are very
+KILLHIM proficient at the art of genetic engineering and will undoubtably
+KILLHIM have a new war chief before you have time to rest.
+;----------------------------------------------------------------------------
+
+NAME Serpine Suzalle
+
+DESC "Sssssss.... Uuuummmansssss.  Uuuummmannn make good fighhtt."
+DESC You turn to see a master Serpine warrior, the Serpine Suzalle. He (she?)
+DESC is armed with a surplus of widow-weapons, probably obtained through
+DESC hostile circumstances.
+
+HITPTS 190
+STR 70
+DEX 100
+AGL 100
+EXP 21000
+MONEY 21000
+
+MINDIST 120
+MAXDIST 150
+
+WEAPON1 WidowBlade
+WEAPON2 WidowBlaster
+ARMOR Widow Armor
+INV Sonic Whistle
+INV WidowPack
+INV10 Uni-Translator
+INV10 Medkit/30
+
+TRESTRICT DESERT
+
+COMBATPIC SUZALLE
+TYPE 4
+TALKTO 110
+
+KILLHIM The inhuman speed and grace of the creature astounded you.  But it
+KILLHIM failed to overcome your training and skill.  As you begin rifling
+KILLHIM through the serpine's gear you take care to avoid the chunk of
+KILLHIM flesh in its backpack.  You have a suspicion it might be all to
+KILLHIM familiar.
+
+;----------------------------------------------------------------------------
+
+NAME Steel Widow
+
+DESC You roll to the ground as you notice a familiar shadow.  A Spider
+DESC Droid?  Here?  The spot you were in seconds before is hit by the
+DESC raw power of a pulse weapon.  PULSE??  In the hands of an enemy?
+DESC You stare in growing shock at a metal monstrosity painted black.
+DESC Four times taller then a spider droid, and bearing the insignia of
+DESC the black widows, the spider-thing prepares to fire another volley
+DESC of death.  A widowlance protrudes from its head like the horn of
+DESC some mythological beast.
+
+HITPTS 271
+STR 71
+DEX 71
+AGL 71
+EXP 21000
+MONEY 21000
+
+MINDIST 120
+MAXDIST 150
+
+WEAPON1 WidowBlade
+WEAPON2 Pulse Rifle
+ARMOR Widow Armor
+INV WidowPack
+INV Trivex Pack
+INV25 ROM: LR-Scan
+
+TYPE 4
+COMBATPIC STEELWID
+
+KILLHIM You fall back as a violent electrical shock arcs from the shell
+KILLHIM of the thing and strikes you.  Thrown to your back you watch
+KILLHIM the Steel Widow rattle to a halt.  Warily examining it you find
+KILLHIM evidence of Draku engineering. But more chilling, an equal part
+KILLHIM of the technology seems familiar as that of the free cities, in
+KILLHIM such new condition that it is doubtful it was salvaged from
+KILLHIM battle.  This can only mean that some of your fellow soldiers
+KILLHIM must be selling equipment and weapons to the foes. Unthinkable.
+;----------------------------------------------------------------------------
+
+NAME Turncoat Soldier
+
+DESC Rounding the bend you come face to face with a fellow soldier. A gut
+DESC feeling tells you not to let your guard down.  Sure enough, he aims
+DESC the barrel of his pulse rifle at you. This must be one of the scum
+DESC that have been sneaking high powered weapons to the opposition.
+DESC He smirks at your hateful glare, "I'm sorry, but they were willing
+DESC to pay me more for one weapon then I could have ever earned as a
+DESC honest soldier.  And you wouldn't believe the amount I'll get for
+DESC your corpse."
+
+HITPTS 280
+STR 71
+DEX 71
+AGL 71
+EXP 21000
+MONEY 21000
+
+MINDIST 120
+MAXDIST 150
+
+WEAPON1 Neutron Sabre
+WEAPON2 Pulse Rifle
+ARMOR Widow Armor
+INV Trivex Pack
+INV Neutron Pack
+INV10 Medkit/100
+INV10 Rations/10
+INV10 Dumb Mine
+INV10 GSRZ Rations/25
+INV10 Smart Mine
+INV10 Zilpox Medline
+INV5 Vortex Cell
+
+TYPE 4
+
+KILLHIM A wave of satisfaction passes over you as you watch the turncoat
+KILLHIM fall to the ground.  You make sure to give his corpse a careful
+KILLHIM search: after all the trouble killing him you don't want his
+KILLHIM goods to fall into enemy hands anyway.  But as you notice the
+KILLHIM the large amount of cash on him, you know that he is most likely
+KILLHIM not the only soldier to sell out.
+;----------------------------------------------------------------------------
+
+NAME Cabal Warrior
+
+DESC You hear an odd sound coming from around some bushes and decide to
+DESC investigate. You notice a green scaley body hunched over working on
+DESC some communications gear. From what you know of the wasteland, this
+DESC alien being can only be one thing... One of Xeboc's cabal warriors.
+DESC Genetically engineered and selectively breeded to be the perfect
+DESC warrior, they are a most dangerous foe.
+
+HITPTS 292
+STR 72
+DEX 72
+AGL 72
+EXP 22000
+MONEY 22000
+
+MINDIST 120
+MAXDIST 150
+
+WEAPON1 WidowBlade
+WEAPON2 WidowBlaster
+ARMOR Widow Armor
+INV WidowPack
+INV WidowPack
+INV10 Medkit/30
+INV10 Medkit/100
+INV10 Rations/10
+INV10 Warper
+INV10 ROM: EM-Warp
+
+TYPE 4
+TALKTO 104
+COMBATPIC CABAL
+
+KILLHIM As you pear over the body of the slain cabal warrior, you notice
+KILLHIM that he is armed with an odd array of equipment -- the same type
+KILLHIM of weapons that are useed by the Black Widows. You wonder, did this
+KILLHIM soldier come across these weapons by accident? ... Or is Xeboc
+KILLHIM in league with the Black Widows?
+;-----------------------------------------------------------------------------
+
+NAME Curate of Loki
+
+DESC A blur of dark red passes before your eyes.  Nearly giving yourself
+DESC whiplash in the process you follow it.  Standing on a ridge you see a man
+DESC dressed in red and black with an extremely haughty expression.  "Woe unto
+DESC you oh blasphemer," says the man, "Woe unto you for you have rejected Chaos
+DESC to long.  You have been chosen as an example of how Order falls before the
+DESC holy might of the Clergy of Loki.  You have been chosen just as he who once
+DESC bore these weapons."  He indicates the neutron sabre at his side.  Then
+DESC with a flourish he produces a Pulse Bazooka!!  Suddenly he lifts into the
+DESC air with grace no bird could ever compare to and takes aim.
+
+HITPTS 295
+STR 73
+DEX 73
+AGL 73
+EXP 23000
+MONEY 23000
+
+MINDIST 120
+MAXDIST 150
+
+WEAPON1 WidowBlade
+WEAPON2 Pulse Bazooka
+ARMOR Widow Armor
+INV WidowPack
+INV Neutron Pack
+INV20 Laptop
+INV10 ROM: Appraise
+INV10 Rations/10
+
+TYPE 4
+COMBATPIC CURATE
+
+KILLHIM "Woe unto who?"  You ask the blank face of the corpse that lies before
+KILLHIM you.  With a horrible tearing sound some strange metal disks rip from
+KILLHIM the lifeless husk.  You watch them float in the air, then explode into
+KILLHIM tiny fragments.  The body does likewise.  A fitting end to a follower
+KILLHIM of Chaos you decide: to explode into random fragments.
+;----------------------------------------------------------------------------
+
+NAME Baby Jenks
+
+DESC You see a girl approaching, who looks like she must be in her early
+DESC teens. You wonder what she's doing all the way out in Zone 5. Then
+DESC you catch a glimpse of the Fang Gang logo on her t-shirt. This must
+DESC be the girl that The Vampire in Death Warrior HQ was mentioning.
+DESC Unfortunately for you, she doesn't seem as friendly as The Vampire
+DESC was!
+
+HITPTS 305
+STR 74
+DEX 74
+AGL 74
+EXP 23500
+MONEY 23500
+
+MINDIST 120
+MAXDIST 150
+
+WEAPON1 WidowBlade
+WEAPON2 WidowBlaster
+ARMOR Widow Armor
+INV WidowPack
+INV Trivex Pack
+INV25 Smart Mine
+INV10 Ghetto Blaster
+
+TYPE 4
+TALKTO 109
+
+SEX FEMALE
+
+KILLHIM Your last attack knocks Baby Jenks to the ground, where she lies
+KILLHIM unconcious. You're about to make one last attack and end her
+KILLHIM life once and for all when her EMWARP program activates itself!
+KILLHIM You wish these Fang Gang Members would stop doing that! You're
+KILLHIM getting annoyed....
+;----------------------------------------------------------------------------
+
+NAME Fang Gang Elder
+
+DESC From a distance you see a white shining figure in torn jeans and a
+DESC black leather jacket. As he comes closer, you realise his skin
+DESC looks almost like marble. He must be one of the higher-ranking
+DESC vampires of the Fang Gang. He doesn't look like he wants to be nice
+DESC to you either!
+
+HITPTS 308
+STR 74
+DEX 74
+AGL 74
+EXP 23500
+MONEY 23500
+
+MINDIST 120
+MAXDIST 150
+
+WEAPON1 WidowBlade
+WEAPON2 Pulse Rifle
+ARMOR Widow Armor
+INV WidowPack
+INV Trivex Pack
+INV25 Smart Mine
+INV25 Dumb Mine
+INV10 Vortex Cell
+
+TYPE 4
+COMBATPIC FANGELDR
+
+KILLHIM Like the Fang Gang Warriors back in Zone 4, just when you think
+KILLHIM you've killed him, his EMWARP program comes to the rescue,
+KILLHIM taking him (but not his equipment) to safety. Still, at least
+KILLHIM you got SOMETHING out of it...
+
+
+;----------------------------------------------------------------------------
+Level 6 monsters start
+;----------------------------------------------------------------------------
+
+NAME Shifter
+
+DESC You always thought that the rumors of a fellow soldier who had been
+DESC mutated by combined exposure to the effects of warpers, phase armor, and
+DESC high intensity radiation were just that, rumors.  But as you watched the
+DESC person materialize on the bluff ahead, then teleport to a succession of
+DESC nearby spots, all without touching the warper at his belt, you realize
+DESC that there is truth behind the stories.  Instinct makes you duck as his
+DESC fire sabre stabs at you from behind.  You turn to see him reform some
+DESC sixty feet away, aiming something large at you.
+
+HITPTS 315
+STR 78
+DEX 78
+AGL 78
+EXP 28000
+MONEY 28000
+
+MINDIST 150
+MAXDIST 180
+
+WEAPON1 Fire Sabre
+WEAPON2 Xenon's Surprise
+ARMOR Phase Armor
+INV Neutron Pack
+INV Trivex Pack
+INV Warper
+INV5 Laptop
+INV5 ROM: EM-Warp
+
+LANDWATER
+
+COMBATPIC SHIFTER
+TYPE 9
+
+KILLHIM As he crumbles under your onslaught, you see his brow knit in
+KILLHIM intense concentration.  As he fades from sight, you see him mouth
+KILLHIM the words, "This will not be our last battle."  While his escape
+KILLHIM annoys you, apparently he was too hurt to take all his equipment
+KILLHIM with him, so your victory wasn't entirely without reward.
+
+;--------------------------------------------------------------------------
+
+NAME Chaos Knight
+
+DESC "Thou art a thorn in the side of Chaos.  Prepare thyself to be plucked
+DESC most painfully."  Head to toe, your newest opponent is encased in heavy
+DESC steel painted red and black.  He is obviously a member of the Loki, but
+DESC doesn't seem to be interested in flying.  His arms whir softly as he
+DESC brings a massive integrated cannon to bear.
+
+HITPTS 327
+STR 79
+DEX 79
+AGL 79
+EXP 29000
+MONEY 29000
+
+MINDIST 140
+MAXDIST 180
+
+WEAPON1 Fire Sabre
+WEAPON2 TachyonBlaster
+ARMOR Phase Armor
+INV Neutron Pack
+INV Std Medline
+
+NOSELL
+NOSURR
+
+DISINT 75
+
+TYPE 4
+COMBATPIC CHAOSKNT
+
+KILLHIM The Chaos Knight falls backwards into the sand.  The gaping wounds
+KILLHIM you inflicted provide a fine view of his internal workings. Though
+KILLHIM he fought with every bit of the skill and thought of a human, you
+KILLHIM can find only robotic components.  As the self-destruct mechanism
+KILLHIM kicks in, you wonder at the advances in artificial intelligence
+KILLHIM required for such complex thinking.  Only the Puritron CPU is said
+KILLHIM to utilize such awesome technology.
+
+;----------------------------------------------------------------------------
+
+NAME Nick's Nightmare
+
+DESC There's a legend which says there was once a mighty warrior named Nick who
+DESC once had a nightmare about a mighty beast lurking in the wasteland. The
+DESC beast of his dream came to life and destroyed him. Until now, you've
+DESC regarded it a nothing more than a tale told by Sacre Base recruits. But,
+DESC with such a supernatural beast standing before you, you begin to wonder
+DESC if the legends actually had any merit.
+
+HITPTS 320
+STR 80
+DEX 80
+AGL 80
+EXP 29000
+MONEY 29000
+
+MINDIST 150
+MAXDIST 180
+
+WEAPON1 LightSaber
+WEAPON2 DreamBlaster
+ARMOR MercArmor
+
+TYPE 4
+COMBATPIC NGHTMARE
+
+KILLHIM One final blow and you have sent Nick's Nightmare back into the
+KILLHIM world of the supernatural.
+;----------------------------------------------------------------------------
+
+NAME Xenon's Vengence
+
+DESC One of the old stories that was told by the campfires in your recruit days
+DESC was the tragedy of Xenon and Paladin. Paladin would venture out and capture
+DESC all of Xenon's fortress's. Xenon exacted his revenge on Paladin by making
+DESC a deal with the evil Draku Warriors to create a beast sent to destroy
+DESC Paladin. The beast succeeded. But, the beast was so fierce, so powerful,
+DESC that it turned on Xenon himself and destroyed him. Such is the story
+DESC of Xenon and Paladin.
+
+HITPTS 325
+STR 81
+DEX 81
+AGL 81
+EXP 30000
+MONEY 30000
+
+MINDIST 150
+MAXDIST 180
+
+WEAPON1 LightSaber
+WEAPON2 Plasma Ripper
+ARMOR MercArmor
+INV Power Pack
+
+COMBATPIC VENGENCE
+TYPE 4
+
+KILLHIM As you finish off the evil creature, you wonder what else lurks out
+KILLHIM here in zone six....
+;----------------------------------------------------------------------------
+
+NAME High Priest of Loki
+
+DESC For a moment you glance at the sky, and notice that a dark cloud has come
+DESC lower then you would expect one to.  For just a second you glimpse a steel
+DESC structure rising from its top.  Then it rises upwards again, leaving behind
+DESC a humanoid figure that hurtles through the air towards you with a sound
+DESC that makes your ear ache.  Screeching to a halt in the air above you is a
+DESC being dressed in red and black.  As he aims his tachyon blaster at you and
+DESC pulls his sabre from its scabbard, you know that you face one who has
+DESC reached the highest pinnacle in the Clergy of Chaos: A High Priest of Loki.
+
+HITPTS 338
+STR 81
+DEX 82
+AGL 81
+EXP 31000
+MONEY 31000
+
+MINDIST 150
+MAXDIST 180
+
+WEAPON1 LightSaber
+WEAPON2 TachyonBlaster
+ARMOR Phase Armor
+INV Chaos Medallion
+INV50 Laptop
+INV5 ROM: AutoNav
+INV5 ROM: Diet
+INV10 Warper
+
+TYPE 4
+COMBATPIC LOKIHIGH
+
+KILLHIM For a time the corpse of the high priest hovers in the air.  Then
+KILLHIM the implants that gave the being flight unexpectedly explode,
+KILLHIM reducing your foe to a lingering mist as you dive to the ground for
+KILLHIM cover.  You know that his fellows will never forgive you for this
+KILLHIM outrage, and can't help but watch the sky warily as you search the
+KILLHIM ground for any debris of note.
+;---------------------------------------------------------------------------
+
+NAME Xeboc Destructor
+
+DESC "You must die.  You cannot oppose Xeboc The Mighty."  As you hear
+DESC this, you whirl around and encounter one of the most massive
+DESC machines you have ever yet seen in the wasteland!
+
+HITPTS 350
+STR 92
+DEX 82
+AGL 22
+EXP 32000
+MONEY 32000
+
+MINDIST 150
+MAXDIST 180
+
+WEAPON1 A-Mk.II
+WEAPON2 TachyonBlaster
+ARMOR Phase Armor
+INV10 Warper
+INV10 Medkit/100
+
+TYPE 4
+COMBATPIC DESTRUCT
+
+KILLHIM As the massive machine explodes, you're thrown a few hundred
+KILLHIM feet back.  You wonder if there's anything worse than the Xeboc
+KILLHIM Destructor out there?
+;---------------------------------------------------------------------------
+
+NAME Xanth
+
+DESC During the initial landing of the Cabal, a large portion of their
+DESC hunting beasts were destroyed by an undiscovered earthian plague.  The
+DESC Cabal, who take pride in their hunting beasts, brought the few
+DESC remaining to the Drakus.  Knowing the excellent skill of the Drakus,
+DESC the Cabal insisted that the Drakus enhance the creatures previous
+DESC abilities.  This is how the Xanth evolved.  That is also why they are
+DESC now walking on four legs and using the other two for weapons.
+
+HITPTS 330
+STR 83
+DEX 83
+AGL 83
+EXP 33000
+MONEY 33000
+
+MINDIST 150
+MAXDIST 180
+
+WEAPON1 A-Mk.II
+WEAPON2 TachyonBlaster
+ARMOR Phase Armor
+INV10 EnviroBlur
+INV10 Medkit/100
+INV10 Warper
+
+LANDWATER
+
+COMBATPIC XANTH
+TYPE 4
+
+KILLHIM The Xanth falls to the ground.  You are shocked to realize that
+KILLHIM the Xanth is more heavily armed than their masters.  The Cabal's
+KILLHIM admiration for their beasts is terrifying.  What kind of
+KILLHIM retribution can you expect from the Cabal?
+;---------------------------------------------------------------------------
+
+NAME Cabal Commander
+
+DESC The rank of commander is one of the most prestigious positions in the
+DESC dreaded cabal military and this guy looks as if he really deserves
+DESC it. Strong well defined muscles ripple under the green scaley skin. Its
+DESC approach towards you is well thought out.  Quick eyes scan the terrain
+DESC looking for all the possible ambush areas.  With a gurgle that you
+DESC believe is a laugh, the Cabal Commander moves in for the kill.
+
+HITPTS 350
+STR 85
+DEX 85
+AGL 85
+EXP 34000
+MONEY 34000
+
+MINDIST 150
+MAXDIST 180
+
+WEAPON1 A-Mk.II
+WEAPON2 TachyonBlaster
+ARMOR Phase Armor
+INV10 EnviroBlur
+INV10 Medkit/100
+INV10 Warper
+
+TYPE 4
+COMBATPIC CABALCMN
+
+KILLHIM The Cabal Commander's last action was trying to reach a small
+KILLHIM device implanted in his shoulder. Apparently, he doesn't have
+KILLHIM the strength to continue.  Before he falls completely into
+KILLHIM death's grasp, he spits on your boot.  The faint gurgling comes
+KILLHIM again, only to fade into silence.
+;---------------------------------------------------------------------------
+
+NAME Xeboc Guardian
+
+DESC You notice something blurry rising out of the ground.  It's too
+DESC hard to make out what it is exactly.  Suddendly it drops its
+DESC enviro-blurrer and you see a Xeboc Guardian!
+
+HITPTS 365
+STR 86
+DEX 86
+AGL 86
+EXP 35000
+MONEY 35000
+
+MINDIST 150
+MAXDIST 180
+
+WEAPON1 A-Mk.II
+WEAPON2 TachyonBlaster
+ARMOR Phase Armor
+INV EnviroBlur
+INV10 Warper
+INV10 Medkit/100
+
+TYPE 4
+COMBATPIC XEBOCGRD
+
+KILLHIM Xeboc Guardian was tough!  When there's one, there's MORE! As
+KILLHIM you search the body, you see some kind of Enviroment-Blurrer.
+KILLHIM So that's how they hide...
+
+;---------------------------------------------------------------------------
+
+NAME Cabal Elite
+
+DESC A slight discoloration along the tree line is your first clue. As his
+DESC EnviroBlur disengages, the figure sharpens into that of a member of the
+DESC Cabal Elite, Xeboc's personal guard. The Cabal Elite has the "privelege"
+DESC of the best training, the best armor, and the best weapons of the
+DESC Cabal army. He lets out a menacing laugh as he reaches for his SLM-9000
+DESC PulseRay, the preferred weapon of the Cabal Elite.
+
+
+HITPTS 365
+STR 90
+DEX 90
+AGL 90
+EXP 45000
+MONEY 45000
+
+MINDIST 150
+MAXDIST 180
+
+WEAPON1 A-Mk.II
+WEAPON2 SLM-9000 PulseRay
+ARMOR Phase Armor
+INV EnviroBlur
+INV10 Medkit/100
+
+TYPE 4
+
+KILLHIM Knowing that he has lost the battle, the mighty Cabal Elite warrior
+KILLHIM turns his A-MK.II towards his chest and plummets to the ground,
+KILLHIM forcing the weapon through his heart. Cabal Elite's will not permit
+KILLHIM their advesary the honor of the kill.
+
+

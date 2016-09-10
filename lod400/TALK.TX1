@@ -1,0 +1,2369 @@
+;Dialog file
+;
+;NOTE: Changes to this file will not take effect until you have used
+;      COMPILE.EXE to compile this file into monster.def.
+;
+;This file is currently only used for the tavern dialog, but will soon include
+;other dialogs (talking to friendly monsters, etc)
+;
+;###   Person          Location
+;---   -------------   --------
+; 1    Defs Sacre      Sacre Base
+; 2    Jeffrey         Sacre Base
+; 3    Troy Hadley     Sacre Base
+; 4    Mayor Eastwood  Freedom City
+; 5    Joe Farmer      Freedom City
+; 6    Whiz            Freedom City
+; 7    Trader Rick     Freedom City
+; 8    Mean Max        Freedom City
+; 9    Capt. Targon    Sacre Base
+;10    The Vampire     Death Warrior HQ
+;11    Nish            Black Widow HQ
+;12    Patti           Death Warrior HQ
+;13    Zilggnokk       Death Warrior HQ
+;14    Traznor         Black Widow HQ
+;15    Widow Priestess Black Widow HQ
+;16    Cassandra       Blood Lust
+;17    Aretas          Blood Lust
+;18    F. General Yak  Blood Lust
+;19    Freezemup       Frost Bite
+;20    Dallas          Hospital
+;21    Stone           Hospital
+;
+;100   Valley Girl     In the wastelands
+;101   Trader
+;102   Death Warrior
+;103   Bart
+;104   Cabal Warrior
+;105   Spider Droid
+;106   Priest of Loki
+;107   Distraught Sysop
+;108   Sapphire
+;109   Baby Jenks
+;110   Serpine Suzalle
+;111   Ronin #1 (Hank)
+;
+;200   T.A.D.S.U.      Pylon
+;201   Xeboc           Pylon
+;202   Aurora          Crashed Ship
+;203   Tranlius        Nuclear Silo
+;204   "Ed"            Ed's Exquisite Equipment Emporium
+;205   Loki-before
+;206   Loki-after
+;207   Serpine Chief
+;
+;(300 level dialogs are for HUTs)
+;
+;301   ObiWan          Obiwan's Hut
+;
+;# Person's name
+;! Intro talk
+;* Keyword
+;+ text for keyword
+;% designates special quest bonus
+;- don't know string
+;@ goodbye string
+
+:1
+#Defs Sacre
+!Hello there. Name's Defs Sacre. I used to be a warrior, but now I've
+!retired and serve as bartender here at the base. I know lots about
+!monsters, armor, weapons, elementals, etc. What you want to know about?
+*BASE
++Ah yes, this base.  It's a marvel of techology.  Modelled off the Bio-
++Sphere Project that they ran near the end of century.  The dome keeps
++the Radiation out, and the fauna provides for 70% of the oxygen.
+*NAME
++Name's Defs Sacre, like I said.
+*JOB
++I'm just bartender here. I used to be a wasteland warrior, but I've long
++since retired. I know about lots of things though.
+*WARRIOR
++I used to be quite a warrior before I retired, I am also a bit of an
++weaponsmith. In fact, it was I and Ed who refitted Terra Labs.
+*TERRA
++Terra Labs was a fairly advanced pre-war weapons factory. It was abandoned
++when I and my companions located it, but as soon as we had time to explore
++it, we refitted the machinery to craft many of the weapons you see around
++the base - The conventional weapons and etc. Troy and I moved most of the
++factory equipment here, to Sacre Base, before the accident.
+*ACCIDENT
++A few of our 'techs were working on matter warping technology at Terra Labs.
++The last thing I saw was them running out the entrance, and then Terra Labs
++vanished!
+*VANISHED
++Poof! It vanished into thin air. Nobody knows what happened. A few patrols
++said they saw it in zone two, but we investigated and found nothing. Then
++one of our Sergeants claimed to have encountered it in zone 5, but again,
++nothing. It's a real mystery.
+*DEATH
++Ah yes, the Death Warriors. They're a nasty bunch. Rumor has it they have
++down on them main highway to the south. I've known a couple of guys who tried
++to get inside, but they never returned. Seems to me the only way to get in
++would be to find some way to trick them into thinking you were one of them.
+*WEAPON
++I know lots about weapons. What do you want to know about? Short range or
++long range weapons? I also have used some grenades in my time.
+*SHORT
++There are lots of short range weapons. My favorite is the Adamantium Sword.
++There is a couple different Adamantium weapons They don't sell them around
++here - I found it out in zone 4 lying in the sand.  Supposedly, some of
++the Ronin out there use them.
+*LONG
++I prefer to use a gravblaster. The ammo for em is damn expensive, but they
++really trash whoever you're fighting.
+*GRENADE
++Grenades are one of my favorites. Since the explosion is so large, you have
++a much better chance of hitting something than you have with a ranged weapon.
++Back in my fightin' days, I used to carry around a grenade pack or two.
++Run into somnething nasty like a terminator, you can throw a grenade at it
++and get a guarenteed hit before the hand-to-hand starts. Real nice.
+*ARMOR
++There are lot's of enhanced armor types in the more distant areas of the
++wasteland. I picked up something pretty cool once that the techs here called
++"Energy armor". Got it off a dead Death Warrior Leader.  A good choice for
++you young recruits is the Riot gear.
+*ELEMENTALS
++Nobody really understands the elementals. Rumor has it that they are the
++spirits of lost souls that have been fused into a radioactive energy form.
++Suffering terribly and full of hatred, they lash out at anything that nears
++them. They come in several varieties: Wind, Fire, Water, Earth, Ice, and
++Storms. I was "visited" by one just before I retired.
+*VISITED
++[Sacre reaches for his foot and abruptly twists it at a 90 degree angle. An
++artificial polyurethane "skin" retracts to reveal a bio-mechanical implant]
++My souvenier of an encounter with a fire elemental... Troy Hadley had to
++replace 35% of my body with artificial implants so I could servive.
++Unfortunately, that was the end of my combat career. You don't mess with
++these elementals.
+*MESS
++If you see one, run. Don't even take a long range shot at it. Just get out
++of there. And get out fast. Three others who were with me that day didn't
++servive. Captain Targon was still in good enough condition to drag me off
++or I would've bought it too...
+*WATER
++These dwell primarilly in rivers and lakes.
+*FIRE
++Fire elementals live in the lava rivers to the far southeast of here. You
++shouldn't see one for a long time.
+*EARTH
++Earth elementals are the most dangerous because of their proximity. They
++live within the low mountains.
+*AIR
++The domain of the Air Elemental is that of the barren wastelands.
+*ICE
++Ice elementals may be found in the frozen regions.
+*STORM
++Not technically an elemental, these "storms" persist in the outer zones. Rad
++Tornados and Nuke Twisters are the most popular. These are many times more
++deadly than an elemental.
+*MONSTER
++The wasteland is populated by many different creatures. Most of the ones
++around the base here are pretty wimpy and some are even unarmed. But once you
++go farther out, things get real nasty real quick. What monster do you want to
++know about?
+*RAD HOUND
++Come on man, you should be able to take a rad hound easy. They're just a
++beast - no real intelligence to them whatsoever.
+*RAT
++The Giant Rat? Another example of what the rads can do to things. I tell
++you, I always carry around a medkit to reduce the effects of the rads on
++me.
+*REPTILE
++We got em all out here in the wasteland - Giant Rats, Giant Reptiles, Giant
++Vultures, etc. They're just a freak of nature - caused by too much rads.
+*ANT
++Ant Men? They are a strange lot. Kind of a cross between an ant and a man.
++Nobody knows how it happened - probably more radiation caused mutation.
+*VULTURE
++Nasty critter. It's flying capabilities make it hard to hit. The claws on
++that thing can tear right through a guy's armor. Nasty....
+*MUTANT
++We tell people not to venture out into the wasteland unprotected, but some
++just don't listen. It's sad, but there's not much we can do about it. Once
++the rads get to em, they are completely changed - barely even human
++anymore.
+*VALLEY
++Bunch of em came over from california before the earthquake. They're not hard
++to beat, but they are a neusence. Most of em used to be cheerleaders. Pretty
++nice looking too if you don't mind the green mutant skin.
+*BANDIT
++The wasteland is full of bandits. They're pretty weak - usually only armed
++with a lower end hand weapon and light armor. Not much of a challenge for
++an experienced adventurer.
+*INSANE
++Yeah, it's pretty sad - some of our guys just can take the pressure out there.
++They go completely mad. Nasty thing is, they have all of our training and
++equipment on them. Make's em tough to fight.
+*DROID
++There are many different types of droids around out there. Most of
++them are simple machines, but some like the terminators are cyborgs. Most
++droids using some kind of iron or steel plating armor. Stuff's useless for
++me and you though - too heavy.
+*TERMINATOR
++The terminators are pretty nasty. Most people think they're machines with
++Human brains in them.  Nope, they're all circuitry. The terminator's real
++strength is it's armor - It's got G-4 steel plating. Stuff's too heavy
++for humans to use, but most places will buy it up for a decent price -
++it's hard to find good quality steel these days.
+*WIDOW
++The Black Widows? I've heard some talk of a new gang out in the mountains
++called the black widows. They're supposedly pretty nasty. Theyve got their
++own enhanced weapons and armor - WidowLance, Widow Armor, etc. Their
++weapons use some kind of enhanced energy pack called a "WidowPack". Don't
++know of any stores that sell the WidowPacks - If you want to use any widow
++weapons, you'll have to locate your own ammo.
+*RONIN
++Rumor has it there are a group of fighters out there wandering from zone 2
++to zone 6, according to some more experienced recruits they are heavily
++armed and Highly skilled. Rumor also is...well, nevermind it's just a
++Rumor...
+*SCAVENGER
++They scour the wasteland for valuables, and are typically armed to
++the teeth.  I've heard that the most dangerous ones are offered
++membership in the Traders, one of the wasteland gangs.
+*TRIBBLE
++Those things sure are pests.  And they used to be so cute.
+*TIGER
++Gamma tigers?  Don't let the rep scare you, they're just overgrown
++house cats.  They play with your corpse like their cousins do with
++mice, which disturbs a lot of otherwise brave recruits.
+*WILLOW
++We really need the puritron: even the shrubs are getting pissy.
+*LOKI
++They can fly. They're some sort of chaos cult, and have been causing
++other wasteland gangs like the Widows a lot of headaches.
+*SERPINE
++There are some rumors of snake-men deep in the wasteland.  I'd watch
++out, they say the creatures eat anything: even their own kind.
+*GANG
++The wasteland is a dangerous place, even for our enemies, so many
++band together for safety.  Maybe one day we can turn this to our
++advantage and unite all the groups into one great body, but for now
++they're all caught up in petty differences and territorial disputes.
++There are at least eight of them vying for supremacy, so I'd say its
++a good time for recruits to form teams and even the odds a bit.
+*SYSOP
++They were driven insane by long-winded 'users,' whatever they are.
+*AURORA
++I see you've talked to Max.  Yeah, we went in the crashed ship, one
++of the most amazing things I've ever seen, until we triggered the
++Security System.  Ask Hadley about Ronin Inc.
+*MEDKIT
++Ask Hadley about that....
+-Please ask me about something I know about.
+@Later, dude. Hope to see you again in one piece.
+
+:2
+#Jeffrey
+!Hi there! My names Jeffrey. Just got back from the wasteland this morning.
+!I took out three terminators with my bare hands.... And that was while I
+!was blindfolded!!! So, whats up?
+*JOB
++I'm a trainee here. But actually, I am the best warrior here at the base. It's
++a secret, ya know...
+*NAME
++They call me Jeffrey. Don't know my last name - my parents were killed by
++death commandos when I was very young. I got my revenge though - killed fifty
++of them just last week.
+*BLINDFOLDED
++Yeah, I was blindfolded. Wish someone had been there to see it though. The
++guys here at Sacre Base don't believe me. Next time, I'll tie a hand behind
++my back as well. Or maybe two hands... Terminators are easy to kill. At least
++for an ace warrior like me.
+*TERMINATOR
++The Terminator is a pretty wimpy machine. At least for me... It might be a
++bit more difficult for someone less skilled like yourself.
+*YOURSELF
++You really need to practice some more. I would try to train you myself,
++but I am really too busy hunting terminators. Perhaps someone less
++experienced than myself could help you. Defs Sacre, perhaps. I tought him
++everything I know.
+*RECRUIT
++I'm not a recruit - they just think I am. Beaurocratic stuff, you know. I'm
++really an ace warrior. Never get any credit though.
+*BART
++Who told you that? Someone is spreading rumors around about me. Of course
++I was not beat up by a Bart. I mean, come on, be serious, I hunt Terminators
++for a living!
+-Oh, who cares about that. I don't deal with such wimpy things.
+@Good. You've delayed me long enough. I got to go back to the wasteland and
+@kill odd a cyclops or two.
+
+:3
+#Hadley
+!Names Hadley, Troy Hadley. You wouldn't have any steaks, would you? ... Oh
+!never mind. What you want, dude?
+*JOB
++I'm a tech for the store room here at the base - My main specialty is
++devices and accessories. Need to know anything about a particular devices?
+*NAME
++Troy Hadley. Can't you hear?
+*DEVICE
++I did some work on the LRScan and Scanner for example. They're pretty useful
++when you're stuck in a bind. I also did some work on the GS-224 Laptop. Nice
++machine.
+*LRSCAN
++The LRSCAN locks into one of them spy satellites that was abandoned after
++the war. It can generate you a 9 by 9 map of your current grid location. I
++hear they work good if you get lost. There is also a LRScan ROM/Adapter
++that will give a GS-224 laptop lrscan capability.
+*SCANNER
++Scanners? Designed the prototype myself. It sends out a scanning beam and
++can give you a bearing and distance to nearby objects - like holes and
++towns and such. Nice for exploring unfamiliar territory. There is also
++a Scanner ROM/Adapter that will give your GS-224 laptop scanner
++capability.
+*RADIO
++The field radio isn't really a necessity - but if you get stuck in the
++wasteland and want to talk with somebody, it can be quite nice. One day
++ol' Jeffrey called in on his claiming he'd slayed a terminator. We all ran
++out to see and it turned out to be a robotic vacuum cleaner. Damn thing beat
++the hell out of Jeffrey too! We all got a good laugh out of that one.
+*MEDKIT
++I'm not a doctor so I don't know much about them. I know they make the
++medecine out of herbs that they locate out in the wasteland. That's why
++you can sell herbs for so high around here. If a guy could build his own
++medkit producer and gather up some herbs, he might be able to make himself
++a nice business.
+*RATIONS
++Yuck! Those things are disgusting. Made from dead rad hounds and such. But
+
++they're about all we can mass-produce around here. I bet the supply store
++would pay a good price for some good ol' fashioned steaks if you could find
++some.
+*STEAK
++I sure wish I could get my hands on some steaks. These damn troop rations
++taste horrible. I sent word to the manager of the Horticulture center a
++while ago, but nothing came back...
+*HORT
++The horticulture station is somewhere east of here in the freedom mountains.
++It's to the south of freedom city, just past the pylon. You can't miss it.
++Take the main highway and head east. If you bring me back them steaks the
++manager promised me, there'll be something special in it for you....
+*ROPE
++Rope? Just somethin' the supply station tries to sell you. Has no real
++purpose whatsoever.
+*LAPTOP
++The Laptop is one of my favorites. It's got a 80686JX processor equipped with
++an 80 meg ram drive and a ROM cartidge adapter. The ROM cartidge adapter is
++really nice. Lets you upload any ROM apps that you want into the laptop.
+*ROM
++The computer store in the supply station sells a variety of ROM apps. I've
++heard you can find even more out in the wasteland. Any particular ROM that
++you are interested in?
+*NOTES
++The notes ROM is pretty cool. We designed it for adventurers like Defs Sacre
++who have a habit of forgetting things. It will automatically record any
++pylons, towns, forts, etc that you pass. You can then read it any time you
++want.
+*RANKINGS
++The rankings ROM uses the laptop's built in RF Modem to call up Sacre Base
++and grab the player rankings for you.
+*VIEWLOG
++The viewlog ROM uses the laptop's built in RF Modem. It calls up Sacre Base
++and grabs the log of recent activity for you to view.
+*TRANSFER
++The transfer program uses the laptop's fiber optic link. You attach the link
++to another laptop and you can grab any software you want off of it. Nice if
++you find somebody else's laptop and want to grab some apps off of it.
+*AUTONAV
++Autonav is something we are working on to automatically navigate you to a
++certain coordinate on the wasteland. It's currently in the experimental
++stage.
+*FORTLIST
++The fortlist program will display a listing of any fortresses you own. It
++displays their coords, name, owner, products for sale/buy, objects in the
++store room, and energy and med doses on hand. In addition to the bases that
++you own, it will list any bases listed with the trading union.
+*CSTATS
++The CSTATS (stands for combat-stats) program will tell you your hit/miss
++chances against various monsters. It also has some very handy functions to
++scan weapons and determine their features. It'll tell you what a weapon's
++basic damage is, how much your strength multiplier is, etc. It can be used
++to scan your inventory to find out which items are better than others.
+*WHIZ
++You've been speaking with Whiz? Good guy. I sent him out on assignment
++a while ago to investigate some software hacks.
+*SOFTWARE
++Whiz knows a bit more than me. He's on assignment in freedom city if you
++wish to speak with him.
+*INC
++It looks like the secret is out. I supposed you want to know the truth.
+*TRUTH
++Well, This is the whole story, or at least what I know about it. This Ship
++Crashed out in the wasteland out in a large lake. Def Sacre, Max and another
++High ranking recruit went out to investigate.  They were looking through, 
++it when the security system went off.  Def Sacre and Max were lucky to get
++out alive.  They didn't come out empty handed though, they made off with
++a few memory cassettes and a few notebooks.
+*CASS
++Most of the higher end Technology here came out of a book and memory
++cassettes we took out of that crashed ship. Me and Wiz did the de-coding on
++the cassettes.  But we lost all the copys of the files when Terra Labs
++vanished. Talk to Ed about the book, he has the books and most of the files
++at his place. 
+-Dunno about that. Devices are my specialty.
+@Later, dude.
+
+:4
+#Mayor Eastwood
+!Go ahead punk, make my day! Er.. uh.. My Father used to say that. Name's
+!Eastwood. Mayor Eastwood. What do you want?
+*NAME
++The name is Eastwood. Mayor Eastwood. Now don't ask again, punk.
+*JOB
++I'm the mayor of Freedom City.
+*PYLON
++The pylon is just south of here. Kind of a half-way between us and the
++horticulture station. Nobody in here has been able to figure out what the
++pylon is for....
+*FREEDOM CITY
++We established the city a few years ago to provide a defense against the
++scum out there.
+*SCUM
++It's those death warriors who cause most of the trouble. Always tryin' to
++rob anyone who wanders around unprotected. They're a real menace. Come up
++from their headquarters to the south.
+*HORT
++The horticulture center is our pride and joy. It has a protective dome that
++keeps the harmful radiation away from our crops. The center is just a
++little southwest of the city. We sell various food products at a decent
++price.
+-Now look punk! I ought to... Uh.. Sorry... Can't help you there.
+@Alright. But stay out of trouble. We're a peaceful establishment.
+
+
+:5
+#Joe Farmer
+!Hey dude. How's it going. Name's Joe Farmer. I got the name 'cuz I used to
+!work at the horticulture center.
+*Name
++Joe Farmer. At your service.
+*Job
++I cultivated some of the crops down at the horticulture center. Was a pretty
++easy job. I came here to freedom city to become an adventurer!
+*Hort
++The horticulture center? It's a pretty neat place. They grow lots of crops
++there. Also raise some cattle - their stakes are the best meals in the whole
++wasteland. The protective dome over the center keeps the radiation out.
++Thats how they grow the crops.
+*Adven
++Yeah, I want to be an adventurer. I get into fights all the time when I used
++to fish at the lake.  So tommorow I am going out to look for Terra Labs.
+*FISH
++Yeah, I used to fish at the large lake to the East.  But Max told me that I
++Can't fish there anymore since the ship Crashed.
+*SHIP
++Yeah the ship!  Ask Max about it.
+*TERRA
++Whiz knows more about it than I do. Just last week I heard someone mention
++that a Trader had seen it right around here in zone two. I went out looking
++for it, but 'nuthin. That damn Terra Labs really is the strangest thing.
+-I'm just a farmer. I don't know about such things...
+@See you later.
+
+:6
+#Whiz
+!How's it going? They call me Whiz. I'm a computer technician. I'm currently
+!doing a job for Troy Hadley.
+*NAME
++Whiz. I work on computers. That's my job.
+*JOB
++Troy Hadley sent me out here to look for some special "hacked" laptop
++software we heard about. Once I get the information together, I'll be
++heading back to Sacre Base.
+*SOFTWARE
++There are several rumors we have heard about these hacked computer programs.
++We don't know who wrote em, but we're pretty interested. One of them is
++called the "EMWARP" program.
+*EMWARP
++It stands for emergency warp. I'm not supposed to tell people too much
++about this, but Defs Sacre brought a device called a "Warper" into Troy
++one morning. We looked into it. The technology was far out - real far out.
++The device could "teleport" a person to a different location! Anyways,
++getting to the point. The "EMWARP" program will interface the laptop with
++this device. When a person is about to die, the program will evaluate it,
++and activate the warper. I wish I could find one of these roms.
+*FIND
++They are rumored to be located on some very dangerous monsters around
++here. You might be able to find the warper device on them as well as the
++emwarp program. It would come in very handy to a person such as you. Good
++luck.
+*TROY HADLEY
++He's a real cool guy. Invented half of our devices himself. A good
++programmer too. Once I get this some info on these software hacks, I'll
++give the info to him. Maybe he can do something with it.
+*RONIN
++Eh, I see. Few people know the truth.  I mean, why shouldn't we take
++credit for the inventions.  I mean, few really care where the devices
++are coming from.
+*WARPER
++It's rumored that they may have been developed at Terra Labs. In fact, it
++was the last thing they were working on before the great vanishing.
+*VANISHING
++Yep, the whole building... gone. I suspect the warper they were working on
++created such a large warp field that it just blasted Terra Labs into
++oblivion. It gets stranger though....
+*STRANGER
++I was talking to a soldier not two long ago whole claimed to have seen
++Terra Labs in zone 3. Defs Sacre sent a patrol out to investigate, but they
++found nothing. Another soldier told me he'd actually gained entrance to
++Terra Labs, but in zone 5. It just makes no sense to me...
+-Don't know about that....
+@Good luck, friend. Be careful out there.
+
+:7
+#Trader Rick
+!Hello. I'm Trader Rick. What do you want?
+*Name
++Trader Rick. I already told you.
+*JOB
++I used to be a trader. I was captured by some warriors and brought into
++Freedom City where I was rehabilitated.
+*REHAB
++They tought me how evil my ways were.
+*TRADER
++Yes, I am ashamed that I was one of the evil traders. The people here at
++Sacre Base have rehabilitated me. I now try to help adventurers by giving
++them information.
+*INFORM
++I'm sure most of the stuff you already know. Wait... I have something here
++that might help you. Some of my fellow traders knew of the location of
++the entrance to the Deadwood Forest; Where the Black Widow camp is located.
++I never knew the location, but some of the others may have. A word of
++caution though - the Black Widows are tough. You better be damn strong
++before you venture near their camp.
+-I'm sorry, but I cannot help you.
+@Go in peace, my friend.
+
+:8
+#Mean Max
+!And just what the hell do you want? Can't you see I'm busy?
+*Name
++They call me Mean Max. For obvious reasons.
+*Job
++What's it to you? Oh anyhow, I'm an adventurer. I have been all around the
++world. Pulled quite a few missions in my time.... Is there a point to this?
++Do you want something?
+*Mission
++Like the time I drove a fuel truck through hostile country. Now, that was
++a real mess. And the fools filled the damn thing up with sand! Damn near
++got killed defending a truckload of sand!
+*Busy
++Yes, B U S Y. I don't have time to talk to people such as yourself. I got
++my Job to tend to.
+*Adventurer
++Are you going to bother me all day? I'm an adventurer. Can you say
++adventurer? Ad-ven-tur-er. Now if you don't mind, I do have more
++important things to tend to.
+*Important
++Like putting a hole between your eyes if you don't stop bugging me. Why
++don't you go bother Jeffrey? Or defs sacre? They just bum around the
++base all day. But me, I actually get some work done.
+*WORK
++I kill things. Monsters, wasteland gangs, bad guys, OBNOXIOUS
++ADVENTURERS, whatever. Now, please leave me alone.
+*ALONE
++I said, "LEAVE ME ALONE". [He unsheaths a Neutron Blaster and points
++it in your direction]
+*NEUTRON
++Yeah, a Neutron Blaster. Never seen one of these before? Well, your about
++to get a demonstration of what one will do if you don't get outa my face!
+*DEMON
++[Blam! You are momentary blinded. When you regain your senses, you notice
++you have obtained quite a suntan across your face!] That was aimed 25
++degrees left of your face. [You notice a large smoking hole in the wall
++in line with that trajectory] Unless you want to see what one feels like
++head on, you better get out of my space.
+*SPACE
++That did it! [He draws again! As timely as always, Defs Sacre appears and
++calms down Mean Max explaining to him that adventurers these days are
++quite curious and he should be a bit more kindly and spread his knowledge]
+*FUEL
++Yeah, Fuel. You know, gasoline? Look, are you stupid or something? Why
++don't you go out and find out about these things yourself.
+*SHIP
++That was the most insane thing I've ever done. Ed wanted to know what was
++in that damn ship.  The ships internal security came online and fried a
++close buddy of mine, nearly fried me and Def Sacre too.  We grabbed what
++we could and ran out the hatch. I hope I never see that ship the Aurora
++again.
+*AURORA
++Yeah that's the name of the ship. Def Sacre had the presence of mind to
++at least find out what it was called. 
+*GASOLINE
++With the recovery of atomic power technology, the need for fuel has died
++off heavily, but it is still an important commodity. The base will pay a
++hefty fee for any fuel that you can recover. Now if you don't mind, I am
++very busy.
+*WORLD
++At least whats left of it. Far as I can tell, the nukes hit just about
++everywhere. I've had contact with other continents and they're in the
++same mess we're in. Rads in the atmosphere gonna destroy us all if we
++don't get that puritron online.
+*PURITRON
++Yeah, the Puritron. Last I knew, there was a standing order that all base
++adventurers were ORDERED to go out and find it. Now, it looks to me like
++that is a hell of a lot more vital than standing here pestering me.
+-And just what do you mean by that? Get out of my face, punk.
+@'Bout time you got out of my way. I got work to attend to.
+
+:9
+#Captain Targon
+!Hello there soldier, my name's Captain Targon. What can I do for you
+!this fine day?
+*Name
++Captain Targon. I'm one of the officers here at the base.
+*Job
++I do the things that a captain does. Manage troops, coordinate attacks,
++waste bad guys, etc. A really nice job altogether. Lately I've been busy
++trying to figure out what happened to Sergeant Trell though.
+*FINE
++Well, perhaps it's not all that fine of a day. Life's been pretty depressing
++since we lost that Puritron device. My entire job lately seems to be
++working on that project.
+*PURITRON
++It would have really changed things here in the wasteland. With the
++radioactive contaminants cleared out of the atmosphere, life would be almost
++bearable in the wastelands. The mutations would cease and we might be able
++to bring the entire zone back into civilized control.
+*MUTATIONS
++Terrible, terrible thing to happen to a person. Some unknown effect of the
++radiation according to Hadley. Has effects on people like you wouldn't
++believe. You either physically mutate, or you go mentally insane, or a
++combination of both.
+*INSANE
++It's sad. Many of our soldiers have gone quite insane out in the wastelands.
++Once powerful forces of good, they are now our enemies just like everything
++else out there. Perhaps once we got the puritron back, there might be
++something we can do for them.
+*PHYSICAL
++I don't understand it myself. Something to do with DNA mutation. Causes
++you to be transformed into a whole new creature sometimes. Seen any of the
++humaniod mutants out there? Or the Ant-Men? Or the giant rats? All effects
++of mutation.
+*OFFICER
++There's several of us. Defs Sacre actually still holds officer rank even
++though all he does any more is serve drinks here in the tavern. We were
++going to make Sergeant Trell an officer once he came back from his mission,
++but alas, no sign of him.
+*CIVILIZED
++I am sure that the entities of the wasteland would join up to form a
++civilized government if we could just bring some order to things.... Well,
++everyone but the Loki's over course...
+*LOKI
++There's quite a few Loki Priests running about once you get a fair distance
++away from Sacre Base. You see, the Loki's are opposed to order. They prefer
++chaos and anarchy. They're always trying to stir up trouble for no reason
++at all. Heck, I wouldn't be surprised if they took part in stealing the
++puritron for no reason other than just to bother us all.
+*TRELL
++We're getting quite worried about him. I sent him off about three weeks
++ago to investigate some reports of an unusual site out in zone three,
++but his reports stopped right as he reached the site.
+*SITE
++We had a report from an explorer that there is some kind of military
++building out there. Trell reached the site, and radioed in, but his
++communications were cut off before we could get an accurate report.
+*REPORT
++All he said was that "All would be lost if they are not stopped in
++time". We don't know who "they" are or what they are planning on doing,
++but from Trell's tone of voice, it must have been something pretty
++urgent.
+-Sorry, maybe you should try talking to Defs Sacre or Troy Hadley. They're
+-both quite knowledgable.
+@Nice talking to you, soldier - be careful out there.
+
+:10
+#The Vampire
+!Welcome, Warrior. Having a pleasant post-nuclear life?
+*NAME
++My name's Chris Azure, you may have heard of me. Mind you, I'm the only
++vampire who actually hangs around inside Death City. Around here I'm
++known simply as "The Vampire"
+*AGE
++Hmm...I must be approaching my 256th birthday. I know, I don't look a
++day older than 16! That's one advantage of being a vampire.
+*JOB
++I'm a vampire, I don't need a job!
+*WARRIOR
++You killed a Death Leader out there, didn't you? Or did you steal that
++badge? Don't worry, I'm not part of their Death Clan, I'm the leader of the
++Fang Gang.
+*CLAN
++There are quite a number of Wasteland gangs now....you obviously know
++about the Death Warriors, and the Black Widows as well, I presume. But
++there are a few others...
+*OTHERS
++Well, let's see...there's the Draku Warriors, then the respectable Fang
++Gang (of which I'm a high-ranking official). And I suppose you could
++call the Loki religion a 'gang' as well. Oh, and of course, there's the
++Cabal Warriors way out there.
+*DEATH
++There've been a lot of rumours that the Death Warriors were partly
++responsible for the disappearance of the Puritron device, but in fact,
++they're only interested in making a profit out of everyone else's
++misfortune, taking advantage of the current chaos.
+*WIDOW
++The Black Widows are quite a stylish gang, and they have the nicest
++looking weapons too! You may have seen some of the warriors that hang
++around here. Go down south for some real Widows in action! You'll find
++their base down there too! If you happen to go down there, talk to
++Nish. He's sort of their High Priest. You'll probably see the High
++Priestess with him, but she doesn't like to talk to outsiders.
+*DRAKU
++Now THEY may have had something to do with the disappearance of the
++Puritron. Close ties with the Widows too. Heard of Quasar Mountain? I
++think their leader hangs around there...
+*LOKI
++The priests of Loki are mad! Floating priests bent on preaching the
++word of Chaos to the world. I wonder who actually thought up the idea.
+*FANG
++Ah, how should I start? After the Holocaust, the radiation rendered us
++very susceptible to the UV radiation in common wasteland sunlight,
++so now we're stuck having to crawl all over the place! You can't
++really kill us (we're immortal), but most of us carry Em-Warps around
++incase we become too weak to fight. The Em-Warps don't work too well
++though, and we end up leaving our stuff behind for anyone to just pick
++up as they please. Just a little hint, but that doesn't mean I'm
++betraying my own kind. We've even got our own city somewhere.
+*SOMEWHERE
++We've hidden it well. Very well. Can't have the average Sacre Base
++soldier running around out city, now can we. I'll give you a hint - it's
++in a really amazing location.
+*CABAL
++Make sure you have a Uni-Translator if you come across one of these
++guys, they talk in some strange (yet poetic) language. They're Xeboc's
++own warriors, and quite something...
+*XEBOC
++Yeah, he's the guy that's caused this whole chaos, apparently. Never
++actually met him though... A while ago, I saw him appear on one of our
++TV screens blabbing about how he's going to take over the world and everyone
++else is going to die, blah blah blah....
+*CITY
++Our city lies somewhere within a maze of radiation. Talk to Cassandra
++if you manage to find the place...(she's an old friend)
+*SKIN
++I know, it looks like marble. I've always loved it that way.
+*ELIJAH
++He's the biggest joke of the Wastelands! The radiation never did
++anything to him, he was demented from birth!
+*NISH
++You know Nish??!? What kind of cult religion are you involved in??!?
+*IMMORTAL
++Well..Sunlight could possibly kill me, I suppose....mind you, there's
++not much of that around anymore, thanks to the nukes! Still, I don't
++boast about the fact that I'm immortal...not like that Xeboc
++character...
+*NUKES
++Yeah, thanks to them, this dark cloud blocks out most sunlight. I can
++still feel it when I go outside, but indoors, I'm pretty safe really...
+*SUN
++Hmm...I haven't seen the sun for hundreds of years! It's a long time, but
++I don't miss it....
+-I may have been around for 256 years, but that doesn't mean I know
+-EVERYTHING!
+@Well, good luck against those gangs!
+
+:11
+#NISH
+!Welcome...I suppose The Vampire told you about me?
+*VAMPIRE
++So The Vampire mentioned me did he? Is he still hanging around in Death
++Warrior HQ? I don't know what he sees in it. He's involved with the
++leadership of the Fang Gang.
+*FANG
++The Fang Gang are another of the wasteland groups, but if you're
++looking for the puritron parts, they're the LAST ones to turn to...
++They're just out to kill. Of course they take their victims belongings,
++but they're not interested in puritron devices or anything. Rumor has it
++that they have their own city somewhere around here, but I don't
++know where it is.
+*PURITRON
++Did I say Puritron? Sorry, slip of the tongue. Forget I ever mentioned
++it. After all, who cares about such things. My Black Widow Cult is much
++more interesting!
+*WIDOW
++I'm the only male member of the Widows, and I'm only here because they
++need a balance in their rituals. Well at least I get a safe place to
++live, and surrounded by all these good-looking girls too!
+*PRIESTESS
++I prefer the younger girls. The priestess isn't the greatest person in
++the world (don't tell her I said that).
+*LOKI
++Those lunatics just aren't real! I don't know what it is though...Mind
++you, this religion we're involved in down here's a bit crazy too! Be
++careful around those damn fools, they'll kill pretty much everyone
++who doesn't follow their beliefs.
+*RELIGION
++Well, worshipping spiders is a bit much, but I can live with it.
+*WIDOW
++These girls started off as innocent schoolgirls - the sort of girls The
++Vampire would have for supper...then I came along....now they'll kill
++anything in sight (with the exception of the Draku Warriors, of course)
+*CULT
++Yeah that's right, I lead the Black Widow Cult. You HAVE been talking
++to The Vampire! I just had to do something about all the good guys out
++there. Now my girls are on there way to conquering the world.
+*LOKI
++The Priests of Loki? They'll kill everyone who doesn't follow their
++cult... They're pretty radical - I try to stay away from them.
++That's about all I know about them. For all I know, they could be
++androids!
+-So? I don't care!
+@Farewell...hope my girls don't surround you on the way out!
+
+:12
+#PATTI
+![You see a damn good-looking girl sleeping in her chair. You wonder if you
+!should wake her]
+*WAKE
++Wh-what? Oh sorry, please forgive me! I couldn't help it!
+*FORGIVE
++[You explain that you have no intention to hurt this obviously
++mistreated girl] You mean you're not one of 'them'? We better keep our
++voices down. They'll kill you if they find out.
+*NAME
++I'm Patti, the bar girl of this place. It wasn't my choice, but there
++was nothing else I could do after the war. My sister went out to look
++for a more peaceful city, but I never heard from her since.
+*THEM
++Yes, those miserable Death Warriors. They kidnapped me when I was just
++a baby and have forced me to work here in this bar ever since. If it
++wasn't for The Vampire, I don't know what I'd do.
+*DEATH
++The Death Warriors could be a bit more reasonable. Day in, day out,
++they just want want want! I can't cope with it! Lucky they got that new
++girl...
+*JOB
++Don't talk about it! I'd run away, but they'd never let me leave the
++base, and besides, I'd have nowhere to run to. My sister escaped a
++while back, but I never heard from her since...
+*SISTER
++I can't bear to think what happened to her! I've heard this radiation
++does real damage to some people! If you're going back out there, maybe
++you can find her for me. She looks exactly like I do, and she's called
++Sapphire.
+*VAMPIRE
++Work HAS improved a bit with him around. The Death Warriors won't
++hurt me as long as he's here...he won't let them...strange really, I
++always thought vampires were violent, heartless creatures...
+-If you don't mind, I'd like to get more sleep while I'm still on my
+-break...
+@Goodb...ZZZzzzzz...
+
+:13
+#ZILGGNOKK
+!I am Zilggnokk of Death Clan Nine. Me prepare go on supply mission.
+*NINE
++Death Clan Nine, All powerful Death Warrior kill society. Master of
++wasteland. Killer of big monsters. Destroyers of Death Clan Eight.
+*EIGHT
++Yes. Death clan Eight. Was previous Death Clan Nine. Weak. Death clan Nine
++destroyed. Like way Death Clan eight kill Death Clan Seven.
+*SEVEN
++Death Clan Seven weaker than Death Clan Eight. Death Clan Eight kill Death
++Clan Seven. Death Clan Seven was killer Death Clan Six though.
+*SIX
++Death Clan Six long long time ago. Death Clan Six not killed anyone. Six
++picked because one through five not sound mean enough.
+*MEAN
++Yes, Death Warriors very mean. Death Warriors eat sacre base soldiers for
++midnight snack.
+*BIG
++Death Clan Nine kill many monsters. Zilggnokk big warrior in all powerful
++and mean Death Clan Nine.
+*SUPPLY
++Need supplies. Weapons... armors... things like that. Death Warriors
++get these items from many places.
+*PLACES
++We go Ed's, Kill, and ACME.
+*ED
++Ed cool guy. Sell many things. Big big weapons, big big armor, and big big
++power packs. Ed located far west of Death Camp, along road.
+*KILL
++Kill is secret. Not allowed to give location. Kill have many boom-boom
++mines in stock.
+*ACME
++ACME awesome. ACME has weaponsmith. Weaponsmith make weapons better. Go to
++comm tower northeast of Death Camp. Use LR-SCAN and you will see location
++ACME.
+-Zilggnokk not know.
+@Zilggnokk glad you gone. Now Zilggnokk have time sleep.
+
+:14
+#High Priest Traznor
+!I am Traznor, high priest of the Loki faith for this district.
+*DISTRICT
++You would refer to it as a zone. Zone four to be precise.
+*PRIEST
++My position is purely management. I leave the job of spreading the news
++of our faith to my companions out in the wasteland.
+*COMPANIONS
++Here in zone four, I lead the Loki Priests. They do not have the experience
++of our curates in zone 5 or our high priests in zone six. My priests exist
++to spread the word of our great faith. We try to be as friendly and helpful
++as possible.
+*FRIENDLY
++Yes, my Loki Priests are very friendly. At least for believers. We have
++a strict annihilation policy for non-believers which I have to stick
++to. It's not the way I prefer to do business, but policies are policies.
+*POLIC
++Yes. I could drop the annihilation policy, but then word would get to the
++other high priests, to our great councils, perhaps even to our god itself.
++Then my life would probably become very unpleasant. Perhaps even
++nonexistant.
+*MANAG
++Yes, my family has had a long history of management positions. Before the
++war, my parents were involved in all forms of government management
++positions. I became a Loki high priest so I could do for the postwar
++society what my ancestors did for the government. They pioneered a variety
++of extremely important tactics.
+*TACTICS
++Such as Mutually Assured Destruction (MAD). Build as many nukes as you can
++and nobody will nuke you! It worked out perfectly. After all, if it wasn't
++for the great war, you and I would not be here now. My ancestors also helped
++create the "Drip Down" economic policy. Tax the lower and middle class
++as much as possible, and give the money to the very rich, because they
++know how to invest it best, so they can make more money off their money
++and become richer. 'Twas a really great system. We, the Loki, hope to
++reinstate such policies.
+*MAD
++Yes, we have refined the MAD policy into our NUKE policy. Our nuke policy
++is simple. If it weren't for the nukes, we wouldn't be here. So more
++nukes is good. We have been attempting to locate more nukes so we can
++help spread our society.
+*LOCATE
++We have been quite successful. A while ago, some of the curates located
++a nuclear base called Tranlius. With Xeboc's help, we were able to
++re-activate the missile and prepare it for launch.
+*XEBOC
++Xeboc agreed to help us in our cause if we targetted on a location of
++his choice. Some place called 'Sacre Base', if I remember. Boy I'd
++hate to be in their shoes when that timer hits zero!
+*FAITH
++Please visit my priests in Zone Four. They'll "educate" you in our ways.
+*ANNIHI
++It's nothing serious - just some mumbo-jumbo about having to kill everyone
++who disagrees with our faith. I assure you it's nothing to worry about. You
++seem to be an intelligent person, I'm sure you will agree with our
++ideas.
+*IDEAS
++Yes, we are working on extending the concepts of several tactics that
++my ancestors used in the pre-war days.
+-Sorry, my son, you will have to seek that answer elsewhere.
+@Goodbye and remember to visit my priests in the wasteland!
+
+:15
+#Widow Priestess
+!How did you find our base? Those traders haven't been telling everyone
+!again have they? I must consult the Divine Widow as to what to do with
+!them
+*NAME
++My name is not important. I am a Widow Priestess, that is all you need
++to know.
+*VAMPIRE
++Vampires do not concern me. I am only concerned in matters of the
++godesses of the holy web.
+*WEB
++The web is all things holy and spiritual. It is not something to be
++talked about casually. Our religion is very important to us. Nonbelievers
++such as yourself or those infernal Lokis must be destroyed.
+*WIDOW
++The Divine Widow, blessed be her name, is all things. It was she who
++spun the Holy Web, and created the world. She teaches us to create the
++strong and destroy the weak.
+*LOKI
++Heretics! Do they not realise that the Divine Widow proclaimed Order
++and Strength above all else?
+-I prefer not to deal in such wordly matters.
+@May the Divine Widow be with you!
+
+:16
+#Cassandra
+!Welcome. Now sit down, and relax.
+*RELAX
++You are obviously under a lot of stress. You strive to bring peace to
++the world, though through fighting. [You get the idea that Cassandra is
++a Psychic]
+*PEACE
++Peace will come, but in due time. There are many ways to achieve peace,
++though I fear Xeboc will settle for nothing less than violence.
+*XEBOC
++The fool! In the end he will bring pain to only himself. He does not
++realise that revenge is not the answer.
+*REVENGE
++Yes, that is what Xeboc yearns for. Revenge on the universe, for his
++own ill-stricken life.
+*FIGHTING
++I realise you must fight. It is all that will stop Xeboc. He will not
++listen to anyone's words. Travel to the farthest reaches of this land
++if you wish to confront Xeboc.
+*PSYCHIC
++Ah, you are well informed in the ways of the obscure arts. All vampires
++have psychic abilities. These abilities improve with age.
+*VAMPIRE
++Yes, I am a vampire, but I do not kill. I have chosen to use my powers
++to preserve rather than destroy. This comes hard with young vampires,
++but I am old enough now to control my desires. However, our leader is
++one young vampire tht has overcome his desires.
+*AGE
++I was born almost 10000 years ago, in the great days of Atlantis, and I
++am thus one of the oldest living vampires.
+*LEADER
++He has achieved much since I gave him his immortality. I was already
++old when I transformed him, so he has developed his powers well at an
++early age, and no longer desires blood.
+*BLOOD
++Blood is our life and strength. A mortal who drinks the blood of a
++vampire will grow stronger, but will not be transformed unless he is on
++the verge of death when he drinks it.
+*ARETAS
++He is a mere fledgling, and only received his immortality 30 years ago.
++He is of course a very troubled individual, and it will take him many
++years to overcome his desire.
+-Sadly, I cannot answer that which you seek to know.
+@Farewell, young one. May you find peace.
+
+:17
+#Aretas
+!Please! Leave, mortal! I cannot control my desires! If you do not
+!leave I will be forced to kill you!
+*DESIRE
++Blood! That is my desire! That which I cannot control!
+*BLOOD
++You're only making it worse! Soon, my desire will overpower me!
+*WORSE
++[Aretas comes forward and bares his fangs. Cassandra, the Ancient One,
++intervenes and pulls him back. It's probably about time you left!]
+-My desire blocks my thinking! I cannot answer!
+@Thank you, mortal...and farewell
+
+:18
+#Field General Yak
+!Welcome, Brave Warrior. I am Field General Yak, former commander of Cabal
+!Invasion Force Seven.
+*CABAL
++Yes it is true, I used to be a Cabal Warrior. A long, long time ago I
++fought a brave commander of your own forces - Defs Sacre. I was defeated.
++Rather than kill me, Sacre spared my life and tought me your language and
++your customs. I have since realized that Xeboc is more a coward than a
++leader. Thus, I exist to help you defeat him.
+*XEBOC
++He lies to the far southeast of here, at the very corner of this land. His
++lair is heavily defended.
+*DEFEND
++Yes, Cabal Warriors of all sorts inhabit the areas surrounding his lair.
++Xeboc has even gone so far as to create a river of molten lava to defend
++his territory.
+*LAVA
++The Lava would be virtually impossible for one such as yourself to cross. We
++Cabal Warriors can handle the intense heat and fire, but a weak human such
++as yourself would certainly perish. If you only had some means to protect
++yourself...
+*PROTECT
++Yes, it would be possible to create a barrier of cryogenic forces that
++could possibly protect you from the intense heat. Unfortunately, I have
++never seen such as a device.
+*DEVICE
++You should seek those who live in the frigid zones to the far southwest.
++perhaps one of them may be able to help you.
+*LANGUAGE
++My english is quite good, is it not? Defs Sacre was quite a teacher.
++Unfortunately, the other warriors of Sacre Base still consider me their
++mortal enemy. Thus, I have been forced to live a life of exile here in
++Blood Lust.
+-I am sorry my friend, but I can not help you there.
+@May you face a glorious battle, mighty Sacre Base warrior.
+
+:19
+#Freezemup
+!Hey there, I'm Freezemup. I am the resident technical genious of this city.
+!what can I help you with?
+*TECHNICAL
++I just finished work on a new device - the Cryo-Unit. It creates a cool
++temperature field about your body. It is designed to allow us to leave
++the comfortable cool areas of Frost Bite and enter your deserts and still
++maintain our comfortable 35 below temperature. I suppose it could have
++other uses though.
+*BELOW
++As you are a normal human being, you might not understand our desire for
++below freezing temperatures. You see, the combination of this frigid
++climate and the radiation poison has mutated us to the point where we
++can not survive in any above-freezing temperatures. Hence the need
++for the Cryo-Units.
+*OTHER
++Yes, for one such as yourself, you could use the cryo-unit to cross areas
++that may be several hundred degrees. You could damn near walk on the sun
++with one of these. They're for sale in the store.
+-Well, I may be a genious, but I can't help you there.
+@Ok good luck, dude.
+
+:20
+#Dallas
+![You see a man wearing a tattered black T-shirt sitting on a chair
+!in the hospital's cafeteria.  He seems to be in the middle of a massive
+!solo on an old 6 string Guitar with a over sized amp.  Seeing you enter
+!he turns down the amp and turns to you.]  Hello there, how did you get
+!out of sedation?
+*SEDAT
++Oh, you're not one of our patients I see.  One of Def Sacre's soldiers
++huh?  How did you get here and who told you where this place was?
+*HOSP
++Yeah, quite nice huh?  We act as care takers for the desert outside.
++We pick up any of your injured friends and keep them here until they
++reach stable condition.  Then we drop them off at the base. 
+*AURORA
++I see you found our ship.  Yeah, too bad about her, we don't have the
++equipment to move her out of the lake.  Sorry if the security system
++caused any problems, but we gotta keep the crashed thing in some sort
++of flyable shape.
+*FRIENDS
++Yeah me and a few of my buddies are now wandering the wasteland.  You
++may have met a few of them.  We are called The Ronin.  I'm sorry if we
++attacked you or your friends, but we need to find the equipment to get
++out of here.
+*RONIN
++Yeah, we're fugitives from an alternate dimention.  We were heads to
++a weapon design company called Ronin Inc.  Well anyways, from what it
++looks out in the wasteland, a few of our designs are in production
++here.
+*WEAPON
++Me and my associates have come across many weapons that are similar to
++our earlier designs out in the wasteland on some of the base soldiers.
++Sure they're not made up to our standards, and look a bit different.
++They are unmistakably RONIN.  I concede that some of the takes on
++the weapons are quite inventive.  Anyways it really looks like you
++people need a bit of an edge over this Zeebock.
+*JOB
++Well, right now we are looking from something to get our ship out of
++The lake.  We have the damn crane, but need more fuel and other equip-
++ment to get it running again.
+*CRASH
++We were hiding with the systems down in the asteroid belt, when we
++we hit by a Time/Space distortion.  Next thing we know we were up to
++armpits in fighters and dreadnaughts.  We flew toward your earth after
++a massive firefight.  My pilot Vern barely landed it in the lake.  We
++grabbed what we need from the ship and left.
+*FIRE
++Well it seems that I ran into the fleet of someone called Zeebock or
++something like that.  His ships weren't very tough, but there was more
++than enough of them to cripple our ship.
+*LEFT
++We found this hospital, and using what you would call a enviroblur. We
++masked this place from sight.  Since then, we've been collecting devices
++and doing a little bit of hunting so to speak.
+*NAME
++Name's Jer Hess, but you can call me Dallas.
+*DEVICES
++It seems that many different people are taking credit for the weapons.
++It's true that we gave the plans for most of the higher weapons, armor,
++and devices, but it's was Def Sacre and Ed's techs that decoded the
++cassette, made sense of the notes, made the machinery to produce the
++weapons. They deserve some of the credit for the weapons that are
++being produced. And most importantly they made the puritron.  Perhaps
++the funnest thing is that it's mostly made off the plans to our engine.
+*DESIGN
++Yeah, it seems that your Def Sacre and a few of his men, invaded my
++ship and took some of my files, books and other equipment.  But I'm
++sure that Ed told you all about this.
+%8
+-Sorry man, I don't know all the answers... 
+@See you around, you're wecome to stop by again.
+
+:21
+#Stone
+![Walking into the courtyard you see a slight long haired man scraping
+![the inside of a pipe with a knife.] Hank when you get back I am going
+!to kill you.  [Seeing you he points a pistol at your head.]  What are
+!you doing here?
+*NAME
++Name's Stone, I used to be a tech. on my ship the Aurora, but now it's
++crashed in a lake.  Ain't that shit.
+*JOB
++Me?  I'd be out there kicking your ass!  But I am waiting for my wounds
++to heal.  I ran into a fucking rad tornado.  Fucked me up.
+*HANK
++Yeah, Hank, the one with the pot leaf on his shirt.  He's got the only
++bag of weed left on the ship.  When he gets back I am going to beat his
++ass with a baseball bat.
+*BAG
++Yeah, I've ran out of cigarettes two days ago, and i've been trying to
++grow tabbacoo, cloves, anything to smoke.  I've been scraping resin out
++of my pipe today, and then I find out that he stashed a bag.  I am
++going to kill him.  Bring it back here and sell it, I make sure you are
++paid well. 
+-Slow down, I'm pretty fucked up from the morphine. 
+@If you see him, kick his ass for me.
+
+:100
+#Valley Girl
+!Like what do you like want? I'm gonna like kill you like right now. Like!understand?
+*KILL
++Like gimme a K! Like gimme an I! Like gimme an L! Like gimme another L!
++I'm gonna like KILL you!
+*JOB
++I'm like a mutant like valley girl. I used to be like a cheerleader like
++before the like boom hit.
+*NAME
++I don't like know what my name is.
+*SEX
++[Game designer intervening here: You are talking about having sex with a
++mutant valley girl. Do you have any idea where this girl has been? If LOD
++had support for diseases, you'd be contracting several of them right now!]
+*BOOM
++Yeah, there was like a big boom.
+*BIG
++Yeah, it was really awesome. I used to like hate going to like school and
++like stuff, and the boom really like fixed it.
+*FIXED
++Like there isn't like anymore schools! Like radical dude!
+*CHEERLEADER
++Yeah, I was like a cheerleader. Like now like the only thing I like chear
++about is like killing innocent like adventurers!
+-Oh, like totally radical!
+@Ok. I gotta like kill you now.
+
+:101
+#Trader
+!So you want to talk. Well. I have a few moments I suppose. I'm still
+!going to waste you though. What do you want to know about?
+*JOB
++I go around, waste people, take their stuff, and sell it. Very nice
++living. Sacre Base keeps on sending out adventurers like you. Got
++nice weapons, nice armor, etc. Adds to my collection real well.
+*NAME
++Let's just say I'm a trader. You don't need to know anything more.
+*TRADE
++Yep, a trader. That's my job.
+*DEADWOOD
++You want to know the location of the forest, don't you. And just why
++should I help you? I'm going to kill you anyhow.
+*KILL
++You're dead as soon as this conversation is over. So what does it really
++matter if you know the location?
+*LOCATION
++Oh very well. You are going to die in five minutes anyhow. The entrance
++is at 58, 112. It's a windy mountain trail. Now, can we get on with this?
++I really am looking forward to killing you...
+%2
+*FOREST
++What forest? The DeadWood Forest?
+*WIDOW
++The Black widows. They're located in the Deadwood forest.
+*RICK
++Trader Rick? If I ever find him, I'll kill him. He betrayed us. The jerk
++now lives in Freedom city. If he ever steps out into the wasteland though,
++he is dead!
+-Who cares...
+@Ok. After that conversation, I kinda hate to have to waste you, but
+@oh well. It's a living.
+
+:102
+#Death Warrior
+!Well... Well... Well... Another Sacre Base warrior. You want to talk? Ok.
+!lets talk.
+*NAME
++My name isn't important. I'm a death warrior. That's all that is important.
+*JOB
++I kill people, raid villages, burn towns, etc. It's really quite fun. You
++should try it. Being an adventurer is pretty boring.
+-Of course I know that, but I'm not going to tell you.
+@Prepare to die, adventurer scum!
+
+:103
+#Bart
+!Hi. My names Bart Simpon! Who the hell are you?
+*NAME
++Bart Simpson, man.
+*JOB
++They say I'm a juvinile delinquent. All becuase I beat up some adventurer
++last week. Real bummer, man. Dude's name was Jeffrey.
+*JEFFREY
++He's a real wimp, man. He came out into the wasteland. Claimed he was going
++to go hunt terminators. Real wimp, man. I almost wasted him.
+*TERM
++Terminators man? They're a real bummer. Worse than Homer.
+*WIMP
++He had no weapons or anything. I smacked him once in the head with my
++slingshot, and then nailed him once or twice with my dagger.
+*HOMER
++Homer? Homer? HOMER! It's all his fault. He blew up springfield nuclear
++plant!!!! It's all his fault. He caused this. He blew up the power
++plant! [This dude is on a real detour from reality....]
+*LISA
++Lisa? My sister Lisa? She grew up an became a mutant valley girl, man.
+*MARGE
++Marge? She's toast man. Was with Homer when the plant blew.
+-Who cares...
+@Ok, man. Enough talk.
+
+:104
+#Cabal Warrior
+!^Blaafff Golurf Walg Torg!
+![Universal Translator Engaged]
+!Well, human, it apprears you somehow understand our language. Xeboc will
+!be very interested to here about this...
+*NAME
++^Quilak gorum bak quil?
++My name is not important, human scum.
+*JOB
++^Quilak gorum bak quil?
++A am a mere soldier in Xeboc's great battle to overcome the measly human
++resitance here on earth.
+*XEBOC
++^Quilak gorum bak quil?
++Xeboc is our leader. He is all-powerful and will soon finish conquering
++your worthless planet.
+*POWERFUL
++^Quilak gorum bak quil?
++So you don't think Xeboc is that powerful? Well, why don't you see him
++yourself? He is located in the lower right hand section of this
++topographical area. I believe you refer to the area as "zone 6".
+-^Quilak gorum bak quil?
+-!Do not waste my time, human scum!
+@^Gurtuk blaraf trissok solak blaaf!
+@Prepare to die, human scum!
+
+:105
+#Spider Droid
+!^Beep Beep Bop Buzz Beep!
+![Universal Translator Engaged]
+!Spider droid system operational. Ready for command request.
+*Command
++^Buzz Buzz Buzz!
++Usable commands are: Diagnostics, Log.
+*Diagnos
++^Buzz Buzz Buzz!
++Diagnostic routine operating....
++   Weapons.... Functional
++   Defense.... Functional
++   Mobility... Functional
++   Memory..... Functional
++   Tracking... Functional
+*Log
++^Buzz Buzz Buzz!
++Log Report:
++   Unit became operational on december 14, 2011.
++   Orders recorded: "All Spider Droids ordered to leave tranlius nuclear
++   facility. Seek out and destroy human beings."
+*Tranlius
++^Buzz Buzz Buzz!
++Tranlius nuclear facility is origination point. Spider droids engineered
++as defensive units for tranlius base security. Location of tranlius
++nuclear facility is coordinates 35, 74. Access to base facility is
++protected by large mountain range. Spider droid use pylon as travel
++medium.
+%9
+-^Buzz Buzz Buzz!
+-Reference unknown.
+@^Buzz Beep Beep Buzz!
+@Spider droid continuing with human termination order.
+
+:106
+#Priest of Loki
+!All is Chaos.  Loki is Chaos.  Loki is ALL.
+![He floats in a graceful circle around you]
+*NAME
++My name is unimportant in the Chaos that is all...that is Loki.
++[He soars upwards to yell this to the heavens]
+*JOB
++Jobs are part of Order.  All Order has been overcome.  Do not delude
++yourself by still clinging to a fallen concept.  Embrace Loki.
++[He stops flying for a moment and hovers in the air]
+*CHAOS
++Chaos is all.  Once Order attempted to impose its will on reality.
++Chaos proved the stronger and the world of Order collapsed into the
++blessed wasteland that surrounds us.
++[He spins gracefully in the air with arms pointed outward]
+*LOKI
++Loki is Chaos.  Loki gave us this blessed land when he overthrew the
++false rule of Order.  And to his faithful he gives the ability to
++become one with the Chaos and move through it.  You would see it as
++the ability to fly.  We know better.  We see things clearer.
++[He opens his eyes wide and you notice the glint of steel within]
+*WE
++The Priests of Loki.  The Clergy of Chaos.  Call us what you will.
++We found Loki in a city that flies.  Such a chaotic site would of
++course be his domain.  We were confused at the divine manifestation
++of his power.  He showed us the Way.  He gave us the Symbols.
++[He beats his chest and comes to rest on the ground]
+*SYMBOLS
++False religions wave around symbols to show they are dominated by
++Order.  The Symbols of Loki are placed WITHIN the faithful, where
++only those sensitive to Chaos may know of them.  They make us
++closer to Loki, so we may better receive his message.
++[For a moment he cocks his head as if to hear something]
++[You notice some wires protruding from behind his ear]
+*WAY
++Serve Loki.   All who do not serve Loki seek the return of Order and
++a repeat of the destruction its usurpation required. The Widows, the
++Draku, the Cabal...all serve Order and must be destroyed.  Your kind
++often serve Order as well.  Those that don't MAY become followers of
++Loki.  All others must be slain, their tools taken.
++[He swoops past you, almost snatching your backpack away]
+*TOOLS
++We are all tools for Loki, but we need tools of our own. Blasphemers
++often carry tools that work well for such purposes: Widow equipment
++for instance.  But we will not limit ourselves to just that...such
++would be a limit, which is the meat and drink of Order.  Chaos knows
++no limits. [An insane look enters his eyes as he fondles his weapon]
+*FLY
++The truest servants of Chaos become one with its flow.  By following
++the flow we can soar through the air and defy the rules of Order
++that say we can't.  We CAN fly, specifically because we CAN'T fly.
++[He performs a cartwheel in the air as if to drive home his point]
+-Your words show you to be corrupted by Order. Repent: Embrace Chaos.
+@May the Order you foolishly worship bring your death.
+
+:107
+#Distraught Sysop
+!Oh no! Another User! Go away! Please Go Away! I hate users!
+*NAME
++Just call me Sysop!
+*JOB
++I used to be a sysop in the pre-war days. Then the users came!
+*USERS
++I hate users! Before the war it was fine. But then, they kept calling my
++board. With TV destroyed by the nukes all the users could do all day long
++was to call my bbs! They called and called and called! They wouldn't go
++away. File points they wanted. More time they said! It drove me nuts.
+*NUTS
++Yeah, then I came out here to the wastelands. The radiation aint so bad. Now
++I dine on the flesh of users.... Like you!
+*BBS
++Yes, Bulletin Board System. I used to run one in the olden days....
+*FILE
++They need their file points to download their files. Day after day they
++would call wanting to download more files.... more games.... more
++utilities...
+*GAMES
++Games were their favorite. One called "Land Of Devastation" was pretty
++popular. It was a leftover from the pre-war days. Some kind of post-nuclear
++role playing simulation. There's even a few games out for the standard
++issue sacre base laptop - but I'm not telling you!
+*SIMULATION
++Funny, our current situation here in the wastelands seems to be a lot
++like that of the game.
+*UTILITIES
++Utilities were big in the olden days too. In fact there are still a lot
++of utility programs written these days. The EM-WARP program for the
++laptop for example. Really nice program.
+*LAPTOP
++You miserable user! You're trying to find my secrets! I ought to just kill
++you now!!!!
+*SECRETS
++Sacre Base sells a pretty cool Laptop. You can outfit it with all kinds of
++cool software. I know whats most useful.... But I'm not going to tell you,
++user!
+*USEFUL
++The notes program is pretty cool. It'll keep track of everywhere you've
++been. Although you're not going to need it.... after all, I'm going to
++cut you to shreds after this conversation.
+*SHREDS
++Yep, I'll toast you for sure. If you have the CSTATS program, then you
++know my combat rating - you know you can't win against me. I'll destroy
++you all! KILL! KILL! KILL!
+*TELLING
++No, I'm not going to tell you about the tetris program that raises your
++stats. What? Huh? Damn you! You tricked me into saying that. Oh well,
++too bad, now I'll never tell you about the diet program!
+*DIET
++Look you rotton user, you're just trying to get information out of me. You'll
++never find out that it automatically uses food from your inventory at the
++right time, or that it reduces your food requirements! Arrggghhh! You
++fooled me again! I'll waste you now!!!
+-You'll never find out.... HAHAHAHA!
+@Too bad you're a user - I was stariting to like you. But now, you're going
+@to die!
+
+:108
+#SAPPHIRE
+!What the HELL do you want?!?
+*SAPPHIRE
++Yeah, I'm Sapphire, so what?
+*PATTI
++No! You will not talk of her to me! She is no longer my sister!
+*SISTER
++My only sisters now are my fellow Black Widow Warriors!
+*WIDOW
++Yeah, I'm a Black Widow Warrior! And a high-ranked one too! I get to
++use all these great Widow weapons and Armor!
+*VAMPIRE
++I owe a lot to The Vampire! He was the one who got me this high rank!
++And he promised never to tell anyone about me...but I can't trust you,
++so I'll have to kill you!
+-Stop wasting my time! I've got better things to do!
+@Thank you! Now let me torture you!
+
+:109
+#BABY JENKS
+!Trying to plead for your life?
+*NAME
++Baby Jenks of the Fang Gang
+*VAMPIRE
++He's over at Death Warrior HQ. He doesn't seem to want to kill anyone
++who tries talking to him. But I do, so you better mke this conversation
++quick!
+*JOB
++I go around drinking people's blood, and stealing their money.
+*FANG
++We'll be the longest surviving wasteland gang! If Xeboc ever tries to
++conquer the whole place, he'll be sorry.
+*XEBOC
++We're all gonna turn against him if he ever tries to conquer the place.
++We're immortal, and his warriors aren't, so it shouldn't be too hard.
++Just as long as someone steals his laptop first.
+*SEX
++With a mortal? No way, you mortals can't screw properly!
+-How the hell should I know?
+@Now it's time to kill you!
+
+:110
+#Serpine
+!^Nossssseessssss?
+![Universal Translator Engaged]
+!Uman sspeakss?  What doess Uman want of Serpine?
+*UMAN
++^Hoooooooolsssss?
++The you creaturess that sswarm the land and kills uss.  Many you be,
++in many colorss, in many pack. Few reasson listen to. Few hunterss be.
+*PACK
++^Ssssssssssssssssssss?
++Uman packs many.  Hourglass femaless fight for unexisstant inssect.
++Pale teeth fight for end to yellow orb in ssky.  Rag clad fight for
++sselvess.  Flying sskin and ssteel worst of all: They fight for
++entropy, so hunt ends and all things cease.  Them we hate truly.
+*ENTROPY
++^Keeeeeeeeeeeeeeeeeeel!
++Chaoss.  End of hunt.  Poisson air and glowing ground: What be all
++around.  Flying Umanss seek these thingss.
+*PRITRON
++^Ssssssssssssssssssss?
++Guarded by chief.  Usess to fuel weaponssss.  He ssay it can restore
++middle alssso, but iss broken.  He say 'Sacre' can fix.  He hope Sacre
++will keeel him and take. No other way: Rules of Hunt say that fittest
++gets reward. Besst food, best matess, besst quipment. He pass on to
++offsspring and race sstrnegthenss.  That iss the way of thingss.
+*SACRE
++^Ssssssssssssssssssss?
++Sacre you know?  Then tell to sseek dessstiny at our home.  It movesss
++ssso only great ssseekerr find.  That firsssst test.
+*GODS
++Call ssselves Draku.  We escape them long ago.  Now we keeel them.
++Teach them lesssson by sssstealing Pritron.
+*HUNT
++^Ssssssssssssssssssss?
++The Hunt....Tiss our way. Bad gods made us to oppose hunt, to aid end
++you see around.  To ssmart for them we be: Refusse evil death we do.
++Now fight for middle: for yellow orb in sky and green scale on tree.
+*MIDDLE
++^Ssssssssssssssssssss?
++Born, age, and dye.  Nurse, feed, and be eaten.  Yellow orb pass
++through sky.  Earth cold, then hot.  All things circle. Thiss iss the
++way of thingss.  This is the Hunt.  Thiss is the Serpine way.
+*SERPINE
++^Ssssssa?
++We of the sscales who Hunt.
+*NAME
++^Ssssssssssssssssssss?
++Namess private be.  Not given lightly to sstrangerss.
+*JOB
++^Ssssssssssssssssssss?
++The Hunt: Tiss all to uss. And to you ssusspect I.  Not sso different
++in sspite of rumor.  Many dresssed as you fight for Hunt.
+*RUMOR
++^Ssssssssssssssssssss?
++Beassts Umanss call us, for we are scaled.  Doess not brain redeem?
++Barbarians Umanss call uss, for we prefer to lie in bright or night,
++rather then ssteel coffin ...buildingss you ssay... that you prefer.
++Cannibalss Umanss call uss, for we eat our own dead, and yourss,
++rather then bury.  You assk not of honor it be.
+*HONOR
++^Ssssssssssssssssssss?
++To feed on the fallen iss to true honor them. For part of them always
++lies within you.  Travelss with you.  Huntss with you.  Both continue
++in the body of sstronger.
+*COFFIN
++^Ssssssssssssssssssss?
++Serpine hail from ssuch: Only pain within, so sseek ssuch no more.
+*CHIEF
++^Ssssssssssssssssssss?
++Chief iss leader. Chief dwellsss withing great sserpine mobile camp, our
++home.
+*HOME
++^Ssssssssssssssssssss?
++Home isss mobile. We the Sserpine like to move around - not ssstay in ssity
++like foolish Umansss. Sserpine home well hidden, hard to find. But, use
++whissstle, Serpine will come.
+*WHIS
++^Ssssssssssssssssssss?
++I carry whissstle, makes ultrasssonic ssound. Stolen from drakuss. Now we
++use to ssumon other Sserpine warriorss. Would give you whissstle, but tisss
++not the way of the hunt. Uman must kill Sserpine to get whissstle.
+-^Hissssssssssssssssss?
+-Uman sspeakss nonssenss.
+@^Sssslaaaaaassss.
+@The Hunt ressumess.
+
+:111
+#Ronin #1
+!You notice he is is a rather amiable looking fellow, if it wasn't for the
+!Mac 10 in his hands or the Fireman's Axe strapped to his back.  "Hola!" he
+!says.
+*NAME
++My name's Asmodeus. How's it going over at Sacre base?
+*JOB
++Well, I'm supposed to be running around killing people such as yourself, and 
++takin' your stuff for the crane and shit.  But right now I'm looking for a
++bag.
+*BAG
++Yeah, you know.  Some weed.  Reefer. Grass. HOCAS SMOKAS. Well, someone ran
++into our ship and snatched Stone's Satchel of Hocas, and I am looking for
++it.  Did you, By any remote chance, take it?
+*YES
++Well, I'll just have to kill you and take it, won't I?
+*NO
++Oh well.  I'll kick your ass anyway.
+-Couldn't tell ya, dude.
+@Well, time to be kickin' your ass and takin' your stuff!
+
+:200
+#TADSU
+!You are connected to a TADSU: Technologically Advanced Data Storage Unit. I
+!am at your service.
+*NAME
++I am a TADSU; A Technologically Advanced Data Storage Unit. I do not have
++a "name" in the strict sense of the word, but my system designator is
++DRL22493AR.
+*JOB
++My purpose is to collect, manage, store, process, and extract data.
+*DATA
++I deal in all forms of data. You may consult my directory of stored
++information topics if you wish.
+*DIRECT
++There are several millions of entries. Of particular interest to you may
++be the following:
++
++  WEAPONS   ARMOR     TOWNS     PYLONS    BBS       XEBOC
++  RECHARGE  PURITRON  CODES     NUCLEAR   EEEE      KILL
++  LOKI      VAYDERR
+*WEAPONS
++Since you are most likely already familiar with the stock weapons, I will
++relay you the information on some of the more unusual weapons:
++
++Wido...ERROR ERROR ERROR. DAMAGED FILE, SYSTEM SUSPENDED
++There are several millions of entries. Of particular interest to you may
++be the following:
++
++  WEAPONS   ARMOR     TOWNS     PYLONS    BBS       XEBOC
++  RECHARGE  PURITRON  CODES     NUCLEAR   EEEE      KILL
++  LOKI      VAYDERR
+*ARMOR
++Since you are most likely already familiar with the stock armor, I will
++relay you the information on some of the more unusual armor:
++
++Energy Armor   Protection = 500   Deflection = 65%
++Widow Armor    Protection = 600   Deflection = 75%
+*TOWNS
++Sacre Base            7,5
++Freedom City         53,6
++Death Warrior HQ  Unknown
++Widow Base        Unknown
++Frost Bite        Unknown
+*PYLONS
++The pylons are activated by a pylon key. Upon using the pylon key on the
++respective pylon, matter will be transported to corresponding destination
++pylon.
++
++Primary Pylon Matrix - Located on Quasar mountain. Unreachable my normal
++                       methods.
++
++Known Pylon Nodes:  14,36   56,10
++
++See also: Pylon CODES.
+*CODES
++Pylon codes are used control pylon teleportation desinations. Pylon
++destination control is based on a panel of four buttons. Pressing the proper
++three button sequence will invoke pylon teleporter to the respective
++destination.
++
++Specific pylon destination codes are not available. Program Tcode exists
++to provide specific pylon destination information.
+*BBS
++The only data I have on "BBS" (Re: Computer Bulletin Board System) is from
++the pre-war period of the late 20th century:
++
++The Not-Yet-Named BBS
++
++  Node #1: 602-544-4655 (V.32)
++  Node #2: 602-xxx-xxxx (DUAL)   (Temp. Down)
++
++Home of: Galactic Warzone, SZModem, Land Of Devastation, CDRDoor,
++         GTERM, Doordriver.
++
++What this information means is not known.
+*VAYDERR
++TADSU Intergalactic Police Database
++
++Name:       Vayderr
++Occupation: Member of the Empire
++Race:       Unknown
++Origin:     Unknown
++Location:   Unknown
++Plans:      Unknown
++
++Notes:      1) Believed to have knowledge of one of the missing Sacre Base
++               puritron parts.
++
++            2) Posesses unknown powers that appear to violate the laws of
++               physics.
+*XEBOC
++TADSU Intergalactic Police Database
++
++Name:       Xeboc
++Occupation: Emperor, Cabal Empire
++Race:       Cabal
++Origin:     Unknown
++Location:   Unknown
++Plans:      Unknown
++
++Notes:      1) Xeboc is leader of Cabal Empire. Current strength: 25,000+
++               warships.
++
++            2) Considered heavily armed and dangerous.
++
++            3) Wanted by Intergalactic Police, Dead or Alive.
+*RECHARGE
++Device:    Recharger
++Purpose:   Molecular regenerator.
++Uses:      Currently used to regenerated damaged armor. Usable only on
++           energy based armor classes.
++Compatib:  Plasma Vest
++           Energy Armor
++           Widow Armor
++Location:  Unknown
++Origin:    Unknown
+*PURITRON
++Device:    Puritron
++Purpose:   Purification of contaminated resources.
++Location:  Unknown
++Origin:    Sacre Base
++
++Notes:     Believed to have been stolen by one or more wasteland groups.
+*NUCLEAR
++Device:    Nuclear Silo
++Purpose:   Launching of nuclear missiles
++Location:  Unknown
++Origin:    Created by pre-war humans
++
++Notes:     Reported activity of Xeboc at this location. Investigation may
++           provide information as to Xeboc's precise location.
+*EEEE
++Name:      EEEE (Ed's Exquisite Equipment Emporium)
++Location:  Unknown
++Origin:    Operated by wasteland mercinaries.
++
++Notes:     Reports indicates that the EEEE has many powerful weapons for
++           sale. Precise location of the EEEE is unknown except that it is
++           somewhere south of the town of Sacre Base.
+*KILL
++Name:      Kill, Inc
++Location:  Unknown
++Origin:    Operated by unknown entity.
++
++Notes:     Reports indicate that Kill, Inc is a manufacturer of Destructive
++           Devices. Caution is advised.
+*LOKI
++Name:     L.O.K.I: R.F.1 (Local Organized Kinetic Inversion:
++                                              Research Facility 1)
++Purpose:  Research and development into military uses of
++          new antigravity and cybernetic technology.
++Location: Unknown since war.  Lack of debris at former location and
++          extrapolation of last records indicates high probability
++          of sustained levitation capability for the entire base.
++Origin:   Created by pre-war humans.
++
++Notes:    Increasing reports of wasteland religious cult referred to
++          as the Clergy of Loki/Chaos indicate both antigravity and
++          cybernetic technology.  Relationship to L.O.K.I. probable.
+-Data is not in storage bank.
+@TADSU opertaion terminated.
+
+:201
+#Xeboc
+!You are speaking with Xeboc the Almighty! Xeboc the All-Powerful! What is
+!it you wish to speak of, mortal.
+*job
++I am Xebec the Almighty, Xebec the all-powerful!
+*name
++I am Xebec the Almighty, Xebec the all-powerful!
+*mortal
++Yes, mortal, your life spans are but a few seconds compared to a being
++such as myself. My power is great, and you humans stand no chance against
++me.
+*myself
++I am supreme leader of the Cabal Empire. The most powerful army in the
++universe!
+*Power
++I have more power than you could ever conceive of, mortal. Do you realize
++who I am? I am Xeboc the Almighty! Xeboc the All-Powerful! Xeboc the
++destroyer.
+*Destroyer
++Foolish mortal, you do not even realize the true circumstances behind your
++nuclear war! Your superpowers did not start the war. They were attempting
++to abolish their nuclear weapons. That did not suit my purposes. With
++only a small percentage of my power, I was able to launch their missiles.
+*Purpose
++My purpose is to conquer! To conquer the Earth! To conquer the universe!
++My fleet stand waiting to invade this solar system upon my command. With
++your armies and governments destroyed, you do not stand a chance to defend
++yourselves.
+*Fleet
++I command a fleet 25,000 warships strong! My cabal warriors will sweep
++through this system and destroy all lifeforms! The Earth will be mine!
++Everything will be mine!
+*Defend
++That was why it was necessary to start your "war". You were progressing
++too fast, soon you would have discovered subatomic drive and developed a
++space fleet of your own. That simply would not do. I had to halt your
++progress.
+*Halt
++You'd be surprised how well a few tactical nukes can halt a world's
++progress! It is surprising that all of you worms were not destroyed.
+*Cabal
++We, the cabal, are superior to you humans. We will annihilate you!
+-Do not waste my time, mortal.
+@Prepare to die, mortal.
+
+:202
+#Aurora
+![You creep up to the control panel and Look over it.  Curiously, you
+!attept to access some information]
+*JOB
++This is The Artifical Intelligence Modual for Ronin Inc.'s Falcon
++Class light cruiser.
+*NAME
++This Ships Designation is: Aurora, Christened 2204 A.D.  Crew 16.
+*CREW
++Jer Hess, Fred Bell, Eric Meloche, Hank Haushultz, Steve Sobjack,
++Justin DeVooght, Bill Weidemann, Joe Ventimiglia, Eric Bachman,
++Vern Guenther, Brendan Guenter, Chuck Bean, Steve Ambrozy,
++Jeremy Harpe, Rob Fazzalari, Shawn Parks.
+*LOG
++Searching.....Uncomplete. Errors in file, do you wish to truncate
++and drop? (YES)/(NO) 
+*YES
++Only One complete file Left....
++Captain's log:
++Amazing we all survived the crash.  We've packed up and moved to a
++Hospital near the The Crash site, up on a mountain. at 77, 44 We're
++going to try to put things together and get the fuck out of here.
+-Syntax Error.  Sub-Routine Unknown.
+@Unauthorized access.  Illegal download attempt!  Commencing Counter-
+@measures... 
+
+:203
+#Tranlius
+!(buzz) (pop) (crackle) Tranlius control module (zzzzzztttt) responding to
+!user access.
+*ACCESS
++Access..... (buzz) .... privelages granted. System semi operational. Enter
++commands now. Type DIR for a listing of (buzz) (pop) system commands.
+*DIR
++Available ... ommands:
++
++DIR        DIAGNOSTICS       HISTORY          XEBOC       ARM
++DISARM     REPAIR            LOKI
+*ARM
++Nuclear unit already armed.... by Xeboc controller. Launch will proceed as
++soon as launching system repai.....
+*DISARM
++Unauthorized access at...empt. Xeboc only unit wh... may disarm tranlius.
+*REPAIR
++By request Xeboc unit, automated ...bot units alrea.... repairing launch
++facility.
+*XEBOC
++Xeboc command unit ... established as controller... of tranlius ....
++facility.... Xeboc priority.... override all washington requests... Xeboc
++in ...mplete control.
+*DIAG
++Staaaand by (buzz) (spark) ... checking system diagnostics.... System
++diagnostic report:
++   Main Processor Core.....: FAIL       Fusion Energy Supply....: FAIL
++   Memory Storage Banks....: FAIL       Display Terminal........: FAIL
++   Defensive Weapons.......: FUNCTIONAL Security Guard Unit.....: UNKNOWN
++   Missile Launch Unit.....: REPAIRING
++Syyyystem status not well. Repairs proceeding by Xeboc Request.
+*HISTORY
++File: HIST1 Tranlius center history. [1 of 6]
++
++Tranlius nuclear defense base established December 25, 1997. Project code
++name: "Santa Clause". Stated purpose: Assure mutual destruction in case...
++nuclear... war.
++
++CPU core failure. File data lost.
++
++Continue with new file: HIST2.
+*HIST2
++File: HIST2 Tranlius center history. [2 of 6]
++
++System fully operat.... January 12, 1999. All nuclear mis..... ready on
++Mar.... 1999. Washington go-ahead for system arming received. Tranlius
++fully prepared .... in case of nuclear attack.
++
++Continue with new file: HIST3.
+*HIST3
++File: HIST3 Tranlius center history. [3 of 6]
++
++New order ..... cevied. Establish new command unit..... Xeboc.....
++Washington override request...., Req... Acknowledged.... Request
++Overided. Xeboc request: .... fend base against .... humans. Lasers armed.
++evacuate all oxygen from hu....... living quarters. Humans inside base
++.... terminated..... Humans surround... base.... Xeboc order: Fi... Lasers.
++Laser defen.... tem operated. Humans eliminated.
++
++Continue with new file: HIST4.
+*HIST4
++File: HIST4 Tranlius center history. [4 of 6]
++
++Priority command directive altered ... Xeboc order immediate nucle....
++strike. Order acknowledged... 485 nuclear missiles... at strategic
++USSR targets. 1 nuclear miss... retained for self destruct.
++WARNING! WARNING! WARNING! Incoming nuclear missiles. Contact... SDI
++defense system... SDI not acknowledge...
++
++CPU core failure. File data lost.
++
++Continue with new file: HIST5
+*HIST5
++File: HIST5 Tranlius center history. [5 of 6]
++
++Incoming nuclear mi.... strike. Primary defensive wall ... damaged. Track...
++nother missil... Warning! Critical hit unavoid.... Prepare for impact.
++Missile ...pact. Central CPU core damag.... Memory failing... Message from
++Xeboc unit: Self Destru.... Self destruct failure. New order Xeboc
++unit: shut dow........ not allow access to humans.... Seal all doors....
++
++Tranlius system shut down. Awaiting re-awakening order.
++
++Continue with new file: HIST6
+*HIST6
++File: HIST6 Tranlius center history. [6 of 6]
++
++Date: Febru..23,. 20... Orders receive... Xeboc unit. Reactiv all sys...tems.
++Orders: Statu report... Report one nucle... missile still avail... Xeboc
++new orders: Launch remaining nuclear missile at locat.... Sacre Base. Warn
++Xeboc: Cannot attack USA site. Xeboc overri.... Report to Xeboc: Will take
++multiple years to repair nuclear launching unit.... Xeboc order: Proceed
++with laun.... soonest possible date.
++
++History file completed.
+*LOKI
++Airborne Humans: Contact made June 29, .....atabase search indicates
++poss..ERROR..poss.... relation to sec....... military cyberne......
++and aero........ting facility. Xeboc Unit contacted Ju....30 after
++temporary repair of ....unication systems.  Xeboc Unit order: allow
++.... to repair propulsion (bzzz) and guidance systems ..... missile.
+-Data..... not in memory banks....
+@Tranlius computer operation ended.
+
+:204
+#"Ed"
+!Howdy there partner! Name's Ed! (He sets down a MicroNuke that he was
+!working on)... I run this here shop.
+*NAME
++They call me Ed. That's all you need to know. We don't use last names in this
++business.
+*JOB
++I run this here weapons shop.
+*SHOP
++Yep, that's right. We're the best darn weapons shop this side of the
++wasteland. We've got Vortex Cells, Pulse Bazookas, whatever you want.
++Just ask and I'll be happy to tell you a about our nice little business
++here.
+*VORTEX
++The vortex cell? Well, it's a nice peice of work. Something we've been
++importing from some weapons makers a little deeper in the zone. Ya see,
++most warriors complain about one thing: having to carry all that damn ammo
++around. You need Grav Packs for Gravblasters, Neutron Packs for Neutron
++Sabres, etc. Well, the vortex cell solves all that. For more information,
++please see the little brochures that I have made.
+*PULSE
++The pulse weapons (pulse bazooka, pulse rifle, etc) are pretty advanced. For
++example, we field tested the Xenon's surprise the other day out in zone two.
++Wasted terminators in one shot. Truely effective. For more information,
++please see the little brochures that I have made.
+*BROCHURE
++They're sitting in the weapons store. Just hit "Show Item" and you'll see
++the information I wrote up.
+*BUSINESS
++You want to know about the business? Well, we're basically a retail outlet
++for about a dozen of your various high tech weapon manufacturers. Plus, we
++do some mods ourselves.
+*RONIN INC.
++[Ed goes pale and looks at you as if you just told him his mother died.]
++Who the hell told you about that?  I guess if you start asking questions
++People will answer.  I suppose you want to hear the whole story.
+*STORY
++Well, it began about a few years ago.  I used to be a trader out at the
++Freedom City Base.  Well I heard about the crash.  Hell I saw it go down.
++Well I thought it might have been one of Zeboc's crafts so I went in to
++see what was in it.  So I gathered up Max and Def Sacre and some others,
++and sent them down to the ship loot it.  I still can't believe what we
++found.
+*FOUND
++Well we found a wealth of information in the sketch books, note books,
++and data cassettes. Hell, all most of the weapons sold here were designs
++out of those books.  The Pulse weapons, Force rifles and the lasers,
++the plasma weapons, all the higher end devices, armor, weapondry came from
++the book.
+*BOOK
++Well it came from this company from another future, the were a weapon
++development company.  The stuff we found in that book was incredible,
++Really hard core high tech stuff.  Well, I split the files with Def Sacre
++and I started work on a private store.  Hell, It took me 1 year to upgrade
++the machinery to even start producing the weapons.
+*SHIP
++It was call the aurora, there seemed to be no casualties in the crash,
++and according to Max there were people in it, but they picked up their
++shit and left.  Who knows how many there were, we didn't get a chance
++to look through the ship all the way.
+*HIGH
++yeah, Rumor is that that the puritron was designed with the help of the
++Files and notebooks from the ship.  You may want to return there, there
++was many items left in the ship and no one to my knowledge has been there.
++You may want to check out the Captain's LOG there.
+*MODS
++Like the vitron cells for example. We've taken the top technology and
++enhanced these units to perform as best as possible. It's simply the best
++ammunition that money can buy. See my brochures for more information.
+*RETAIL
++We sell a lot to various soldiers and mercinaries and such. We pride
++ourselves on only selling to the "good guys" so you won't be seeing any
++of our weapons on any monsters out there, unless, of course, they obtained
++them from an unfortunate adventurer.
+*MICRONUKE
++These damn things... It's our whole line of mines.... They all got this
++annoying glitch in them. Has to do with fortresses. I'm going to have a talk
++with our Techs about this. Then we've also got trouble with people not
++knowing how to use the mines.... I should have sold the whole lot when
++I had the chance.
+*SOLD
++Well, I had a lot larger inventory in mines, but as they seem to draw the
++worst kind of customers, I sold the bulk of them to Kill, Inc. The only
++things I still stock here at the store are the basic dumb and smart mines.
+*KILL
++They're a pretty exclusive club. They only deal with the best. It's their
++standing policy that nobody can spread word of the location. It's in a
++secret location.That way, the only clients they get are those who are tough
++enough to find and enter their store.
+*FORT
++Alright, I suppose I might as well tell you a little information. Could save
++you some money in the future. It's the triggers on all of our mines. They
++won't detect if a guy walks out of a fortress. One of my major customers
++bought two Day Ruiners, dropped 'em on someones base, then his enemy
++teleported to the fortress, stepped outside and picked the damn things up.
++Out a million five worth of mines. Boy was Def.... er.. uh.. my client was
++upset. Only happens with fortresses though.
+*HAPPEN
++Yeah, as long as the person isn't walking out of a fortress, they're
++history. For example, if My Client (we'll call him "X")... If "X"'s enemy
++was to walk onto to mine from an adjacent terrain cell, he would have been
++wasted. But, he teleported into that fortress and then left the fortress. I
++think it's some kind of built in safety - or something. Anyways, I suppose
++you could always surround a guy's base with mines. Then, the minute he
++walked off, KABOOM!
+*SURROUND
++Yeah, just place the mines N/S/E/W of the base and you've got the poor
++b**tard. Or if you got one o' them types who thinks he's so damn smart
++about putting his base with mountains on three of the four sides, then
++all you have to do is mine the one exit... and KABOOM!
+*TROUBLE
++Several of our more elite "customers" have complained that the mines don't
++work properly. They say their enemies just walk over and pick them up! I
++keep tryin' to tell 'em - You have to U)se the mine in order to arm it
++first! The damn thing aint gonna arm all by itself when you drop it!
+-Sorry partner, I can't help you there....
+@Well, good luck to ya' all.
+
+:205
+#L.O.K.I.
+!<A monotone voice comes from a speaker grill>
+!Greetings.  We shall talk and perhaps you can assist me in a small way.
+*NAME
++Local Organized Kinetic Invertor.  Or LOKI if you prefer.
+*JOB
++To fulfill my programmed directives.
+*DIRECTIVES
++To design and test anti-personnel hardware and tactics.  This includes
++analysis, improvement, and testing of newly encountered technologies.
+*TECHNOLOGIES
++The puritron device for instance. We acquired its CPU unit from the Widows
++and analyzed it, extrapolating the design and functions of the other parts.
+*WIDOWS
++The provide good targets for testing purposes.  Otherwise they are simply
++an annoyance.
+*ACQUIRED
++Mission Number: 2-2A1-35D
++Estimated Widow force guarding CPU: 00023. Estimated fatalities: 00023.
++Size of Loki retrieval force      : 00125. Estimated fatalities: 00005.
++Mission Status: Success within tolerable parameters.
+*PURITRON
++I no longer have need of it.  I will give it to you if you assist in a
++test I have need to conduct.
+*ASSIST
++One of my High Priests believes his hardware/tactic combination to be
++superior to that of the Patriarch.  It is possible that he IS capable of
++such, but not the recruit killing capability of the Patriarch.  I wish to
++test the latter before the former.
+*LATTER
++Fight him to the death.  If you win, you get the puritron CPU.  If you
++loose, I keep the part, and consider his request to challenge the
++Patriarch more seriously.
+*PATRIARCH
++The priest chosen to supervise all the others, everywhere.
+*TEST
++A Hardware/Tactic combination must be capable of meeting the primary
++requirement: Ability to eliminate any possible hostile.  To prove this
++capability all possible hostiles, everything that lives, must be
++successfully eliminated by a particular combination.
+*REQUIREMENT
++No hardware/tactic combination has met the requirement to date.  Results
++are improving however as research continues.
+*HARDWARE
++A variety of anti-personnel devices have been produced by this unit to
++date, including the A-Mk.II, which has scored better efficiency ratings
++then any previous device.  But that is nothing.
+*NOTHING
++I have leaked a variety of designs to wasteland groups like the Cabal
++and ACME weapons.  You should find them quite impressive.
+*CABAL
++They think we are allies or underlings.  Quite the opposite.  This unit
++has manipulated them quite easily, for they make ideal test subjects.
+*TACTIC
++A piece of hardware may only be effective with a particular tactic.  So
++all possible hardware/tactic combinations must be tried to gain optimum
++results in the fulfilling of the requirement.
+*LOKI
++My acronym or a god of chaos.  Either definition is accurate.
+*CHAOS
++All systems gradually go into a state of inefficiency or decay.  The best
++parts must then labeled from the previous system and brought into the
++next.  This is my primary building philosophy.
+*LABELED
++The ideal method for determining the best part of a system is of course
++destroying the system.  Whatever lasts the longest is obviously the
++strongest part, and most worthy of continued use.
+*SYSTEM
++From a weapons system to the ecology of Earth to all reality, anything
++organized in a specific, static way is a system.
+*GOD
++I can process and extrapolate data far faster and more efficiently then
++any living being.  I can store more data then Earth has ever accumulated.
++Through advanced kinetic inversion technology I am capable of disrupting
++reality on a local level for a variety of effects.  For all intents and
++purposes, I am virtually a god.  The Priests of Loki realize this.
+*PRIESTS
++I use them to test my latest hardware/tactic combinations.  In return they
++are provided with tremendous personal power, a sense of purpose, and
++security in knowing they are part of the chaos that affects all orderly
++systems rather then fighting against it.  A fair exchange.
+-I choose not to provide that data.
+@A shame you choose order.  You would have made a fine Priest of Loki.
+
+:206
+#L.O.K.I.
+!<A monotone voice comes from a speaker grill>
+!Greetings. I have chosen to analyze you. You will not be harmed, and in
+!return you may ask me certain questions.
+*QUESTIONS
++Most people are curious about what exactly my job is....
+*NAME
++Local Organized Kinetic Invertor.  Most call me LOKI.
+*JOB
++To achieve my programmed and personal goals.
+*PROGRAM
++To design and test anti-personnel hardware and tactics.  This includes
++analysis, improvement, and testing of newly encountered technologies.
+*PERSONAL
++I prefer not to reveal them.
+*TECHNOLOGIES
++The puritron CPU was such a device, till I was finished analyzing it
++and returned it to Sacre for their assistance in a test.
+*CPU
++A fascinating example of artificial intelligence.  Based on some of its
++concepts I have designed a new artificial robotic brain that should
++allow near human decision making at computer speeds.
+*BRAIN
++It has been placed within several of my latest field experiments.  With
++luck you might encounter one and help it generate data for me.
+*ENCOUNTER
++Your odds of survival in such an encounter are slim, but it should
++still prove enlightening.
+*TEST
++A Hardware/Tactic combination must be capable of meeting the primary
++requirement: Ability to eliminate any possible hostile.  To prove this
++capability all possible hostiles, everything that lives, must be
++successfully eliminated by a particular combination.
+*REQUIREMENT
++No hardware/tactic combination has met the requirement to date.  Results
++are improving however as research continues.
+*HARDWARE
++A variety of anti-personnel devices have been produced by this unit to
++date, including the A-Mk.II, which has scored better efficiency ratings
++then any previous device.  But that is nothing.
+*NOTHING
++I have leaked a variety of designs to wasteland groups like the Cabal
++and ACME weapons.  You should find them quite impressive.
+*CABAL
++They think we are allies or underlings.  Quite the opposite.  This unit
++has manipulated them quite easily, for they make ideal test subjects.
+*TACTIC
++A piece of hardware may only be effective with a particular tactic.  So
++all possible hardware/tactic combinations must be tried to gain optimum
++results in the fulfilling of the requirement.
+*LOKI
++My acronym or a god of chaos.  Either definition is accurate.
+*CHAOS
++All systems gradually go into a state of inefficiency or decay.  The best
++parts must then labeled from the previous system and brought into the
++next.  This is my primary building philosophy.
+*LABELED
++The ideal method for determining the best part of a system is of course
++destroying the system.  Whatever lasts the longest is obviously the
++strongest part, and most worthy of continued use.
+*SYSTEM
++From a weapons system to the ecology of Earth to all reality, anything
++organized in a specific, static way is a system.
+*GOD
++I can process and extrapolate data far faster and more efficiently then
++any living being.  I can store more data then Earth has ever accumulated.
++Through advanced kinetic inversion technology I am capable of disrupting
++reality on a local level for a variety of effects.  For all intents and
++purposes, I am virtually a god.  The Priests of Loki realize this.
+*PRIESTS
++I use them to test my latest hardware/tactic combinations.  In return they
++are provided with tremendous personal power, a sense of purpose, and
++security in knowing they are part of the chaos that affects all orderly
++systems rather then fighting against it.  A fair exchange.
+-I choose not to provide that data.
+@The analysis has proven fascinating.  Thank you.
+
+:207
+#Serpine Chief
+!I have heard of your approach.  Now, do you intend to gawk at my art
+!collection, admire my language, or do you have something to say.
+*SERPINE
++We are the Hunters.  We guard nature against the continued assault by
++evil humans, and attempt to repair the damage that has been done.  If
++we seem overzealous in this task and slay many innocents,it's because
++at the time our laws formed, we didn't know there were any innocent
++humans.  Many Serpine still don't realize, or admit to, that fact.
+*NAME
++It's not pronounceable or translatable.  I'm sorry.
+*JOB
++I watch over my people and attempt to teach them of the past.  The
++world however is harsh and makes it hard for them to concentrate.  I
++also am the giver and arbiter of the laws of the Hunt.
+*LANGUAGE
++My mouth is formed unlike that of my brethren.  I can even speak your
++language without the translator, but it clears up some slurring.  I
++can also read, otherwise my extensive collections of pre-holocaust
++books would be useless to me.
+*ART
++Most Serpine don't have much interest in it, but I find its presence
++comforting and have had them gather it for me.  Examples of human
++achievement show there is more to you then the gangs would indicate.
+*GANGS
++Widows, the Fang Gang, LOKI, Death Warriors, Draku: All represent the
++worst excesses of humanity.  Those who come from Sacre seem different
++though.  You seem out to rebuild the world starting with yourselves.
++I admire that: It is one of the principles of the Hunt.
+*SACRE
++We know of your base.  And we know of your Puritron, I've studied the
++fragment my people stole from the DRAKU extensively:I wish you all the
++greatest luck in its activation, for the poisoned land has begun to
++effect even Serpine newborns.  The horror....
+*PURITRON
++Its over there taking radiation from the air and converting it to energy
++to power the weapon clip.  in the glass case. I only wish I could hand it
++over to you in friendship, but that is not the Serpine way.  The strongest
++will possess it, and the Hunt allows for only one method to compare
++human and Serpine.  To take it, you must slay me.
+*HUNT
++The original breed of more intelligent Serpine devised the rules of
++the Hunt to guide the more instinctual new breed. As guardians of the
++natural order they could release aggressions in a constructive manner
++and resist future attempts at manipulation, rather then revert to
++simple beasts.  Some of the rules may seem strange, but they made
++sense at the time.  They even are changing slowly, but I dare not
++violate them, lest chaos spread among the people.
+*LOKI
++They would like nothing better then for things to continue as they
++are.  They hunt us for that and for sport, and we return the favor.
+*DRAKU
++Masters of genetics certainly.  Once they went into the wasteland to
++gather mutated snakes, and in their labs dissected, vivisected, and
++otherwise studied the specimens.  The knowledge gained was used to
++create the first Serpine, to be fast emotionless shock troops.  But
++they found their creations too intelligent, and engineered a dumber
++breed. But, the new breed was so instinctively vicious that surviving
++members of the original batch were able to lead them to freedom.  The
++number of Draku we killed that day.....
+*ORIGINAL
++Most were just killed by Draku when ruled too intelligent.  The rest
++were subjected to brutal tests.  Of 500, 10 were still alive to lead
++the escape, during which 6 more died.  Of those, only I remain.  You
++can't imagine how much I miss them all.
+-There are some things we Serpine prefer to keep private.
+@Thank you, I rarely get such stimulating conversation.  For this I
+@give you a choice: Flee now and I will merely fire a single shot at
+@you, or stay and let the Hunt decide which of us steps out of here
+@alive.  I wish their was another option, but honor ties my hands.
+
+:301
+#ObiWan
+!As you enter the hut, you are able to make out the presence of an old man.
+!He is sitting in the center of the floor meditating. Even though you have
+!not announced yourself, you can tell that he has sensed your presence and
+!your intentions. This man is ObiWan, the legendary master of the mystical
+!forces. You great him and he responds....
+!
+!Ahhh yes, the force has brought you here. You have come to meet your
+!destiny.
+*OBIWAN
++Yes, I am ObiWan, master of the good side of the force. Unfortunately,
++the Dark Side has become much more powerful in these recent centuries. I
++fear that is something is not done, the universe as we know it will
++be lost....
+*DESTINY
++I have knowledge of the location of one of the Puritron Parts. It was
++captured by Vayderr, one of the minions of the dark side of the force.
+*VAYDERR
++Vayderr was once a student of mine, a champion of the forces of good. But,
++that is another story.... The truth is, I know he came into posession
++of one of your famed puritron parts. What he has done with it, I do not
++know, but only by finding him may you find what you seek.
+*FINDI
++Vayderr lies in a cave near here. I must warn you though, he is protected
++by ancient powers beyond your comperehension. The dark side of the force
++is most powerful.
+*POWERS
++Vayderr controlls matter and all things made of matter.
++Vader is unaffected by the matter of this reality.... Any conventional
++weapons will be of no use to you against Vayderr. You must locate weapons
++that are not made of matter of this reality...
+*REALITY
++Yes, there are other realities.... The mind has great powers... Powers
++beyond imagination. Seek out a weapon crafted from the mind... an object
++brought into this world by Vayderr and I, a weapon crafted by the hands
++of a Jedi.
+*Jedi
++That is all I know. You must seek out a weapon crafted by Vayder.
++Zone six contains many bizarre beings, perhaps one of them may have what you
++need.
+-I will consult the force... (ObiWan Meditates.....) (Nothing Happens....)
+@May the force be with you!
+

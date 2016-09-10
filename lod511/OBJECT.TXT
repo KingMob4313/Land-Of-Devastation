@@ -1,0 +1,158 @@
+Land Of Devastation Standard DataSet
+Game Objective and Background
+
+The War
+-------
+      It happened in the early 21st century. Nobody is sure actually when
+as most recorded history was lost at that point. Nobody is sure who started
+it, or what the reasons were, but one thing is for sure, the world was made
+very aware of the possibilities of nuclear warfare.
+      The estimated time is somewhere between 2051-2075 that the war
+occurred. Hundreds, if not thousands, of nuclear missiles stormed through
+the atmosphere. Their targets: Population centers, military outposts, and
+governmental facilities.
+      The effects were greater than had been previously theorized. Great
+blast waves levelled entire cities. All unprotected crops and livestock
+perished. Those who didn't die of the initial attack were killed off by
+starvation or nuclear contamination.
+
+Sacre Base
+----------
+      There was, however, at least one establishment that survived. A small
+nuclear fallout shelter about 50 miles out from Tucson, Arizona. At the
+first sighting of the nuclear clouds, the doors were sealed and the base
+relied on its self-supporting supplies.  Also those in the base placed them-
+selves in cryogenic sleep to wait out the radiation clouds that were sweep-
+ing the globe.
+      So after nearly a hundred years, those inside the base were reawakened.
+While the radiation levels were now safe, there would be occasional radiation
+storms that would catch the base unawares, so those inside Sacre base continued
+their wait. After about five years, when internal supplies became scarce, it was
+necessary to explore the outside world. The first explorations were lead
+by Commander Defs Sacre, a survivalist who helped to found the shelter
+before the war.
+      Sacre was able to locate supplies necessary to sustain life in the
+shelter for many years to come. Sacre also located a pre-war weapons
+laboratory, Terra Labs. At Terra Labs, Sacre and his men were (With the help of
+a local trader) able to develop advanced energy weapons - lasers, Tachyon 
+Swords, etc.
+      With these weapons, Defs Sacre upgraded the small, fragile nuclear
+shelter into a full-fledged military outpost. In honor of his bravery, the
+base was named "Sacre Base".
+
+Nuclear Contamination
+---------------------
+      As a result of the great war, vast amounts of nuclear radiation were
+released into the atmosphere. This radiation, in turn, affected the
+environment in ways never before imagined. Peaceful animals were mutated
+into hideous beasts; Humans were transformed into a disorganized mass of
+criminals. Law and order completely collapsed. It was thought that all
+hope of saving the earth would be lost.
+
+The PuriTron Device
+-------------------
+      In the year 107AB, scientists at Terra Labs developed a device 
+known as the PuriTron. This device would be capable of removing the 
+radioactive contaminants from several thousand cubic feet of air per day.
+      At last, it seemed that there was finally a solution to the world's
+problems. The PuriTron would clean the radiation out of the atmosphere. The
+radioactive mutations then would cease, and organized government could
+be established. Sacre base was very anxious to see the puritron put into
+action and ordered its transportation immediately.
+      An armed caravan left Terra Labs later that year to transport the
+PuriTron to Sacre Base where it could be installed and operated. The
+situation was perfect. Too Perfect. About half way through the journey, the
+caravan was attacked by a fierce band of female warriors known as the
+Black Widows.
+      The party was overwhelmed by the attack. The Black Widows had enhanced
+weapons far superior to that of the caravan, since all of Sacre base's weapon
+production still was not complete yet. The battle was devastating and only a
+handful of men were able to escape. The PuriTron device, however, was lost.
+      From intelligence gathering operations, it has been determined that the
+Black Widows split the PuriTron into at least five separate components which
+they then hide in separate locations throughout the wasteland.
+
+The Quest
+---------
+      Your quest, as a soldier stationed at Sacre Base, is to locate these
+lost parts of the PuriTron and return them to Sacre Base where they may
+be assembled and activated. The fate of the world is in your hands.
+
+PuriTron Device Parts
+---------------------
+      The following parts are required for the assembly and operation of the
+  PuriTron device. Sacre Base will pay generously for their return.
+
+      RAD EXTRACT
+
+          The Radiation extractor is a device capable of collecting radiation
+          from contaminated materials. The radiation is then collected and
+          concentrated into the storage vessel. Non-radiated air is sent
+          to the recycler for recycling.
+
+      STORAGE VESSEL
+
+          The storage vessel is a special lead cylinder capable of storing
+          the concentrated radiation in a safe, leak proof environment.
+
+      FILTRON
+
+          The Filtron is a energy-enhanced filtration unit that removes large
+          particles such as soot, sand, etc from the air. These debris are
+          then sent to the RAD EXTRACT for decontamination. Clean air is
+          sent to the VENT for return to the atmosphere.
+
+      CIRCULATOR
+
+          A large atmospheric collector. It collects air from the atmosphere
+          and sends it to the FILTRON for processing.
+
+      NOVA CELL
+
+          A power cell containing stored solar energy. This energy is used to
+          power the above equipment.
+
+      VENT
+
+          A high efficiency output device designed to return clean air back
+          to the environment without creating any disturbance.
+
+      RECYCLER
+
+          Takes all particulate debris (dirt, soot, plastics, etc) and
+          converts it to a plastic-like material which may be used for
+          construction, manufacturing, etc.
+
+      The following diagram illustrates how the above units operate together:
+
+
+                  CIRCULATOR            FILTRON               VENT
+            :-----------------: :------------------: :----------------:
+            :  \              : :                  : :           /--  :  air
+            :   \             : :     /---\        : :          /     :  out
+            :    \----------- : : ---//---\\------ : : --------/      :
+   air ---\ :                 : :     :/-\:        : :                : ---\
+    in --- >:                 : :     ::*::        : :                : --- >
+       ---/ :                 : :     :\-/:        : :                : ---/
+            :    /----------- : : ---\\---//------ : : --------\      :
+            :   /             : :     \---/        : :          \     :
+            :  /              : :      | |         : :           \--  :
+            :-----------------: :------------------: :----------------:
+
+ NOVA CELL  :-----------------: :------------------: :----------------:
+            :     RECYCLER    : :      : : RAD     : :      STORAGE   :
+ :--------: : :--------:      : :      : : EXTRACT : :         VESSEL :
+ :        : : :        :      : :      ---         : :                :
+ :  :--:  : : :        \      : :     /   \        : :     /------\   :
+ :  :--:  : : :         \---- : : ---- \ / ------- : : ---/       :   :
+ :  :--:  : : :------\        : :       \          : :            :   :
+ :  :--:  : :   : :   \------ : : ---- / \ ------- : : ---\       :   :
+ :        : :  /   \          : :     \---/        : :     \------/   :
+ :--------: :-----------------: :------------------: :----------------:
+
+
+Locating The PuriTron Parts
+---------------------------
+      Locating the lost PuriTron parts will not be easy; We have absolutely
+  no data as to the parts' location. You may have to rely on sources your meet
+  out in the wasteland to reveal the necessary information.

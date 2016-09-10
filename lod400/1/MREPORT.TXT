@@ -1,0 +1,21 @@
+Performing maintenance
+----------------------
+ þ Checking for a winner.
+ þ Trimming the log file down to size.
+ þ Performing user maintenance.
+ þ NPC fort Sacre Transport added.
+ þ NPC fort Terra Labs added.
+ þ Performing base maintenance.
+    þ Fort Sacre Transport at 1,4,3 reactor produces 300 energy units.
+    þ Fort Terra Labs at 1,1,1 reactor produces 350 energy units.
+    þ Fort Terra Labs at 1,1,1 wanders to 1,52,38.
+    þ Fort Terra Labs at 1,52,38 autoseller produces UltraWarper/25.
+    þ Fort Terra Labs at 1,52,38 autoseller produces UltraCharger/10.
+    þ Fort Terra Labs at 1,52,38 autoseller produces UltraCloak.
+ þ Playing with the message base.
+    þ Added msg #1 from Scott Baker about REGISTER YOUR COPY!
+    þ Added msg #2 from Scott Baker about STUFF!
+ þ Checking the isreal monsters.
+     Added 93 (DeathStalker)
+     Added 94 (High Ronin #1)
+     Added 95 (High Ronin #2)

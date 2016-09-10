@@ -1,0 +1,1258 @@
+Welcome to the first edition of the Land of Devastation (LOD) FAQ!
+Author: Konnor McCloud, author of the Highlands series of datasets for LOD.
+Version:1.00
+
+		   ÚÄÄÄÄ¿      ÚÄÄÄÄÄÄÄÄÄ¿ ÚÄÄÄÄÄÄÄÄÄ¿
+		   À¿  ÚÙ      ³  ÚÄÄÄ¿  ³ À¿  ÚÄÄÄ¿ À¿
+		    ³  ³       ³  ³   ³  ³  ³  ³   ³  ³
+		    ³  ³       ³  ³   ³  ³  ³  ³   ³  ³
+		    ³  ³       ³  ³   ³  ³  ³  ³   ³  ³
+		    ³  ³   ÚÄ¿ ³  ³   ³  ³  ³  ³   ³  ³
+		   ÚÙ  ÀÄÄÄÙ ³ ³  ÀÄÄÄÙ  ³ ÚÙ  ÀÄÄÄÙ ÚÙ
+		   ÀÄÄÄÄÄÄÄÄÄÙ ÀÄÄÄÄÄÄÄÄÄÙ ÀÄÄÄÄÄÄÄÄÄÙ
+
+This FAQ addresses creating custom datasets for the LOD door game (version
+4.1 and prior) created by Scott Baker.
+============================================================================
+
+Throughout this FAQ, you will see special notes. These notes contain
+information I have gathered from making datasets that is not covered in any
+other documentation. Please read these and make note of them for your own
+reference.
+
+=============================================================================
+
+BASIC INFORMATION
+=================
+
+What is this FAQ sheet for?
+---------------------------
+Through the LOD FidoNet echo, I have received many requests for information
+from sysops and players who have wanted some information on creating custom
+datasets for LOD. So, this is not a technical discussion on how to play the
+game, although many hints will be given, and it is not a technical forum for
+getting the game to run on your bbs, although I welcome submissions for future
+versions of this FAQ that may address these points.
+
+This is primarily for those sysops and dataset designers who wish to create
+custom datasets for LOD and are struggling with some of the finer points. This
+FAQ is intended to encourage the creation and distribution of custom datasets
+for LOD (and since no one wants to play the dataset designers on their own
+datasets, we are always looking for good new ones to play!).
+
+This FAQ is not intended as a replacement for the documentation that
+is provided with the LOD door game itself. Rather, it is meant to enhance
+those files with information gleaned from my experience in programming custom
+datasets, information gathered from others who have tried to make custom
+datasets, and information and submissions from the LOD FidoNet Echo.
+
+It is therefore suggested that dataset designers thoroughly read and
+familiarize themselves with Scott's original documentation before reading
+this FAQ.
+
+Thanks,
+					--Konnor
+
+
+What is LOD?
+------------
+LOD is a bbs role-playing door game. It only supports one player at a time,
+however it does support team play and player vs. player battles. Several video
+modes are available, including Text, ANSI, and EGA (through an available
+terminal program called GTERM). The game is fairly customizable and these
+customized versions are distributed as "datasets". A default dataset is
+supplied with the game that provides the "Xeboc" scenario. Due to some
+limitations of the game engine, parts of the game cannot or should not be
+modified.
+
+
+What is LOD about?
+------------------
+LOD is set in a post-apocalyptic world of mutated beasts and gangs that roam
+an area called "the wasteland". You portray a warrior for a small outpost of
+humanity committed to bringing civilization back to the countryside. Your band
+of adventurers and scientists have perfected a device called the PuriTron that
+will cleanse the irradiated particles from the air and the surrounding
+wasteland. However, the PuriTron was captured by an unknown wasteland entity
+and disassembled into its nine component pieces.
+
+
+What is the object of LOD?
+--------------------------
+The object of LOD is that you must venture out into the wasteland, arming,
+equipping, and training yourself as you go, and try to locate the missing
+PuriTron parts. As you meet and vanquish these various wasteland entities, you
+gain experience and money from them (unless they vanquish you!). You must take
+this experience and use it to train yourself, usually at your home base, an
+outpost called Sacre Base, in your attempt to become more powerful and able to
+recapture the missing PuriTron parts. Of course, the wrinkle here is that the
+other players in the game want to do the same, and of course, will only see
+you as an adversary.
+
+
+What is a "custom dataset"?
+---------------------------
+At its simplest, a custom dataset is a modified GAME.DEF file created by
+editing the text files supplied with LOD and compiled with the LOD compiler.
+Additional files can be modified also, including:
+	TRIVIA.DEF to provide new trivia questions for the casino
+	ANSI.DEF to provide new ANSI menus and object pictures
+	USERDOC.TXT to provide a custom description in the Documentation menu
+	RESOURCE.002 to provide custom EGA pictures for GTERM
+	GTSTRS.DEF to provide custom strings for GTERM
+
+
+Who can make a custom dataset?
+------------------------------
+Anyone with the time or desire to try. LOD is definitely not at the forefront
+of current computer game technology, however, it is fairly popular on bbs' and
+the game is not that hard to customize. So far as I know, the first custom
+dataset for LOD (other than the default) was created by Ray Bacon of Pearland,
+TX, sysop of the Cobra bbs and Moderator of the LOD FidoNet echo.
+
+
+How do you make a custom dataset for LOD?
+-----------------------------------------
+Scott Baker, the author of LOD, has provided the game with many tools for
+customizing his game. There is a compiler available for compiling new game
+definition files (GAME.DEF), another compiler for trivia questions, one for
+adding ANSI graphics to the game, and one for adding EGA files to GTERM. There
+is also a program supplied with LOD to facilitate the creation of custom
+datasets and editing the *.BIN files required by the game called CUSTOM.EXE.
+Other utilities are available, both from Scott Baker and from other sources.
+
+
+What is GTERM?
+--------------
+GTERM is a custom remote terminal front-end for LOD. It contains a set of EGA
+pictures to associate with many different items and monsters and can speed up
+play at higher modem speeds over the ANSI mode. It also features sound support
+for SoundBlaster compatible sound cards.
+
+GTERM has its own set of graphics and strings. Anyone wishing to change the
+"theme" of LOD should investigate changing all of the appropriate items for
+GTERM also, since many players enjoy using this front-end and might be
+confused playing a custom dataset with a description of one kind of monster
+and a picture of another.
+
+
+What Are Some of the Limitations for LOD DataSet Designs?
+--------------------------------------------------------
+There are many limitations in this game, particularly for those dataset
+designers who don't happen to be programmers. This game does not lend
+itself well to the creation of alternate realities since many of the little
+details are hard-coded. (For example: You can change a ROM disk's name, change
+its description, change its readout (if its a text file), but you can't change
+the program name used to call it up.)
+
+So, to create a new game scenario within the confines of this game's
+limitations is truly challenging, and I have yet to see one done successfully
+and done well.
+
+I will try to point out the limitations where I can. It will be up to you to
+find your way around them.
+
+Some of the limitations are provided below just for quick reference:
+	The program names used on the laptop cannot be changed.
+	The nature of many of the quests cannot be changed.
+	No more than 9 cities.
+	Cannot create more huts than are already available.
+	The number of items a fort can hold can be limited, but factories
+		will ignore this limitation.
+	GTERM!!!
+
+Below are some of the number limitations of the game structure that I have
+found. If these parameters are exceeded, either an apparent random factor
+appears in the numbers associated with these items or the game crashes. In
+some cases, weapons will appear to do infinite damage, or shields will not
+show up at full strength. I include these as references, I cannot verify
+them. I just know they work for me:
+
+	No more than 10,000 strings can be compiled (fixed in 4.1).
+	No more than 349 items.
+	Fort Shields cannot be larger than 50,000 points or they become
+		seemingly random in size (overwriting memory).
+	Weapons (Long range, short range, and mine and grenade blasts) cannot
+		do more max damage than 250 points or they do infinite damage.
+		(fixed in 4.1)
+	Max % of Xeboc: There is a bug in this that I have not fully explored.
+		But I know an error occurs if over 100%.
+	Medlines cannot restore more than 1 hit point per step (game crashes)
+	Players cannot walk in wasteland with more than $1 billion dollars on
+		them (game crashes)
+	Players cannot put more that $1 billion dollars in Rent account or
+		it goes negative (and the player owes that much rent!!!)
+	No more than 16 pylons can be placed on the wasteland map.
+
+
+How Do I Create a Custom DataSet?
+---------------------------------
+Are you sure you want to try this? Well, if you do, all you have to do is edit
+some of the text files included with the game and perhaps change the map a
+little. Then simply recompile the GAME.DEF and send your dataset out (be sure
+and test it first!). It can be as simple as that! But...
+
+For the more adventurous, there is a LOT more you can do...limited only by
+your imagination and the LOD game engine! Listed below are some of the things
+you can change:
+
+	-THE SCENARIO. With certain limitations, you can change the theme
+	 of LOD around to reflect your own vision.
+	-THE MAP. Make a few changes in the default map or start over from
+	 scratch and make one that's all yours (recommended).
+	-THE MONSTERS. Change around the creatures that your players meet.
+	-THE TAVERN CHARACTERS. Your players can go into any city and talk to
+	 denizens in the local tavern. Put some new or interesting people or
+	 (?) in there...perhaps giving out useful advice?
+	-A NEW CITY. LOD allows you to add one more city to the existing ones,
+	 or you can start from scratch and rename them all (much harder!)
+	-ITEMS. Create new items for your players to find, or modify existing
+	 ones.
+	-TRIVIA. There is a trivia game available in all city casinos, make
+	 your own!
+	-PICTURES. Either ANSI or EGA, change the way items look when your
+	 players view them.
+	-PLAYER STATS. Change the stats your players start with. You can also
+	 change the items and cash they initially start out with.
+	-EXPERIENCE POINTS. Change the number of experience points players
+	 receive for going up a level.
+	-PLAYER ADVANCEMENT. Change how fast (or slow) your players move up.
+	-FINANCIAL DATA. Change the amount players can borrow in a loan, the
+	 amount of interest their accounts will earn, how big their accounts
+	 can get, how long they have to wait for a loan, and more!
+	-QUESTS. To a limited degree, you can change the quests around.
+	-FORTS. Change how players can use and equip their forts.
+	-AND MUCH MORE!!!
+
+
+What Tools Do I Use to Make My DataSet?
+---------------------------------------
+The LOD basic package of files include almost all of the utilities you will
+need to get started. Listed below are the game editors provided:
+
+CUSTOM.EXE--This program is used to edit many of the features found in the
+game, including the map, all of the objects, and the terrain. This program
+automatically creates the *.BIN files required to compile your dataset. It
+also allows you control over many of the other aspects of starting your game,
+including:
+	-New Player Options (Control over options players start out with)
+	-Fort Options (Control over how forts are configured and controlled)
+	-Combat Modes (Control over the different types of combat available)
+	-Finances (Control over all of the financial aspects of the game)
+	-Misc (Janitor payments, raising levels at all cities option)
+	-Advancement (Control over how players advance)
+	-Taxes (Control over how and when players are taxed)
+	-Casino (Control over how much can be bet and won)
+
+ANSIPUT.EXE--This program allows you to add, delete, and edit the 255
+available ANSI pictures that can be used in the game. This program must be
+used in conjunction with an ANSI editor program.
+
+COMPILE.EXE--This program takes all of the files specified as .txt files to be
+included in the game, along with the .def and .bin files to compile the
+dataset. The dataset file is generally output as GAME.DEF.
+
+DOCVIEW.EXE--This program allows you to view and sort the various documentation
+files in LOD from a central program. It separates the USERDOC.TXT file into its
+basic areas of interest by topic. Helpful for offline viewing.
+
+EDITIMG.EXE--An EGA graphics editor.
+
+EGAPUT.EXE--Adds EGA graphics to the compiled resource file.
+
+GAMEEDIT.EXE--Editor for games in progress. Useful for fixing players who have
+'screwed the pooch'. If a player attempts to take a step with more than a
+billion dollars on their person, they get kicked out of the game. Use this
+utility to fix them up. If a player dies through a massive bout of line noise
+(and the sysop feels merciful), use this utility to resurrect them. If a user
+sticks more than a billion dollars into their RENT account and it goes
+negative (wanting them to PAY a billion dollars), use this to get them squared
+away. This is a useful utility for fixing just about anything that has to do
+with a game in progress.
+
+GETBIG.EXE--A .GIF file capture utility.
+
+GMAPEDIT.EXE--This program is an EGA Map Editor. It allows you to edit the map
+in EGA mode so you can see how the map will look in GTERM.
+
+LCDOS.EXE--LGPL Compiler (DPMI version)
+
+RTM.EXE--A file needed for DPMI (Copyright Borland International)
+
+TRIVCOMP.EXE--This program is used to compile your TRIVIA.TXT file into
+TRIVIA.DEF. The format for the questions must be followed fairly explicitly.
+One problem I have noticed is that you DO NOT want to include any sort of
+punctuation in your questions other than question marks and periods. Commas
+really give you screwy results.
+
+TVHC.EXE--A Help file compiler.
+
+
+How Do I Make a Good DataSet?
+-----------------------------
+Now THAT is a good question! The best answer to this question is this:
+
+"Make a game that you would want to play."
+
+This includes things like:
+
+	-Balance. The game must play well, giving players only what they need
+	and only as they need it. What's the point if a player can get the
+	best weapon in the game right off the bat?
+
+	-Creativity. Make players want to stop and explore your world.
+
+	-Attention to Detail. There's nothing worse than playing a game that
+	says one thing will happen, and something completely different
+	occurs. (It is really easy for this to happen when you are modifying
+	the default dataset.)
+
+	-Theme. Be sure to build the world your way, people it with your
+	characters and plots and items and, well, you get the idea.
+
+Remember why you are doing this, for FUN!
+
+The following instructions are provided to help you in creating a custom
+dataset for LOD:
+
+
+CUSTOMIZING THE MAP
+===================
+LOD is played on a 125X125 map made up of a grid consisting of terrain tiles.
+Each tile has a particular terrain type associated with it.
+
+In this version of LOD (4.1) there are 50 terrain types available through the
+CUSTOM.EXE program. The first 48 of these are used in the default dataset. It
+is fairly simple to edit these terrain types in the CUSTOM program, but it
+must be noted that these terrain types can not be changed in the GTERM
+program, so I do not recommend changing them since GTERM is a popular way to
+play this game.
+
+
+Editing the Map
+---------------
+From within CUSTOM, select EDIT, then MAP. You are presented with a 125X125
+grid that represents a map of the wasteland as used in LOD. You also have 48
+terrain types to choose from to add to your map. Some of these terrain types
+are standard terrain features (deserts, swamps, etc.), others are specialized
+terrain squares representing cities, huts, and other domicile type locations.
+
+To place a terrain tile, simply use the arrow keys to move the cursor to the
+desired square, then press the letter corresponding to the terrain type to be
+placed in that square. Alternate menus of terrain types are available by
+pressing the SHIFT+> or SHIFT+< keys.
+
+Remember, since the wasteland is limited to 125X125 sectors, the outer rim
+should be some type of impassable terrain to keep players from "falling off".
+
+Note:  If you wish to start with a blank map freq TPLODMAP.ZIP from
+       1:106/131 or ftp it from blkbox.com.  Taylor Parker "filled" it in
+       with just plains terrain.
+
+Placing Sacre Base
+------------------
+This is probably the most important decision you will make in your dataset.
+The zones used to indicate the types of monsters players will encounter all
+radiate away from Sacre Base based on the distance that squares are from the
+base.
+
+
+Placing the Cities
+------------------
+Each of the cities should be placed in the wasteland. It might be advisable
+to space them out to avoid getting large readouts when players use their
+scanners (and for variety's sake!)
+
+NOTE: If you place a city on the map more than once, whenever a player enters
+the city, they will always exit back out at the one furthest away from the
+upper right corner. For example, in my latest, I placed four Death Warrior
+Camps out in the wasteland. Whenever a player enters any one of them, they
+exit at the one furthest from the upper right corner.
+
+
+Selecting Terrain Types
+-----------------------
+There are a lot of different approaches to creating terrain. This is strictly
+up to you. Some people like to create semi-realistic terrain, with one type
+of terrain blending into the next. Others prefer a more stark effect with
+all types of terrain mixed in. Let your creativity shine! Here are some
+suggestion that I try to follow:
+
+	-Don't mix your terrain up too much. Having deserts next to water or
+	lava rivers in snow terrain gets confusing. (But it is a wasteland!)
+
+	-Try to put several of the same types of terrain squares together to
+	get some continuity. Create mountain ranges, nuclear strikes,
+	volcanoes, and, if you like, entire eco-systems!
+
+	-Create a different type of impassable terrain than just mountains. It
+	can get boring running into mountains all of the time.
+
+	-Use your map as an integral part of your dataset. Make it work for
+	your dataset in setting up what you are trying to do. One early
+	dataset turned the entire wasteland into one big maze. Talk about your
+	theme concepts!
+
+
+Placing Pylons
+--------------
+Pylons are a particular type of terrain that allows players standing on that
+terrain square to "enter" the pylon (if they have a key) and use it to jump
+around on the wasteland to another pylon by entering the proper three digit
+color code.
+
+There are two types of pylon, the Up pylon and the Down pylon. Use these
+interchangeably. There is no difference in the two any more. In an early
+version of LOD, there were multiple levels (this is also what the "Rope" is
+for) that players could move between (hence, up and down pylons!). This was
+changed in favor of a larger, single level map. But the pylons were never
+changed. There is no difference between the two.
+
+To place a pylon, simply select a place that you want a pylon to be and put
+it there. Don't worry about the color codes, these are automatically assigned
+when the dataset is compiled.
+
+NOTE: Do not use more than 16 pylons on your map. The compiler will not
+support more than 16 pylons. If you add more, the first ones are dropped off
+of the list.
+
+
+Designating Zones
+-----------------
+The zones, by default, radiate away from Sacre Base in 30 click increments.
+The only thing affected by these zones is the placement of monsters.
+Generally, as a player passes into a higher zone (further away from Sacre
+Base), they will run into harder monsters. This is controlled by the MINDIST
+and MAXDIST settings in the description of each monster. To change the zones,
+simply change the MINDIST and MAXDIST parameters on your monsters.
+
+You can't change the display though if you do this. It will still read zone 1
+as 30 clicks from Sacre, etc.
+
+
+Creating Multiple Maps
+----------------------
+By using a batch file to swap out a series of GAME.DEFs when the game is first
+called and loaded, the possibility arises for multiple maps to be used in the
+game. This effect was first introduced by Ray Bacon of New Age Software, and
+has also been used by Marvin Moffett in several of his datasets. With this
+setup, it is possible that a player will face a different map every time he
+logs into the game. The changes he may face may be minor or major, it's all
+up to you.
+
+
+EDITING THE TEXT FILES
+======================
+Editing the text files is the easiest way to change LOD. You can easily add
+new monsters, forts, characters, conversations, and even customize the screen
+displays in the game. Refer to section 4 of CUSTOM.DOC for a listing of the
+text files that can be edited and compiled.
+
+
+Editing the STRINGS.TXT File
+-----------------------------
+Rule #1--DO NOT ADD OR DELETE ANY LINES IN THIS FILE!!!!!!!!!!!!!!!!!!!!!!!!!
+Rule #2--See Rule 1!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+You can modify this file as much as you want, as long as you obey Rules 1 and
+2. Just read through the file to get a sense of what this file is for. This
+file contains all of the text "strings" that appear whenever certain game
+conditions are met. Actually, this file represents almost all of the game
+interface except for the basic ANSI shell.
+
+Changes you make to this file will go a long way toward establishing your
+"personality" in the game. So be careful to keep your changes consistent.
+
+There is also a GTERM strings file that can be edited, but must be distributed
+with the dataset.
+
+Konnor's Note: I caution dataset designers against changing the GTERM files,
+since many players use the same GTERM configuration for many different boards.
+If you change it to where the game calls a different picture for a standard
+scene, the users who have not set up your included files will be faced with
+a blank area on their display, or worse, if they do set yours up and you
+change a default picture, they will get a blank area on other boards. This
+goes for the RESOURCE.000 and RESOURCE.002 files also. Many players will not
+want to keep up with all of that. If you do change these files, make it so
+that none of the default pictures are changed.
+
+
+Creating Monsters
+-----------------
+Creating new monsters consists of several steps, most of which can be
+understood by viewing a sample monster. This one is from my custom dataset,
+and is a monster that guards the crumbling labyrinth situated around KILL,
+INC. Comments are included after each section describing what each is for:
+
+EXAMPLE MONSTER FROM MONSTER.TXT COMPILED IN KM4ALOD4.ZIP:
+;----------------------------------------------------------------------------
+
+NAME Minotaur ;You gotta give it a name!
+
+DESC As you venture down the hallway in this creepy labyrinth, you hear the
+DESC distinctive "THUMP, THUMP" of footsteps approaching you. From the sound,
+DESC you must assume that whatever is coming, it's very large. Then suddenly,
+DESC you are face to knee with a giant minotaur! It is armed to the teeth and
+DESC definitely not happy to see you here. ;Description of the encounter.
+
+TRESTRICT FLOOR ;Makes this monster only show up on a certain type of terrain.
+
+ORIGX 67  ;X Origination point\
+ORIGY 100 ;Y Origination point -The place on the map around which this monster
+ORIGZ 1   ;Z Origination point/      will appear-used with MINDIST and MAXDIST
+
+HITPTS 350  ;How much damage it can sustain
+STR 360     ;Strength rating
+DEX 245     ;Dexterity Rating
+AGL 245     ;Agility Rating
+EXP 25000   ;Amount of experience a player gets for defeating this monster
+MONEY 31000 ;Amount of money a player gets for defeating this monster
+
+DISINT 50   ;percentage chance that an item will disintegrate upon death
+
+MINDIST 0   ;Minimum distance this monster appears from XYZ origination point
+MAXDIST 20  ;Maximum distance this monster appears from XYZ origination point
+
+WEAPON1 WidowLance   ;Short range weapon--affected by DISINT %
+WEAPON2 WidowBlaster ;Long range weapon--affected by DISINT %
+ARMOR Widow Armor    ;Armor type worn by monster--affected by DISINT %
+INV WidowPack	;Ammo for weapons--NOT affected by DISINT %
+INV WidowPack	;Ammo for weapons--NOT affected by DISINT %
+INV10 Rations/10     ;10% chance of item in inventory--NOT affected by DISINT %
+INV25 Bag of gold    ;25% chance of item in inventory--NOT affected by DISINT %
+TYPE 4	       ;Combat strings of this type (4) will appear
+
+KILLHIM The Minotaur screams a mighty wail, then falls dead at your feet. You
+KILLHIM search his massive body for anything of value.  ;Death description
+
+;----------------------------------------------------------------------------
+Detailed instructions for creating monsters are included in the default
+MONSTER.TXT included with the LOD program files.
+
+
+Adding New Monster Files
+------------------------
+New monster files can be added by modifying the section of the DATASET.TXT
+file that identifies the usage of the MONSTER keyword. To add a new monster
+file, simply add your file name to the list of monster files in DATASET.TXT
+using the following format:
+
+MONSTER MONSTER.TXT (substitute your file name for MONSTER.TXT)
+
+
+Limiting the Range of Monsters
+------------------------------
+Use the MINDIST and the MAXDIST parameters to specify the maximum distance and
+the minimum distance that a monster will appear from any given point. Default
+point of origin is Sacre Base. Use in conjunction with the ORIGX, ORIGY and
+ORIGZ commands to specify alternate starting points for your monsters to
+radiate out from.
+
+Hint-when using the ORIGX, ORIGY, and ORIGZ commands, ORIGX is always the
+number of columns over, starting from the left, and the ORIGY is the number
+of rows down, starting from the top. ORIGZ is ALWAYS set to 1. So the entry
+for a monster that you wish to have radiate a minimum of 2 squares and a
+maximum of 10 squares away from the point 10 squares in and 10 squares down on
+the map would be as follows:
+
+ORIGX 10
+ORIGY 10
+ORIGZ 1
+
+MINDIST 2
+MAXDIST 10
+
+Konnor's Note: Be sure that you do not put monsters that are inappropriate to
+the zone they are in. No newbie wants to face a monster that they have almost
+no chance of beating right off the bat!
+
+
+Limiting Terrain Type Appearances for Monsters
+----------------------------------------------
+There are two different ways to have your monsters appear only on certain
+types of terrain. You can use the WATERONLY command to limit the appearance of
+your monsters to only water type terrain (see Editing Terrain Types for more
+info on setting a terrain type to water), or you can use the TRESTRICT command
+option to force your monster to appear on only specific types of terrain. More
+than one TRESTRICT command can be present for each monster. I've used up to
+five at a time without any problem. Use this format:
+
+TRESTRICT plains
+
+This command will cause your monster to only appear on the terrain type called
+"plains".
+
+The LANDWATER command will simply cause your monster to appear on both land
+type and water type terrain.
+
+Konnor's Note: Using the TRESTRICT command in conjunction with the MINDIST
+and MAXDIST commands can limit even further the range of terrain that your
+monsters may appear in.
+
+
+Editing Terrain Types
+---------------------
+A limited amount of editing of the terrain types can be done. The easiest
+things to do is to change certain types of terrain that are currently passable
+to impassable (Forests?) or certain types that are land types to water types
+(Swamps?). You can also change the ANSI colors of the terrain types and the
+characters used to define them. I would not recommend changing much more than
+that since any such changes would ruin the gaming experience for GTERM users.
+
+Konnor's Note: Terrain tiles that do not have a corresponding display tile in
+GTERM show up as big, black, ugly squares with the terrain number smack dab in
+the middle when GTERM is used. If you use altered terrain squares to hide
+certain paths or mazes, they stick out like a sore thumb when GTERM is used.
+
+
+Adding Terrain Types
+---------------------
+This can be done in the for the ANSI display options. But this is not
+recommended because players using GTERM will only see a big black square that
+will stick out like a sore thumb.
+
+However, you can do it by editing the last two available terrain types in
+CUSTOM.EXE.
+
+
+Creating New Items
+------------------
+Now comes the fun part! You should definitely read section 8 in the CUSTOM.DOC
+file before attempting to do this. Remember, this FAQ just enhances the info
+in the LOD docs, the best source is still Scott's original docs, and this
+topic is covered extremely well.
+
+The easiest way to create a new item is to use CUSTOM.EXE to simply change the
+name of an existing item (be careful though--make sure the item is not
+referenced elsewhere by its previous name). Even better, go to the end of the
+existing items in the list defined in CUSTOM.EXE and start from scratch.
+
+Here are some hints on items to add:
+
+	-Fort options: Make some really good weapons and fort packs and
+	 shields to give the fortress owners something to spend all of their
+	 loot on.
+
+	-Take care of the necessities: Need bigger medkits or food packs?
+	 Make them! How about warpers, stealth fields, rechargers? Give it to
+	 them!
+
+	-Gotta take care of the baddies that you are going to create, so make
+	 some better weapons; both long range and close.
+
+	-Get creative. Dive into the GENOBJ.TXT file and create some real
+	 goodies! (Watch out for that Replicator though!)
+
+Konnor's Note: The replicator is an item that is provided but not used in the
+default dataset. It will essentially replicate any item it is used on. This
+means that it is basically an endless, limitless source of wealth for any
+player who has one. I do not recommend using this device in your dataset,
+unless you make sure it does not come into play until near the end of the
+game, say, as a reward for the winner?  There is a way around it, and that
+is to modify the replicator to give a limited number of uses. If you do this,
+do not put it up for sale unless it is THE most expensive item in the game.
+Otherwise, a creative macro writer will loop it and have a limitless source
+of wealth.
+
+
+Figuring the Cost of Items
+--------------------------
+Remember that the price paid for an item is greater in the other cities than
+it will be in Sacre Base, so take into consideration what city the item will
+be sold in when assigning a cost to a new item. The cost increases according
+to the city number, so if the same item is sold in City 3 and City 4, it will
+be more expensive in City 4.
+
+
+Creating Upgraded Weapons
+-------------------------
+Weapons can be created that feature the same type of upgrades that are
+available from ACME Labs. All instances of the weapon will feature the
+upgrade and players will have to do nothing to receive those benefits except
+equip and use the weapon.
+
+The upgrades that are available are:
+
+	Dexterity bonuses of 10%, 20%, and 30%
+	Strength bonuses of 10%, 20% and 30%
+		(Upgrades of only 10 and 20% are available at ACME.)
+	Stunner (Useful on long range weapons only)
+	Burst Mode (Useful on long range weapons only)
+	UniAmmo (Useful for all types of weapons that require ammo)
+
+There are 127 different combinations of the bonuses and upgrades. A numeric
+value between 1 and 127 is assigned to each combination. To create an upgraded
+weapon, simply put the proper number in the VAR2 slot for the weapon. Leaving
+the VAR2 slot blank or putting a 0 in it is the same as no upgrade.
+
+Be sure to choose the proper upgrade for the type of weapon. You wouldn't want
+to have a short range weapon that has a stunner upgrade on it that wouldn't
+work, would you?
+
+Use the following chart to choose the correct number for the upgrade:
+
+##d=Dexterity  ##s=Strength  S=Stunner  B=Burst Mode  U=UniAmmo
+
+ 1-10d	     33-10d,10s	  65-10d,20s	   97-10d,30s
+ 2-20d	     34-20d,10s	  66-20d,20s	   98-20d,30s
+ 3-30d	     35-30d,10s	  67-30d,20s	   99-30d,30s
+ 4-S	       36-10s,S	    68-20s,S	    100-30s,S
+ 5-10d,S	   37-10d,10s,S	69-10d,20s,S	101-10d,30s,S
+ 6-20d,S	   38-20d,10s,S	70-20d,20s,S	102-20d,30s,S
+ 7-30d,S	   39-30d,10s,S	71-30d,20s,S71      103-30d,30s,S71
+ 8-B	       40-10s,B	    72-20s,B72	  104-30s,B72
+ 9-10d,B	   41-10d,10s,B	73-10d,20s,B	105-10d,30s,B
+10-20d,B	   42-20d,10s,B	74-20d,20s,B	106-20d,30s,B
+11-30d,B	   43-30d,10s,B	75-30d,20s,B	107-30d,30s,B
+12-S,B	     44-10s,S,B	  76-20s,S,B	  108-30s,S,B
+13-10d,S,B	 45-10d,10s,S,B      77-10d,20s,S,B      109-10d,30s,S,B
+14-20d,S,B	 46-20d,10s,S,B      78-20d,20s,S,B      110-20d,30s,S,B
+15-30d,S,B	 47-30d,10s,S,B      79-30d,20s,S,B      111-30d,30s,S,B
+16-U	       48-10s,U	    80-20s,U	    112-30s,U
+17-10d,U	   49-10d,10s,U	81-10d,20s,U	113-10d,30s,U
+18-20d,U	   50-20d,10s,U	82-20d,20s,U	114-20d,30s,U
+19-30d,U	   51-30d,10s,U	83-30d,20s,U	115-30d,30s,U
+20-S,U	     52-10s,S,U	  84-20s,S,U	  116-30s,S,U
+21-10d,S,U	 53-10d,10s,S,U      85-10d,20s,S,U      117-10d,30s,S,U
+22-20d,S,U	 54-20d,10s,S,U      86-20d,20s,S,U      118-20d,30s,S,U
+23-30d,S,U	 55-30d,10s,S,U      87-30d,20s,S,U      119-30d,30s,S,U
+24-B,U	     56-10s,B,U	  88-20s,B,U	  120-30s,B,U
+25-10d,B,U	 57-10d,10s,B,U      89-10d,20s,B,U      121-10d,30s,B,U
+26-20d,B,U	 58-20d,10s,B,U      90-20d,20s,B,U      122-20d,30s,B,U
+27-30d,B,U	 59-30d,10s,B,U      91-30d,20s,B,U      123-30d,30s,B,U
+28-S,B,U	   60-10s,S,B,U	92-20s,S,B,U	124-30s,S,B,U
+29-10d,S,B,U       61-10d,10s,S,B,U    93-10d,20s,S,B,U    125-10d,30s,S,B,U
+30-20d,S,B,U       62-20d,10s,S,B,U    94-20d,20s,S,B,U    126-20d,30s,S,B,U
+31-30d,S,B,U       63-30d,10s,S,B,U    95-30d,20s,S,B,U    127-30d,30s,S,B,U
+32-10s	     64-20s	      96-30s	      128-10d (restarts)
+
+
+So, if you wanted to create a short range weapon that had both a 20% upgrade
+in strength and a 20% upgrade in dexterity, and a UniAmmo upgrade, you would
+simply insert 82 into the VAR2 for that weapon.
+
+
+Damage Limitations
+------------------
+Prior to version 4.1, there was an undocumented limit to the amount of damage
+that a weapon or mine could do. This limit was 255 for the maximum damage
+variable. Any weapon that exceeded this would do a random amount of damage
+that could be considered "infinite" in this game. Of course, you can use this
+"bug" to your advantage by creating a fort weapon that would do "infinite"
+damage. That would make someone think twice before attacking your fort!
+
+
+Creating New Armor Types
+------------------------
+Here's a few suggestions for new armor types:
+
+	-Change the size of all existing armor types.
+
+	-Make a type of armor that has a high deflection rate, but has a low
+	 charge to it and is not rechargeable. This would be good for those
+	 "hard to kill opponents as a one-shot deal.
+
+	-Make armor types that do not fully recharge by setting the MAXUSE
+	 lower than the original charge.
+
+	-Make some armor types that are already upgraded in one or both areas.
+
+	-Make an armor type that has a very high charge, but a very low
+	 deflection rate!
+
+
+Making New Armor Types Rechargeable
+----------------------------------
+This little item is pretty tricky! It should be as easy as setting the VAR1
+to a "0" if the armor is not to be rechargeable, and to a "1" if it is to be
+rechargeable. However, there is a little kicker thrown in, and it comes in the
+form of an extra utility you need to get from either Scott's NYN bbs or any
+other bbs that has it. This is the MAXUSE.EXE utility. You simply insert this
+utility into your working directory and then run it to edit your armor types.
+What this does is tell LOD what the recharged strength of the armor will be.
+By default, the MAXUSE value for any item is 0. That is why you need this
+utility, otherwise, you can recharge your armor, but you will be recharging
+it to the default value, which is "0"!
+
+HINT: You'll need this utility to edit other items, too. The MAXUSE value of
+an item is referenced when the item is used. So, if you have a new type of,
+say, food that has 100 uses, when the player goes to use it, the game will
+report:
+There are 100 of 0 applications remaining. Use an application (Y/N) ?
+So, you might want to fix this, since it looks a little stupid.
+
+
+Creating Upgraded Armor Types
+-------------------------
+This bit was submitted by Doug Merha. Pay attention!
+
+ARMOR UPGRADES
+
+Any precreated armor may have E.T.S. capability which will augment the
+character's stats with E improving Strength, T improving Dexterity, And
+S improving Agility. The key is in VAR1, which should be set as
+follows: ##R (Where ## is chosen from the table below and R is set
+to 1 if the armor is Rechargeable, 0 if not.) 10%, 20%, 30%
+
+E=strength T=dexterity S=agility:
+	  ##R ETS
+(EXAMPLE) 011=110
+	  III II
+	  III  ------STR & DEX UP 10%
+	     --------RECHARGEABLE VARIABLE (1 for YES, 0 for NO)
+	   ----------THIS NUMBER ADDED WITH A 1 OR A 0 (011)IN VAR1
+
+##  ETS	 ##  ETS      ##  ETS       ##  ETS
+00  000	 16  001      32  002       48  003
+01  110	 17  111      33  112       49  113
+02  220	 18  221      34  222       50  223
+03  330	 19  331      35  332       51  333
+04  011	 20  012      36  013       52  010
+05  121	 21  122      37  123       53  120
+06  231	 22  232      38  233       54  230
+07  302	 23  303      39  300       55  301
+08  022	 24  023      40  020       56  021
+09  132	 25  133      41  130       57  131
+10  203	 26  200      42  201       58  202
+11  313	 27  310      43  311       59  312
+12  033	 28  030      44  031       60  032
+13  100	 29  101      45  102       61  103
+14  210	 30  211      46  212       62  213
+15  320	 31  321      47  322       63  323
+
+
+Creating NPC Forts
+------------------
+NPC forts are useful for several reasons. You can use them to:
+
+	-Provide convenient access to a particular area.
+
+	-Protect a particular area (with a good proximity detector and a
+	 very strong weapon or a nice consistent mine spreader!)
+
+	-Sell special items.
+
+	-Sell energy or medkits.
+
+	-Spread mines.
+
+It is important to remember the following: Your NPC forts WILL be attacked.
+You can set them up so that they are either easy or hard to take over.
+
+Remember, after a certain point in the default dataset, you cannot protect a
+fort. Players simply get too strong. If you want your NPC fort there for the
+duration of the game, you have several options:
+
+	-Make it inaccessible. This only works for Proximity defense forts and
+	 mine spreaders. Players would need to get to all of the other types.
+	 Do this by putting some sort of inaccessible terrain on all four sides
+	 and do NOT put any sort of teleporter in it.
+
+	-Create fortress weapons and shields that NOBODY, not even the
+	 strongest possible player in the game can get past. (You don't have to
+	 make these fort items generally available.)
+
+	-Create items that are locked in place and cannot be removed. Make
+	 sure the fort is also equipped with an anti-self destruct option.
+
+
+Creating NPC Fort Stores
+------------------------
+To create an NPC fort store, you first need to create the fort options which
+will stock your store and then restock it at night during maintenance. The
+easiest way to do this is to simply copy the setup for the TERRA LABS SELLERs,
+either A, B, or C, to another slot. Then specify the VAR2 as the device number
+of the item you want the stocker to create and put up for sale. You'll notice
+that the VAR1 value for each of the three TERRA LABS SELLERs is different.
+That's because each one stocks a different available slot in your fort:
+
+	-A stocks slots 1 and 2
+
+	-B stocks slots 3 and 4
+
+	-C stocks slots 5 and 6
+
+Now that you have your stockers created, simply go to your NPCFORT.TXT file
+and create a new fort. Below is an example:
+
+;-----------------------
+
+NAME Nemesis Dry Goods	  ;gotta give it a name!
+
+X 62			    ;X location
+Y 47			    ;Y location
+Z 1			     ;Z location (always 1)
+
+PASSWORD RANDOM		 ;IMPORTANT! So no one can guess it!
+				;RANDOM assigns a randomly generated password
+MED 50000		       ;If you want it to sell medkits, give it some
+MEDFS 50000		     ;How much of the medkits are for sale?
+MEDPRICE 200		    ;How much are the medkits per dose?
+
+ENERGY 10000		    ;Give it some energy right off the bat.
+ENERGYFS 0		      ;Don't sell it or it can be depleted and the
+ENERGYPRICE 0		   ;fort easily conquered.
+
+MONEY 0			 ;Does your fort need any cash in the treasury?
+
+TELEPRICE 1000		  ;Teleportation charge. Delete if no teleporter.
+TOLLPRICE 0		     ;Toll charge. Delete if no Toll Station.
+
+SPEC Sacre Pack		 ;Fort option (default pack)
+SPEC Black Hole Tap	     ;Fort option (custom energy)
+SPEC Death Knell		;Fort option (custom weapon)
+SPEC Gassy Nebulae	      ;Fort option (custom moat)
+SPEC Ultimate Shield	    ;Fort option (custom shield)
+SPEC Sacre Seller 2	     ;Fort option (custom stocker)
+SPEC Sacre Seller 5	     ;Fort option (custom stocker)
+SPEC Sacre Seller 8	     ;Fort option (custom stocker)
+LISTUNION		       ;Why not? You gotta advertise!
+;-----------------------
+
+NOTE--Before LOD ver. 4.1, forts with the RANDOM password option were assigned
+random numeric passwords up to five digits. These types of forts could be
+broken into easily with a sequential number macro. Version 4.1 changes the
+RANDOM function to assign alpha-numeric passwords.
+
+
+Creating Mine Spreader Forts
+----------------------------
+These are easy. Simply equip an NPC fort with one or more mine factories and a
+mine spreader. A single mine spreader will spread all mines created so you do
+not need more than one mine spreader. For more fun, give the fort a Wanderer,
+so it will warp around randomly leaving mines all over the wasteland.
+
+
+Making NPC Forts That Warp
+--------------------------
+If you add a Wanderer device to your NPC forts, be sure and list their initial
+location as:
+
+X1
+Y1
+Z1
+
+
+Creating Fort Packs
+-------------------
+Creating fort packs is not as hard as it has been made out to be, but there is
+a bit of an art to it, and a lot of trial and error. First, refer to Section
+Eight of CUSTOM.DOC for information on creating your new items. Then, you
+simply add together the VAR1 settings for each item in the fort pack. Remember
+that you can only use items with an application code = 38. You'll notice if
+you look through the device list that there are two sets of Teleporters,
+Excelsior Teleporters, and Transporters with different application codes. The
+ones with an application code of 38 are the ones you will include in your
+packs. The other ones are the ones you can buy by themselves for your fort.
+
+For example, if you want to create a fort pack with a:
+
+	-transporter VAR1 =  16
+	-comset      VAR1 =  32
+	-wanderer    VAR1 = 128
+	-SFG	 VAR1 =  64
+			    ---
+			    240
+
+Simply add up the VAR1s (240) and put that number in the VAR1 slot in your
+fort pack.
+
+Now the art and trial and error comes in when you try to fit more than three
+or four items in a pack. Since the VAR1s are multiples of each other, you may
+start running into problems if you try to load them up. An even bigger hurdle
+comes when you try to make bigger proximity detectors, mine spreaders, or toll
+stations and the like. If you print out your device list now, you'll notice
+that the VAR1 for the PROXIMITY TRIP R0 is 1024. The VAR1 for the PROX R1 is
+twice that, or 2048. The VAR1 for a PROX R2 is 3 times that, or 3072. Get
+the pattern? So, you can safely assume that the VAR1 for a PROX R3 would be
+4096. But, what would the VAR1 be for a PROX R7--8192? No, that's the VAR1
+for a TOLL STATION R0!
+
+You can include Factories in your fort packs, too! The VAR1 for a factory is
+256. Simply include the device number of the item you want the factory to
+create in the VAR2 slot.
+
+You can add as many factories as you want, but again, you can run into
+problem when you add more items. For example, say you create a fort pack with
+four factories:
+
+	-Factory	VAR1 =  256
+	-Factory	VAR1 =  256
+	-Factory	VAR1 =  256
+	-Factory	VAR1 =  256
+				---
+			       1024
+
+You might notice that this number (1024) is also the VAR1 for a PROX R0. This
+type of mistake becomes much more common when dealing with the larger numbers
+associated with some of the other items. Be sure to compile and check out your
+fort packs before you consider yourself done.
+
+NOTE: When you compile your GAME.DEF to test it out, you have to delete any
+items created from a previous compile or they WILL NOT have the properties of
+your current compile. For example, if you create a fort pack -- then compile,
+and enter the game, build a fort and install the pack -- and find out that it
+is not exactly what you want, when you correct the device and then recompile,
+this will NOT change the properties of the existing item already installed in
+your fort. You must delete that one and then install it again to check it out
+properly.
+
+
+Creating Fort Weapons
+---------------------
+Be careful when you create new fort weapons that you do not make them too
+strong. For instance, if you limit your players to 200 hit points, there is
+no point in having a fort weapon that does more than 201 maximum damage.
+Having a fort weapon that does a minimum of 200 damage is sure to take out
+any attacker with one hit.
+
+If you are writing a dataset in version 4.0 or a previous version, there is a
+limit on how much damage a fort weapon can do. This limit is 255. Any weapon
+that is designed to do more than 255 damage will do an unspecified, and for
+the purposes of this game, infinite amount of damage. This bug has been fixed
+in LOD version 4.1.
+
+
+Creating Fort Shields
+---------------------
+When creating new fort shields, remember that you want them to be somewhat
+vulnerable. You do not want a shield so strong that it CANNOT be defeated,
+unless you want your players to be absolutely safe, and this idea, generally,
+is not a good one for this type of game (it causes players to give up). So
+make your fort shields strong enough so that the strongest possible player in
+the game has a certain percentage chance of taking it over. The limit for
+fort shield strength in version 4.0 and prior version was 50,000 points. Any
+shield designed with a greater value than that would get a seemingly random
+value. (Konnor's Note: This may or may not have been fixed in version 4.1.)
+
+
+Creating Fort Factories
+-----------------------
+A word of warning on creating fort factories. Remember that each factory will
+create one item per night. This can cause forts to get cluttered very quickly.
+Be sure and make factories only for items that players will want to use or
+sell on a daily basis.
+
+To create a fort factory, use a VAR1 of 256, application code of 38, and enter
+the device number of the item you want the factory to create in VAR2.
+
+
+Creating NPC Monsters and Characters
+------------------------------------
+I suggest you use the ISREAL.TXT file to setup your NPCs in, although you can
+create your own file if you properly include it as a monster file in the
+DATASET.TXT file.
+
+The trick to getting NPCs to work properly is to start assigning player
+numbers from the end of the available player slots. Since each NPC will take
+up a player slot, start from the end with slot 254 (taken up by a
+Deathstalker in the default dataset). Then assign the next one as:
+
+ISREAL 253
+
+Following this formula, you can add quite a few NPCs to your dataset.
+Other than adding the ISREAL line, just set up the ISREAL like any other
+monster.
+
+
+Making NPCs Camped
+------------------
+Use the CAMPED and NORANDOM commands with the X, Y, Z coordinates. Do not use
+the MINDIST or MAXDIST commands.
+
+There is an exception to this rule. If you have a wide enough expanse of open
+terrain (NO impassable terrain types). Then you can set up an NPC to set up
+camp within a specific area, but not at any designated coordinates by setting
+your focus with the XYZ coordinates, and then setting the MINDIST and MAXDIST
+distances so that there is no chance your NPC will camp further away than the
+closest impassable terrain square. BTW, omit the NORANDOM command to make this
+work! The reason that you can only do this within an expanse of passable
+terrain is simply because you don't want your NPC camped on top of a mountain
+where no one can get at it!
+
+
+Limiting the Range of NPC Monsters or Characters
+------------------------------------------------
+There are two ways to limit the appearances of NPC (ISREAL) monsters: by
+terrain and by distance (or both).
+
+
+USING GENOBJ.TXT
+================
+This is a file where magic can occur! Various types of uses, appearances and
+transformations for objects can be programmed in this file.
+
+Use this file to get creative. Remember, your players don't always need to
+kill a monster to get a certain item. Perhaps they can MAKE that item...
+
+Be careful when using the REPLICATE command. This can throw off the balance
+of your game in a hurry. Players with access to a replicator basically have
+access to an unlimited source of funds.
+
+One thing to be careful about is that you cover all of the bases when
+programming in GENOBJ.TXT. If you make one thing happen on a certain type of
+terrain, be sure to include what happens when the player is NOT on that type
+of terrain. The more variables you use, the more distinct scenarios you have
+to cover.
+
+Konnor's Note: This file can be the key to an excellent dataset. Players who
+are familiar with my datasets know I make extensive use of this file. However,
+if this file is not done properly, it can ruin an otherwise excellent dataset.
+So, I suggest that you test each possible scenario repeatedly before you
+include it in your dataset.
+
+
+CREATING NEW TRIVIA
+====================
+
+Editing the TRIVIA.DEF File
+---------------------------
+Watch out for those punctuation marks! Do not use commas in your questions or
+your file will not compile correctly. Use the following format--one question
+per line, followed by the answer. Start the question at column 1 of your text
+editor and start the answer at column 60. Leave at least one empty space
+between your question and answer. Use a plain ASCII text editor.
+
+Be sure and save your trivia questions file as TRIVIA.TXT.
+
+
+Compiling New Trivia
+--------------------
+Simply make sure that your TRIVIA.TXT file is in the same directory as the
+TRIVCOMP.EXE file and run the compiler.
+
+Be sure to go back and check out each line that is reported by the compiler as
+containing an error. Many times just deleting any commas appearing in the
+question will fix it.
+
+
+EDITING THE ANSI SCREENS
+========================
+You will need an ANSI editor program to help you in this section.
+
+
+Using ANSIPUT.EXE
+-----------------
+Use ANSIPUT.EXE to add, delete, extract, and list the ANSI files contained
+in ANSI.DEF. Type ANSIPUT by itself at the command line to get a listing of
+the proper command syntax. It can speed things up if you copy your ANSI.DEF
+and your ANSIPUT.EXE to the directory with your ANSI editor.
+
+
+Editing Menus
+-------------
+You might want to edit the menus to give your game a more custom look or
+feel.
+
+
+Editing the Item Descriptions
+-----------------------------
+These are called by the ANSI code entered in the CUSTOM program. It will help
+your players if you edit the ANSI screens for different items to correctly
+reflect the changes you have made in the dataset.
+
+The ANSI.DEF file is limited to 256 compiled ANSI files. Many of these are
+taken up by intro screens and game menus. That leaves fewer available for your
+items than you may have items. One way around this is to combine similar items
+on the same ANSI screen. For example, the Phasers 1, 2, and 3 are very nearly
+identical, so why not put them all together on one screen, and simply identify
+the strength of each one all on one screen? That frees two screens for your
+own amazing items!
+
+Dataset Naming Conventions
+--------------------------
+Please follow the naming conventions Scott Baker has outlined in the LOD
+doc's for the zipped file that contains your custom dataset.
+
+Example:  KMLOD41A.ZIP
+	  ^^   ^^^
+	  |    | |
+	  |    | |__  This is the version of your dataset.
+	  |    |____  This is the version of LOD it works with.
+	  |_________  These are your initials.
+
+Also to help the sysop's out include a text file in the zipped file named
+FILE_ID.DIZ that contains a descrption of what is included in the
+dataset.  Many bbs softwares can use this FILE_ID.DIZ as the file
+description in the download directories.
+
+Example:	This is the Highlands dataset for Land of
+		Devastation ver. 4.1. This dataset was
+		written by Konnor McCloud
+		Features include a custom map, over
+		80 new objects, new trivia, new puzzles,
+		new characters, new monsters, and new
+		places to visit, even an updated ANSI.DEF.
+		This ZIP file includes the GAME.DEF file,
+		the ANSI.DEF file, the TRIVIA.DEF file,
+		the USERDOC.TXT file, a README.TXT file, and
+		this FILE_ID.DIZ.
+		Simply unzip this file into your LOD 4.1 directory,
+		delete all *.DAT files and PNEWS.* files and
+		start playing!
+		Please DO NOT modify this dataset in any way!
+
+FTP Site Information
+--------------------
+An FTP site has been set up on the Internet with some LOD files you
+might be interested in grabbing.  Below is a recent listing of files
+available on the site.  If you have a file you would like added to the
+site forward it via FIDO netmail to Taylor Parker at 1:106/131.  Be sure
+to include a netmail with a descrpition of the file.  If you need help
+contact Taylor Parker in the FIDO LOD echo, via netmail or via the
+Internet - nemesis@blkbox.com
+
+Files on blkbox.com in the /pub/lod directory.
+
+GTERM400 ZIP       808,833 03-03-94   ega graphics for lod
+LOD400A  ZIP       108,770 03-03-94   lod part a
+LOD400B  ZIP       546,278 03-03-94   lod part b
+LOD400C  ZIP       137,892 03-03-94   lod part c
+LOD400D  ZIP       593,566 03-03-94   lod part d
+LOD400E  ZIP       355,389 03-03-94   lod part e
+LOD400F  ZIP       763,834 03-03-94   lod part f
+LOD400G  ZIP	87,123 03-03-94   lod part g
+L400FIX2 ZIP       223,894 03-08-94   fix 2 for lod
+SLAMSET1 ZIP       195,074 01-09-95   lod 4.0 alternate dataset
+HELL400A ARJ       821,206 04-11-94   lod 4.0 alternate dataset. circles
+				      of hell
+TPLODMAP ZIP	 1,474 04-16-94   my blank map to design datasets with
+00INDEX  TXT	     0 01-26-95   this file you are reading
+KM3ELOD4 ZIP       233,084 01-09-95   lod 4.0 alternate dataset by konnor
+				      mccloud
+NAS240A  ZIP       385,806 01-09-95   lod 4.0 alternate dataset by new age
+				      software ie. ray bacon and friends
+MAXUSE40 ZIP	 8,625 01-09-95   fixes the rechargeable armor bug
+LOD410A.ZIP  -  Sysop and User documentation     [REQUIRED]
+LOD410B.ZIP  -  Main LOD program and data	[REQUIRED]
+LOD410C.ZIP  -  EGA version		      [OPTIONAL]
+LOD410D.ZIP  -  EGA additional graphics library  [OPTIONAL]
+LOD410E.ZIP  -  Sysop customization package      [OPTIONAL]
+LOD410F.ZIP  -  Sound/music support	      [OPTIONAL]
+LOD410G.ZIP  -  EGA developers kit	       [OPTIONAL]
+LOD410O.ZIP  -  OS/2 Executables		 [OPTIONAL]
+LOD410P.ZIP  -  DPMI Character Mode Executables  [OPTIONAL]
+GTERM410.ZIP    Remote EGA graphics and sound for LOD 4.1
+KM4LOD41.ZIP    This is the Highlands dataset for Land of
+		Devastation ver. 4.1. This dataset was
+		written by Konnor McCloud
+		Features include a custom map, over
+		80 new objects, new trivia, new puzzles,
+		new characters, new monsters, and new
+		places to visit, even an updated ANSI.DEF.
+		This ZIP file includes the GAME.DEF file,
+		the ANSI.DEF file, the TRIVIA.DEF file,
+		the USERDOC.TXT file, a README.TXT file, and
+		this FILE_ID.DIZ.
+		Simply unzip this file into your LOD 4.1 directory,
+		delete all *.DAT files and PNEWS.* files and
+		start playing!
+		Please DO NOT modify this dataset in any way!
+
+
+Konnor's Final Note:
+
+Well, I hope this helps. If you have any questions, comments, submissions, or
+complaints, send them to me over the FidoNet LOD echo. Address them to Konnor
+McCloud. I check the echo nearly every day, so you will have a response very
+quickly--but I can't make any promises... :).  Happy LODing everyone!

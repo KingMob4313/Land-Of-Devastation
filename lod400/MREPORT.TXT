@@ -1,0 +1,15 @@
+Performing maintenance
+----------------------
+ þ Checking for a winner.
+ þ Trimming the log file down to size.
+ þ Performing user maintenance.
+    þ Dick (1) playernews file erased.
+    þ High Ronin #2 (!!!monster95***) exempt from day deletions
+    þ High Ronin #1 (!!!monster94***) exempt from day deletions
+    þ Deathstalker (!!!monster93***) exempt from day deletions
+ þ Performing base maintenance.
+    þ Fort Sacre Transport at 1,4,3 reactor produces 300 energy units.
+    þ Fort Terra Labs at 1,83,111 reactor produces 350 energy units.
+    þ Fort Terra Labs at 1,83,111 wanders to 1,36,122.
+ þ Playing with the message base.
+ þ Checking the isreal monsters.

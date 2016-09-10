@@ -1,0 +1,372 @@
+LGPL (Lod Game Programming Language)
+Scott M Baker, 1995
+
+[This documentation is incomplete. I had to rush this out in a hurry.
+Experimentation is probably the best way to figure out how LGPL
+works....]
+
+Introduction:
+
+       LGPL is a programming languaged designed to allow dataset designers
+to modify and extend certain aspects of LOD.  For example, the addition of
+new types of objects that may be U)sed by the player.
+
+       Compiling the LGPL source file is a two phase process. You must
+do the following:
+
+     a) Run "LCDOS.EXE"    (compiles LGPL.IN into LGPL.OUT)
+     b) Run "COMPILE.EXE"  (merges LGPL.OUT into GAME.DEF)
+
+     (Note: You may also use COMP_DPM.EXE or COMP_OS2 in step b if you
+            wish)
+
+       Source files in the standard LOD distribution are as follows:
+
+     LGPL.IN:    Primary source file for U)seobject command
+
+     VORTEX.INC: Include file that implements the Vortex cell
+
+     STDLIB.INC: Some standard library stuff (min/max,inc/dec,etc)
+
+     LODVAR.INC: LGPL lod variable structures
+
+     LODLIB.INC: Library of LOD interface functions.
+
+       If you wish to add additional devices to LOD, then you may wish
+to store your additions in an include file as was done with the
+vortex cell code.
+
+The Compiler Itself:
+
+       LCDOS is a DPMI program.  You'll need more than one meg of
+memory to run it.  I was forced to compile it as a DPMI application
+because it was simply to big to function with DOS's 640k base memory
+limit.
+
+       LCDOS is implemented in 'C', and is my largest project in 'C'
+to date (LOD itself is written in pascal).  My 'C' is still maturing,
+so there are undoubtably countless bugs to be resolved.
+
+       LCDOS was originally an Oberon compiler.  It has since been
+augmented with Pascal and C like features, a preprocessor, and numerous
+LOD-specific features.
+
+Types:
+
+       LGPL supports most pascal-like types, with a few additions,
+omissions, and modifications:
+
+       BYTE:    One-byte unsigned integer
+       WORD:    Two-byte unsigned integer
+       SHORT:   Two-byte signed integer (Borland Pascal == Integer)
+       INTEGER: Four-byte signed integer (Borland Pascal == Longint)
+       COMP:    Eight-byte signed integer
+
+       BOOLEAN: One-byte, either TRUE or FALSE
+
+       SINGLE:  Four-byte floating point
+       REAL:    Six-byte floating point
+       DOUBLE:  Eight-byte floating point
+
+       CHAR:    One-byte unsigned character
+       STRING:  Variable length string, string[0] is a length byte.
+                Not NULL terminated.
+
+       The "Array" and "Record" modifiers are available to create
+more complex types.
+
+       There is no such thing as a "void pointer". Pointers may be
+declared as "POINTER TO <type>" where type is one of the types
+listed above.  Pointers should be used with EXTREME caution as
+most programming errors involve mangled up points of one sort or
+another.
+
+Error Messages:
+
+       LGPL's error messages are confusing, loaded with compiler-
+specific terminology, and sometimes not very indicative of the
+problem.  I'm working on this.  If you get an error, then the best
+solution is probably to cut out the offending segment of code and
+find the problem by the process of elimination (i.e. remove stuff
+until you figure out which statement is causing the bug)
+
+Compilation:
+
+       LGPL source is compiled into an indirect threaded byte code, which
+is saved into the output file.  The code utilizes a stack-based virtual
+machine which is implemented via an interpreter in LOD itself.
+
+[I plan to include full details on the byte code at a future date]
+
+       Duplicate string literals are automatically eliminated, so
+you needn't worry about wasting space by including the same string
+twice.
+
+Known Errors:
+
+       There seems to be a problem with returning negetive numbers from
+procedures. For example:
+
+procedure foo: integer;
+begin;
+ return -1;
+end foo;
+
+var
+ i: integer;
+begin;
+ writeln(i);
+end;
+
+This seem to return MAX(longint) rather than -1. Bummer.
+
+----------------------------------------------------------------------------
+
+PROCEDURE linkcombatplayer(n: integer; var u: pusertype);
+
+               Loads the address of a combat user into a pointer
+       variable. The combat user routine is specified by the
+       integer variable n. Valid codes (for n) are as follows:
+
+               1) pchar: The user while he/she is in combat
+               2) mchar: The monster that the user is fighing
+
+               This routine should only be called once and should be done
+       inside the main() routine.
+
+PROCEDURE linkdevdef(var devdef: pdevdefarray);
+
+               Loads the address of the device definition array into
+       a pointer variable. This procedure only needs to be called once
+       and should be done in the main() routine.
+
+PROCEDURE linkusernum(var usernum: pbyte);
+
+               Loads the address of the current user number into a
+       pointer variable. This procedure only needs to be called once and
+       should be done in the main() function.
+
+PROCEDURE linkuserrec(var user: pusertype);
+
+               This function is used to load the address of the player
+       record into a pointer variable. This procedure only needs to be
+       called once and should be done in the main() routine.
+
+PROCEDURE addobject(z,x,y: integer; var d: devicetype): integer;
+
+               Places the object specified by "d" at the coordinates
+       specified by z,x,y. Returns the number in the object array where
+       the object was placed.
+
+PROCEDURE cdist(x1,y1,x2,y2: integer): integer;
+
+               Calculates the distance from (x1,y1) to (x2,y2). Distance
+        is calculated according to the formula d=(sqr(x1-x2)+sqr(y1-y2)).
+        Note that the value returned by this function is the SQUARE of
+        the distance. To get the actual distance, you will need to take
+        the square root of the result, for example, SQRT(CDIST(...)).
+
+PROCEDURE checklaptop(user: pusertype; mask: comp): boolean;
+
+               Returns TRUE if the user posesses a laptop which contains
+        the program specified by "mask".
+
+PROCEDURE displr(z,x,y: integer);
+
+               Displays a long range scan of the specified coordinates.
+        The format of the display is a 9x9 grid.
+
+PROCEDURE dropobj(var d: devicetype);
+
+               Places the object specified by "d" onto the wasteland. The
+       object is placed at the current Z,X,Y coordinates of the player.
+
+PROCEDURE EnterMessage(replyname,replysub: string);
+
+               Sends a message. Replyname and Replysub are intended to be
+       used when replying to an existing message, in which case replyname
+       is the user to reply to and replysub is the subject of the original
+       message. If these variables are blank, then the user will be
+       prompted for a name and subject.
+
+PROCEDURE enumforts(start,z,x,y: integer): integer;
+
+               Enumerates the fortresses located at a specific z,x,y
+       coordinate. This function is meant to be called in a loop in a manner
+       similar to :
+
+               fort:=enumforts(0,user^.z,user^.x,user^.y);
+               while (fort<>0) do
+                (* do somewith with "fort" *)
+                fort:=enumforts(fort,user^.z,user^.x,user^.y);
+               endwhile;
+
+PROCEDURE enumobjects(start,z,x,y: integer): integer;
+
+               Enumerates the objects located at a specific z,x,y
+       coordinate. This function is meant to be called in a loop in a manner
+       similar to :
+
+               obj:=enumobjects(0,user^.z,user^.x,user^.y);
+               while (obj<>0) do
+                (* do somewith with "obj", for example, peekobject *)
+                obj:=enumobjects(obj,user^.z,user^.x,user^.y);
+               endwhile;
+
+PROCEDURE enumplayers(start,z,x,y: integer): integer;
+
+               Enumerates the players camped at a specific z,x,y
+       coordinate. This function is meant to be called in a loop in a manner
+       similar to :
+
+               player:=enumplayers(0,user^.z,user^.x,user^.y);
+               while (player<>0) do
+                (* do somewith with "player", for example loaduser *)
+                player:=enumplayers(player,user^.z,user^.x,user^.y);
+               endwhile;
+
+PROCEDURE findcity(citynum: byte; var z,x,y: byte);
+
+               Given a city number specified in "citynum", the location of
+        the city will be loaded into the specified z,x, and y coordinates.
+
+PROCEDURE findmonster(z,x: word; var n: word): boolean;
+
+               Given a "z" and an "x" coordinate, find the monster that
+        matches ORIGZ and ORIGX. This is usually used for finding specialty
+        monsters, such as robomines and/or puritron boss monsters.
+
+PROCEDURE gtermnomapcheck;
+
+               Updates the gterm display for remote and/or local players.
+       Testing for GTERM is performed automatically and it is safe to
+       simply call this procedure without explicitly checking for GTERM.
+
+PROCEDURE listuserinv(user: pusertype; useonly: boolean);
+
+               Displays an ascii listing of the user's inventory. If the
+       boolean variable "useonly" is true, then only items that are usable
+       will be reported.
+
+PROCEDURE loadcombatdata(pc,mc: word);
+
+               Loads the combat data for the player specified by "pc" and
+       the monster specified by "mc". "pc" should by 1 under most normal
+       circumstances.
+
+PROCEDURE loaduser(n: word; var u: usertype);
+
+               Loads the user record of the user number specified by "n"
+       into the variable "u". Be careful that you do not use this function
+       to load the record for the current user - this function only reads
+       from disk and the current user is always stored in memory!
+
+PROCEDURE NewMail;
+
+               Displays a count of the number of new (unread) messages for
+       the current player.
+
+PROCEDURE peekobject(n: integer; var d: devicetype);
+
+               Given an object number, returns the object. The object
+        is not removed from the wastelands.
+
+PROCEDURE ReadMail;
+
+               Enters the readmail module.
+
+PROCEDURE retrieveobject(n: integer; var d: devicetype);
+
+               Given an object number, returns the object and removes
+        it from the wastelands.
+
+PROCEDURE saveuser(n: word; var u: usertype);
+
+               Writes the user record "u" into the user file at the position
+       specified by n. Be careful not to write the current user's record
+       as the current user is always written when LOD terminates.
+
+PROCEDURE showchar(user: pusertype);
+
+               Displays the character sheet for the current player.
+       Identical to hitting "C" at the wastelands and/or city prompt.
+
+PROCEDURE sqrt(x: integer): integer;
+
+               Calculates the square root of x. The answer returned is an
+       integer, so therefore it is not necessarily the true square root,
+       and may be rounded.
+
+PROCEDURE vbatt_numammo(): integer;
+
+               Returns the number of ammo types defined by the vbatt
+       system.
+
+PROCEDURE vbatt_ammoname(n: integer): string;
+
+               Returns the name of the ammunition type specified by "n".
+
+PROCEDURE vbatt_ammoeff(n: integer): integer;
+
+               Returns the conversion efficiency of the ammunition type
+       specified by "n".
+
+PROCEDURE doplayercombat(un: word): boolean;
+
+               Initiates player-vs-player combat with the player
+       specified by un. I'm not entirely sure what the boolean result
+       means yet....
+
+PROCEDURE checkdupename(name: string): boolean;
+external 1045 PROCEDURE namestr(name: string): string;
+external 1046 PROCEDURE ansimapper(x1,y1,xtodo,ytodo,xhi,yhi: integer);
+external 1048 PROCEDURE flagredraw;
+external 1049 PROCEDURE querygtermactive(): boolean;
+external 1050 PROCEDURE getmoveparams(var z,x,y: word; var quiet: boolean);
+external 1051 PROCEDURE getmap(z,x,y: word): word;
+external 1052 PROCEDURE getterrain(maptile: word; var ter: terraintype);
+external 1053 PROCEDURE setpassable(b: boolean);
+external 1054 PROCEDURE hasobj(devapp: word; var u: usertype): boolean;
+external 1055 PROCEDURE checkquest(n: word): boolean;
+external 1056 PROCEDURE specialquest(n: word);
+external 1057 PROCEDURE rentcheck(): boolean;
+external 1058 PROCEDURE findobj(devapp: word; var u: usertype): word;
+external 1059 PROCEDURE getenterparams(var z,x,y: word);
+external 1060 PROCEDURE getenterselection(var entertype,entervar: word);
+external 1077 PROCEDURE move_to_town(entervar: word);
+external 1078 PROCEDURE dialog(person: word);
+external 1079 PROCEDURE setenterstring(s: string);
+external 1080 PROCEDURE gettownname(townum: word): string;
+
+external 1061 PROCEDURE enter_hort;
+external 1062 PROCEDURE enter_pylon;
+external 1063 PROCEDURE enter_kirk;
+external 1064 PROCEDURE enter_draku;
+external 1065 PROCEDURE enter_xeboc;
+external 1066 PROCEDURE enter_nukesilo;
+external 1067 PROCEDURE enter_vayderr;
+external 1068 PROCEDURE enter_snowcave;
+external 1069 PROCEDURE enter_loki;
+external 1070 PROCEDURE enter_serpine;
+external 1071 PROCEDURE enter_clonecenter;
+external 1072 PROCEDURE enter_base(entervar: word);
+external 1073 PROCEDURE enter_camp(entervar: word);
+external 1074 PROCEDURE enter_eeee;
+external 1075 PROCEDURE enter_kill;
+external 1076 PROCEDURE enter_acme;
+
+external 1018 PROCEDURE wmindam(i: integer): integer;
+external 1019 PROCEDURE wmaxdam(i: integer): integer;
+external 1020 PROCEDURE wammo(i: integer): integer;
+external 1021 PROCEDURE getminerobo(var o: devicetype): integer;
+external 1022 PROCEDURE getmineflag(var o: devicetype): integer;
+external 1023 PROCEDURE setmineflag(var o: devicetype; f: integer);
+
+external 1009 PROCEDURE use_genobj(index: integer);
+external 1010 PROCEDURE use_mappack(var device: devicetype);
+external 1035 PROCEDURE use_scanner(var device: devicetype);
+
+external 1004 PROCEDURE textcolor(color: integer);
+external 1005 PROCEDURE waitkey;
+external 1017 PROCEDURE readkey(): char;
+external 1047 PROCEDURE clrscr;

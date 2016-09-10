@@ -1,0 +1,30 @@
+;Tavern Definition file
+;
+;Each line of this file represents one person in a tavern. The first number
+;is the town number (1=Sacre Base, 2=Freedom city, etc). The second number
+;is for the number of the person as defined in TALK.TXT
+;
+;This file must be compiled using COMPILE.EXE before the changes will take
+;effect.
+;
+ 1  1   Defs Sacre
+ 1  2   Jeffrey
+ 1  3   Troy Hadley
+ 2  4   Mayor Eastwood
+ 2  5   Joe Farmer
+ 2  6   Whiz
+ 2  7   Trader Rick
+ 1  8   Mean Max
+ 1  9   Captain Targon
+ 3 10   The Vampire
+ 4 11   Nish
+ 3 12   Patti
+ 3 13   Zilggnokk
+ 4 14   Traznor
+ 4 15   Widow Priestess
+ 8 16   Cassandra
+ 8 17   Aretas
+ 8 18   Field General Yak
+ 7 19   Freezemup
+ 9 20    Dallas          Hospital
+ 9 21    Stone           Hospital

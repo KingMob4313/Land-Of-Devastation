@@ -1,0 +1,728 @@
+;Combat string definitions
+;
+;NOTE: Changes to this file will not take effect until you have used
+;      COMPILE.EXE to compile this file into monster.def.
+;
+;This file contains all of the combat strings used in LOD. (These strings
+;used to be in the MONSTER.DEF file but were moved here)
+;
+;The strings are seperated into several "groups" which define what actions
+;the strings apply to. A new group is designated by the word "NEWGROUP".
+;Then you must use the "INCLUDE" parameter to specify what actions will
+;be included. The format for include is as follows:
+;
+;INCLUDE HH 1 0
+;        :: : :-- Defender code
+;        :: :
+;        :: :---- Attacker Code
+;        ::
+;        ::------ Action Code
+;
+;The Action code can be any of the following:
+;
+;        HH - Hand (unarmed) hit
+;        HM - Hand Miss
+;        HA - Hand hit armor
+;        WH - Short range weapon hit
+;        WM - Short range weapon miss
+;        WA - Short range weapon hit armor
+;        RH - Ranged weapon hit
+;        RR - Ready Ranged weapon
+;        R3 - Ready Ranged weapon - 3 round burst
+;        RA - Ranged weapon hit armor        (added in version 3.50)
+;        RM - Ranged weapon missed           (added in version 3.50)
+;        ST - Person is stunned
+;
+;The two attacked/defender codes are as follows:
+;
+; 0 - Applies to all attacks; Monsters, other players, etc. except for player.
+; 1 - The user
+; 2 - Another player
+; 3 - Animal monsters - Rats, Vultures, etc
+; 4 - Humanoid monsters - Death warrior, Bart, etc
+;
+; 5-99 are sysop-definable. You may use them for whatever you want.
+;
+; 100+ are reserved.
+;
+;For example, "INCLUDE WM 1 0" means that the strings are for Weapon Miss and
+;for when a player (code 1) hits anything (code 0).
+;
+;"INCLUDE RH 1 3" would be for Ranged Hit (RH), when the player (code 1) hits
+;an animal (code 3)
+;
+; %1 attacker name
+; %3 attacker weapon
+; %5 attacker range weapon
+; %7 attacker he/she/it
+; %9 attacker his/her/its
+;
+; %2 defender name
+; %4 defender weapon
+; %6 defender range weapon
+; %8 defender he/she/it
+; %0 defender his/her/its
+;
+
+NEWGROUP
+INCLUDE HH 1 0
+You clobber %2 with your fist, sending %2 backwards to the ground!
+You throw a surprise punch to %2's abdomen!
+You throw a low kick, sending %2 to the ground!
+You lunge at %2, knocking %2 to %0 knees!
+A stream of blood sprays into your face as you decimate %2!
+With all your might, you slam you fist into %2, nearly knocking it out!
+You throw a high kick into your opponent's chest, sending %2 flying backward!
+;
+;---------------------------------------------------------------------------
+;
+NEWGROUP
+INCLUDE HM 1 0
+%2 successfully blocks your oncoming attack and sends you flying to the ground in defeat.
+Anticipating your attack, %2 proves a bit faster than the you, and executes a skillful dodge.
+You take a flying leap at %2 and land face-first on the ground.
+You wisely assume a defensive posture to rest for this round.
+You pause  for a moment to catch your breath, missing a vital chance to attack.
+Exhausted from combat, you change your mind and take a moment's pause to regain your strength.
+%2 sees you coming and dodges. You wind up assaulting a tree.
+;
+;---------------------------------------------------------------------------
+;
+NEWGROUP
+INCLUDE HA 1 0
+Your fist feels as if it has hit a brick wall when it hit's %2's solid armor.
+%2 laughs as your feeble attack is halted by %0 armor.
+Your fist glazes into %2's armor, inflicting no damage.
+You fail to penetrate %2's armor.
+You nearly break your hand as you smack %2's armor.
+;
+;---------------------------------------------------------------------------
+;
+NEWGROUP
+INCLUDE WH 1 0
+You plunge your %3 deep into %2's chest, sending it to the ground howling in pain!
+You catch %2 off-guard and slice it with your %3!
+Your %3 descends into a devestating reverse arc as you bury it deeply into your opponent!
+You pummel %2 with your %3, sending a spray of blood into the air!
+With a savage war-cry, you slam your %3 into your enemy's chest, crushing %0 ribs!
+Your enraged opponent screams in sheer terror as you thrust your %3 into %0 side!
+Blood sprays furiously as your %3 severs a vein in your opponents leg!
+You sadistically hack into %2 with your %3!
+Your %3 slices through %2's skin as %8 falls backward in defeat!
+With the might of a warrior, you hack off some of %2's flesh as a souvenier!
+You viciously tear into %2 with your %3!
+Handling your %3 superbly, you devastate %2, busting %0 ribs!!!
+Your %3 seems to glow as you crash it into %2's head.
+You viciously tear into %2 with your %3!
+You plant your %3 into %2's head, brains splattering all over.
+%2 gasps with horror as your %3 cleaves into %0 midsection.
+With incredible strength, your %3 splits into %2's spine, nearly paralysing %2!!
+The %3 splits open %2's torso, exposing blood and guts...YUCH!!
+Turning quickly, your %3 flashes, and cuts out some of %2's guts.
+Rolling on the ground, you spring at %2, hitting %2 with your %3.
+The %3 unerringly slits %2's throat, sending %2 gasping for air.
+You try your %3 on %2's face, and come away with the side of %0 head.
+Your %3 sings as it bites into %2's belly, exposing %0 innards!!!!
+In a blink of an eye, your %3 slices %2 in three places!!!
+With acrobatic skill, you backflip over %2, lodging your %3 in %0 back.
+Screaming in pain, %2 drops to the ground, your %3 withdrawing bloodily!!
+Somersaulting behind %2, you unleash your %3, slicing %2 just below the neck.
+Unsheathing your %3, %2 frowns, just before you bury it in %0 stomach.
+%2 screams into the night, as your %3 carves a nice hole in %2.
+With finesse and skill, you smash %2 with your %3.
+Your %3 nearly detaches %2's head from %0 shoulders.
+;
+;---------------------------------------------------------------------------
+;
+NEWGROUP
+INCLUDE WM 1 0
+%2 successfully blocks your oncoming attack and sends you flying to the ground in defeat.
+Anticipating your attack, %2 proves a bit faster than the you, and executes a skillful dodge.
+You take a flying leap at %2 and land face-first on the ground.
+Your %3 streaks past %2 in a vain miss.
+You wisely assume a defensive posture to rest for this round.
+You aim is shy as your attack ends in a near miss of %2's head.
+%2 dives back causing your ill-conceived attack to land in a crash to the ground.
+%2 laughs as your %3 doesn't even come close.
+You launch your %3 at %2, but %2 dodges left, avoiding the blow.
+Even though you thought you could hit %2, %8 evades your blow with ease.
+%2 does a back-flip, and you cleave thin air with your %3.
+%2 is faster than you suspected, dodging your %3 with lightning speed.
+If you struck a second sooner, your %3 would have killed %2.
+Although your %3 whizzes swiftly, %2 dodges it easily.
+You gasp as %2 ducks, and you go flying with the %3's momentum.
+%2 has been working out, and dodges your blow quite easily.
+In your haste, you forgot to place your hit, and miss %2 by a mile.
+;
+;---------------------------------------------------------------------------
+;
+NEWGROUP
+INCLUDE WA 1 0
+%2's armor deflects your pitiful attack.
+Your %3 bounces off of %2's armor.
+Your %3 fails to penetrate %2's armor.
+Your spirits drop as your attack only manages to scratch %2's armor.
+Your %3 glazes %2's armor, failing to inflict any damage.
+%2's armor is too strong for yout %3 to penetrate.
+%2's armor is stronger than expected, deflecting your %3 with ease.
+You wonder if %2's armor is souped-up, as it bears the brunt of your %3.
+KLANG!!!! Your %3 bounces off %2's armor, and %2 laughs loudly.
+You want some of that armor, as your %3 is not able to penetrate it.
+Hoping you are not getting weaker, your %3 just scratches %2's armor.
+Damn %3, you think as it slides off of %2's armor.
+%2 laughs at your %3, as it fails to penetrate %0 armor.
+You strike against %2's armor, hoping it will give way to soft flesh.
+Although it's powerful, your %3 hardly even scratches %2's armor.
+;
+;---------------------------------------------------------------------------
+;
+NEWGROUP
+INCLUDE RH 1 0
+A shot from your %5 rips into %2, sending a spray of blood across the wasteland.
+Your aim is right on as a shot from your %5 blasts %2, sending chunks of bone and flesh everywhere.
+KABLAM! %2 is nearly disintegrated by the blast from your %5.
+Blood sprays as your %5 blows a hole in %2.
+%2 is knocked back ten feet from the blast of your %5.
+The wasteland rumbles as the mighty shot of your %5 tears into %2, send a bloody spray across the surroundings.
+Preparing your %5, you unleash a blast that almost destroys %2's head!!
+You get %2 right between the eyes with your new %5.
+%2 spasms fiercely as your %5 busts through %0 cranium, exposing %0 brains.
+With unerring precision the burst from your %5 hits %2's body, contorting %0 features.
+%2 tries to run, but your %5 blasts %0 butt from behind!!!
+Your %5 spews fire, as a burst from it connects with %2's shoulder, crushing it.
+You accidently trigger your %5 reaching for your %3, shooting %2 in the foot.
+The %5 jerks mightily, as it nearly blows away half of %2's body!!!
+ZZZAAAPPPP!!!! The %5 screams as it destroys %2's face!!!!!
+Without hesitation, you prime your %5, catching %2 right between the eyes.
+%5s do much damage when weilded correctly, and yours almost shatters %2's spine.
+;
+;---------------------------------------------------------------------------
+;
+NEWGROUP
+INCLUDE RA 1 0
+%2's armor absorbs your feeble attack.
+You are dumbfounded as your %5 is stopped by %2's superior armor.
+Damn %5! You think as it isn't even powerful enough to penetrate %2's armor.
+;
+;---------------------------------------------------------------------------
+;
+NEWGROUP
+INCLUDE RM 1 0
+Your shot is wide as it whizzes past %2's head.
+%2 grins as your weapon jams.
+%2 leaps to the side, avoiding your attack.
+Your %5's sights must have been misaligned as you missed %2 by a mile.
+Damn! You didn't even come close to hitting %2 with your %5.
+;
+;---------------------------------------------------------------------------
+;
+NEWGROUP
+INCLUDE RR 1 0
+You pull out your %5 and prepare for combat!
+With a grin on your face, you remove your %5 from its holster and sight it on %2!
+In preparation for combat, you pull out your %5!
+You prepare to unleash your %5 on %2!
+%2 shudders as you ready your %5!
+You draw your %5 and prepare to kick some serious @#$!
+The sight of your %5 terrifies %2 as you prepare to unleash it's power.
+You unstrap your %5 and prepare to put a sizable hole in %2!
+You ready your %5 and sight it on %2!
+Like the marksman that you are, you pull out your %5 in a second!!!!
+%2's smile changes as your %5 is out and aimed on %2's face!!!!
+%2 says %0 last prayers as your %5 bears down on %0 body.
+You hit the ground, unleashing your %5 from it's place, ready to blast %2.
+Reaching for your %5, %2 looks for a place to hide.
+Looking at you with awe, %2 can't believe how fast you pulled out the %5.
+Powering up your weapon, you kneel and aim your %5 at %2.
+;
+;---------------------------------------------------------------------------
+;
+NEWGROUP
+INCLUDE R3 1 0
+%2 shrieks in terror as you flip your %5's selector into three round burst mode!
+%2 nearly has a heart attack as %8 notices you engage your %5 in three round burst mode!
+You smirk at %2 and engage the three round burst mode of your %5!
+You flick the selector on your %5 into three round burst mode and prepare to Rock-N-Roll!
+;
+;---------------------------------------------------------------------------
+;
+NEWGROUP
+INCLUDE ST 1 0
+The effects of %2's stun weapon have not worn off.... You are too weak to continue.
+;
+;---------------------------------------------------------------------------
+;
+NEWGROUP
+INCLUDE HH 0 1
+%1 throws a mighty punch to your face, throwing you to the ground.
+Without warning, %1 lands a surprise punch in your abdomen.
+Catching you in surprise, %1 throws you to the ground with a low-kick.
+%1 lunges at you, knocking you off your feet.
+;
+;---------------------------------------------------------------------------
+;
+NEWGROUP
+INCLUDE HM 0 1
+You successfully block %1's oncoming attack and send %1 flying to the ground in defeat.
+%1 kicks at your head, but you block %9 attack.
+Anticipating %9 attack, you prove a bit faster than %1, and execute a skillful dodge.
+%1 takes a flying leap at you and lands face-first on the ground.
+;
+;---------------------------------------------------------------------------
+;
+NEWGROUP
+INCLUDE HA 0 1
+Your armor deflects %1's harmless attack.
+%1's harmless attack is deflected by your powerful armor.
+;
+;---------------------------------------------------------------------------
+;
+NEWGROUP
+INCLUDE WH 0 1
+%1 plunges %9 %3 deep into your chest, sending you to the ground howling in pain.
+%1 catches you off-guard and slices you with %9 %3.
+%1 vengefully bludgeons you with %9 %3.
+%1 pulverises you with %9 %3, sending your blood squirting in all directions.
+%1 thrusts %9 %3 into your arm, and smiles as %7 digs out some of your severed flesh.
+With an insane smile, %1 slashes your chest, covering %9 %3 with blood.
+%1 slices your left hand with %9 %3.
+Jumping forward, %1 swings %9 %3 and catches you right below your chest.
+The %3 screams as it chops your arm in two places!!!!
+%1 smiles with glee as %9 %3 splits open your abdomen.
+With graceful ease, %1 smashes %9 %3 into your neck.
+The %3 connects, and %1 laughs as the blood gushes freely.
+With a quickness you've never seen, %1 cuts you to the bone.
+;
+;---------------------------------------------------------------------------
+;
+NEWGROUP
+INCLUDE WM 0 1
+Suffering some insane delusion, %1 falls to the ground yelling and screaming, missing out on a combat chance.
+You see %1 coming and dodge to the left as %7 sends %9 %3 into the tree next to you.
+Another bout of insanity kicks in causing %1 to miss another combat chance.
+%1's aim is off and %9 %3 slices nothing but air.
+You catch %1's attack in mid-air and deny %1 another combat chance.
+%1 looks dumbfounded as %9 %3 whizzes by your head, missing just barely.
+%1 is amazed at the speed with which you dodged %9 %3.
+Just missing a fatal stroke, %1 curses %9 %3!!!
+If %1 had struck sooner, you would have been dead for sure.
+Distracted by %9 wounds, %1 swings wildly, grazing your armor.
+%1 drops %9 %3, thus missing out on a perfect chance to kill you.
+With a mighty spasm, %1 falls to the ground holding %9 back and yelling.
+Running at you, %1 trips and falls, losing yet another chance to harm you.
+;
+;---------------------------------------------------------------------------
+;
+NEWGROUP
+INCLUDE WA 0 1
+Your armor deflects %1's harmless attack.
+You laugh as your armor deflects %1's meager attack.
+%1's %3 fails to penetrate your superior armor.
+%1 looks dismayed as %9 futile attack bounces off your armor.
+%1's %3 makes only a small imprint on your powerful armor.
+The %3 bounces off your armor, barely hurting you.
+%1 frowns as %9 %3 doesn't harm your new armor.
+You feel that blow, even though your armor deflected %1's %3.
+Throwing your head back, you laugh at %1, as %9 worthless %3 withdraws uselessly.
+You bless your armor, as once again it saves you from %1's %3.
+;
+;---------------------------------------------------------------------------
+;
+NEWGROUP
+INCLUDE RH 0 1
+%1's %5 blasts a sizeable hole in your shoulder.
+A shot from %1's %5 sends a few displaces a few ounces of your flesh from your body.
+You scream in pain as %1 nearly blows your leg off with %9 %5.
+Blood runs down your face as %1 blasts a chunk of your skull away with %9 %5.
+You momentarily black out as %1's %5 rips into you.
+You momentarily black out as %1's %5 rips into you.
+AARRGGHHH!! %1 has hit you from behind with %9 %5.
+Even though you dodge, %1 has got you beaned, and blasts you with %9 %5.
+The %5 finds it's mark, and blows your body away with a mighty blast!!!
+In the blink of an eye, %1 fires %9 %5, connecting just below your pelvis.
+BBZZZAAAPPPPP!!! %1's %5 screams as it destroys half of your head.
+%1's %5 busts through your armor, digging deep into your innards!!!!
+;
+;---------------------------------------------------------------------------
+;
+NEWGROUP
+INCLUDE RA 0 1
+%1's attack fails to penetrate your armor.
+Your armor absorbs the full bast of %1's %5.
+%1's %5 is powerful, but not strong enough to reach through your armor.
+Your armor is smashed as %1's %5 rips into it. At least your body was spared the damage.
+;
+;---------------------------------------------------------------------------
+;
+NEWGROUP
+INCLUDE RM 0 1
+The only thing damaged by %1's attack is the tree where %9 poorly aimed shot landed.
+%1's shot flies past your head in a near miss.
+You wonder if %1 is drunk - %9 %5 missed you by a mile!
+You breath a sigh of relief as %1's %5 streaks past you in a near miss.
+;
+;---------------------------------------------------------------------------
+;
+NEWGROUP
+INCLUDE RR 0 1
+%1 draws %9 %5 in preperation for a fight!
+%1 unsheathes %9 %5 and prepares to do some damage!
+%1 notices the fear in your eyes as you see %9 %5!
+You can't believe your eyes as you see %1 pull out a %5 and sight it on you!
+Before you can react, %1 has %9 %5 out and ready to blast you!!!
+Even before you get your weapon out, %1 is priming %9 %5 to kill you.
+Like a flash of light, %1 draws %9 %5, aiming it at your head.
+You gasp as %1 is pulling on %9 %5's trigger, quick as lightning.
+Without hesitation, %1 has %9 %5 out and aimed at your chest.
+%1 has practiced this manuever many times, and %9 %5 is ready to kill!!!
+Like a western marksman, %1 draws %9 %5 in a flash!!!!!
+Instantaneously, %1 pulls %9 %5 out and finds you in his sights!!!
+;
+;---------------------------------------------------------------------------
+;
+NEWGROUP
+INCLUDE R3 0 1
+A cold shiver runs up your spine as you notice %1 switching %9 %5 into three round burst mode!
+%1 notices your terror as %7 engages %9 %5 in three round burst mode!
+;
+;---------------------------------------------------------------------------
+;
+NEWGROUP
+INCLUDE ST 0 1
+The effects of your stun weapon persist and %1 is too weak to move!
+;
+;===========================================================================
+;The following combat strings are for Christopher Darque's STORM monsters
+;===========================================================================
+;
+NEWGROUP
+INCLUDE RR 1 10
+You ready your %5 an prepare to fend off %2.
+;-------------
+NEWGROUP
+INCLUDE R3 1 10
+You flip your %5 into burst mode and prepare to do what you can against %2.
+;-------------
+NEWGROUP
+INCLUDE ST 1 10
+You are stunned by the force of %2 and unable to move.
+;-------------
+NEWGROUP
+INCLUDE RH 1 10
+You fire your %5 blindly into %2, doing a small but meaningful amount of damage.
+You fire a shot that barely has a noticable effect on %2.
+Fireing in a panic you have a marginal effect.
+You realize that your weapon is only going to have a marginal effect on %2.
+Your weapon causes a slight change in %2's power.
+;-------------
+NEWGROUP
+INCLUDE RM 1 10
+Your fire your %5 blindly into %2 and inflict no damage.
+You fire a shot that has no effect on %2.
+Fireing in a panic you have no effect.
+You realize that your weapon is not going to affect %2.
+;-------------
+NEWGROUP
+INCLUDE HH 1 10
+You smash your fist into %2, but cause little damage.
+;-------------
+NEWGROUP
+INCLUDE HM 1 10
+You take a wild swing at %2, but your fist just glides through the wind.
+;-------------
+NEWGROUP
+INCLUDE HA 1 10
+Your fist bounces off of %2.
+;-------------
+NEWGROUP
+INCLUDE WH 1 10
+Your %3 seems to have an effect on the power of %2.
+Even a solid hit from your %3 has only a small effect.
+Even though you score a hit, you realize that you really should try to escape.
+Fireing into %2 does seem to effect it, but only slightly.
+Even though you score a hit, fireing is beginning to seem like an act of desperation.
+;---------------
+NEWGROUP
+INCLUDE WM 1 10
+%2's forces causes your shot to go wide.
+You are so blinded by the dust that you fire wide.
+The strange energy of %2 deflects your shot.
+As your %3 passes through %2 without inflicting damage, you realize this is truely a waste of time!
+You are beginning to realize that escape may be the best course of action.
+;-----------------
+NEWGROUP
+INCLUDE RR 10 1
+Almost as if it anticipates your attack, %1's radioactive winds thrash violently.
+;-----------------
+NEWGROUP
+INCLUDE RH 10 1
+The force of %1's %5 nearly knocks you over.
+;-----------------
+NEWGROUP
+INCLUDE RA 10 1
+Although nearly disintegrated by the blast, your armor absorbs the full impact of %1's %5.
+;-----------------
+NEWGROUP
+INCLUDE RM 10 1
+Surprisingly %1's %5 leaves you unharmed.
+;-----------------
+NEWGROUP
+INCLUDE ST 10 1
+Surprisingly enough, %1 is still stunned by your %6.
+;-----------------
+NEWGROUP
+INCLUDE WH 10 1
+%1 batters you with wind and energy.
+The wind blinds you and burns your skin.
+You are picked up and smashed down again by the force of %1!
+Energy rips through you like a scythe.
+Another blast of force and you are hurt again.
+It seems that you might never escape %1.
+In the violence of %1 you are helpless as you are battered about.
+A violent blast of wind causes your own weapon to go off, hitting you!
+The damage is slowly mounting as you struggle in vain.
+;------------------
+NEWGROUP
+INCLUDE WM 10 1
+Hugging the ground %1 cannot hurt you.
+A small rock provides brief cover before it too is torn away.
+Huddling on the Ground you avoid %1's blast for a moment.
+For a brief moment %1 eases.
+You begin to wonder if this will ever end.
+;------------------
+NEWGROUP
+INCLUDE WA 10 1
+Your Armor absorbs the smash of the wind.
+Your Armor counteracts %1's damage for the moment.
+;===========================================================================
+;===========================================================================
+;                            SOLID ELEMENTALS
+;===========================================================================
+;===========================================================================
+NEWGROUP
+INCLUDE RR 1 11
+Apparently suffering from madness, you aim your %5 at %2.
+;-------------
+NEWGROUP
+INCLUDE R3 1 11
+You flip your %5 into burst mode and prepare to enter a hopeless battle with %2.
+;-------------
+NEWGROUP
+INCLUDE ST 1 11
+You are stunned by the force of %2 and unable to move.
+;-------------
+NEWGROUP
+INCLUDE RH 1 11
+You fire your %5 blindly at %2, but it only destroys a negligible part of it.
+Your shot imbeds in the side of %2 without much effect.
+Firing in a panic you rattle %2 a little, but that's all.
+You realize that your weapon is next to worthless against %2.
+;-------------
+NEWGROUP
+INCLUDE RM 1 11
+You fire your %5 blindly at %2, only to see it bounce off harmlessly.
+You fire a shot that vanishes into %2's bulk.
+Firing in a panic you miss wildly.
+You realize that your weapon will not damage something as large as %2.
+;-------------
+NEWGROUP
+INCLUDE HH 1 11
+You smash your fist into %2's hulking form, and feel your bones nearly break.
+;-------------
+NEWGROUP
+INCLUDE HM 1 11
+You take a wild swing at %2, but it reforms itself to avoid your attack.
+;-------------
+NEWGROUP
+INCLUDE HA 1 11
+Your fist bounces off of %2.
+;-------------
+NEWGROUP
+INCLUDE WH 1 11
+Your %3 seems to have an effect on the solidity of %2.
+Even a solid hit from your %3 has only a small effect.
+Even though you score a hit, you realize that you really should try to escape.
+Firing at %2 does seem to effect it, but only slightly.
+Even though you score a hit, firing is beginning to seem like an act of desperation.
+;---------------
+NEWGROUP
+INCLUDE WM 1 11
+The shaking of the unstable terrain causes your shot to go wide.
+You are so terrified of %2 that you fire wide.
+As your %3 bounces off %2 without inflicting damage, you realize this is truly a waste of time!
+You are beginning to realize that escape may be the best course of action.
+;-----------------
+NEWGROUP
+INCLUDE RR 11 1
+Cascades of energy spread out along %1's limbs, apparently preparing to blast forth!
+;-----------------
+NEWGROUP
+INCLUDE RH 11 1
+The force of %1's %5 singes your flesh.
+;-----------------
+NEWGROUP
+INCLUDE RA 11 1
+Although nearly liquified by the blast, your armor absorbs the full impact of %1's %5.
+;-----------------
+NEWGROUP
+INCLUDE RM 11 1
+A blast of radiation from %1 melts a tree behind you.
+%1's eyes glow with power as it focuses its radiation.
+;-----------------
+NEWGROUP
+INCLUDE ST 11 1
+By some miracle, %1 seems to be stunned by your %6.
+;-----------------
+NEWGROUP
+INCLUDE WH 11 1
+%1 slams into you with raw elemental fury.
+The heavy radiation given off by %1 makes you feel ill.
+You are picked up into the air and smashed down again by %1!
+Raw radiation blasts from %1's outstretched limb, cutting through you like a scythe.
+Another awesome blow strikes home, leaving you on the verge of shock.
+It seems that you might never escape %1.
+You are helpless against the violence of %1.
+A violent slam damages some of your ammo, causing it to blast you.
+The colossal damage is swiftly mounting as you struggle in vain.
+;------------------
+NEWGROUP
+INCLUDE WM 11 1
+You duck just in time to dodge %1's swipe.
+You manage to find a hiding spot, but it is pulverized by %1.
+The air crackles with radiation as %1 gathers its strength.
+A cloaked figure in red and black flies overhead, distracting %1.
+You begin to wonder if this will ever end.
+;------------------
+NEWGROUP
+INCLUDE WA 11 1
+Your armor absorbs the crush of %1's limb.
+Your armor cracks under the force of %1's damage, but holds for the moment.
+;===========================================================================
+;===========================================================================
+;                            ANIMAL ATTACKS
+;===========================================================================
+;===========================================================================
+NEWGROUP
+INCLUDE HH 3 1
+%1 rakes its razor-sharp claws along your belly!
+Suddenly %1 bursts forward and knocks you down with the force of the collision!
+You see the creature's maw take a chunk out of your flesh!
+You cry out in pain as %1 sinks its teeth into your foot.
+Blood sprays everywhere as the horrible talons of %1 tear through you.
+You can smell animal musk as the beast tears at your throat.
+The claws of %1 rip into your arm!
+You are sure some of your ribs crack as the beast pounces on you.
+Only with a tremendous act of strength do you manage to pry the teeth of the %1 off your arm.
+%1 bites into you with the fury of nature unleashed!
+;---------------------------------------------------------------------------
+NEWGROUP
+INCLUDE HM 3 1
+You block the shearing claws of %1 and push it backwards.
+%1 snarls, attempting to frighten you into making a mistake.
+%1 tears up dirt in a vain attempt to hit you.
+You skillfully dodge, letting a tree become the victim of %1.
+Unable to anticipate your sudden burst of speed, %1 rockets past in an attempt to ram.
+A skillful jump sends you right over the head of %1.
+%1 sprawls in the dirt as you dodge its vicious attack.
+;---------------------------------------------------------------------------
+NEWGROUP
+INCLUDE HA 3 1
+The teeth of %1 are no match for your armor.
+Only scratches on your armor result from the beast's raking attack.
+The armor you wear completely absorbs the force as %1 slams into you.
+;===========================================================================
+;===========================================================================
+;                                SHIFTER
+;===========================================================================
+;===========================================================================
+NEWGROUP
+INCLUDE RR 1 9
+Shifter yawns as you point your %5 at him.
+;-------------
+NEWGROUP
+INCLUDE R3 1 9
+As you flip your %5 into burst mode Shifter takes notice and begins to teleport wildly as a defence.
+;-------------
+NEWGROUP
+INCLUDE RM 1 9
+Shifter easily teleports out of the path of your wild shot.
+You disintegrate a rock behind where Shifter was standing before his teleport.
+Your foe is teleporting so wildly that you shoot your %5 into the air in annoyance.
+You let loose with a blast, only to feel a tap on your shoulder.  Shifter says "Maybe next time."
+;-------------
+NEWGROUP
+INCLUDE HM 1 9
+Shifter teleports out of the path of your haymaker.  "Your punching me?" he asks in confusion.
+;-------------
+NEWGROUP
+INCLUDE WM 1 9
+Your blow slices through the air as Shifter teleports away.
+You execute a tremendous thrust to the spot Shifter WAS in, before he teleported.
+Shifter teleports multiple times in rapid succession.  You stand dumbfounded.
+Not needing to teleport, he easily sidesteps your clumsy thrust.
+The peculiar fellow parries your blow with his sword, giggling madly.
+;-----------------
+NEWGROUP
+INCLUDE RR 9 1
+"Just go home." growls the former recruit as he clicks the safety off on his gun.
+The mad teleporter reappears on a ridge, a perfect spot for targeting you.
+;-----------------
+NEWGROUP
+INCLUDE WH 9 1
+Shifter vanishes.  Seconds later you feel a sharp pain in your back.
+"I VORP!!" yells Shifter as he nearly takes your head off.
+Shifter giggles as he vanishes.  He's still giggling when he reappears with a blade in your side.
+You hear giggling from behind you.  You spin and get slashed along the neck.
+Shifter vanishes.  You are knocked flat as he slams down from above.
+The strange fellow executes a martial arts style teleport kick to your vitals.
+;------------------
+NEWGROUP
+INCLUDE WM 9 1
+Ducking just in time you avoid decapitation from the teleporting Shifter.
+You narrowly manage to parry as he appears to your side and swipes.
+As Shifter is slashing at you, he teleports away.  "Oops, too early" he says.
+;---------------------------------------------------------------------------
+;Crashed Ships automated Guns
+;---------------------------------------------------------------------------
+NEWGROUP
+INCLUDE WH 20 1
+%1's %5 blasts a sizeable hole in your shoulder.
+A shot from %1's %5 sends a few displaces a few ounces of your flesh from your body.
+You scream in pain as %1 nearly blows your leg off with %9 %5.
+Blood runs down your face as %1 blasts a chunk of your skull away with %9 %5.
+You momentarily black out as %1's %5 rips into you.
+You momentarily black out as %1's %5 rips into you.
+AARRGGHHH!! %1 has hit you from behind with %9 %5.
+Even though you dodge, %1 has got you beaned, and blasts you with %9 %5.
+The %5 finds it's mark, and blows your body away with a mighty blast!!!
+In the blink of an eye, %1 fires %9 %5, connecting just below your pelvis.
+BBZZZAAAPPPPP!!! %1's %5 screams as it destroys half of your head.
+%1's %5 busts through your armor, digging deep into your innards!!!!
+;
+;---------------------------------------------------------------------------
+;
+NEWGROUP
+INCLUDE WA 20 1
+%1's attack fails to penetrate your armor.
+Your armor absorbs the full bast of %1's %5.
+%1's %5 is powerful, but not strong enough to reach through your armor.
+Your armor is smashed as %1's %5 rips into it. At least your body was spared the damage.
+;
+;---------------------------------------------------------------------------
+;
+NEWGROUP
+INCLUDE WM 20 1
+%1's shot flies past your head in a near miss.
+You wonder if you've damaged the sensors - %9 %5 missed you by a mile!
+You breath a sigh of relief as %1's %5 streaks past you in a near miss.
+;
+;---------------------------------------------------------------------------
+;
+NEWGROUP
+INCLUDE WR 20 1
+as you back away from the console %1's Cannons whirl and lock onto you...
+;
+;===========================================================================
+;===========================================================================
+
+

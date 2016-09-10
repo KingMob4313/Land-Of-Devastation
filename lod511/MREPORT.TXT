@@ -1,0 +1,132 @@
+Performing maintenance
+----------------------
+ þ Checking for a winner.
+ þ Removing useless items from the wasteland.
+    þ Number of items = 353
+    þ Riot Armor at 1,18,44 because of worthless armor.
+    þ Energy Armor at 1,97,7 because of worthless armor.
+    þ MedKit at 1,15,2 because of worthless medkit.
+    þ GSRZ Rations at 1,15,2 because of worthless rations.
+    þ Number of items = 349
+ þ Trimming the log file down to size.
+    þ 22 lines removed from log file.
+ þ Performing user maintenance.
+    þ Kai Tukov (1) playernews file erased.
+    þ Kai Tukov accumulated $663 interest in his normal account.
+    þ Kai Tukov accumulated $60 credits for janitorial services.
+    þ Kai Tukov needed a USERIDX refresh.
+    þ Ronin #14 (!!!monster124***) exempt from day deletions
+    þ Ronin #13 (!!!monster123***) exempt from day deletions
+    þ Ronin #12 (!!!monster122***) exempt from day deletions
+    þ Ronin #11 (!!!monster121***) exempt from day deletions
+    þ Ronin #10 (!!!monster120***) exempt from day deletions
+    þ Ronin #9 (!!!monster119***) exempt from day deletions
+    þ Ronin #8 (!!!monster118***) exempt from day deletions
+    þ Ronin #7 (!!!monster117***) exempt from day deletions
+    þ Ronin #6 (!!!monster116***) exempt from day deletions
+    þ Ronin #5 (!!!monster115***) exempt from day deletions
+    þ Ronin #4 (!!!monster114***) exempt from day deletions
+    þ Ronin #3 (!!!monster113***) exempt from day deletions
+    þ Ronin #2 (!!!monster112***) exempt from day deletions
+    þ Ronin #1 (!!!monster111***) exempt from day deletions
+    þ High Ronin #2 (!!!monster110***) exempt from day deletions
+    þ High Ronin #1 (!!!monster109***) exempt from day deletions
+    þ Deputy Fife (!!!monster108***) exempt from day deletions
+    þ Pink Panther (!!!monster107***) exempt from day deletions
+    þ Cat Burgler (!!!monster106***) exempt from day deletions
+    þ Bandit (!!!monster105***) exempt from day deletions
+    þ Trader Leader (!!!monster104***) exempt from day deletions
+    þ Trader Harry (!!!monster103***) exempt from day deletions
+    þ Trader Dick (!!!monster102***) exempt from day deletions
+    þ Trader Tom (!!!monster101***) exempt from day deletions
+    þ Deathstalker (!!!monster100***) exempt from day deletions
+ þ Distributing Taxes/Donations.
+    þ $77970 total taxes/donations collected.
+    þ $77970 taxes/donations awarded per user.
+    þ 1 users awarded taxes/donations.
+ þ Performing base maintenance.
+    þ Fort ALPHA TRANSPORT at 1,7,4 Reactor produces 300 energy units.
+    þ Fort Beta Transport at 1,5,10 Reactor produces 300 energy units.
+    þ Fort Terra Labs at 1,20,103 Reactor produces 350 energy units.
+    þ Fort Terra Labs at 1,20,103 Wanders to 1,91,44.
+ þ Playing with the message base.
+ þ Checking the isreal monsters.
+     Checking Isreal: DeathStalker (mon=100, user=254)
+     Checking Isreal: Trader Tom (mon=101, user=253)
+     Checking Isreal: Trader Dick (mon=102, user=252)
+      þ Isreal: Trader Dick regenerated a GravPack/70
+      þ Isreal record updated: Trader Dick
+     Checking Isreal: Trader Harry (mon=103, user=251)
+     Checking Isreal: Trader Leader (mon=104, user=250)
+     Checking Isreal: Bandit (mon=105, user=249)
+      þ Isreal resurrected: Bandit
+      þ Isreal record updated: Bandit
+     Checking Isreal: Cat Burgler (mon=106, user=248)
+      þ Isreal resurrected: Cat Burgler
+      þ Isreal record updated: Cat Burgler
+     Checking Isreal: Pink Panther (mon=107, user=247)
+     Checking Isreal: Deputy Fife (mon=108, user=246)
+     Checking Isreal: High Ronin #1 (mon=109, user=199)
+      þ Isreal: High Ronin #1 regenerated a Pistol Clip/20
+      þ Isreal record updated: High Ronin #1
+     Checking Isreal: High Ronin #2 (mon=110, user=198)
+     Checking Isreal: Ronin #1 (mon=111, user=197)
+      þ Isreal: Ronin #1 regenerated a Technical Tools
+      þ Isreal: Ronin #1 regenerated a GSRZ Rations/50
+      þ Isreal: Ronin #1 regenerated a .357 Revolver
+      þ Isreal: Ronin #1 regenerated a Quick Load/6
+      þ Isreal: Ronin #1 regenerated a Bag of Weed
+      þ Isreal record updated: Ronin #1
+     Checking Isreal: Ronin #2 (mon=112, user=196)
+      þ Isreal: Ronin #2 regenerated a 9mm Pistol
+      þ Isreal: Ronin #2 regenerated a Pistol Clip/20
+      þ Isreal record updated: Ronin #2
+     Checking Isreal: Ronin #3 (mon=113, user=195)
+     Checking Isreal: Ronin #4 (mon=114, user=194)
+      þ Isreal: Ronin #4 regenerated a Laptop
+      þ Isreal: Ronin #4 regenerated a ROM: C-Stats
+      þ Isreal: Ronin #4 regenerated a MedKit/50
+      þ Isreal: Ronin #4 regenerated a Long Dagger
+      þ Isreal record updated: Ronin #4
+     Checking Isreal: Ronin #5 (mon=115, user=193)
+     Checking Isreal: Ronin #6 (mon=116, user=192)
+     Checking Isreal: Ronin #7 (mon=117, user=191)
+      þ Isreal: Ronin #7 regenerated a Laptop
+      þ Isreal: Ronin #7 regenerated a ROM: FF2
+      þ Isreal: Ronin #7 regenerated a ROM: Tetris
+      þ Isreal: Ronin #7 regenerated a ROM: History
+      þ Isreal: Ronin #7 regenerated a ROM: AutoNav
+      þ Isreal: Ronin #7 regenerated a MedKit/50
+      þ Isreal: Ronin #7 regenerated a .44 Revolver
+      þ Isreal: Ronin #7 regenerated a Quick Load/6
+      þ Isreal record updated: Ronin #7
+     Checking Isreal: Ronin #8 (mon=118, user=190)
+      þ Isreal: Ronin #8 regenerated a Pistol Clip/20
+      þ Isreal record updated: Ronin #8
+     Checking Isreal: Ronin #9 (mon=119, user=189)
+      þ Isreal: Ronin #9 regenerated a Pistol Clip/20
+      þ Isreal: Ronin #9 regenerated a Power Belt/300
+      þ Isreal: Ronin #9 regenerated a ROM: C-Stats
+      þ Isreal: Ronin #9 regenerated a GSRZ Rations/50
+      þ Isreal: Ronin #9 regenerated a MedKit/50
+      þ Isreal: Ronin #9 regenerated a 9mm Pistol
+      þ Isreal record updated: Ronin #9
+     Checking Isreal: Ronin #10 (mon=120, user=188)
+      þ Isreal: Ronin #10 regenerated a Communicator
+      þ Isreal: Ronin #10 regenerated a GSRZ Rations/50
+      þ Isreal record updated: Ronin #10
+     Checking Isreal: Ronin #11 (mon=121, user=187)
+     Checking Isreal: Ronin #12 (mon=122, user=186)
+      þ Isreal: Ronin #12 regenerated a .357 Revolver
+      þ Isreal: Ronin #12 regenerated a Quick Load/6
+      þ Isreal record updated: Ronin #12
+     Checking Isreal: Ronin #13 (mon=123, user=185)
+      þ Isreal: Ronin #13 regenerated a GSRZ Rations/50
+      þ Isreal: Ronin #13 regenerated a Laptop
+      þ Isreal: Ronin #13 regenerated a ROM: C-Stats
+      þ Isreal: Ronin #13 regenerated a Technical Tools
+      þ Isreal: Ronin #13 regenerated a .40 Pistol
+      þ Isreal record updated: Ronin #13
+     Checking Isreal: Ronin #14 (mon=124, user=184)
+      þ Isreal: Ronin #14 regenerated a MedKit/50
+      þ Isreal record updated: Ronin #14

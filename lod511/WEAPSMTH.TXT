@@ -1,0 +1,211 @@
+ACME Weapons: Weaponsmith services
+----------------------------------
+
+       ACME Weapons maintains a full-time weaponsmith to provide the public
+  with various conversions, modifications, and upgrades to existing weapons.
+  The range of our services are outlined below:
+
+
+ACCURIZE (10%, 20%, or 30%)
+
+       Accurizing a weapon is simply the process of improving a weapon's
+  accuracy. We are capable of improving accuracy by 10% to 30%, depending
+  on your requirements.
+
+       Your accuracy will be improved whenever you use the accurized weapon,
+  and only when you use the accurized weapon. For example, if you had an
+  "accurized neutron rifle" and a standard "neutron sabre", then your
+  accuracy when you shoot the neutron rifle would be 10% greater, but your
+  accuracy while using the neutron sabre would remain unchanged.
+
+       Accurizing can be performed only once. If a weapon is accurized to
+  10%, it cannot then be re-accurized to 20% or 30%.
+
+       Accurizing can be performed on both long range and short range
+  weapons.
+
+
+INTENSIFY (10%, 20%, or 30%)
+
+       Intensification is the process of improving the damage that a weapon
+  inflicts. We are capable of improving this damage by 10% to 30%, depending
+  on your requirements.
+
+       As with accurizing, intensifying is in effect whenever you use the
+  intensified weapon, and only when you use that weapon.
+
+       Intensifying can be performed only once to a weapon. A weapon cannot
+  be re-intensified to a greater level.
+
+       Intensifying can be performed on both long range and short range
+  weapons.
+
+
+UNI-AMMO CONVERSION
+
+       Uni-Ammo conversion is a special service we offer for energy weapons.
+  You have probably experienced frustrating situations when you lacked the
+  required type of ammunition for a weapon, but had a surplus of another
+  incompatible type on hand.
+
+       Uni-Ammo will fix this problem. With a Uni-Ammo conversion package
+  installed, your energy weapon will be able to use any type of energy
+  ammunition that you may have, automatically.
+
+       The Uni-Ammo conversion works only with ENERGY WEAPONS and ENERGY
+  AMMO. For example, see the below tables:
+
+       COMPATIBLE WITH                 INCOMPATIBLE WITH
+
+       Electroblade                    All non powered weapons
+       Electrosword                    all gunpowder weapons
+       Electrolance                    all bow and crossbows
+       Neutron Sabre                   
+       All Phasers                     
+       Comp Blaster                    
+       Grav Blast                      
+       Plasma Blast
+       Neutron Rifle
+
+       Power Pack                      Arrows
+       Power Belt                      All Gunpowder type ammo
+       Grav Pack
+       Plasma Pack
+       Neutron Pack
+
+       The above tables are not an exhaustive list; There are many other
+  weapons and ammo that the Uni-Ammo conversion may be used with. Please see
+  our weaponsmith for more information.
+
+       NOTE: A weapon with a more advanced ammunition type may require
+  more charges from a more primitive weapon type. For example, a Uni-Ammo
+  Neutron Blaster would require the following ammunition for one shot:
+
+       Power Pack or Power Belt: 5 units
+       Grav Pack...............: 3 units
+       Plasma Pack.............: 2 units
+       WidowPack...............: 2 units
+       Neutron Pack............: 1 unit
+
+       Ammunition packs with fewer than the required number of units are
+  thus unusable (i.e. in the above example, a Power Pack/4 or a Grav Pack/2
+  would be useless)
+
+       Using the CSTATS ROM with the "/uniammo" switch will display the
+  ammunition requirements for any weapons with Uni-Ammo conversions.
+
+       Uni-Ammo conversions may be performed on both long range and short
+  range weapons.
+
+
+THREE ROUND BURST CONVERSION
+
+       Our three round burst conversion allows your long range weapon to
+  fire three shots in rapid succession. By firing three shots instead of one,
+  your potential for damage is much greater.
+
+       Due to weapon vibration, the accuracy of your weapon will degrade
+  as each of the three shots is fired:
+
+       First shot...: 100% Accuracy
+       Second shot..: 80%  Accuracy
+       Third shot...: 60%  Accuracy
+
+       Even with the reduced accuracy on the second and third shots, the
+  shots are still capable of doing full damage if they hit.
+
+       Conversions may only be performed on Energy Weapons such as the
+  phasers, comp blaster, gravblast, etc. Conversions may not be performed
+  on conventional weapons such as crossbows, clip pistols, uzis, etc.
+
+       Three round burst conversions may only be performed on long range
+  weapons.
+
+
+SHOCKWAVE BLASTER MODULE
+
+       Our shockwave blaster represents a new innovation in wasteland combat
+  tactics. The shockwave blaster will fire a precisely calculated burst of
+  high frequency energy in the direction of your enemy. This energy burst
+  has a very high impact force and may cuase your enemy to drop one or more
+  of his items.
+
+       Extensive testing on real world combat simulations has revealed the
+  odds of causing a hostile to drop an item to be approximately 15%. Although
+  this is not very frequently, one must understand that the loss of an
+  important item (such as a weapon or ammunition pack) could be devestating
+  to the opponent.
+
+
+GRENADE LAUNCHER
+
+       There has long been a debate between combatants about the use of a
+  grenade versus that of a long range weapon. Grenades have the advantage
+  of scoring a definite hit due to their large blast range. However, their
+  limited availability and restricted damage ranges make them less effective
+  than a long range weapon.
+
+       Combatants have long had to choose between one or the other. This is
+  no longer the case. ACME Weapons is now proud to offer the new line of
+  MKL-29TU grenade launching accessories. We can mount a grenade launcher
+  tube to ANY long range weapon. This will allow you to both launch a grenade
+  and fire a long range shot at the same time.
+
+       Caution: The bulky addition of the grenade launcher will have negetive
+  effects on the normal accuracy of your long range weapons. We have
+  calculated that most shooters experience a 30% loss in accuracy while a
+  grenade launcher is attached to their weapon.
+
+
+ARMOR BURNER
+
+       We at ACME Weapons have long noticed the proliferation of high
+  strength armor types in the wastelands. These armor types can have a very
+  detrimental effect on combat efficiency. Warriors have complained that
+  they sometimes spend more time hacking an enemies armor to bits than they
+  spend hitting the enemy himself.
+
+       We have a solution. Through extensive in-field testing, we have
+  devised a special modulation frequency which when applied to a short range
+  weapon's energy field, will cause increased damage when the weapon impacts
+  armor of any type.
+
+       We are proud to offer armor burning enhancements that range from 200%
+  to 800% of normal damage levels. Damage inflicted on the opponent himself
+  is unaffected by this modification, but destruction of the opponent's armor
+  may now be accomplished at a much faster rate.
+
+
+DEATHPULSE
+
+       Our deathpulse unit is an advanced modification which will charge
+  your short range weapon with a substantially greater amount of power than
+  normal. The net increase should be 500% to 1000%. However, there are
+  some concerns:
+
+       - The increased power level may damage your weapon, making it
+         unusable. ACME Weapons does operate a repair department, but
+         repairs are costly.
+
+       - Because it's charged to a higher potential, it will eat up
+         significantly more ammunition than normal.
+
+       Once your weapon is equipped with the deathpulse module, we
+  recommend only using it in extreme situations where it is absolutely
+  necessary.
+
+
+USE OF THE CSTATS ROM
+
+       The GS-224 Laptop (available from Sacre Base) can be equipped with
+  a very useful program entitled "CSTATS". CSTATS will display a weapons
+  profile for your short and long range weapons. This profile will display
+  any Accurize or Intensify operations that have been performed, Uni-Ammo
+  conversions, 3 round burst conversions, etc.
+
+       The CSTATS ROM may also be used to display ammo requirements for
+  Uni-Ammo weapons by using the "CSTATS /UNIAMMO" switch.
+
+       Please see your Laptop's HELP command for more information on using
+  CSTATS.
+

@@ -1,0 +1,3160 @@
+String definitions for game.~
+&EWelcome to ~
+&BStandby, looking for you...|~
+|Well, you appear to be an old hand here! Welcome back!|~
+|Sorry, but we're out of room. Please try back another time.|~
+&FEnhanced 5x5|~
+&FStandard|~
+&FEnhanced 3x3|~
+-- More --~
+~
+&CAs you prepare to camp out, the local Hotels-R-Us representative runs out and|~
+proclaims, "Uh.. Sir! Just so there aren't any misunderstandings, I'd like to|~
+remind you that if you camp out on this map, there'll be a charge of &F$~
+|~
+&Cautomatically applied to your rent account!"||~
+&CPlayer-versus-player combat is not allowed on this map.|~
+&BLogoff inside of fortress (&FY&B/&FN&B) ? ~
+&BExit to wastelands (&FY&B/&FN&B) ? ~
+~
+~
+~
+~
+~
+~
+~
+&9°°°±±±²²² &CPress Any Key&9 ²²²±±±°°°~
+&9Character Profile|~
+&9-----------------|~
+&BName..........: &F~
+&BHit Points....: &F~
+&BStrength......: &F~
+&BDexterity.....: &F~
+&BAgility.......: &F~
+&BExperience....: &F~
+&BMoney.........: &F~
+&BMinerals......: &F~
+&BFuel..........: &F~
+&BHerbs.........: &F~
+ cm3~
+&BInventory.....: &7|~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+&9## Name                 Cost        ## Name                 Cost|~
+&9ÄÄ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ ÄÄÄÄÄÄÄÄÄÄ  ÄÄ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ ÄÄÄÄÄÄÄÄÄÄ|&7~
+&9## Name                 Cost|~
+&9ÄÄ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ ÄÄÄÄÄÄÄÄÄÄ|&7~
+&A||[PRESS ANY KEY]~
+~
+~
+~
+&CYou cannot afford that item.|~
+&CThere is no room in your inventory.|~
+&COk. It's yours.|~
+&CInvalid number.|~
+&BPurchase a ~
+ (&FY&B/&FN&B) ? &F~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+&3     [Terrain]               [Status]|~
+&BLocation.: &F~
+&BType.....: &F~
+&BDist/Zone: &F~
+&BDanger...: &F~
+&BTime Left: &F~
+&BHealth...: &F~
+&BSt/Dx/Ag.: &F~
+&BRad dmg..: &F~
+&BExper....: &F~
+&BLevel....: &F~
+&ENearby Items|~
+&E------------|~
+&BDrop which object from inventory (&F?&B=List) ? &F~
+&CDrop What?|~
+&BPick up which object from ground (&F?&B=List) ? &F~
+&CThat isn't here!|~
+&CThere is no more room in your inventory.|~
+&CThere aren't any objects here.|~
+~
+&FNorth  ~
+&FSouth  ~
+&FEast   ~
+&FWest   ~
+&FDrop   ~
+&FPick Up~
+&BWeapon (Close): &F~
+&BWeapon (Range): &F~
+&BArmor.........: &F~
+&BMed Lining....: &F~
+&BLaptop........: &F~
+&BAux Weap/Shld.: &F~
+&BSpecial Quests: &F~
+&BTeam..........: &F~
+&C<Dead>~
+None.~
+&9Wastelands Help|~
+&9---------------|~
+&B  North...: &FN&B or &F8&B     Pick Up Item: &FP&B     Enter Location: &FG&B|~
+&B  South...: &FS&B or &F2&B     Drop Item...: &FD&B     Camp out here.: &FA&B|~
+&B  East....: &FE&B or &F6&B     Check Status: &FC&B     Construct fort: &FF&B|~
+&B  West....: &FW&B or &F6&B     Equip.......: &FQ&B     Inv Maint.....: &FM&B|~
+&B  Look....: &F5&B          Use Item....: &FU&B     Use Laptop....: &FL&B|~
+&B  Kill Obj: &FK&B          Quick Heal..: &FY&B|~
+~
+~
+~
+~
+~
+&FUse Obj~
+&FStatus ~
+&FLook   ~
+&FEquip  ~
+&FEnter  ~
+&FBuild  ~
+&FEnter  ~
+&FI-Maint~
+&FBAD Spl~
+&BUse which object from inventory (&F?&B=List,&FQ&B=Quit) ? &F~
+&CUse what?|~
+&CAnd just what would you want me to do with that????|~
+&CThat item is out of applications.|~
+&BThere are &F~
+&B of &F~
+&B applications remaining.|~
+&BUse an application (&FY&B/&FN&B) ? &F~
+&BThere are &Funlimited&B applications remaining.|~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+&BSelect which item number (&F?&B=List,&F0&B=None) ? &F~
+&CPlease only select a close-combat weapon  for this option.|~
+&CPlease only select a long-range weapon for this option.|~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+&CThere is no room in your inventory to place deselected item.|~
+&CCurrent item deselected and placed in inventory.|~
+&CPlease only select an armor type for this option.|~
+&CPlease only select a medical lining for this option.|~
+&CPlease only select a laptop for this option.|~
+&CYou are hungry.||~
+&CYou are very hungry.||~
+&CYou are extremely hungry.||~
+&CYou are dying of hunger.||~
+&CYou are not very hungry.||~
+&CThe food tastes terrible as it goes down.|~
+&CPlease only select a close-combat weapon or a shield for this option.|~
+&CHit points regained ~
+&CRope can only be used on holes up/down.|~
+&BJourney down the hole (Y/N) ? &F~
+&BJourney up the hole (Y/N) ? &F~
+&CYou venture up to level ~
+&CYou venture down to level ~
+&CThere is nothing to enter here!|~
+&CYou enter the town.|~
+&4°°°±±±²²² &CHit Return To Engage Combat&4 ²²²±±±°°°~
+&CThis monster is not very friendly. It won't let you depart as friends.|~
+~
+~
+~
+~
+~
+~
+~
+&FDepart as Friends|~
+&FUse Warper|~
+&FEquip Character|~
+&FInventory Maintenance|~
+&ALong Range Encounter ] ~
+&FHand-To-Hand|~
+&FLong-Range|~
+&FSurrender|~
+&FGrenade|~
+&FCheck Status|~
+&FView Opponent|~
+&FTalk to Opponent|~
+&FBuy Item|~
+~
+&C|You prepare for hand-to-hand combat!||~
+&FE&B]xchange &FH&B]eal &FD&B]eathpulse &FO&B]pp-Cstats &FF&B]lash &FP&B]arry &FM&B]ore &E-> ~
+&FA&B]ttack &FB&B]erserk &FR&B]un &FS&B]urrender &FV&B]iew &FC&B]har &FW&B]arp &FH&B]eal &FM&B]ore &E-> ~
+&3[Status - ~
+&3]|~
+~
+~
+~
+~
+~
+~
+~
+&BCongratulations! You have risen to level ~
+&BYou have &F~
+ &Battribute points left to allocate.|~
+&B  1> Add two points to Strength|~
+&B  2> Add two points to Dexterity|~
+&B  3> Add two points to Agility|~
+&B  4> Add two points to Health|~
+&3|Please choose ]~
+&FStrength|~
+&FDexterity|~
+&FAgility|~
+&FHealth|~
+&B|  Current stats: STR: &F~
+&B DEX: &F~
+&B AGL: &F~
+&B HIT: &F~
+&BString Definitions......: &F~
+&B bytes (&F~
+&B strings)|~
+&BMap Array...............: &F~
+&B bytes|~
+&BLocal Object List.......: &F~
+&B bytes (&F~
+&B objects&B)|~
+&BMonster Definition Index: &F~
+&B bytes|~
+&BCombat Data.............: &F~
+&B bytes|~
+&BHeap Space Available....: &F~
+&B bytes|~
+&BDo you wish to &FR&Bead or &FW&Brite messages (&FR&B/&FW&B) ? ~
+&FRead|~
+&FWrite|~
+&BView which item number (&FQ&B=Quit,&F?&B=List) ? &F~
+&A|[PRESS ANY KEY]~
+&CInvalid number.|~
+&CNo data available.|~
+&BYou gain &F~
+ &Bexperience and &F~
+ &Bgold from the encounter.|~
+|&9ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´&EFrom the Author&9ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿|~
+&9³&7 Welcome to version 5.11!  This version is mainly just a bugfix, but there   &9³|~
+&9³&7 are a few miscellanious additions as well - have a look at the casino. I am &9³|~
+&9³&7 working on setting up a home-page for LOD on the WWW. You are welcome to    &9³|~
+&9³&7 visit and see the work in progress at http://www.primenet.com/~smbaker.     &9³|~
+~
+~
+~
+&9ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ|~
+&BUh oh. Looks like you had a little accident last time you were here.||~
+~
+&BDo you wish to [&FC&B]reate NEW char or [&FR&B]essurect OLD char ? ~
+&FCreate|~
+&FResurrect|~
+&BResurrect, are you sure (&FY&B/&FN&B) ? ~
+&BCreate, are you sure (&FY&B/&FN&B) ? ~
+&C|Your body remains a mass of decimated flesh being picked by the buzzards.|~
+&CYet another senseless tragedy.....||~
+&BCamp here, are you sure (&FY&B/&FN&B) ? ~
+&9T Name                  Worth            Level  Quest  Attr   Comp|~
+&9Ä ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ  ÄÄÄÄÄ  ÄÄÄÄÄ  ÄÄÄÄÄ  ÄÄÄÄÄ|~
+&FLaptop ~
+&FKillObj~
+&FQk Heal~
+&FCampOut~
+&3|You secure the fortress and prepare to hole up inside until you are ready|~
+&3to journey outside again. The fortresses defenses should protect you from any|~
+&3hostile monsters or players.|~
+&3You wake up safe and sound inside the defenses of your bases ready to spend|~
+&3yet another day fighting monsters in the wasteland.|~
+~
+&COnly the fortress owner may do that!|~
+&E[Player vs Player experience rules are in effect (see docs: Combat Basics)]|~
+ &E<STUNNED>~
+&CYou don't have a warper!|~
+&BUse your warper (&FY&B/&FN&B) ?~
+|&C[There is no room in your inventory to place the item!]|~
+|&3[You place the &F~
+&3 in your inventory.]|~
+|&C[You already have a &F~
+&C in your inventory!]|~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+&FHelp|~
+&FEditor|~
+&FQuit|~
+&FWasteland|~
+&FDocumentation Menu|~
+&FDDTerm Enable - Stand By|~
+&FCommodities Trading|~
+&FSR Weapons Store|~
+&FArmor Store|~
+&FMiscellaneous Store|~
+&FAmmunition Store|~
+&FView Character|~
+&FHelp|~
+&FBase Operations|~
+&FSell Item|~
+&FComputer Store|~
+&FLR Weapons Store|~
+~
+&FList|~
+&FBuy|~
+&FShow|~
+&FView Character|~
+&FSupply Station|~
+&FHelp|~
+&FSell|~
+~
+~
+~
+&BItem number to sell (&F?&B=List,&FQ&B=Quit) ? &F~
+&BWe'll give you &F~
+&B for your &F~
+&B. Sell it (&FY&B/&FN&B) ? ~
+&FYes|~
+&FNo|~
+&CSell what?|~
+&BQuit, are you sure (&FY&B/&FN&B) ? ~
+&FYes.|~
+&FNo.|~
+&BEnter Wastelands, are you sure (&FY&B/&FN&B) ? ~
+&B's &E~
+&B disintegrates as it hits the ground.|~
+&CYou don't have a ranged weapon!|~
+&CYour ranged weapon is out of ammo!|~
+~
+~
+~
+~
+~
+&7[C-Stats combat difficulty rating: &F~
+&7]|~
+&EWe purchase used items at &F~
+% &Eof new cost.||~
+&EWe purchase used fortress devices at &F~
+% &Eof new cost.||~
+Unlisted.|~
+Listed; No Teleporter.|~
+Listed; Nothing forsale.|~
+Listed.|~
+&A  Located: &FCamped Player &Adist= &F~
+&A  Located: &FFortress&E(clk) &Adist= &F~
+|&CNOTE: The damage levels listed are at base level. They DO NOT reflect any|~
+&Cimpact that your strength may have. Real world levels (reported by the "view|~
+&Ccharacter" command) do reflect your strength and may be higher.|~
+&CYour weapon is out of ammo.|~
+&A  Located: &F~
+&Adist= &F~
+&A  Located: &FFortress      &Adist= &F~
+&A bearing &F~
+&A degrees.|~
+&BPhysical structures:~
+&BLand type information:|~
+&BCurrent stealth field operating mode: ~
+&FOff|~
+&FQuiet|~
+&FNoisy|~
+&BChange operating mode to [&FO&B]ff, [&FQ&B]uiet, or [&FN&B]oisy ? ~
+&BStealth field operating mode set.|~
+&BThis option allows your fortress to be listed in the holostore directory. Other|~
+&Bpeople will be able to buy items from your "forsale counter" and have the item|~
+&Bteleported to them. They WILL NOT be informed of your fort's location. For this|~
+&Bto work, you must 1) Own a teleporter, 2) Activate Holostore, and 3) Place|~
+&Bitems up for sale (see your storage room).|~
+|&BList your fortress in the holostore directory (&FY&B/&FN&B) ? ~
+|&BToggle the small fortress tile (&FY&B/&FN&B) ? ~
+&BYou have a choice on whether you want your inventory display to list in rows or|~
+&Bin columns.|~
+|&BToggle the inventory display mode (&FY&B/&FN&B) ?~
+&CThat type of armor does not fit you.|~
+~
+&CYou can't get away!!!|~
+&B  &F4&B> Enhanced ansi character sheet.: ~
+&B  &F5&B> Colored store inventory list..: ~
+&B  &F6&B> GTERM fast (no error check)...: ~
+&B  &F7&B> Inventory display.............: ~
+&B  &F8&B> GTERM small fortress tile.....: ~
+(reserved for ansi)~
+(reserved for ansi)~
+&3Toggling the expert mode will allow you to remove certain menus from the|~
+&3screen. You should be familiar with all of the menus before activating the|~
+&3expert mode. Although the menus will not be displayed, in most cases you|~
+&3will still be able to get a menu by pressing the "?" key.||~
+~
+&BExpert mode is currently off. Activate it (&FY&B/&FN&B) ? ~
+&BExpert mode is currently on. Disable it (&FY&B/&FN&B) ? ~
+&FRow|~
+&FColumn|~
+&BAs you run away, your enemy sights his weapon on you!|~
+&9ANSI options status|~
+&9-------------------|~
+&B  &F1&B> Use enhanced ansi map display.: ~
+&B  &F2&B> Display wasteland map in color: ~
+&B  &F3&B> FORCE ansi capabilities on....: ~
+&FOn|~
+&FOff|~
+&B|Option to toggle or "Q" to quit >-> &F~
+&BLand of Devastation supports three text (i.e. non-GTERM) map display modes:|~
+&B   &F1&B> Standard: re-draws entire display when you move, 3x3 grid.|~
+&B   &F2&B> Enhanced 3x3: updates display in-place, 3x3 grid.|~
+&B   &F3&B> Enhanced 5x5: updates display in-place, 5x5 grid.|~
+&3|Your current selection is: ~
+&BSelect a new display mode (&F1&B-Standard,&F2&B-Enh3x3,&F3&B-Enh5x5,&FQ&Buit) ? ~
+&BIf the display is too slow for you, you can turn coloring of the wasteland|~
+&Bmap on or off with this option. (Note: To get any color at all, ANSI must|~
+&Beither be enabled at the bbs software or you must use the FORCE ANSI option).|~
+&B|Toggle the display map in color option (&FY&B/&FN&B) ? ~
+&BIf your bbs software currently has ANSI color disabled, you may force it on in|~
+&Bthis door by using this option.|~
+&B|Toggle the FORCE ANSI option (&FY&B/&FN&B) ? ~
+&BBy default, when a fortress is present, GTERM displays a map-sized picture of|~
+&Bfortress. You may elect to replace this map-sized picture with a small "B"|~
+&Bwhich will not obscure the original terrain display.|~
+Slight~
+Moderate~
+Extreme~
+Dying~
+Minimal~
+&BPerforming maintenance|~
+&B----------------------|~
+ &Fþ &ARemoving useless items from the wasteland.|~
+ &Fþ &ATrimming the log file down to size.|~
+ &Fþ &APerforming user maintenance.|~
+ &Fþ &AItems are falling into the wasteland.|~
+ &Fþ &APerforming base maintenance.|~
+ &Fþ &APlaying with the message base.|~
+ &Fþ &APerforming Authenticity Verification.|~
+ &Fþ &AChecking for a winner.|~
+ &Fþ &ADistributing Taxes/Donations.|~
+ &Fþ &AChecking the isreal monsters.|~
+    &Fþ &E~
+&A at &E~
+&A because of worthless armor.|~
+&A because of worthless ammo.|~
+&A because of worthless medkit.|~
+&A because of worthless rations.|~
+&A because of worthless device|~
+&A because of |~
+&A because of |~
+&A because of |~
+&BYou have &F~
+&B units of &F~
+&B. How many to sell at &F$~
+&B per unit ? &F~
+&CYou don't have that much!|~
+&CSold!|~
+&CYou don't have any &F~
+&C to sell!|~
+&9Commodities Trading|~
+&9-------------------|~
+   &C[&FL&C]&B List items/prices.|~
+   &C[&FM&C]&B Sell minerals.|~
+   &C[&FF&C]&B Sell fuel.|~
+   &C[&FH&C]&B Sell herbs.|~
+~
+   &C[&FC&C]&B View your character.|~
+   &C[&FQ&C]&B Base Operations.|~
+~
+~
+&A|Commodities trading option ]&F~
+&FView Character|~
+&FList Commodities|~
+&FSell minerals|~
+&FSell fuel|~
+&FSell herbs|~
+&FBase Operations|~
+~
+~
+~
+&BFortresses cost &F$~
+&B to construct.|~
+&CYou don't have enough money!|~
+&BConstruct a fortress (&FY&B/&FN&B) ? ~
+&FYes|~
+&FNo|~
+&CFortress construction, inc. Is tired of making Fortresses.|~
+&C|Fortress Created.|~
+&B|What do you wish to name your fortress ? &F~
+&B, right (&FY&B/&FN&B) ? ~
+&FYes|~
+&FNo|~
+&CThis location is unsuitable for constructing a fortress!|~
+&BYou must assign a password to your fortress. The password is used to prevent|~
+&Bunauthorized access to your fortress. The password may be up to eight chars|~
+&Bin length. ||~
+&BWhat do you want for a password ? &F~
+&B, Right (&FY&B/&FN&B) ? ~
+&FYes|~
+&FNo|~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+&ENearby Items:      ~
+&ENearby Items:~
+&CThere is no fortress here!|~
+&BFortress requests password: &F~
+&CAccess Accepted.|~
+&CAccess Denied.|~
+&BYou collect &F~
+&B cm3 of &F~
+&B.|~
+&FYes|~
+&FNo|~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+&EFortress Inventory:|~
+&BDrop which object from inventory (?=List) ? &F~
+&CDrop What?|~
+&BPick up which object from fortress (?=List) ? &F~
+&CThat isn't here!|~
+&CThere is no more room in your inventory.|~
+&CThere aren't any objects here.|~
+&CYou don't have any grenades!|~
+&CYou hurl a grenade at the enemy!|~
+Your %5's shockwave blaster sends %2 stumbling to the ground, dropping %0 &E%Z&4!~
+~
+%1's %5 emits a shockwave, causing you to drop your &E%Z&4!~
+~
+The stress of Deathpulse mode was too much for your %3. Sparks and smoke pour from it's now useless frame.~
+~
+~
+&BFortress Name.: &F~
+&BLocation......: &F~
+&BOwner.........: &F~
+&BMinerals......: &F~
+&BFuel..........: &F~
+&BHerbs.........: &F~
+&BMoney Stored..: &F~
+&BObjects Stored: &F~
+&BEnergy on hand: &F~
+&BMedical on hnd: &F~
+&BTraders Union.: &F~
+&BHolostore.....: &F~
+~
+~
+&E] &2[&EMoat--&2] &7~
+&E] &2[&EDefens&2] &7~
+&E] &2[&EMisc--&2] &7~
+&E] &2[&EWeapon&2] &7~
+&E] &2[&EReact-&2] &7~
+&E] &2Empty~
+&E] &A~
+&2~
+~
+~
+~
+~
+None|~
+ cm3~
+&9Fortress Finances|~
+&9-----------------|~
+   &C[&FD&C]&B Deposit money.|~
+   &C[&FW&C]&B Withdraw money.|~
+   &C[&FV&C]&B View treasury.|~
+~
+~
+~
+   &C[&FC&C]&B View your character.|~
+   &C[&FQ&C]&B Fortress Operations.|~
+~
+~
+~
+&A|Finance Selection ]&F~
+&FDeposit money|~
+&FWithdraw money|~
+&FView treasury|~
+&FView character|~
+&FFortress operations|~
+~
+~
+~
+&BFortress treasury has &F$~
+&B. You have &F$~
+&B. Deposit how much ? &F~
+&BFortress treasury has &F$~
+&B. Withdraw how much ? &F~
+&CInvalid.|~
+&BFortress treasury has &F$~
+&B.|~
+&CTransaction completed.|~
+&AWelcome to the Tavern!~
+&B||You casually enter the Tavern and begin to look around. While you are here,|~
+&BYou notice the following people:||~
+~
+~
+~
+~
+~
+~
+~
+&CThere is nobody here!||~
+&A|Who do you want to talk to [&2Q=Quit&A] ? &F~
+~
+~
+~
+~
+ took posession of the fortress!|~
+ warped out!|~
+ surrendered to the fortress!|~
+ woke up from a restless sleep.|~
+ enlisted.|~
+ was revived from near-death.|~
+ was killed by a ~
+ died of starvation.|~
+ died of unknown causes.|~
+A Fortress was constructed!|~
+ attacked fort: ~
+, belonging to ~
+ chickened out and ran!|~
+ found the fort lacking a defense field!|~
+ blasted through the fort's defense field in long range combat!|~
+ trashed the fort's defense field in close combat!|~
+ died while attacking ~
+A massive EarthQuake hit the wastelands! Objects in bases may be lost.|~
+And so ends yet another day of post-nuclear hell!|~
+ was awarded $~
+ for janitorial services.|~
+Dust storms claimed several discarded items left on the wasteland!|~
+ restarted from a saved clone.|~
+'s &Abank account was taxed $~
+'s &Agame account was taxed $~
+.|~
+Emergency warp device operation detected!|~
+ attacked ~
+!|~
+ surrendered.|~
+ ran!|~
+ warped out!|~
+ warped out while fighting ~
+ stepped on a mine and was killed!~
+Fortress ~
+ was self-destructed!|~
+ stepped on a mine!|~
+ stepped on ~
+ mines!|~
+Emergency warp device operation was detected ~
+ times!|~
+ was killed by ~
+ died while fighting ~
+ in close combat!|~
+ in long range combat!|~
+ was shot while running from ~
+Check your accounts! $~
+ of tax/donations re-distributed to players!|~
+ quit the ~
+ team.|~
+ joined the ~
+ created the ~
+Emergency warp program couldn't respond in time!~
+!|~
+ died in close combat while attacking ~
+ died in long range combat while attacking ~
+ died while running like a coward from ~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+&B. [&FD&B]eposit, [&FW&B]ithdraw, or [&FQ&B]uit ? ~
+&B. You have &F$~
+&B. Deposit how much ? &F~
+&B account has &F$~
+&B. Withdraw how much ? &F~
+&CInvalid.|~
+&Baccount has &F$~
+&B.|~
+~
+~
+~
+~
+~
+&CYou are starving to death!!!|~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+|~
+&7        *********************************************|~
+&7        *        Alpha Centauri Slot Machine        *|~
+&7  ********************************************************|~
+&7  *                   --- Jackpot ---                    *|~
+&7  * 1 Cherry  - 20 credits   3 bells       - 200 credits *|~
+&7  * 2 Cherry  - 50 credits   3 Any-bars    - 300 credits *|~
+&7  * 3 cherry  - 70 credits   3 single bars - 400 credits *|~
+&7  * 3 Oranges - 100 credits  3 double bars - 500 credits *|~
+&7  * 3 Grapes  - 150 credits  3 triple bars - 1000 credits*|~
+&7  ********************************************************     ***|~
+&7***                                                      ***  *****|~
+&7*                                                          *   ***|~
+&7*----------------------------------------------------------*    *|~
+&7*                  :                    :                  *    *|~
+&7*                  :                    :                  *    *|~
+&7*----------------------------------------------------------*    *|~
+&7*                                                          *    *|~
+&7*                                                          *    *|~
+&7*                                                          *    *|~
+&7*                     ___________                          ******|~
+&7*                     :         :                          *|~
+&7*                     :         :                          *|~
+&7************************************************************|~
+|~
+&B<Slot Machine>||~
+&9Each pull costs 10 credits.|~
+&2You have &F$~
+&2.|~
+&CYou're out of money!|~
+&3[P]lay or [Q]uit ? &F~
+&B<Trivia>|~
+&CWe're out of trivia for now!|~
+|~
+&2Trying a trivia question costs &F$~
+&2. If you answer correctly, then |~
+&2I will pay you &F$~
+!||~
+&CYou don't have enough money!|~
+&BTry a question (Y/N) ? &F~
+&BYour answer: &F~
+&9You got it!|~
+&CSorry, you were incorrect.|~
+&9Casino Options|~
+&9--------------|~
+   &C[&FF&C]&B Coin flip.|~
+   &C[&FG&C]&B Guess number.|~
+   &C[&FS&C]&B Slot machine.|~
+   &C[&FT&C]&B Trivia.|~
+   &C[&FZ&C]&B Casino Statistics.|~
+~
+   &C[&FC&C]&B View your character.|~
+   &C[&FQ&C]&B Base Operations.|~
+~
+~
+~
+&A|Casino Selection ]&F~
+&FCheck Char|~
+&FCoin Flip|~
+&FGuess Number|~
+&FSlot Machine|~
+&FTrivia|~
+&FQuit|~
+&FCasino Statistics|~
+~
+~
+~
+~
+~
+~
+~
+~
+&FInventory Packed.|~
+&FInventory Sorted.|~
+&BExchange item number A (1-16) ? &F~
+&BExchange item number B (1-16) ? &F~
+&CInvalid number.|~
+&FItems exchanged.|~
+~
+~
+~
+~
+~
+&BOverlay buffer size.....: &F~
+&B bytes|~
+&7A dark mist surrounds your body and you are knocked unconscious. When you|~
+&7awake, you are not in the same place as you were!|~
+&7Default coordinates overridden by EM-WARP program.||~
+&7All that is heard is a slight clicking sound....|~
+&7~
+&BRefuel which cell from inventory (&F?&B=List) ? ~
+&COnly energy cells may be refueled here.||~
+&EEd sells vortex energy units at a cost of &F$~
+&E each.||~
+&3Buy how many [&F~
+&3] ? &F~
+|&CA couple of mercenaries send you a menacing look as you realize you can't|~
+&Cafford that much.||~
+|&CYour energy cell cannot hold that much.||~
+|&3You attach your cell to the refueling station and a generous amount of energy|~
+&3pours into it.|~
+    &Fþ &E~
+&A at &E~
+&A disappeared into the wasteland forever.|~
+    &Fþ &E~
+&A accumulated &E$~
+&A interest in his normal account.|~
+&A interest in his game account.|~
+&A interest on his loan.|~
+&A credits for janitorial services.|~
+&A needed a USERIDX refresh.|~
+    &Fþ &AAdded msg &E#~
+&A from &E~
+&A about &E~
+    &Fþ &ADeleted msg &E#~
+&A lines removed from log file.|~
+    &Fþ &ANumber of items = &E~
+    &Fþ &AFort &E~
+ &Aat &E~
+ &AReactor produces &E~
+&A energy units.|~
+&A killed because of not logging in.|~
+&A removed because of not logging in.|~
+&A was charged &E$~
+&A rent.|~
+&CAs you struggle to survive in the wasteland, you are overcome by|~
+&Can immense hunger. You have died of starvation.|~
+&9Combat Statistics: Weapons Profile|~
+&9----------------------------------|~
+|&BShort Range Weapon: &F~
+&B   Hit deflection chance...............: &F~
+&B   Deflection points remaining.........: &F~
+|~
+&BHit probability versus:            Defense probability versus:|~
+&B   Avg. Zone &F~
+&B monster: &F~
+&B   Your strength bonus percentage......: &F~
+&B   Accuracy bonus percentage...........: &F~
+&B   Effective dexterity.................: &F~
+|&BLong Range Weapon: &F~
+&BCombat bravery.........................: &EKill: &F~
+&E  Run: &F~
+&E  Surr: &F~
+&BCombat accuracy........................: &F~
+&A (Rechargable)~
+&BExperience required for next level.....: &F~
+&CReady!|~
+&B   Base damage level...................: &F~
+&B   Effective damage level..............: &F~
+&BLast player that you killed............: &F~
+&BLast player who killed you.............: &F~
+&BLast monster that you killed...........: &F~
+&BLast monster who killed you............: &F~
+n/a|~
+&9Combat Statistics: Armor Profile|~
+&9--------------------------------|~
+|&BShield: &F~
+&B   Hit deflection chance...............: &F~
+&B   Deflection points remaining.........: &F~
+&BTotal Kills............................: &F~
+|&BMedical lining: &F~
+&B   Regeneration rate...................: &F~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+|&BPurchase which computer number (&FQ&B=Quit,&F?&B=List,&FV&B=View) ? &F~
+|&BPurchase which robo-defender number (&FQ&B=Quit,&F?&B=List,&FV&B=View) ? &F~
+|&BPurchase which reactor number (&FQ&B=Quit,&F?&B=List,&FV&B=View) ? &F~
+|&BPurchase which moat number (&FQ&B=Quit,&F?&B=List,&FV&B=View) ? &F~
+|&BPurchase which defense field number (&FQ&B=Quit,&F?&B=List,&FV&B=View) ? &F~
+|&BPurchase which weapon number (&FQ&B=Quit,&F?&B=List,&FV&B=View) ? &F~
+|&BPurchase which item number (&FQ&B=Quit,&F?&B=List,&FV&B=View) ? &F~
+|&BPurchase which factory number (&FQ&B=Quit,&F?&B=List,&FV&B=View) ? &F~
+|&BPurchase which pack number (&FQ&B=Quit,&F?&B=List,&FV&B=View) ? &F~
+&CPlease sell your current reactor first.|~
+&CPlease sell your current moat first.|~
+&CPlease sell your current defense field first.|~
+&CPlease sell your current weapon first.|~
+&CPlease sell your current energy sink first.|~
+&CThere is no room in your fort's specialty device inventory.|~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+&BAmmunition may be discharged into the fortress power reserves to|~
+&Bprovide power for fortress defenses, devices, etc.||~
+&BDischarge which ammo pack (&FL&B=List,&FQ&B=Quit) ? &F~
+&CAmmunition discharged.||~
+&CThat is not a valid ammunition type.||~
+&CDischarge what?||~
+&BProducts to sell:|~
+&B  1) Minerals  &F~
+&B  2) Fuel      &F~
+&B  3) Herbs     &F~
+&B  4) Healing   &F~
+&B  5) Energy    &F~
+|~
+&BProducts to buy:|~
+&B  D) Minerals  &F~
+&B  E) Fuel      &F~
+&B  F) Herbs     &F~
+|~
+&BCash in fortress treasury: &F$~
+&B  G) Teleportation price: &F$~
+~
+~
+~
+~
+~
+~
+~
+&B units at &F~
+&B per unit.|~
+&B per unit; budget: &F$~
+&B.|~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+&BYou have &F~
+&B total units of &F~
+&B available. Place how many for sale ? &F~
+&CInvalid.|~
+&BHow much money do you wish to charge per unit ? &F~
+&BHow much money to pay per unit ? &F~
+&BYou have &F$~
+&B available. Budget how much for purchasing ? &F~
+&B total units of &FEnergy ~
+&B total units of &FHealing ~
+&BMedical kits can be discharged into fortress medical storage banks where they|~
+&BCan either be used by the fortress owner or transferred to medical sales.||~
+&BDischarge which MedKit (&FL&B=List,&FQ&B=Quit) ? &F~
+&CMedical Kit discharged.||~
+&CYou can only discharge a medical kit.||~
+&CDischarge what?||~
+&9Combat Statistics: Misc Information|~
+&9-----------------------------------|~
+&B   Special features....................: ~
+&EBurst ~
+&EStunner ~
+&EUni-Ammo ~
+&7Unknown|~
+&B   Base ammunition type................: &F~
+&7None|~
+&B   Intensify damage multiplier.........: &F~
+&BPurchase a &F~
+&B for &F$~
+&B (&FY&B/&FN&B) ? ~
+&3The following ammo packs can be created from your energy in storage:||~
+&CYou don't have enough money.||~
+&CThere is no room in your inventory.||~
+&7 (energy units)|~
+(unused)~
+&BAvailable for Trading:|~
+&2   Selling &F~
+&2 units of &F~
+&2 at &F$~
+&2 per unit.|~
+&C   Selling nothing.|~
+&2   Buying &F~
+&C   Buying nothing.|~
+Energy~
+Healing~
+&9Fortress Misc Options|~
+&9---------------------|~
+   &C[&FM&C]&B Create medkit from medical storage.|~
+   &C[&FH&C]&B Heal from medical storage.|~
+   &C[&FP&C]&B Create ammo pack from energy.|~
+   &C[&FS&C]&B Set fortress password.|~
+   &C[&FU&C]&B Use fortress communicator.|~
+   &C[&FE&C]&B Equip your character.|~
+   &C[&FD&C]&B Destroy fortress.|~
+   &C[&FV&C]&B View fortress.|~
+   &C[&FC&C]&B View your character.|~
+   &C[&FQ&C]&B Quit to fortress operations.|~
+~
+~
+&A|Fortress Misc Options Selection ]&F~
+&FCreate Medkit.|~
+&FHeal.|~
+&FCreate Ammo Pack.|~
+&FView Character.|~
+&FFortress Operations.|~
+&FChange Fortress Password.|~
+&FUse fortress communicator.|~
+&FEquip character.|~
+&FDestroy fortress.|~
+&FView fortress.|~
+&F~
+&B healing doses are available. Your health is &F~
+&B.|~
+&BUse a healing dose (&FY&B/&FN&B) ? ~
+&FYes|~
+&FNo|~
+&CFortress is out of healing doses.|~
+&CFortress does not have enough energy to create a &F~
+&C.|~
+&BThere are &F~
+&B energy available. Fortress creates energy in a &F~
+&B.|~
+Create one (&FY&B/&FN&B) ? ~
+&CThere is no room in your inventory.|~
+&F~
+&B created.|~
+&CFortress does not have enough med doses to create a &F~
+&C.|~
+&BThere are &F~
+&B healing available. Fortress creates healing in a &F~
+&B.|~
+Create one (&FY&B/&FN&B) ? ~
+&CThere is no room in your inventory.|~
+&F~
+&B created.|~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+&7 Volume in drive C is GS-224|~
+&7 Directory of C:\|~
+|~
+~
+&7Volume GS-224 created Fed 11, 2012 5:34p|~
+|~
+ bytes total disk space|~
+ bytes in 0 hidden files|~
+ bytes in ~
+ user files|~
+ bytes available on disk|~
+|~
+ bytes total memory|~
+ bytes free|~
+~
+&BInsert which ROM cartridge in the "A:" drive (&F?&B=List) ? &F~
+&CYou may only insert a ROM cartridge!|~
+&CInsert what?|~
+&CThat file is already present on the laptop!|~
+&CFile transferred to Laptop root dir.|~
+&BNotes: &FV&B]iew, &FD&B]elete, &FA&B]dd-manual, &FS&B]ort, &FQ&B]uit ? ~
+&FView|~
+&FDelete|~
+&FAdd-manual|~
+&FQuit|~
+&FSort|~
+~
+&CYour notes file is empty!|~
+&BERASE your notes file? Are you sure (&FY&B/&FN&B) ? ~
+&FYes|~
+&FNo|~
+&BEnter MANUAL notes comment below, or enter a blank line to abort.|~
+&B(Coordinates will be logged automatically)|&ENotes: &F~
+~
+~
+~
+~
+~
+~
+~
+&3AUTONAV: You have moved off of current Z-Plane. Deactivated.||~
+&3AUTONAV: North||~
+&3AUTONAV: South||~
+&3AUTONAV: East||~
+&3AUTONAV: West||~
+&3AUTONAV: Path Lost. Deactivated.||~
+&BEnter AutoNav Z-Coordinate (0=abort) ? &F~
+&BEnter AutoNav X-Coordinate (0=abort) ? &F~
+&BEnter AutoNav Y-Coordinate (0=abort) ? &F~
+&CInvalid coordinates.|~
+&CAutoNav cannot traverse Z-Planes.|~
+&CAbort|~
+&3AUTONAV: Destination reached.|~
+|&CAutonav cannot reach that destination!|~
+|&3AutoNav course loaded. &F~
+&3 steps.|~
+&7|Emergency Warper Control Program (EMWARP) revision 2.0|~
+&7(c) 2013 Acme weapons, Inc.|~
+&7|This program will automatically cause any WARPER device in possession at time|~
+&7of unconsciousness to activate, causing user to be teleported to a preset|~
+&7anchor point. Please see laptop 'HELP' for instructions on configuring a new|~
+&7EMWARP anchor point.|~
+&7|Note: Acme Weapons, Inc. is not responsible to any untimely injury, death,|~
+&7paralysis, vaporization, or otherwise undesirable consequences resulting from|~
+&7the use or misuse of this device.|~
+~
+~
+~
+~
+~
+&9ZC XC  YC   Fortress Name       Owner       Selling  Buying  Objs  Energy  Heal|~
+&9-- --- ---  ------------------  ----------  -------  ------  ----  ------  ----|~
+&CYou do not have any bases.|~
+Listed.|~
+Unlisted.|~
+&BListing with the traders union will allow other users to view the location|~
+&Bof your base as well as teleport to your base if/when you buy a teleporter.||~
+&BList with the traders union (&FY&B/&FN&B) ? ~
+(unused)~
+(unused)~
+&BQuick heal used &F~
+&B medkit doses. &F~
+&B remain.|~
+&BFortress Encounter: Long Range.|~
+&B&FL&B)ong Range, &FR&B)etreat, &FE&B)ngage close, &FV&B)iew, &FC&B)har, &FG&B)renade ?~
+&FLong Range|~
+&FRetreat|~
+&FEngage Close|~
+&FView Fort|~
+&FView Char|~
+&FGrenade|~
+~
+~
+&BYou hurl a grenade at the fortress!|~
+&C<BAM> The explosion rocks the very foundation of the fortress!|~
+&CSparks fly as your weapon burns into the fortress's defense field!|~
+&CA certain saying about a "broad side of a barn" applies as your shot misses.|~
+|&CThe fortress's defense crumble! Victory!|~
+&BFortress Encounter: Close Range.|~
+&B&FA&B)ttack, &FR)&Betreat, &FV&B)iew Fort, &FC&B)har status ? ~
+&FAttack|~
+&FRetreat|~
+&FView Fort|~
+&FView Char|~
+~
+~
+~
+&CYou set a new record for the 50-yard dash as you flee from the base!|~
+&DYou grab your weapon and prepare to put a hole in the fort's defense field!|~
+&CYou slash into the fortress's defenses, sending electric flames everywhere!|~
+&CYour attack is off and inflicts no damage!|~
+&CThe fortress fries you with its ~
+&C!|~
+&CThe fortress's shot misses you by a mile!|~
+&DYou prepare to traverse the fortress's moat!|~
+&CYou are bruised and beaten by the fortress's moat!|~
+&CWith stunning ability, you traverse the moat unhindered.|~
+&CWARNING: Base has insufficient energy for defense!|~
+&CWARNING: Base is lacking defense field. Base is defenseless!|~
+&CWARNING: Base is lacking primary weapon. Base is defenseless!|~
+(reserved for another warning)~
+&CAnd just why would you wish to attack your own base?|~
+&3Luckilly, the owner of this fortress was foolish enough not to install a moat|~
+&3and you are able march towards the fortress unhindered.|~
+&3|"What a Fool!", you think as you notice this fortress does not have any|~
+&3defense field whatsoever!|~
+&3|Alarms and sirens blare throughout the fortress as the defense field breach|~
+&3is detected by the internal systems. You notice the distinct sounds of|~
+&3robotic defense droids preparing to defend the fort to the bitter end.|~
+&3 remain)||~
+&7Dietary Control Program (DIET)|~
+&7(c) 2013 Troop Rations, Inc.||~
+&7This program will place you on a high nutrition dietary program|~
+&7that will effectively reduce your food intake requirements by up|~
+&7to 25%. In addition, DIET can automatically recommend the most|~
+&7effective times to consume your rations.||~
+&7Do you wish to have DIET automatically control your eating (&FY&7/&FN&7) ? ~
+&FYes|~
+&FNo|~
+&3On the advice of the diet program, you eat &F~
+&3 ration(s). (&F~
+|&DYou hear a loud klaxon siren blaring, the standard indication that a fortress|~
+&Dis about to activate a corbomite device. You're too close to the fort to run|~
+&Daway in time, so you'll just have to hope that blast isn't strong enough to|~
+&Dkill you.....|~
+&C"Corbomite detonation in ~
+&C seconds."|~
+&D|Sizzle.... Pop.... Buzz.... Nothing happened. The fortress must have been too|~
+&Dlow on energy to inflict any damage.||~
+&C|ZZZZAAAAPPPP! The corbomite device converts the entire contents of the fort's|~
+&Cenergy bank into one tremendous energy pulse which impacts you almost|~
+&Cinstantaniously.||~
+&DYour &E~
+&D is destroyed.|~
+&CYou scream as your flesh is literally vaporized off your body. The energy|~
+&Cpulse inflicts a total of &F~
+&C hitpoints in damage!|~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+&BYou seek out the manager. After a 30 minute wait in his office, he opens the|~
+&Bdoor and his secretary ushers you inside. He says "A friend of mine at Sacre|~
+&BBase, Troy Hadley, requested some steaks. Problem is, we don't have anyone|~
+&Bshall we say "talented" enough to carry the package across the wastelands. If|~
+&Bsomeone was to help us with the task, I am sure that Troy would be very, very|~
+&Bhappy."|~
+~
+~
+&B|Help them (&FY&B/&FN&B) ? ~
+&FYes.|~
+&FNo.|~
+&CThere isn't room in your inventory to put Troy's Steaks.|~
+&BHe says: "Oh. Hello there, friend. I'm sorry, but I'm out of jobs for you.|~
+&BPlease excuse me - there's lot's of work to get done around here." He|~
+&Bleaves.|~
+~
+~
+&BAs you approach the gate of Sacre Base, Troy Hadley approaches you. "My Steaks!|~
+&BMy Steaks! You've brought my steaks! Thanks a lot. I wish there was a way that|~
+&BI could repay you... hmm... Let me think. I've got this database of object|~
+&Blocations in the wasteland. You know, pylons, towns, and the like. Could come|~
+&Bin very handy to a person such as yourself!" He runs off into a back room for a|~
+&Bmoment. "The manager of the computer store has it right now. Just go there with|~
+&Byour laptop and he'll give you the disk.|~
+~
+~
+&BThe computer store manager appears. Hi there. Troy Hadley wanted me to give you|~
+&Bthis disk.||~
+~
+&CThere isn't any room in your inventory!||~
+&CI seem to have lost Troy's steaks. bummer.||~
+&BThe manager gives you Troy's steaks.||~
+&CI seem to have lost Troy's disk! bummer.||~
+&BThe computer store manager gives you Troy's disk.||~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+&BYou have completed special quest &F#~
+&B. You are awarded &F~
+&B experience points!|~
+&9## Name                 Cost       Damage Ammunition Req'd|~
+&9ÄÄ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ ÄÄÄÄÄÄÄÄÄÄ ÄÄÄÄÄÄ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ|&7~
+None~
+ and a &F~
+% &Eteam discount~
+.||~
+&CYour &F~
+&C was taken into the fortress's storage vault!|~
+|&3You laugh outloud as you notice that the fortress does not have sufficient|~
+&3energy to charge it's defense field.|~
+&E [Decloak Engaged]~
+&9JC137 Land Topography scanner beginning operation:||~
+~
+~
+&CThe monster isn't very talkative right now.|~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+&CYou can only have a maximum of eight items for sale!|~
+&BPlace which object up for sale (?=List) ? &F~
+&BWhat do you wish to charge for that item ? &F~
+&C<Aborted>|~
+&9##  Object                Price|~
+&9--  --------------------  --------|~
+&CYou have nothing up for sale!|~
+&CThere are no objects up for sale!|~
+&BRemove which object from sale (?=List) ? &F~
+&CThat item is not for sale!|~
+&BObject removed from sale and placed in storage.|~
+&CYour inventory is full!~
+&BBuy which item from base (?=List) ? &F~
+&CInvalid|~
+&BThe &F~
+&B costs &F$~
+&B, Buy it (&FY&B/&FN&B) ? &F~
+&CYou don't have enough money!|~
+&BThe &F~
+&B has been added to your inventory.|~
+&CThis base has nothing for sale.|~
+&BPermanently "kill" which object from ground (?=List) ? &F~
+&CYou can only build up to &F~
+&C forts.|~
+&CYour fort's storage room can only hold up to &F~
+&C items.|~
+&CYou do not have a fortress communicator!|~
+&CSwapping Weapons...|~
+&BYou are now armed with your &F~
+&B.|~
+&8Picked up a &F~
+&8.|~
+&8Inventory full.|~
+&8Destroyed a &F~
+&8.|~
+&8Dropped a &F~
+&8.|~
+&CThe kill object command has been disabled.|~
+&9Alpha-Combat!||~
+&7A strings of periods will be sent across your screen. Somewhere in the middle|~
+&7of this string will be a lone alphabetical character. When you see this|~
+&7character, hit it as fast as you can. Your chances of hitting will be determined|~
+&7based on how fast your reaction is.||~
+&9Get Ready.|~
+~
+~
+&9Reflex-Combat!||~
+&7A series of numbers will be sent across your screen. When you see the desired|~
+&7number, hit any key as fast as possible. Your chances of hitting the monster are|~
+&7based on your reaction time.||~
+~
+~
+&9Numbers will be &Fincreasing&9. Press on &F~
+&9Numbers will be &Fdecreasing&9. Press on &F~
+&B. Get Ready!|~
+(reserved for combat)~
+(reserved for combat)~
+(reserved for combat)~
+(reserved for combat)~
+&9|Combat Mode Selection|~
+&9---------------------||~
+&BLOD Offers several different "combat modes". These different modes allow you to|~
+&Bchoose a method of combat that you like. The combat modes are used for close|~
+&Brange combat (i.e. hand-to-hand). The default mode is statistical, but feel|~
+&Bfree to select whichever mode you prefer.||~
+&9Selectable combat modes:||~
+~
+~
+~
+~
+&B   1) Statistical|~
+&8   1) Statistical|~
+&B   2) Alpha-Key|~
+&8   2) Alpha-Key|~
+&B   3) Reflex Action|~
+&8   3) Reflex Action|~
+(reserved)~
+(reserved)~
+(reserved)~
+(reserved)~
+&B   Q) Quit||~
+&BSelect: ~
+&FStatistical|~
+&FAlpha-Key|~
+&FReflex-Action|~
+(reserved)~
+(reserved)~
+&FQuit|~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+&9|Statistical Combat|~
+&9------------------||~
+&BIn statistical based combat, your odds of hitting the monster will depend|~
+&Bon your numerical stats (i.e. Strength, dexterity, agility) and not on any|~
+&Bother skill.|~
+~
+~
+~
+&9|Alpha Combat|~
+&9------------||~
+&BIn alpha combat, your chances of hitting the hostile monster are base on how|~
+&Bfast you can hit a specific key on the keyboard. In effect, this method tests|~
+&Byour typing skills. If your stats are low and you are a good typist, you may|~
+&Bwish to give this method a shot.|~
+~
+~
+&9|Reflex Combat|~
+&9-------------||~
+&BIn reflex based combat, your chances of hitting the monster are based on your|~
+&Breflexes. A number sequence will be presented and when you see a pre-determined|~
+&Bnumber, hit your enter key. If you hit it fast enough, then you will hit the|~
+&Bmonster.|~
+~
+~
+&B|Select this combat mode (&FY&B/&FN&B) ? ~
+&FYes.|~
+&FNo.|~
+&CThis mode has been disabled!|~
+&BLog off in base (&FY&B/&FN&B) ? ~
+&9##  Name                  Location  Total Cost|~
+&9--  --------------------  --------  ----------|~
+Sacre Base~
+&BTeleport to which base number (&F?&B=List,&FQ&B=Quit) ? &F~
+&ATeleportation will cost &F$~
+&A. Go for it (&FY&A/&FN&A) ? ~
+&A. &CYou don't have enough money!|~
+&CYes.|~
+&CNo.|~
+&CThis base does not own a teleporter!|~
+&CYou're already here!|~
+&E|You reach over and press the lever that activates the teleportation chamber.|~
+&EImmediately, you are surrounded by a thick black mist. You can feel the energy|~
+&Ebuild as the teleporter's capacitors are charging. One sudden burst and your|~
+&Ebody has been changed from matter to energy. A transmission dish on the roof of|~
+&Ethe fortress turns in the direction of the target fortress. A second later, a|~
+&Ebright beam of energy streaks across the sky to the target fortress. Your|~
+&Eenergy is then captured and reconstructed into your proper form. You have been|~
+&Eteleported!|~
+~
+~
+~
+~
+~
+&EThe teleportation price is how much money you wish to charge someone to use|~
+&Ethe teleporter in your fortress. This is both for departing and arriving. If|~
+&Eyou do not have a teleporter, then this option does not accomplish much.||~
+~
+~
+~
+&BTeleportation Price ? &F~
+(reserved for base tele)~
+(reserved for base tele)~
+(reserved for base tele)~
+(reserved for base tele)~
+(reserved for base tele)~
+(reserved for base tele)~
+&C|You press the recharger's button. Nothing happens.|~
+&E|You press the large rectangular button on the recharger. Immediately, you feel|~
+&Ea magnetic-like attraction between the recharger and your armor. You place the|~
+&Erecharger closer to your armor. Lightning like flashes of energy burst from the|~
+&Erecharger and impact into your armor. As you peer into the inferno, you can see|~
+&Ethat the molecular structure of your armor is being regenerated right before|~
+&Eyour eyes. A few more minutes, and your armor has regained it's full strength!|~
+~
+~
+~
+&E|You press the large rectangular button on the recharger. The recharger sputters|~
+&Ea few sparks in the direction of your armor, but there is no noticeable change.|~
+~
+~
+&7You load up the tetris program and begin to play. You become addicted to the|~
+&7game. Hours go by like minutes as you move the colored blocks across the screen|~
+&7and slide them into place like a pro. When you are done, the results are|~
+&7astonishing. By playing the game, you increased your hand-eye coordination,|~
+&7resulting in a gain of 4 dexterity points!|~
+~
+~
+~
+&7The tetris game is really pretty boring now. You decide to do some adventuring|~
+&7rather than waste any more time playing games.|~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+&APress &F#~
+&A. Press which button: &FR&A]ed, &FB&A]lue, &FG&A]reen, or &FQ&A]uit ? ~
+&FRed.|~
+&FBlue.|~
+&FGreen.|~
+&FQuit.|~
+~
+~
+~
+~
+~
+&AProceed with transporation (&FY&Aes/&FN&Ao) ? ~
+Quit|~
+&APress &F#~
+&A. Press which button: ~
+or &FQ&A]uit ? &F~
+&E|As you press the final button, a massive energy burst teleports you to another|~
+&Elocation. Or so it would seem. When you finally "arrive", things are not as|~
+&Ethey should be. You can't see anything. You can't hear anything. In fact, none|~
+&Eof your senses seem to be working. You wonder where you have ended up...||~
+~
+~
+~
+&E|As you press the final button, a massive energy bolt teleports you to another|~
+&Elocation. You materialize in a small room. A man across the room turns to face|~
+&Eyou. He doesn't look friendly.....||~
+~
+~
+~
+&EAs you prepare to leave and tell the adventurers back at Sacre Base of your|~
+&Emassive victory, you notice some motion in the back of the room. You turn|~
+&Earound. It is Xeboc! The cuts and bruises on his body fade! He faces you and|~
+&Esays: "Foolish Mortal! Do you not realize who I am? Do you think I could be|~
+&Edestroyed this easily? The being which you see before you is obviously not|~
+&Emyself, but merely a projection of my mind. You'll have to try harder than|~
+&Ethat to destroy me, mortal. Come back and talk anytime mortal, I find you|~
+&Equite amusing. To be a good sport, I'll even let you keep those weapons I|~
+&Ecreated.|~
+~
+~
+~
+~
+&EAfter wandering through the labrynthian corridors and hallways of the crashed|~
+&Evehicle you find yourself in the engineering deck.  Before you, standing like|~
+&Ea sacraficial altar is a black terminal screen.  Across it a single cursor|~
+&Ewaits for you to enter something on it.||~
+~
+~
+~
+&BYour ~
+&FStandard~
+&FGame~
+&FRent~
+<next acct>~
+&FDeposit|~
+&FWithdraw|~
+&FQuit|~
+&CMaybe you should pay back your other loan first!|~
+~
+~
+~
+~
+&BThe bank officer goes into his manager's office. A few minutes later, he|~
+&Breturns and explains that due to the high default rate of new recruits, you|~
+&Bwill have to wait a few days before your application can be accepted.|~
+~
+~
+&ALOAN TERMS:||~
+&B1) You may take out a loan for up to &F5%&B of your worth.||~
+&B2) &F18%&B interest per night will be accumulated on any unpaid balance.||~
+&B3) You may only take out one loan at any one time.||~
+&B4) You may pack back any portion of your loan at any time.||~
+&B5) If loan is not paid within a reasonable time period, then severe penalties|~
+&B   may occur.||~
+~
+~
+~
+&3Due to the good financial standing of your team, we are able to increase your|~
+maximum loan by &F$~
+&3.||~
+&BYou may take out a loan of up to &F$~
+&B. Borrow how much ? &F~
+&CInvalid.|~
+&BTransaction completed. Have a nice day.|~
+&BYou owe &F$~
+&B. You have &F$~
+&B. Pay back how much ? &F~
+&CInvalid.|~
+&BThere is &F$~
+&B left on your loan.|~
+&9Financial Statement|~
+&9-------------------|~
+&BCash (on hand and in accounts) ........: (+) &F~
+&BEquipment on hand......................: (+) &F~
+&BWasteland assets.......................: (+) &F~
+&BMiscellaneous..........................: (+) &F~
+&BOutstanding loan.......................: (-) &F~
+&C                                         --------------|~
+&BTotal..................................:     &F~
+~
+~
+~
+~
+~
+&CThe file, "&F~
+&C" is missing.|~
+&9°°°±±±²²² [&CC&9]ontinue, [&CS&9]top, [&CN&9]onstop ²²²±±±°°°~
+&9°°°±±±²²² [&CC&9]ontinue ²²²±±±°°°~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+&CYou do not have a clone.|~
+&9Clone Status|~
+&9------------|~
+&BName........: &F~
+&BHit Points..: &F~
+&BStrength....: &F~
+&BAgility.....: &F~
+&BDexterity...: &F~
+&BLevel/Exper.: &F~
+~
+~
+~
+&CCurrent clone in storage will be erased! Continue [&FY&C/&FN&C] ? ~
+&FYes|~
+&FNo|~
+&BCloning yourself will cost &F$~
+&B. Proceed [&FY&B/&FN&B] ? ~
+&CYou do not have enough money!|~
+|&3As you finish signing the final release form, the clone techs escort you to a|~
+&3small white room. Centered in the room is a platform with two indentations|~
+&3approximately the size of human bodies. You lie down in one of them. The clone|~
+&3techs leave the room and the platform begins rotating. Soon it is moving so fast|~
+&3that you lose consciousness. When you awaken, an exact duplicate of your|~
+&3physical self is laying next to you!|~
+~
+~
+~
+~
+~
+~
+&BSwap yourself with current clone in storage [&FY&B/&FN&B] ? ~
+|&3The clone techs take you to the room where your clone is awaiting. They remove|~
+&3the clone from storage and begin reviving it. They then strap you into it's|~
+&3storage cell. Better hope they are successful in reviving the clone!|~
+~
+~
+~
+~
+&CCurrent clone in storage will be permanently erased!|~
+~
+&BContinue [&FY&B/&FN&B] ? ~
+&BYou have a clone in storage. Do you wish to restart from it [&FY&B/&FN&B] ? ~
+~
+~
+~
+~
+|&3As you awaken, you are in the clone labs. The local manager explains to you|~
+&3that your real self was reported dead a few days ago and that you have been|~
+&3revived in an attempt to salvage whatever is possible. You are then brought to|~
+&3Sacre Base de-briefing of the current situation.~
+~
+~
+|&3Several days later, Defs Sacre comes running into the emergency room. "Look,|~
+&3he's one of ours! He was found by a recruit!"  The medical doctors rush to the|~
+&3scene immediately. One of them says, "I think we'll be able to save him.....|~
+&3But it's not going to be pretty... He's awfully banged up. We don't know in|~
+&3what shape he'll come out of this..." You have been revived!|~
+~
+~
+Yes~
+No~
+&9Part Name        Present  Reroll  Provided By|~
+&9---------------  -------  ------  -----------------------|~
+&3Rad Extract      ~
+&3Storage Vessel   ~
+&3Filtron          ~
+&3Circulator       ~
+&3Nova Cell        ~
+&3Vent             ~
+&3Recycler         ~
+&3CPU              ~
+&3Rad Convert      ~
+~
+&C  Yes   ~
+&C  No    ~
+&F~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+&7Laptop Pylon Telecode Finder ver .0937<Alpha>|~
+&7(c) 2004 We-Hack-It, Inc.|~
+|~
+&7Standby, demon-dialing pylon telelinks...|~
+~
+~
+|&9Code #1  Code #2  Code #3  Code #4  Code #5  Destination|~
+&9-------  -------  -------  -------  -------  ------------------------------|&F~
+&4Red      ~
+&1Blue     ~
+&2Green    ~
+~
+~
+~
+&FWastelands: ~
+&FResults Inconclusive.|~
+&3AUTONAV: Destination out of range.||~
+&CThose coordinates are out of range. Autonav can only handle destinations +/-|~
+&C32 units from your location.|~
+&E~
+&A] &7~
+Horticulture Center|~
+Pylon|~
+Shuttle Craft|~
+Clone Center|~
+Town: &F~
+Fort: &F~
+Camp: &F~
+Nuclear Silo|~
+EEEE Center|~
+Kill, Inc.|~
+Com Tower.|~
+Settler Dome.|~
+|&BEnter which location ? &F~
+&CInvalid Choice!|~
+&CAborted.|~
+&9Player Camp|~
+&9-----------|~
+   &C[&FV&C]&B View player.|~
+   &C[&FA&C]&B Attack player.|~
+   &C[&FS&C]&B Steal item.|~
+~
+~
+   &C[&FC&C]&B View your character.|~
+   &C[&FQ&C]&B Quit to wastelands.|~
+~
+~
+&A|Player Camp Selection ]&F~
+&FView Player|~
+&FAttack Player|~
+&FSteal Item|~
+&FView your character|~
+&FQuit to wastelands|~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+&CThis fortress is equipped with an anti-self destruct device. Self destruct|~
+&Cis not possible.|~
+&CThe device you are trying to sell is equipped with some sort of "device lock".|~
+&CIt cannot be removed, and is impossible to sell!|~
+|&3The device you are about to purchase has a built in "device lock". Once|~
+&3installed, there is NO WAY to remove it.|~
+|&3Do you wish to continue (&FY&3/&FN&3) ? &F~
+&CThere are no forts with available teleporters.|~
+&CThis fortress does not have any energy forsale.|~
+&CThis fortress does not have any medical doses forsale.|~
+&CSorry, this feature has not been implemented yet.|~
+&2   Selling &F~
+&2 for &F$~
+&2 at the sales counter.|~
+&CThe map is filled with unintelligible gibberish.|~
+&2Coordinates of center square are &Fx=~
+&2, &Fy=~
+&2, &Fz=~
+&2.|~
+~
+&BPurchase which ammo number (&FL&B=List,&FQ&B=Quit) ? &F~
+&CThis fortress does not have any energy available!|~
+&CThere is insufficient energy available to create any usable ammo!|~
+&BCreate which ammo number (&FL&B=List,&FQ&B=Quit) ? &F~
+&BCreate a &F~
+&B from &F~
+&B energy units (&FY&B/&FN&B) ? ~
+&CAmmunition created and placed in your inventory.||~
+&CSold! You place the ammo pack in your inventory.||~
+&3The following medical kits can be generated from your med doses in storage:||~
+&7 (medical doses)|~
+&CThis fortress does not have any medical doses available!|~
+&CThere is insufficient medical doses available to create any useable medkits!|~
+&BCreate which medkit number (&FL&B=List,&FQ&B=Quit) ? &F~
+&BCreate a &F~
+&B from &F~
+&B medical doses (&FY&B/&FN&B) ?~
+&CMedkit created and placed in your inventory.||~
+&BPurchase which medkit number (&FL&B=List,&FQ&B=Quit) ? ~
+&BPurchase a &F~
+&B for &F$~
+&B (&FY&B/&FN&B) ?~
+&CSold! You place the medkit in your inventory.||~
+(unused)~
+(unused)~
+(unused)~
+(unused)~
+(unused)~
+(unused)~
+(unused)~
+(unused)~
+(unused)~
+(unused)~
+(unused)~
+~
+|&3You and your adversary enter a rather lengthily conversation about finances.|~
+&3After some intense negotiations on the subject, you are able to discern that|~
+&3your life is worth a measly &F$~
+&3 to your foe. Now, you have a choice. Do|~
+&3you Pay (&FY&3/&FN&3) ? ~
+&FYes.|~
+&FNo.|~
+|&3Upon noticing your more than generous donation, your enemy has decided to|~
+&3allow you to exit without any further harm. Unfortunately, word does get around|~
+&3and the guys at Sacre Base probably won't be too impressed with your "brave"|~
+&3method of dealing with the situation.|~
+|&CUpon seeing that you are a bit short of cash at the moment, your enemy becomes|~
+&Ceven more hostile to you.|~
+|&3You politely indicate that you have better places to spend your money and that|~
+&3you hope to meet the monster again sometime in the future. The monster,|~
+&3however, still seems to be intent on killing you. Oh well....|~
+~
+~
+~
+~
+&CYou don't have any room in your inventory!|~
+&CThe monster doesn't have anything to sell!|~
+|&BBuy which item from monster (&F?&B=List,&FQ&B=Quit) ? &F~
+&CInvalid choice!|~
+&3The monster wants &F$~
+&3 for the &F~
+&3.|~
+&CYou don't have enough money!|~
+&BPurchase the item (&FY&B/&FN&B) ? ~
+&FYes.|~
+&FNo.|~
+&3You make your deal with the monster and happily you each go your separate ways.|~
+~
+~
+~
+&9Game Name        Played  Won     Lost    Money Won   Money Lost|~
+&9---------------  ------  ------  ------  ----------  ----------|~
+&3Coin Flip        ~
+&3Number Guess     ~
+&3Slot Machine     ~
+&3Trivia           ~
+~
+~
+~
+~
+~
+~
+~
+&F~
+&E~
+~
+~
+|&3Cell: &FA&3]dd, &FD&3]ischarge, &FV&3]iew, &FQ&3]uit ? ~
+&FAdd.|~
+&FDischarge.|~
+&FView.|~
+&FQuit.|~
+~
+~
+&CMaximum cell capacity reached.|~
+&BInsert which ammo cartridge into the cell (&F?&B=List) ? ~
+&CYou may only insert an ammo cartridge!|~
+&CThe cell will not accept that energy type!|~
+&CEnergy transferred to cell.|~
+&CInsert what???|~
+&CWARNING! Discharge will empty cell! Continue (&FY&C/&FN&C) ? ~
+&FYes.|~
+&FNo.|~
+&BCell discharged.|~
+|&BEnergy Cell Status:||~
+&7    Vortex Energy units~
+&7    Supplyable ~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+&9##  Name|~
+&9--  ---------------------------------------|~
+|&ANewsletter Article Selection [Q=Quit,L=List] ? &F~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+&2The weaponsmith strips your &F~
+&2 down to it's basic components.|~
+|&2As he peers over the components, he exclaims "Yeah, I think I can do something|~
+&2with this. Let's talk over the details and figure up a price for this...."|~
+|&2As he peers over the components, he exclaims "I'm sorry, but I don't think I|~
+&2can work on one of these.... You see, our conversions cannot be performed on|~
+&2this type of weapon."~
+|&CYour weapon has already been accurized! The gunsmith puts it back together.|~
+|&CYour weapon has already been intensified! The gunsmith puts is back together.|~
+Active - Reroll not set!~
+Active - Will Reroll during maint!~
+Inactive~
+|&BPuritron Status: &F~
+&CYou do not control any of the puritron parts!|~
+&BYou control &F~
+&B puritron parts. Once all five parts are present and three out of|~
+&Bthe five are set to reroll, the game will reset itself during ~
+&Bmaintenance.||~
+&CSet your parts to reroll (Y/N) ? ~
+&FYes.|~
+&FNo.|~
+&CNobody has won yet!|~
+~
+~
+|&BView which object [&FQ&B=Quit,&FL&B=List] ? &F~
+&CInvalid object number.|~
+&BThere isn't much to say about that item!|~
+&CYou decide you've had enough of this... This monster must die... You throw|~
+&Caway all concerns of caution or safety and prepare to battle till the death!||~
+~
+&CYou attempt to use a medkit dose, but your opponent is too quick for you!|~
+&CYou attempt to use the cstats program, but your opponent is too quick!|~
+&CYou do not have an equipped laptop!||~
+&CYour laptop does not have the CSTATS program loaded!||~
+&CYour weapon does not support Deathpulse mode!||~
+&CError: Unable to open notes file!~
+&CError: Too many notes in file to perform sort operation!|~
+&ENotes file sorted.|~
+&CYou do not have an energy cell!|~
+&CAll of your energy cells are already full!|~
+&CNo usable ammunition located!|~
+&CYour energy cell(s) are full!|~
+&CAll usable ammunition has been loaded.|~
+&EYou discharge the &F~
+&E into your &F~
+&E.|~
+&CYour sheild is trashed... You cannot parry with it.||~
+&CYou must have a shield equipped in the "aux weapon" slot to parry!||~
+&CYour weapon is BROKEN! You can't use it in deathpulse mode!||~
+&CYou cover your eyes and toss a flashbomb on the ground in hopes that it will distract %2 long enough for you to make your escape.
+&CYou do not have any flashbombs!||~
+&CYou cannot E)xchange while you have a shield equipped as your aux weapon!||~
+|&BMine option: (&FI&Bnstall/&FW&Barnings/&FA&Bbort/&FV&Biew) ? ~
+(unused)~
+|&EMine installed. Will detonate whenever anyone enters this location.|~
+~
+|&EMine installed. Will detonate whenever anyone but you enters this location.|~
+~
+&C|KABOOM! &4Boy, does this seem like your unlucky day. It seems a small but|~
+&4powerful explosive device has just gone off. Unfortunately for you,|~
+&4explosions are somewhat hazardous to the average human's health.|~
+~
+~
+|&BAs you prepare to install the mine, you think to yourself "This just isn't|~
+&Bright... New recruits and novice soldiers pass through this area from time|~
+&Bto time... " Suffering from a guilty conscience, you put the mine back in|~
+&Byour pack and decide to pursue a different course of action.|~
+~
+~
+&7A man comes running up to you.... "Hello there, Sir, I'm glad I caught up|~
+&7with you. I'm the current manager of Hotels-R-Us, you know, the people who|~
+&7offer the facilities that you have been staying in at these cities. It seems|~
+&7that you owe us some rental money for staying in our establishment. If you|~
+&7please see my office in the Troop Quarters investment section, we would be|~
+&7grateful. By the way... this is really just a formality.... But the rules|~
+&7say that I must inform you... We have a one-logon limit on payments. If you|~
+&7have not paid us by your next logon, we may have to take some drastic|~
+&7measures."|~
+~
+~
+&7A man greats you at the front gates... "Sir, I'm a bit embarrassed to have to|~
+&7address this matter at this time, but we have a slight problem. It seems that|~
+&7you owe us a substantial amount of money... To gain access to the city,|~
+&7you will need to pay me the full amount."|~
+&BI see you are carrying &F$~
+~
+&B on your person.|~
+&3would you willing to part with it (&FY&3/&FN&3) ? ~
+&FYes.|~
+&FNo.|~
+|&EOk.... now it looks like you still owe us &F$~
+&E.||~
+&CWell, Sir, I can't help you if you won't cooperate.|~
+&BI see that you have a whopping &F$~
+&B in your savings account.|~
+&BNow, If my appraisal skills are correct, that &F~
+&B looks to be|~
+&Bworth about &F$~
+&B.|~
+&BI see you have a base entitled &F~
+&B that should be|~
+&Bworth about &F$~
+&B.|~
+&BWell Sir, it appears that we have settled this financial matter.|~
+&BI'm sorry Sir, but it appears you do not have enough funds to settle this|~
+&Blittle matter.|~
+&BWow... Sir, we might be saved yet. You have &F$~
+&B in your game account!|~
+&B is short &F$~
+&CThat ammunition is not of a high enough grade to charge.|~
+&CWARNING WARNING WARNING..... Beginning Fortress Self Destruct Sequence.||~
+&EPlease enter fortress security code for verification: &F~
+&CIncorrect.|~
+&C|Correct Authorization Received. Beginning phase ][ verification.||~
+&EAre you absolutely sure you wish to continue (&FY&E/&FN&E) ? ~
+&FYes.||~
+&FNo.|~
+&3Once the final confirmation is received, the self destruct begins to count|~
+&3down. You frantically rush out of the base to avoid being hit by the|~
+&3explosion yourself. As you reach about a hundred yards from the fortress,|~
+&3you are thrusted forward by the blast of an immense explosion. After your|~
+&3eyes have recovered from the blinding white light, you turn around to view|~
+&3the destruction... All that remains is a huge scorched mark in the ground|~
+&3where the once powerful fortress stood.|~
+~
+&CInvalid name! Please specify something longer!|~
+&7Loading MacroSwift Windows 4.0.|~
+&7|You wait.... And Wait.... And Wait.... Eventually, the screen clears to show|~
+&7a graphics mode application. It has many tiny windows operating at XT speed.|~
+&7You remember back to your history classes. A similar program was seen operating|~
+&7at NATO right around the time of the war. It was said that this program slowed|~
+&7down the armed defenses response after the war to such an extent that all|~
+&7control was lost.... You wonder - could this program have actually been a tool|~
+&7of Xeboc and his cabal warriors?|~
+&7|You immediately terminate the application before it can do any more harm. Aside|~
+&7from having a piece of pre-war history on hand, you have completed another one|~
+&7those somewhat pointless special quests!||~
+&7Loading MacroSwift Windows 4.0.|~
+&7|Noooooooo! You struggle to terminate the program before it can waste any more|~
+&7of your time. Luckily, you hit the reset button in time before the program|~
+&7was able to load. [Hey, you've already got the special quest points... now|~
+&7give it up, ok?]|~
+&EPrices reflect a &F~
+% &Ehigh-ranking player tax~
+    &Fþ &E$~
+ &Atotal taxes/donations collected.|~
+ &Ataxes/donations awarded per user.|~
+    &Fþ &E~
+ &Ausers awarded taxes/donations.|~
+ &AFactory produces &E~
+ &AMine launch aborted.|~
+ &ALaunches &E~
+ &Ato coords &E~
+&A.|~
+ &AWander operation aborted.~
+ &AWanders to &E~
+&A.|~
+ &AScavenger droid gets &E~
+&E at ~
+&A.|~
+ &Fþ &ANPC fort &E~
+&A added.|~
+&A unable to add (file full?).|~
+ &Aautoseller produces &E~
+&A.|~
+(unused)~
+&9Team Options|~
+&9------------|~
+   &C[&FV&C]&B View teams.|~
+   &C[&FM&C]&B Make a new team.|~
+   &C[&FJ&C]&B Join a team.|~
+   &C[&FD&C]&B Quit your team.|~
+~
+   &C[&FC&C]&B View your character.|~
+   &C[&FQ&C]&B Quit to troop quarters.|~
+~
+~
+&A|Team Options Selection ]&F~
+&FView Teams.|~
+&FCreate a Team.|~
+&FJoin a Team.|~
+&FQuit your Team.|~
+&FView Character.|~
+&FQuit to Troop Quarters.|~
+~
+~
+&CSorry, you are already on a team. Please quit that team first.||~
+&CSorry, there is no more room for another team.||~
+&BWhat would you like to name your team ? &F~
+&F~
+&B, correct (&FY&B/&FN&B) ? ~
+&BYour team has been created.|~
+&B. &A~
+&A: &E|      ~
+&CThere are no teams present.|~
+|&BJoin which team (&F?&B=List,&FQ&B=Quit) ? &F~
+&CInvalid choice!|~
+&CThat team is full.|~
+&ATeam joined.|~
+&BPlease choose a PASSWORD to allow people to join your team: &F~
+&BPlease enter the team password: &F~
+&CSorry, that was not correct.|~
+&BQuit your team (&FY&B/&FN&B) ? ~
+&BYou are no longer a team member.|~
+&CIt wouldn't be nice to attack a teammates fortress!|~
+&CYou aren't on a team!|~
+&9## ZC XC  YC   Fortress Name       Owner       Objs  Energy  Heal|~
+&9-- -- --- ---  ------------------  ----------  ----  ------  ----|~
+&CSorry, you do not own any fortresses!|~
+|&BBase number to view (&F?&B=List,&FQ&B=Quit) ? &F~
+&CNo items present.|~
+&9# Team Name                       Score|~
+&9Ä ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ  ÄÄÄÄÄ|~
+&CSorry, no blank team names!|~
+&CSorry, no blank team passwords!|~
+&CSorry, you have already used up all of your fort attacks for today.|~
+&2You have &F~
+&2 fortress attacks remaining today. Attack this fortress (&FY&2/&FN&2) ? ~
+&BFort Atk Left.: &F~
+&2[BONUS]~
+&C[PENALTY]~
+(reserved for show char)~
+(reserved for show char)~
+(reserved for show char)~
+(reserved for show char)~
+&CSorry, you are out of time for today.|~
+|&AYou have played LOD for &F~
+ minutes &Atoday and have &F~
+ minutes &Aleft.|~
+(reserved for time)~
+(reserved for time)~
+(reserved for time)~
+&3Mine type............: ~
+&FSmart~
+&FDumb~
+&3Blasts remaining.....: &F~
+|~
+&3Minimum damage/blast.: &F~
+&F hit points|~
+&3Maximum damage/blast.: &F~
+&7/&FEnergy Drainer~
+&7/&FTeleporter~
+&7/&FRobo~
+(reserved for mine)~
+~
+~
+~
+~
+~
+~
+~
+&B"Excelsior Teleporter standing by."|~
+&BWhich function: &FN&B]ormal Teleport or &FP&B]ylon teleport ? ~
+&FNormal||~
+&FPylon||~
+&FAbort||~
+&BThe owner of this fort charges &F$~
+&B for teleportation. Pay (&FY&B/&FN&B) ? ~
+&CYou don't have enough money!|~
+====================================================================|~
+  LOD was won! The Puritron was assembled and the wasteland saved!|~
+--------------------------------------------------------------------|~
+|~
+The Winners:|~
+|~
+  Prts Fnd: ~
+  Level: ~
+  Worth: ~
+|Top ten:||~
+(reserved for win)~
+(reserved for win)~
+(reserved for win)~
+(reserved for win)~
+&CMessage is private.&7|~
+&CMessage has been deleted.&7|~
+&2    Num: &F~
+&2   Date: &F~
+&2   From: &F~
+&2     To: &F~
+&2Subject: &F~
+&2 Status: &CPrivate|~
+~
+&9------------------------------------------------------------------------&7|~
+&CMessage line limit has been reached.&7|~
+&CInsufficient memory for EnterMessage command!&7|~
+&2   From: &F~
+&2     To: &F~
+&2Subject: &F~
+&2   Date: &F~
+&2Private: &F~
+&7Enter text now. Type a blank line to exit entry mode.|~
+&3Enter: [&FC&3]ont, [&FE&3]dit, [&FD&3]el, [&FI&3]ns, [&FL&3]ist, [&FS&3]ave, [&FA&3]bort ? &7~
+&CYou cannot enter any more lines in this message.&7|~
+&CNo lines in message. Use Continue instead.&7|~
+&7Insert before what line [&F1..~
+&7] ? &F~
+&7Enter text on the line below. 77 characters max length|~
+&CInvalid line number.&7|~
+&CNo lines in message to delete.&7|~
+&7Delete line number [&F1..~
+&7] ? &F~
+&CNo lines in message to edit.&7|~
+&7Edit line number [1..&F~
+&7] ? &F~
+&7Re-enter line below. 77 characters max.|~
+&CMessage aborted.&7|~
+&CInsufficient memory for NewMail command!&7|~
+&1There are no new messages|~
+&CInsufficient memory for ReadMail command!&7|~
+&CThere are no messages present.&7|~
+|&3Read Messages [&F~
+,1..~
+&3] [&FN&3]ext, [&FP&3]rev, [&FR&3]eply, [&FQ&3]uit ? &F~
+&C|[Insufficient ram for sysop audio system - sound will not play on sysop side]|~
+&7Initiating com link..... Performing active com search....||~
+&7Speak to tavern in which town [1-10] ? &F~
+&AAudio/Video link active. Remote conversation unit engaged.||~
+&BYou casually peer into the laptops vidlink. Through the A/V interface, you|~
+&Bnotice the following people:||~
+&CUnable to establish link with desired town.|~
+&B unread messages are present. Read mail now (&FY&B/&FN&B) ? ~
+&B"Transporter standing by."|~
+&BFunction: &FN&B]ormal Teleport, &FP&B]ylon teleport, or &FA&B]bsolute Teleport ? ~
+&FNormal||~
+&FPylon||~
+&FAbort||~
+&FAbsolute||~
+&BThe owner of this fort charges &F$~
+&B for teleportation. Pay (&FY&B/&FN&B) ? ~
+&CYou don't have enough money!|~
+&ATransporter absolute sector function engaged....||~
+&BEnter X coordinate: &F~
+&BEnter Y coordinate: &F~
+&CTeleportation Failed: Invalid Coordinates.|~
+&CTeleportation Failed: Transport location is blocked.|~
+&E|As soon as the coordinates are entered, the transporter is ready for use. You|~
+&Ehesitate momentarily, unsure about this new technology. You cautiously press|~
+&Ethe three large transporter slide levers upward. Immediately, you feel the|~
+&Ematter in your body being converted into energy. Existing now as pure energy,|~
+&Eyou are "beamed" to another location in the wastelands where your body is|~
+&Ereconstructed into physical matter.|~
+~
+~
+~
+&CTeleportation Failed: Coordinates Out of Range (~
+&C squares max).|~
+&BLand of Devastation currently supports an enhanced ANSI style character|~
+&Bsheet (the thing that is displayed when you hit "C" at most menus). It may|~
+&Bbe slower to display for some remote users who are connected at slow|~
+&Bbaud rates.|~
+~
+&B|Toggle the enhanced ansi character sheet (&FY&B/&FN&B) ? ~
+&BBy default, Land Of Devastation will display the listings of items in|~
+&Bstores in color. Items you can buy appear light gray and items you cannot|~
+&Bafford will be displayed in dark gray. Of course, these colors will only|~
+&Bbe displayed if ansi graphics are enabled.|~
+~
+&B|Toggle the colored store listings (&FY&B/&FN&B) ? ~
+&4|To make matters even worse, the explosion threw you back to your previous|~
+&4location.|~
+&CPicking up this item could be dangerous. Are you sure this is what you want|~
+&Cto do (&FY&C/&FN&C) ? ~
+&C|ZZZZZAAAAAPPPP! &4You feel a strong pulse of energy blast your body. You've|~
+&4probably been the unfortunate victim of a energy-drainer mine of some sort|~
+&4which has drained your ammo down to nil!|~
+~
+~
+&C|ZZZZZIIIIIPPPP! &4Instantly, you feel the matter in your body transformed to|~
+&4energy which is flung across the wasteland. It seems you have stepped on some|~
+&4of teleportation mine!|~
+~
+~
+&C"Stand by, Performing retina scan... Base owner identified - Bypassing password|~
+&Croutine".|~
+&3Vortex Link~
+&3Corbomite~
+&3Energy Sink: ~
+ / ~
+ hit points (~
+% deflection)~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+ suffered &E~
+&A points damage from the corbomite device.|~
+    &AYour corbomite device channelled &E~
+&A energy units into a blast pulse!|~
+&A was destroyed!|~
+'s&E ~
+    &A~
+    &AYour corbomite device failed to activate due to insufficient energy.|~
+&A was wasted while running!|~
+&A was wasted in ranged combat!|~
+&A was wasted in close combat!|~
+&A warped out!|~
+&A surrendered to your fortress!|~
+&A chickened out and ran!|~
+    &ASuccess! &E~
+    &ADefeat! &E~
+&A took posession of the fortress!|~
+    &AItem &E~
+&A from &E~
+&A placed in fortress storage room.|~
+&A trashed your defense field in close combat!|~
+&A trashed your defense field in long range combat!|~
+&A found your base lacking a defense field and marched onward!|~
+&A found your defense field uncharged and marched onward!|~
+    &AYour &E~
+&A wasted &E~
+~
+&BNormally, the GTERM interface uses a built in error control protocol to make|~
+&Bsure data is transferred from LOD to GTERM properly. If you are operating using|~
+&Ban error correcting (v.32, MNP5, etc) modem and have an error free link|~
+&Bactive then you may wish to enable the "QUICK" GTERM method which disables|~
+&Bthis duplicate error correction. Note: This option should not be activated|~
+&Bunless you are on an error-free connection. Note: If you are not using GTERM,|~
+&Bthen this option will not do anything.|~
+&B|Toggle the FAST GTERM option (&FY&B/&FN&B) ? ~
+&7FUBAR-DOS version 5 billion and 1.|~
+~
+&BYou have died &F~
+&B times today and are allowed to die &F~
+&B more times.|~
+|~
+&BSorry, you are only allowed to die &F~
+&B times per day. Please call back tomorrow.|~
+|~
+&CTry as you might, you simply cannot convince this monster to accept your|~
+&Csurrender. In fact, you attempts seem to only make him angrier.|~
+~
+~
+&CThis monster seems very attached to his possessions. Try as you might, you|~
+&Care unable to convince the monster to sell any items.|~
+~
+~
+&BAfter waiting around his office for a few hours, the manager of the GSRZ|~
+&Bcenter finally gets around to seeing you. "Ah yes, I gave you some steaks for|~
+&BTroy Hadley not too long ago. I hope you got that taken care of. Looking for|~
+&Bmore work, eh? Well, My stock of Kelp Rations is a bit low. If you can locate|~
+&Bsome for me, I would be much appreciative."|~
+~
+~
+&BKelp Rations! Thank god! I love these things. You've done well, soldier. Please|~
+&Baccept this small reward as a token of my appreciation! He gives you &F$~
+&B!||~
+~
+&CThere is no area on this map designated as an warper home anchor point.|~
+~
+|&7Current warper anchor point is &F%4&7 (z=&F%1&7,x=&F%2&7,y=&F%3&7).|~
+~
+~
+~
+~
+&7The MAPPER displays a scrolling terrain map on your GTERM terminal display. The|~
+&7will display mountains in white, rivers in blue, roads in gray, and all other|~
+&7terrain as black. To activate the display, press ALT-4. As soon as you move,|~
+&7the display will update.|~
+&B&EINTRUDER ALERT! INTRUDER ALERT! &BProximity sensor indicates human lifeform|~
+&Bentering controlled perimeter. All systems armed.... Attention human, any|~
+&Battempt to enter territory will result in detonation. Mine parameters:|~
+&B|~
+&BType...: &F~
+&BOwner..: &F~
+Unknown|~
+&BCharges: &F~
+&BGo ahead anyway (&FY&B/&FN&B) ? ~
+&COne of the guards runs up and says, "Hey! I see you're a new guy here. I|~
+noticed that you are carrying ~
+, but haven't equipped it yet. It|~
+certainly isn't going to accomplish anything until you do! To equip it, just|~
+use the Q)-equip command."||~
+a close weapon~
+a ranged weapon~
+some armor~
+a laptop~
+a shield~
+some med-lining~
+&COne of the guards runs up and says, "Hey! I see you're a new guy here. I|~
+couldn't help but notice you're carrying a~
+, but without any|~
+ammunition for it. You might want to stop by the Sacre Base ammo store and|~
+pick up a~
+!"||~
+&COne of the guards runs up and says, "Hey! I see you're a new guy here. I|~
+noticed your ~
+ is trashed. You might want to find a new one!"||~
+&A and skipped that location.|~
+&A and aborted operation.|~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+|&COh No! The explosion happened so quickly that your EMWARP program didn't have|~
+&Ca chance to respond in time!|~
+~
+~
+~
+~
+~
+~
+~
+~
+&2What do you want me to work on, &FL&2]ong or &FS&2]hort range weapon ? ~
+&FLong Range.|~
+&FShort Range.|~
+&CYou do not have a long range weapon!|~
+&CYou do not have a short range weapon!|~
+&2This operation is for long range weapons only. Let's have a look....|~
+&CYou don't have enough money. The weaponsmith reassembles your weapon in|~
+&Cdisgust.|~
+&3Sell1/~
+&3Sell2/~
+&3Sell3/~
+&3Sell4/~
+&3Burner/~
+|&BSell which item number (&FQ&B=Quit,&F?&B=list) ? &F~
+&CSell what?|~
+&3Generates ~
+(unused)~
+&3SFG~
+&3Trans~
+&3Exc Tele~
+&3Std Tele~
+&3Comset~
+&3Prox/~
+&3Scavenger/~
+&3Scanner~
+&3Toll/~
+&3AntiSD~
+&3Devlock~
+&3Spreader/~
+&3~
+&3DexBoost+~
+&3AglBoost+~
+&3Drainer~
+&3Wander~
+&3Factory/~
+&3Moat: ~
+ - ~
+ dmg~
+&3Weapon: ~
+ - ~
+ dmg~
+&3Defense Shield: ~
+ / ~
+ hit points~
+ &Fþ&A Attending to your finances|~
+    &Fþ&A Your game account was taxed &E$~
+    &Fþ&A Your bank account was taxed &E$~
+    &Fþ&A Your loan accumulated interest in the amount of &E$~
+    &Fþ&A You were charged rent of &E$~
+    &Fþ&A For janitorial services, your bank account was credited &E$~
+    &Fþ&A Your bank account accumulated &E$~
+    &Fþ&A Your game account accumulated &E$~
+~
+&A in interest.|~
+&A.|~
+ &Fþ&A Fortress Activity|~
+&C**** Nightly Maintenance **** &E~
+ &Fþ&A Fort &E~
+&A at &E~
+&A charged &E~
+&A a toll of &E$~
+&A.|~
+&A blasted &E~
+&A for not paying toll.|~
+ &AScavenger droid makes &E$~
+&A profit.|~
+ &AScavenger detects hostile mine at &E~
+    &E~
+&A warped out of combat.|~
+&A ran from combat.|~
+&A surrendered to you.|~
+&A was killed! (You gain &E~
+&A experience and &E$~
+&A cash)|~
+&A killed you!|~
+    &AYou warped to safety.|~
+ &Fþ You were attacked by &E~
+&C**** Maintenance Completed **** &E~
+    &Fþ&A &E$~
+&A in redistributed taxes deposited in your bank account.|~
+ &AScavenger gathers &E~
+&A medkit doses.|~
+ &AScavenger gathers &E~
+&A energy units.|~
+&A was attacked by &E~
+&A destroyed a &E~
+&A barely escaped death by use of an EM-Warp device!|~
+&A died while attacking your fortress!|~
+|&9Would you like a review of what's happened to you recently (&FY&9/&FN&9) ? ~
+&CThere have been no recent events in your life.|~
+&A playernews file erased.|~
+Massive amounts of teleporter energy detected.|~
+was incinerated by Fortress ~
+ wasted a ~
+!|~
+ failed to get past a ~
+!|~
+(log)~
+(log)~
+(log)~
+(log)~
+(log)~
+(log)~
+(log)~
+(log)~
+(log)~
+(log)~
+(log)~
+(log)~
+(log)~
+(log)~
+&C"You have entered a prohibited area. Leave immediately."|~
+~
+|&CZZZAAAPPP! You are blasted by a ~
+&C from the ~
+&C!|~
+&CYou sustain ~
+&C hit points of damage!|~
+north~
+south~
+east~
+west~
+northeast~
+northwest~
+southeast~
+southwest~
+current square~
+&CYour armor absorbs the blow!|~
+&C"You have entered a toll restricted area. You must pay &E$~
+&C."|~
+|~
+&BWill you pay (&FY&B/&FN&B) ? ~
+|&CYou don't have enough money!|~
+|&BYou place your hard-earned cash on the ground in front of you and take a few|~
+&Bsteps back. The high-pitched whiz of a teleporter field is heard and your|~
+&Bcash vanishes, now the property of some greedy fortress owner.|~
+&CYour base is not equipped with a toll station device!|~
+&BToll fee is currently set at &E~
+(disabled)~
+$~
+&B.|~
+&BThe toll fee will be charged to anyone who enters the range of your toll|~
+&Bstation device. If they don't pay, they'll get blasted!||~
+&BEnter new fee or 0 to disable : &F~
+(unused)~
+(unused)~
+|&CYour weapon has already had a three-round burst installed.|~
+|&2"Our three round burst conversion allows you to fire three rounds in rapid|~
+&2succession for enhanced damage. The accuracy of the first round will be|~
+&2unhindered, but due to weapon vibration, the second and third rounds may be|~
+&2less accurate.... My price for this service is &F$~
+&2."|~
+&B|Perform the conversion (&FY&B/&FN&B) ? ~
+|&2The weaponsmith reaches under the work bench and pulls out a ready-made|~
+&2three round burst unit. He inserts it into your weapon, makes the necessary|~
+&2mods, and reassembles everything.|~
+|&2"Our accurization procedures will improve the accuracy of your weapon by a|~
+&2certain percentage. The effect is similar to having a raised dexterity while|~
+&2you use this weapon. My price for this service is &F$~
+&2."|~
+&B|Accurize &F~
+%&B (&FY&B/&FN&B) ? ~
+&2The weaponsmith takes your weapon and carefully mirror-polishes all important|~
+&2surfaces. He installs a new sighting unit and carefully aligns it to be right|~
+&2on target. When finished, he hands the weapon back to you.|~
+&2The weaponsmith carefully grinds the contour of the grip of your weapon to|~
+&2better fit your hand. He carefully adjusts the weapons balance to make it|~
+&2swing more accurately. When finished, he hands the weapon back to you.|~
+&2The weaponsmith carefully fits your weapon with a custom contoured hand grip|~
+&2crafted especially for you. He readjusts and realigns all energy circuits for|~
+&2maximum accuracy and split-second lock time. When finished, he hands the|~
+&2weapon back to you.|~
+&CNo information available on inventory device #~
+&C.|~
+&CNo information available on wastelands item #~
+&CNo interesting items were found.|~
+&B   ~
+:&F ~
+&7Unusable|~
+ units|~
+&9Combat Statistics: Uni-Ammo ammo requirements|~
+&9---------------------------------------------|~
+&CInvalid parameter. Please see laptop HELP for information on parameters.|~
+|&2"Our intensify procedures will boost the damage output of your weapon by a|~
+certain percentage. My price for this service is &F$~
+&2."|~
+&B|Intensify &F~
+%&B (&FY&B/&FN&B) ? ~
+&2The weaponsmith takes your weapon and mirror polishes the barrel for least|~
+&2frictional resistance. He replaces various weak and inefficient springs with|~
+&2new optimized versions. When he is finished, he returns the weapon to you.|~
+&2The weaponsmith brings your weapon over to his laser-polisher and polishes all|~
+&2bladed surfaces to razor-sharp perfection. He improves the balance to allow|~
+&2you to swing your weapon with greater power. When he is finished, he returns|~
+&2the weapon to you.|~
+&2The weaponsmith removes the standard energy-charge capacitors from your weapon|~
+&2and replaces them with higher efficiency versions, thus providing even more|~
+&2energy charge to the blade. When he is finished, he returns the weapon back to|~
+&2you.|~
+&2The weaponsmith removes the standard energy-charge capacitors from your weapon|~
+&2and replaces them with higher efficiency versions, thus providing even more|~
+&2energy charge to the blade. When he is finished, he returns the weapon back to|~
+&2you.|~
+&CThis weapon has already had a Uni-Ammo conversion performed.|~
+|&2"Our Uni-Ammo conversion allows your weapon to operate off of any type of|~
+&2'energy-based' ammunition. It WILL NOT work with crossbow bolts, 9mm clips, or|~
+&2similar conventional ammunition, but will work with Power Packs, Grav Packs,|~
+&2Plasma Packs, etc. Ammo usage depends on the type of weapon and ammo used. For|~
+&2example, a weapon designed to use Neutron Packs may draw as much as 30 units|~
+&2of energy from a Power Pack. Your weapon will of course, still operate normally|~
+&2from it's original ammunition type. My price for this service is &F$~
+&2."|~
+&B|Perform a Uni-Ammo conversion (&FY&B/&FN&B) ? ~
+&2|The weaponsmith reaches under his bench and pulls out a pre-assembled Uni-Ammo|~
+&2conversion unit. He carefully re-wires your weapon to use this new module. When|~
+&2finished, he reassembles the weapon and hands it back to you.|~
+&CSorry, the weapsmith rom is unavailable.|~
+&CThere is no room in your inventory.|~
+|&2"We offer this rom cartridge for the GS-224 laptop that gives a description of|~
+&2our services. The rom may be viewed by loading it into your GS-224 laptop. The|~
+&2price for this rom is &F$~
+&2."|~
+&B|Purchase the Weaponsmith ROM (&FY&B/&FN&B) ? ~
+&CYou don't have enough money. The weaponsmith throws up his hands in disgust.|~
+&2|The weaponsmith gives you the rom disc.|~
+&CNeither your short range nor your long range weapon has a Uni-Ammo conversion.|~
+&B   Exoskeletal Augmentation (str) bonus: &F~
+&B   Targetting Array (dex) bonus........: &F~
+&B   Servo-Augment Unit (agl) bonus......: &F~
+|&BArmor: &F~
+&EShockwave ~
+&ELauncher ~
+&EArmorBurn-~
+&EDeathpulse ~
+~
+~
+&CNo ROM discs found in inventory.|~
+&3~
+: ~
+|&7Anchor point has been set to &F%4&7 (z=&F%1&7,x=&F%2&7,y=&F%3&7).|~
+|&7Anchor point has been set to &F%4&7 (z=&F%1&7,x=&F%2&7,y=&F%3&7).|~
+|&CYour weapon already has a stun conversion installed.|~
+|&2"Our stun conversion modulates a high-frequency field into the energy burst of|~
+&2your weapon. If you hit your opponent, and the blast is not absorbed by his|~
+&2armor, then he will be stunned and unable to move for 1 to 3 combat rounds. My|~
+&2price for this service is &F$~
+&2."|~
+|&BInstall a stun conversion on your weapon (&FY&B/&FN&B) ? ~
+|&2The weaponsmith reaches under his workbench and produces a preassembled stun|~
+&2conversion module. He wires the module into your weapon, reassembles it, and|~
+&2returns it to you.|~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+&2|The Technician explains the process: "Recently, a device was invented called|~
+&2the fortress SFG. It enables a fortress to be invisible to all but the map|~
+&2square it is located in. This can be troublesome to those who are attempting|~
+&2to locate a certain fort. We have built this upgrade for the Standard JC137|~
+&2scanner (available at Sacre Base) to overcome this problem. Our upgrade will|~
+&2allow the scanner to display a bearing to any cloaked forts within it's range."|~
+|&BHave the technician work on which device (&F?&B=List,&FQ&B=Quit) ? &F~
+|&CThe technician looks confused...|~
+|&CThat device is not a scanner.|~
+&2|"Very well. My price is &F$~
+&2."|~
+|&BConvert your scanner (&FY&B/&FN&B) ? ~
+|&CYou don't have enough money!|~
+&2|The technician installs the conversion on your scanner and hands it back to|~
+&2you.|~
+|&CThat device already has the conversion installed!|~
+&2|The technician gets out his armor-conversion manual and explains the options|~
+&2to you: "Our Exoskeleton Augmentation conversion reinforces your armor with a|~
+&2a polymer material several times harder than steel and installs hydraulic|~
+&2strength enhancement cylinders to boost your strength. We can perform the|~
+&2following enhancements: 10%: &F$~
+&2, 20%: &F$~
+&2, and 30%: &F$~
+&2."||~
+|&CYou are not wearing any armor.|~
+|&COnly advanced types of armor may be converted (Plasmavest, Energy Armor, etc).|~
+&BConvert your armor at &F1&B-10%, &F2&B-20%, &F3&B-30%, or &FQ&B-Quit ? ~
+&F10%|~
+&F20%|~
+&F30%|~
+&FQuit|~
+|&CYou don't have enough money!|~
+&2|The technician performs the modification to your armor and returns it back to|~
+&2you.|~
+&2|Your armor has already had this type of modification performed.|~
+&2|The technician gets out his armor-conversion manual and explains the options|~
+&2to you: "Our Targetting Array includes an optical unit which sits just in front|~
+&2of your right eye. Sensors are placed in the armor so that as you move your|~
+&2body, the optical display updates automatically thus increasing your dexterity|~
+&2substantially. We make a variety of upgrades and can offer the following|~
+&2enhancements: 10% &F$~
+&2|The technician gets out his armor-conversion manual and explains the options|~
+&2to you: "Our Servo-Augmentation Unit (SAU) mounts several fast-acting servos on|~
+&2your armor, thus increasing your agility dramatically. We can perform the|~
+&2following enhancements: 10%: &F$~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+&CThere is something wrong with this device. [GENOBJ TAG ERROR]||~
+&BUse on which device (&FQ&B=Quit,&F?&B=List) ? &F~
+&CInvalid choice.||~
+&CThere is no room in your inventory.||~
+&CYou were unsuccessful.||~
+|&CYour weapon already has a shockwave blaster installed.|~
+|&2"The shockwave blaster is a specialty modification which will send precisely|~
+&2calculated burst of high frequency energy in the direction of your opponent.|~
+&2The power of this blast is sufficient to literally send items flying from your|~
+&2opponent's hands! My price for this service is &F$~
+&2."|~
+|&BInstall a shockwave blaster on your weapon (&FY&B/&FN&B) ? ~
+|&2The weaponsmith retrieves a preassembled shockwave blaster module from his|~
+&2parts bin and proceeds to work it into your weapon. The task is long and|~
+&2quite laborous, but undoubtably well worth it.|~
+|&CYour weapon already has a grenade lancher installed.|~
+|&2"This modification will install a grenade launching tube on your long range|~
+&2weapon. As long as you are carrying grenades, your LR weapon will fire both|~
+&2it's normal blast as well as a grenade. Grenade hits are guarenteed, but due|~
+&2to the bulk of the launcher, your normal LR shots may suffer an accuracy|~
+&2penalty. My price for this service is &F$~
+&2."|~
+|&BInstall a grenade launcher on your weapon (&FY&B/&FN&B) ? ~
+|&2The weaponsmith locates an MKL-29TU grenade launching assembly from his supply|~
+&2rack and welds it onto the underside of your LR weapon. A rather crude and|~
+&2bulky modification, but it ought to work.|~
+&2This operation is for short range weapons only. Let's have a look....|~
+|&CYour weapon already has an armor burner modification installed.|~
+|&2"The armor burner will enable your SR weapon to do enhanced damage when you|~
+&2hit your opponent's armor. Damage during other phases of combat is not|~
+&2affected by the armor burner unit. We have several levels of armor burner|~
+&2modules available: ||~
+  &F~
+&7> &E~
+&7% of normal damage level: &F$~
+&7.|~
+|&BWhat level of armor burner would you like installed [&F2&B-&F8&B] ? &F~
+|&2The weaponsmith takes a pre-assembled armor burner unit out of it's box,|~
+&2examines it closely for possible defects, and proceeds to install it into|~
+&2your weapon. "There! You're all set now. ", proclaims the weaponsmith.|~
+|&CYour weapon already has a deathpulse module installed.|~
+|&2"Our deathpulse module will enable you to channel a massive energy burst|~
+&2through your short range weapon. This energy burst can do between &F~
+&2 and &F~
+&2|times the normal damage level. However, there is a substantial probability|~
+&2that your weapon will be damaged by the power levels involved with this|~
+&2modification. My price is &F$~
+&2."|~
+|&BInstall a deathpulse module on your weapon (&FY&B/&FN&B) ? ~
+|&2The weaponsmith replaces the energy charging unit in your weapon with|~
+&2a selectable deathpulse module. Power handling components are replaced|~
+&2with high capacity modules, however the weaponsmith again warns you that|~
+&2the deathpulse module may cause damage to your weapon.|~
+~

@@ -1,0 +1,869 @@
+Module Lodtest;
+
+(* LGPL.IN
+   Main LGPL source file
+
+   LGPL (Lod Game Programming Language) is a special programming language
+   that you may use to modify or add to certain aspects of LOD. If you make
+   any changes, then you must do the following:
+
+     a) Run "LCDOS.EXE"    (compiles LGPL.IN into LGPL.OUT)
+     b) Run "COMPILE.EXE"  (merges LGPL.OUT into GAME.DEF)
+
+   (Note: You may also use COMP_DPM.EXE or COMP_OS2 in step b if you
+          wish)
+
+   LGPL is much like pascal, however there are some differences. Please
+   see LGPL.DOC for more information
+*)
+
+(* include some useful stuff *)
+
+#include "stdlib.inc"
+#include "lodvar.inc"
+#include "lodlib.inc"
+
+const
+ maxlaptopcommands = 70;  (* adjust this up if needed *)
+ directory = 255;
+type
+ Tlaptopcommand = record
+                   code: byte;
+                   dir: byte;
+                   mask: byte;
+                   name: string[8];
+                   ext: string[3];
+                   cmdsize: integer;
+                   date: string[8];
+                   time: string[6];
+                  end;
+ TLapTopcommands = array maxlaptopcommands of TLapTopCommand;
+var
+ lapcmds: Tlaptopcommands;
+ numlaptop: integer;
+
+forward procedure useitem(var d: devicetype);
+
+(* 'C' programmers are used to using break rather than exit *)
+
+#define break exit
+
+(* Various include files follow. Code has been split up into these include
+   files to make everything a bit more managable. If you add your own
+   devices, then I encourage you to create your own include file to seperate
+   your devices from the rest.
+*)
+
+#include "verify.inc"
+
+#include "uplevel.inc"
+
+#include "vortex.inc"
+
+#include "keyring.inc"
+
+#include "warpway.inc"
+
+#include "hypervlt.inc"
+
+#include "tricord.inc"
+
+#include "chem.inc"
+
+#include "miscuse.inc"
+
+#include "laptop.inc"
+
+#include "macro.inc"
+
+#include "holostor.inc"
+
+#include "samsurp.inc"
+
+#include "casino.inc"
+
+#include "fountain.inc"
+
+#include "enter.inc"
+
+#include "diags.inc"
+
+#include "baseuse.inc"
+
+#include "theft.inc"
+
+export procedure use_laptop;
+var
+ command,param: string;
+ done: boolean;
+ command_num,a,b: integer;
+begin;
+ with d:user^.laptop do
+  if (d.num=0) then
+   b:=0;
+   for a:=0 to numudev-1 do
+    if (user^.devices[a].devapp=devapp_laptop) then
+     b:=a;
+    endif;
+   endfor;
+   if b<>0 then
+    writeln("&3Please use the &FQ&3-Equip command to equip your laptop and then you may use the");
+    writeln("&FL&3-Laptop command (in the wastelands) to use your laptop.");
+   else
+    writeln("&CYou do not have a laptop!");
+   endif;
+   return;
+  endif;
+
+  if ~testcap(d,cap1) then   (* make sure laptop has the basic commands! *)
+   setcap(d,cap1);
+  endif;
+
+  gtermaddbigpic("LAPTOP");
+
+  writeln("&3GS-224 Laptop Booting Up....");
+  writeln("&3Type \"DIR\" for a system directory or \"HELP\" for brief instructions.");
+  done:=false;
+  repeat;
+   writeln;
+   write("&7C>");
+   laptop_split(upstr(readln()),command,param);
+
+   if laptop_lookup(command,command_num) then
+    if (lapcmds[command_num].mask=directory) then
+     writeln("Error: ",command," is a directory. To obtain a listing of files, please type");
+     writeln("\"Dir ",command,"\". Type \"HELP\" for more detailed instructions.");
+    else
+     if (testcap(d,lapcmds[command_num].mask)) then
+      switch lapcmds[command_num].code of
+       case 0: writeln("&7Bad command or filename");
+               break;
+
+       case 1: Laptop_Dir(param);
+               break;
+
+       case 2: done:=true;
+               break;
+
+       case 3: laptop_chkdsk;
+               break;
+
+       case 7: laptop_transfer(d);
+               break;
+
+       case 29: laptop_samsurp;
+                break;
+
+       case 30: laptop_slothack;
+                break;
+
+       case 31: laptop_ping;
+                break;
+
+       case 32: laptop_antiping;
+                break;
+
+       case 33: laptop_delete(d,param);
+                break;
+
+       case 34: laptop_fortspy;
+                break;
+
+       case 35: laptop_minescan;
+                break;
+
+       case 36: laptop_macro;
+                break;
+
+       default: laptop_builtin(d,lapcmds[command_num].code,param);
+                break;
+      end;
+     else
+      writeln("&7Bad command or filename");
+     endif;
+    endif;
+   else
+    writeln("&7Bad command or filename");
+   endif;
+
+  until done;
+
+  gtermdecbigpic;
+ endwith;
+end use_laptop;
+
+procedure devsearch(var u: usertype; s: string): integer;
+var
+ loop1: integer;
+begin;
+ for loop1:=0 to numudev do
+  if (submatch(s,devname(u.devices[loop1]))) then
+   return loop1+1;
+  endif;
+ endfor;
+end devsearch;
+
+procedure query_useapp(var d: devicetype): boolean;
+begin;
+ writeln;
+ writeln("&BThere are &F",d.useleft,"&B of &F",
+         devdef_maxuse(d.num),"&B applications remaining");
+
+ return CheckyesNo("&BUse an application (&FY&B/&FN&B) ? &F");
+end query_useapp;
+
+(* Procedure useitem: This is the point at which various usable devices
+     are activated. If you wish to add a new object type to LOD, then just
+     assign it a new devapp (see the devapp constants in LODVAR.INC), and
+     add your code to the switch statement below.
+
+   Note: UseItem is "forward declared" (in 'C' terms - it has a prototype),
+         so that other routines (i.e. the hypervault) can call UseItem to
+         use a particular object.
+*)
+
+procedure useitem(var d: devicetype);
+begin;
+ if d.num=0 then
+  writeln("&CUse what?");
+ elsif devdef_usable(d.num)=false then
+  writeln("&CAnd just what would you want me to do with that????");
+ elsif (d.useleft=0) & (devdef_decuse(d.num)) then
+  writeln("&CThat item is out of applications.");
+ else
+  while (~devdef_decuse(d.num)) or query_useapp(d) do
+   writeln;
+   switch (d.devapp) of
+    case devapp_genobj:    use_genobj(d.var1);
+			   break;
+
+    case devapp_unitran:   use_unitran;
+			   break;
+
+    case devapp_mappack:   use_mappack(d);
+			   waitkey;
+			   break;
+
+    case devapp_laptop:    writeln("&3Please use the &FQ&3-Equip command to equip your laptop and then you may use the");
+			   writeln("&FL&3-Laptop command (in the wastelands) to use your laptop.");
+			   waitkey;
+			   break;
+
+    case devapp_lrscan:    displr(user^.z,user^.x,user^.y,9);
+			   waitkey;
+			   break;
+
+    case devapp_rations:   use_rations;
+			   break;
+
+    case devapp_medkit:    use_medkit;
+			   break;
+
+    case devapp_scanner:   use_scanner(d);
+			   waitkey;
+			   break;
+
+    case devapp_radio:     use_radio;
+			   break;
+
+    case devapp_stealth:   use_stealth(d);
+			   break;
+
+    case devapp_gblaster:  use_genobj(2); (* use_gblaster; *)
+			   break;
+
+    case devapp_warper:    use_warper;
+			   break;
+
+    case devapp_communicator:
+			   use_genobj(0); (* use_communicator; *)
+			   break;
+
+    case devapp_recharge:  use_recharger(d);
+			   break;
+
+    case devapp_vortex:    use_vortex(d);
+			   break;
+
+    case devapp_mine:      use_mine(d);
+			   break;
+
+    case devapp_mapper:    use_mapper;
+			   break;
+
+    case devapp_waypointman:
+                           use_warpway;
+                           break;
+
+    case devapp_hypervault:
+                           use_hypervault;
+                           break;
+
+    case devapp_tricorder: use_tricorder;
+                           break;
+
+    case devapp_chem:      use_chemical(d);
+                           break;
+
+    case devapp_labeller:  use_labeller;
+                           break;
+
+    case devapp_userman:   ExecMenu(menu_doccent);
+                           break;
+
+    case devapp_keyring:   use_keyring(d);
+                           break;
+
+    case devapp_samlink:   use_samlink(d);
+                           break;
+
+    case devapp_dnasamp:   use_dnacontainer(d);
+                           break;
+
+    case devapp_chest:     use_chest(d);
+                           break;
+
+    case devapp_boatplans: use_boatplans;
+                           break;
+
+    case devapp_palarm:    use_palarm;
+                           break;
+
+    case devapp_tkit:      use_tkit;
+                           break;
+   end;
+   if devdef_decuse(d.num) then
+    decuseleft(d);
+    if (d.num=0) then return; endif;
+   else
+    return;
+   endif;
+  endwhile;
+ endif;
+end useitem;
+
+(* UseInventory: This is a the main entrypoint for LOD's useinventory routine.
+     It queries the user for which device to use and then calls UseItem when
+     a device has been selected.
+*)
+
+export procedure UseInventory;
+var
+ a: integer;
+ s: string;
+begin;
+ loop;
+  write("&BUse which object from inventory (&F?&B=List,&FQ&B=Quit) ? &F");
+  s:=upstr(readln());
+  if (s="?") or (s="L") then
+   textcolor(color_lightgray);
+   ListUserInv(user^,true);
+   writeln;
+  elsif (s="") or (s="Q") then
+   return;
+  else
+   a:=atoi(s);
+   if (a=0) then a:=devsearch(user^,s); endif;
+   if (a>0) & (a<=numudev) then
+    dec(a);   (* because inventory is a zero-based array *)
+    useitem(user^.devices[a]);
+    return;
+   endif
+  endif;
+ endloop;
+end useinventory;
+
+procedure color_check;
+begin;
+ (* important to check version number, since querylod_colorchg not supported
+    in lod versions less than 5.02 *)
+
+ if (lodversion()>=5.02) then
+  if querylodint(querylod_colorchg)=0 then
+   writeln;
+   writeln("ANSI Color support is currently OFF.");
+   setlodint(querylod_colorchg,1);
+   writeln("   &1Blue &2Green &3Cyan &4Red&7");
+   setlodint(querylod_colorchg,0);
+   writeln;
+   writeln("If the above line was colored, then color IS supported on your computer and");
+   if checkyesno("you may wish to enable it. Force color enabled [&FY&B/&FN&B] ? &F") then
+    setlodint(querylod_colorchg,1);
+    user^.forceansi:=true;
+    writeln;
+    writeln("&BColor has been forced on. You may alter your color choice at any time by");
+    writeln("going to the troop quarters and selecting Ansi Options.");
+    waitkey;
+   endif;
+  endif;
+ endif;
+end color_check;
+
+(* Makenew: Entry point for new user login. Should establish user's name
+     and sex.
+*)
+
+export procedure makenew;
+var
+ username,tempstr: string;
+ usersex: byte;
+ loop1,ni: integer;
+ devnum: integer;
+begin;
+ gtermaddbigpic("ENLIST");
+ writeln;
+ writeln("&3       You've decided it's finally time to enlist in the Sacre Base patrols.");
+ writeln("As you make your way through to the enlistment center, you notice many");
+ writeln("soldiers standing about -- from green recruits to grizzled veterans. In the");
+ writeln("coming months, many of them will not return from the wastelands. Somehow you");
+ writeln("know that you are going to be different. You're going to be special...");
+ repeat;
+  writeln;
+  writeln("&3The records officer queries: \"&BWhat's your name,  Soldier ?&3\"");
+  write("&E>&F");
+  username:=upstr(readln());
+  if length(username)<=2 then
+   writeln;
+   writeln("&3\"&BThat's a little short. Try again.&3\", barks the records officer.");
+   username:="";
+  elsif checkdupename(username) then
+   writeln;
+   writeln("&3\"&BHey, I don't know what you're trying to pull here. I already have someone by");
+   writeln("the name of ",username," on file. Try again.&3\", barks the records officer.");
+   username:="";
+  else
+   usersex:=sex_other;
+   repeat;
+    writeln;
+    writeln("&3\"&BOk. It's a little dark in here. Could you tell me if you are &FM&B]ale or");
+    write("&FF&B]emale ?&3\" &E>&F");
+    tempstr:=upstr(readln());
+    switch tempstr of
+      case "M":
+      case "MALE":   usersex:=sex_male;
+                     break;
+
+      case "F":
+      case "FEMALE": usersex:=sex_female;
+                     break;
+
+      default:       writeln("&3\"&BOh, A wise guy, eh? Try again.&3\", barks the records officer.");
+    end;
+   until usersex<>sex_other;
+   writeln;
+   writeln("&3\"&BOk. Your name is ",namestr(username),
+     " and you are ",sexstr(usersex),", Right ? &3\"");
+   write("&FY&E]es/&FN&E]o >&F");
+   tempstr:=upstr(readln());
+   switch tempstr of
+     case "Y":
+     case "YES":  (* do nothing *)
+                  break;
+
+     default: writeln("&3\"&BFine. Let's do this all over again. Try to get it right this time!&3\"");
+              username:="";
+   end;
+  endif;
+ until (username<>"");
+
+ color_check;
+
+ (* save username and sex that we just got from the player *)
+
+ user^.alias:=username;
+ user^.sex:=usersex;
+
+ (* initialize the basic parameters *)
+
+ user^.str:=querylodint(querylod_startstr);
+ user^.dex:=querylodint(querylod_startdex);
+ user^.agl:=querylodint(querylod_startagl);
+ user^.money:=querylodint(querylod_startmoney);
+ user^.hitpts:=querylodint(querylod_starthp);
+ user^.hitmax:=user^.hitpts;
+ user^.lvl:=1;
+ user^.ansimode:=AnsiEnh5x5;
+ user^.clrmap:=true;
+ user^.dietoff:=true;
+ user^.combatmode:=1;
+ user^.alive:=true;
+ user^.dnacode:=randi(largest(word));
+
+ (* give the user the starting inventory devices *)
+
+ ni:=0;
+ for loop1:=0 to 7 do
+  devnum:=querylodint(querylod_startdev1+loop1);
+  if (devnum<>0) then
+   user^.devices[ni]:=createdevice(devnum);
+   inc(ni);
+  endif;
+ endfor;
+
+ (* erase the player's record in REGISTRY.DAT, if applicable *)
+
+ delappcode(appuser(usernum^));
+
+ (* this puts the user at the origin location *)
+
+ ReturnToOrigin(user^);
+
+ writeln;
+
+ writeln("&3        You stand before the great gates of the wastelands. Are you ready to");
+ writeln("proceed into the great devastated unknown? Perhaps it might be a good idea to");
+ writeln("thoroughly explore Sacre Base before venturing onward. It might be a good idea");
+ writeln("to pick up some additional supplies.");
+
+ gtermdecbigpic;
+end makenew;
+
+procedure HercTauntMessage;
+begin;
+ switch randi(5) of
+  case 0: writeln("&C\"Foolish mortal. You will find nothing here but death by stone!\"");
+          break;
+
+  case 1: writeln("&C\"He who dares tresspass in the ancient halls of hercules must suffer.\"");
+          break;
+
+  case 2: writeln("&C\"All things living must die, Mortal. You're time is near.\"");
+          break;
+
+  case 3: writeln("&C\"Only a fool would test the patience of the ancients.\"");
+          break;
+
+  case 4: writeln("&C\"Death comes quickly here, Mortal. Warriors of stone shall rule!\"");
+          break;
+
+ end;
+end herctauntmessage;
+
+(* Moveok: Tell LOD if a specific square can be moved to or not. LOD will
+     assume that the square will be moveable unless you make a call to
+     setpassable(FALSE).
+
+   Note: Autonav will only call moveok ONCE per each distinct terrain type,
+     not once per each map square. Therefore, if passability relies on
+     anything other than the terrain type itself, then autonav may become
+     confused.
+*)
+
+#define keypass(keyname,passtext,failtext)           \
+ if keycheck(ckdevstr_verbal(keyname),false) then    \
+   writeln(passtext);                                \
+ else                                                \
+   writeln(failtext);                                \
+   setpassable(FALSE);                               \
+ endif;
+
+export procedure moveok;
+var
+ x,y,z: word;
+ quiet: boolean;
+ maptile: word;
+ ter: terraintype;
+begin;
+ getmoveparams(z,x,y,quiet);   (* get parameters from LOD *)
+ maptile:=getmap(z,x,y);       (* retrieve the map tile at coordinates *)
+ getterrain(maptile,ter);      (* get terrain record for map tile *)
+
+ switch ter.pas of
+   case pPassable:  break;
+
+   case pGenImpass: if ~quiet then
+                      writeln("&CTerrain is impassable in that direction.");
+                    endif;
+                    setpassable(FALSE);
+                    break;
+
+   case pMntns:     if ~quiet then
+                      writeln("&CThe mountains are completely impassable.");
+                    endif;
+                    setpassable(FALSE);
+                    break;
+
+   case pWalls:     if ~quiet then
+                      writeln("&CThe walls are completely impassable.");
+                    endif;
+                    setpassable(FALSE);
+                    break;
+
+   case pWater:     if (hasobj(devapp_boat,user^) = FALSE) then
+                      if ~quiet then
+                        writeln("&CYou are unable to traverse the torrent, polluted wasteland waters. Perhaps if");
+                        writeln("you had some kind of boat?");
+                      endif;
+                      setpassable(FALSE);
+                    endif;
+                    break;
+
+   case pLava:      if (hasobj(devapp_cryo,user^) = FALSE) then
+                      if ~quiet then
+                        writeln("&CHmmmmm... Attempting to walk through a river of lava unprotected is not an");
+                        writeln("&Cextremely wise thing to do. You decide to try something else for now.");
+                      endif;
+                      setpassable(FALSE);
+                    endif;
+                    break;
+
+   case pForrest:   if ~quiet then
+                      writeln("&CThe forrest is impassable. Absolutely impossible to pass.");
+                    endif;
+                    setpassable(FALSE);
+                    break;
+
+   case pKillInc:   keypass( "KILL KEY",
+                             "&EYou insert your kill key into the lock and the mighty doors open.",
+                             "&CThis door needs some kind of key!");
+                    break;
+
+   case pNukeSilo:  keypass( "SILO KEY",
+                             "&EYou insert your silo key into the lock and the mighty doors open.",
+                             "&CThis door needs some kind of key!");
+                    break;
+
+   case pFountainDoor:
+                    keypass( "FOUNTAIN KEY",
+                             "&EYou insert your fountain key into the lock and the mighty doors open.",
+                             "&CThis door needs some kind of key!");
+                    break;
+
+   case pDWDoor:    keypass( "DW BYPASS KEY",
+                             "&EYou insert your DW Bypass Key and the door slides open!",
+                             "&CThis door needs some kind of key!");
+                    break;
+
+   case pHercDoor:  keypass( "HERCULES KEY",
+                             "&E\"Hercules hast returneth. The path to the fountain dost lie open.\"",
+                             "&C\"Begone foolish mortal. You have no key to open this vault.\"");
+                    break;
+
+   case pHercTaunt: HercTauntMessage;
+                    break;
+
+   case pCasinoDoor: keypass( "CASINO KEY",
+                             "&EYou insert your casino key and the door slides open!",
+                             "&CThe door to the casino storage room is VERY securely locked!");
+                    break;
+
+   case pCloneTank: writeln("&CThe clone tanks are used for clone storage. They have no use to you.");
+                    setpassable(FALSE);
+                    break;
+
+   case pEmpty:     writeln("&CYou can't go that way!");
+                    setpassable(FALSE);
+                    break;
+
+ end; (* switch *)
+end moveok;
+
+export procedure healincombat;
+var
+ devnum: integer;
+begin;
+ devnum:=findmedkit(user^);
+ if (devnum=-1) then
+   writeln("&CYou do not have an available medkit!");
+ elsif (user^.devices[devnum].useleft=0) then
+   (* this shouldn't happen *)
+   writeln("&CThat medkit does not have any applications remaining!");
+ else
+   use_medkit;
+   dec(user^.devices[devnum].useleft);
+   if user^.devices[devnum].useleft=0 then
+     user^.devices[devnum].num:=0;
+   endif;
+ endif;
+end healincombat;
+
+procedure findwarper(var u: usertype; var found: integer): boolean;
+var
+ loop1: integer;
+ smallest_useleft: integer;
+begin;
+ smallest_useleft:=largest(integer);
+ found:=-1;
+ for loop1:=0 to numudev+1 do
+  if (u.devices[loop1].num<>0) &
+     (u.devices[loop1].devapp=devapp_warper) &
+     (u.devices[loop1].useleft>0) &
+     (u.devices[loop1].useleft<smallest_useleft) then
+   found:=loop1;
+   smallest_useleft:=u.devices[loop1].useleft;
+  endif;
+ endfor;
+ return (found<>-1);
+end findwarper;
+
+(* Procedure warpincombat: This is called by LOD when the user tries to use
+     his warper in combat.
+*)
+
+export procedure warpincombat;
+var
+ found: integer;
+begin;
+ SetWarpInCombatSuccess(false);
+
+ if ~findwarper(user^,found) then
+  writeln("&CYou do not have a warper device!");
+ elsif checkyesno("&BUse your warper device (&FY&B/&FN&B) ?") then
+  if use_warper() then
+   decuseleft(user^.devices[found]);
+   SetWarpInCombatSuccess(true);
+  endif;
+ endif;
+end warpincombat;
+
+(* Procedure checkemwarp: This is called by LOD whenever a user is about to
+     die. It checks to see if the user has a valid EM-Warp device and
+     a warper.
+
+   Plese note: The user returned by getemwarpparams(...) is not necessarilly
+     the current user. It may be another user who as ATTACKED by the current
+     player. Thus, you can not assume that user^ is the user who is warping!
+*)
+
+export procedure checkemwarp;
+var
+ found: integer;
+ u: pusertype;
+ iscurrentuser: boolean;
+begin;
+ setemwarpsuccess(FALSE);
+ getemwarpparams(u);
+
+ if checklaptop(u^,rom_emwarp) then
+
+  if (u^.number=usernum^) then
+   writeln;
+   writeln("&7As you begin to lose consciousness, you barely make out a computerized");
+   writeln("voice: \"GS-224 EMWARP program assuming control. Searching for WARPER");
+   writeln("device.....\"");
+   writeln;
+  endif;
+
+  if ~findwarper(u^,found) then
+   (* The player didn't have a warper device! *)
+   if (u^.number=usernum^) then
+    writeln("&7\"Warper device not located. Terminating program.\"");
+    writeln;
+   endif;
+  else
+   if (u^.number=usernum^) then
+    writeln("&7\"Warper device located. Activating now.\"");
+    writeln;
+   endif;
+   warpway_emwarp(u^);
+   if ~checkanchorpoint(u^) then
+    (* No valid warper anchor point. Abort! *)
+    if (u^.number=usernum^) then
+     writeln("&CUnable to find valid warper anchor point! Warp failed!|");
+    endif;
+   else
+    decuseleft(u^.devices[found]);
+    if (u^.number=usernum^) then
+     warpermessage(u^);
+    else
+     writeln("&EYour opponent was carrying an EM-Warp device!");
+     writeln("&EHis body disappears!");
+    endif;
+    u^.z:=u^.anchorz;
+    u^.x:=u^.anchorx;
+    u^.y:=u^.anchory;
+    setemwarpsuccess(TRUE);
+    GtermNoMapCheck;
+   endif;
+  endif;
+ endif;
+end checkemwarp;
+
+(* Procedure menucallback: Called by LOD's menu processor when the a menu
+     option code of 2000..3000 is executed. This allows dataset designers to
+     add custom menu options to menus.
+*)
+
+export procedure menucallback;
+begin;
+ switch querylodint(querylod_menucallback) of
+
+   case callback_steal: attempt_theft;
+                        break;
+
+   case 2001:  (* put the code to be executed for menu func 2001 here *)
+               break;
+
+   (* etc... *)
+
+ end;
+end menucallback;
+
+(* Procedure maint: Called by LOD immediately after the normal maintenance
+     has completed. You should include anything here that needs to be
+     executed once per day.
+*)
+
+export procedure maint;
+begin;
+ maint_samsurplus;
+ maint_casino;
+end maint;
+
+export procedure checkraise;
+var
+ a: integer;
+ addmsg: boolean;
+begin;
+ (* failsafe to make sure experience didn't go negetive somewhere *)
+ if user^.exp<0 then
+  user^.exp:=0;
+ endif;
+
+ (* failsafe to make sure exper didn't go berserk somewhere *)
+ if user^.exp>(complev(user^.lvl+1)*4+10000000) then
+  user^.exp:=complev(user^.lvl+1);
+ endif;
+
+ addmsg:=false;
+ while complev(user^.lvl+1)<=user^.exp do
+  inc(user^.lvl);
+  user^.addpts:=user^.addpts+querylodint(querylod_levpts);
+  addmsg:=true;
+ endwhile;
+
+ if addmsg then
+  writeln("&ECongratulations! You have risen to level &F",
+          user^.lvl,
+          "&E.");
+  writeln;
+  writeln("&7All of your friends are waiting at Sacre Base to greet you. When a warrior");
+  writeln("achieves a new level, it is a great time of celebration and the festivities");
+  writeln("last throughout the night. In the morning, Defs Sacre escorts you to the great");
+  writeln("hall of training where you may perfect your abilities.");
+  waitkey;
+ endif;
+
+ if user^.addpts>0 then addlevels; endif;
+end checkraise;
+
+(* Initialization code. This is called by LOD upon startup. The
+     code below sets up pointers into LOD's variables.
+*)
+
+begin;
+ linkuserrec(user);
+ linkdevdef(devicedef);
+ linkusernum(usernum);
+
+ verifydatatypes;
+
+ (* intialize the laptop command table. see laptop.inc. *)
+ laptop_init;
+
+ (* pchar_player points to the user character while user is in combat *)
+ linkcombatplayer(1,pchar_player);
+
+ (* mchar_player points to the monster's character while user is in combat *)
+ linkcombatplayer(2,mchar_player);
+end lodtest.

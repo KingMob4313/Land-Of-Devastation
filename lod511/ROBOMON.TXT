@@ -1,0 +1,317 @@
+;----------------------------------------------------------------------------
+
+NAME Robomine Mark 2
+
+DESC It begins as a slight whizzing sound coming from the nearby mine.
+DESC You watch as a half-buried segment of it opens to reveal an
+DESC awakening robotic killing machine: A Robomine Mark II.
+
+HITPTS 48
+STR 36
+DEX 36
+AGL 36
+EXP 4200
+MONEY 0
+
+;ORIGZ 152 identifies this monster as a robomine
+
+ORIGZ 252
+ORIGX 1
+
+DISINT 100
+NOSELL
+
+WEAPON1 Force Blade
+WEAPON2 Force Pistol
+ARMOR Iron Plating
+INV power pack
+
+COMBATPIC rcu
+
+KILLHIM Your final blow disables the robomine. It's wrecked frame falls
+KILLHIM to the ground, lifeless. You think to yourself "I wonder how much
+KILLHIM money the owner wasted on this piece of junk!"
+
+FLEETXT You run from the situation as fast as you can. The Robomine
+FLEETXT returns to its bunker to recharge for the next attack.
+
+FLEERAN You run from the situation as fast as you can. The Robomine
+FLEERAN returns to its bunker to recharge for the next attack.
+
+;----------------------------------------------------------------------------
+
+NAME Robomine Mark 3
+
+DESC Though your ears still ring from the explosion, you can just make
+DESC out the scraping of a steel hinge. Suddenly a metallic form bursts
+DESC from the fire, its twin gravity projectors trained on you and its
+DESC spindly legs clicking against the scorched earth. The Robomine Mark
+DESC III is primed and ready for battle.
+
+HITPTS 75
+STR 47
+DEX 47
+AGL 47
+EXP 8200
+MONEY 0
+
+WEAPON1 GravSword
+WEAPON2 GravBlast
+ARMOR Energy Armor
+INV GravPack
+
+COMBATPIC rcu
+
+;ORIGZ 252 identifies this monster as a robomine
+
+ORIGZ 252
+ORIGX 2
+
+DISINT 100
+NOSELL
+
+KILLHIM Its structural integrity compromised, the Robomine seems to
+KILLHIM collapse in upon itself. One of the problems with gravity based
+KILLHIM power plants you suppose.
+
+FLEETXT Glancing back, you can see a small bunker rise from the ground
+FLEETXT to accept the Robomine for recharging and maintenance.
+
+FLEERAN Glancing back, you can see a small bunker rise from the ground
+FLEERAN to accept the Robomine for recharging and maintenance.
+
+;----------------------------------------------------------------------------
+
+NAME Robomine Mark 4
+
+DESC A cloud of dust erupts as a large object falls from above,
+DESC apparently shot into the air by the force of the explosion. Quickly
+DESC regaining its footing on 6 segmented legs, the metal monstrosity
+DESC arches a scorpion-like tail (likely a weapon mount) over its frame.
+
+HITPTS 98
+STR 58
+DEX 58
+AGL 58
+EXP 11500
+MONEY 0
+
+WEAPON1 WidowBlade
+WEAPON2 WidowBlaster
+ARMOR Widow Armor
+INV WidowPack
+
+COMBATPIC rcu
+
+;ORIGZ 252 identifies this monster as a robomine
+
+ORIGZ 252
+ORIGX 3
+
+DISINT 100
+NOSELL
+
+KILLHIM Volatile gasses hiss from the shattered frame of the Robomine
+KILLHIM Mark IV. Its days as an assassin are over.
+
+FLEETXT From an outcropping reached in your panic, you watch the Robomine
+FLEETXT Mark IV position and then bury itself above the site of the mine.
+
+FLEERAN From an outcropping reached in your panic, you watch the Robomine
+FLEERAN Mark IV position and then bury itself above the site of the mine.
+
+;----------------------------------------------------------------------------
+
+NAME Robomine Mark 5
+
+DESC Having used the force of the explosion to shoot several meters
+DESC through the ground, the Robomine Mark V rises from the earth in a
+DESC perfect spot to blast with the twin scaled-down tachyon blasters on
+DESC either side of its 'mouth.' That's of course if it doesn't just rip
+DESC you with the Widow Lance integrated into the tail.
+
+HITPTS 125
+STR 74
+DEX 74
+AGL 74
+EXP 23500
+MONEY 0
+
+WEAPON1 WidowBlade
+WEAPON2 Pulse Rifle
+ARMOR Widow Armor
+INV WidowPack
+INV Trivex Pack
+
+COMBATPIC rcu
+
+;ORIGZ 252 identifies this monster as a robomine
+
+ORIGZ 252
+ORIGX 4
+
+DISINT 100
+NOSELL
+
+KILLHIM Its limbs broken and its power failing, the Robomine falls.
+
+FLEETXT Uninterested in pursuit, the Robomine borrows into the ground.
+
+FLEERAN Uninterested in pursuit, the Robomine borrows into the ground.
+
+;----------------------------------------------------------------------------
+
+NAME Robomine Mark 6
+
+DESC You leap as several razor sharp tentacles burst from the smoldering
+DESC ground, followed by a robotic eye. Gasping you realize that you face
+DESC a Robomine Mark VI, which can tunnel as fast as you can walk.
+
+HITPTS 155
+STR 86
+DEX 86
+AGL 86
+EXP 40000
+MONEY 0
+
+WEAPON1 A-Mk.II
+WEAPON2 TachyonBlaster
+ARMOR Phase Armor
+
+COMBATPIC rcu
+
+;ORIGZ 252 identifies this monster as a robomine
+
+ORIGZ 252
+ORIGX 5
+
+DISINT 100
+NOSELL
+
+KILLHIM Though most of the mangled Robomine still remains beneath the
+KILLHIM dirt, you are sure it has been disabled by that last blow.
+
+FLEETXT One by one the tentacles pull beneath the sand, as does the eye.
+
+FLEERAN One by one the tentacles pull beneath the sand, as does the eye.
+
+;----------------------------------------------------------------------------
+
+NAME Guardian Mark 6
+
+DESC Dirt and rock spray everywhere as a half-dozen energized tentacles
+DESC flail up from below. As you back off they approach, the earth
+DESC beneath them bulging from the rounded frame of the Guardian Mark VI
+DESC Robomine pushing along just beneath the surface.
+
+HITPTS 155
+STR 86
+DEX 86
+AGL 86
+EXP 42000
+MONEY 0
+
+WEAPON1 A-Mk.II
+WEAPON2 TachyonBlaster
+ARMOR Phase Armor
+
+COMBATPIC rcu
+
+;ORIGZ 252 identifies this monster as a robomine
+
+ORIGZ 252
+ORIGX 6
+
+DISINT 100
+NOSELL
+
+KILLHIM The power of the blow actually lifts the hull of the Guardian
+KILLHIM right out of the ground. It looks much like an egg with tentacles
+KILLHIM spread over it. Well, a broken egg now.
+
+FLEETXT A shower of dust sprays into the air as the Guardian tunnels
+FLEETXT straight down, no doubt to prepare for its next encounter.
+
+FLEERAN A shower of dust sprays into the air as the Guardian tunnels
+FLEERAN straight down, no doubt to prepare for its next encounter.
+
+;----------------------------------------------------------------------------
+
+NAME Draku RCU Mk 4
+
+DESC The bright flash of the explosion almost hid the arrival of the
+DESC scorpion-like robot that it released from the ground ... Almost.
+
+HITPTS 98
+STR 58
+DEX 58
+AGL 58
+EXP 11500
+MONEY 0
+
+WEAPON1 WidowBlade
+WEAPON2 WidowBlaster
+ARMOR Widow Armor
+INV WidowPack
+
+COMBATPIC rcu
+
+;ORIGZ 252 identifies this monster as a robomine
+
+ORIGZ 252
+ORIGX 7
+
+DISINT 100
+NOSELL
+
+KILLHIM Though the Draku RCU (Robotic Combat Unit) Mark IV is a fine
+KILLHIM example of engineering skill, its still no match for the
+KILLHIM determination of a single human.
+
+FLEETXT The Draku RCU Mark IV casually leaps into the nearby blast hole,
+FLEETXT secure in its place as a marvel of engineering.
+
+FLEERAN The Draku RCU Mark IV casually leaps into the nearby blast hole,
+FLEERAN secure in its place as a marvel of engineering.
+
+;----------------------------------------------------------------------------
+
+NAME Xeboc RCU Mk 6
+
+DESC The ground quakes beneath you, emitting the sound of grinding ...
+DESC metal? Rolling out of the way you manage to dodge the slashing rakes
+DESC of a dozen glowing blades, each fixed to the head of a gleaming
+DESC tentacle. A sensor pod slowly rises from amongst them, glaring at
+DESC you with the menace only a Xeboc RCU (Robotic Combat unit) Mark VI
+DESC can generate. Money is apparently no object for somebody out there.
+
+HITPTS 155
+STR 86
+DEX 86
+AGL 86
+EXP 42000
+MONEY 0
+
+WEAPON1 A-Mk.II
+WEAPON2 TachyonBlaster
+ARMOR Phase Armor
+
+COMBATPIC rcu
+
+;ORIGZ 252 identifies this monster as a robomine
+
+ORIGZ 252
+ORIGX 8
+
+DISINT 100
+NOSELL
+
+KILLHIM You inhale hard as the ultimate in robomine technology is added
+KILLHIM to the list of the vanquished. Whoever set this thing has just
+KILLHIM wasted a great deal of money, and made a very dangerous enemy.
+
+FLEETXT There is a horrible grinding of metal as the Xeboc RCU sinks
+FLEETXT slowly into the wasteland sands. You are safe: For now.
+
+FLEERAN There is a horrible grinding of metal as the Xeboc RCU sinks
+FLEERAN slowly into the wasteland sands. You are safe: For now.

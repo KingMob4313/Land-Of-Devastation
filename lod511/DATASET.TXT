@@ -1,0 +1,678 @@
+;Land Of Devastation DataSet information file.
+;
+;
+;The NAME field indicates the name of this data set.
+;
+NAME Land Of Devastation 'Dark Skies' 
+;
+;The AUTHOR field is the name of the person (or group of persons) who has
+;created this custom data set.
+;
+AUTHOR Frederick Bell and Eric Meloche
+;
+;The next section, which consists of SETDESC descriptions, is a small
+;introduction to this data set. You may wish to describe your scenario
+;here, outline the types of areas in your world, etc.
+;
+SETDESC         What follows is a description of all that is currently known
+SETDESC of the wastelands surrounding Sacre Base. The total habitable
+SETDESC area of the wasteland is about 125 square sectors. Terrain beyond
+SETDESC the wasteland is believed to be completely unsuitable for life and
+SETDESC travel is not possible. Therefore, we suggest you confine your
+SETDESC wanderings to the 125x125 square area. Land beyond these dimensions
+SETDESC will appear as impassable mountains to your terrain scanner.
+SETDESC
+SETDESC         Sacre base is a human establishment, fully staffed by
+SETDESC non-mutated, highly trained military personnel. All resources of
+SETDESC Sacre Base are at your disposal, although most inventory in our
+SETDESC stores requires monetary reimbursement for your usage.
+SETDESC
+SETDESC         Other civilizations exist beyond the confines of Sacre
+SETDESC Base itself. Little information is available about these other
+SETDESC civilizations and we suggest that you use caution when encountering
+SETDESC new places.
+SETDESC
+SETDESC         The wasteland is populated by numerous extremely hostile
+SETDESC creatures of unknown intelligence and motives. Attempts to control
+SETDESC these hostile elements have been somewhat successful around Sacre
+SETDESC Base, but as the distance from Sacre Base increases, more dangerous
+SETDESC beings may be encountered.
+SETDESC
+SETDESC         More information is available from Defs Sacre and Troy
+SETDESC Hadley, who may be located in the Tavern.
+
+MAP 1
+  NAME MAIN.MAP
+  MODMUSIC WITCHING
+  XSIZE 125
+  YSIZE 125
+  MINMINEDIST 20
+  MINPROXDIST 20
+  HUNGER
+  SCAVODDS 10
+ENDMAP
+
+MAP 2
+  NAME SACRE.MAP
+  MODMUSIC ETERNAL
+  XSIZE 33
+  YSIZE 33
+  NOMONSTER
+  NOPVP
+  NOFORT
+  NOMINE
+  TROYQUEST
+  CHECKRAISE
+  COP SACRE GUARD
+  RENTLEVEL 9 50
+  RENTLEVEL 18 75
+  RENTLEVEL 50 100
+ENDMAP
+
+MAP 3
+  NAME UNDER.MAP
+  XSIZE 125
+  YSIZE 125
+ENDMAP
+
+MAP 4
+  NAME HELL.MAP
+  XSIZE 48
+  YSIZE 48
+  HUNGER
+  MINDANGER 35
+ENDMAP
+
+MAP 5
+  NAME FREEDOM.MAP
+  MODMUSIC TALAMASC
+  XSIZE 16
+  YSIZE 16
+  NOFORT
+  NOMINE
+ENDMAP
+
+MAP 6
+  NAME DWHQ.MAP
+  MODMUSIC FATE
+  XSIZE 16
+  YSIZE 16
+  NOFORT
+  NOMINE
+ENDMAP
+
+MAP 7
+  NAME WIDOW.MAP
+  MODMUSIC ACCURSED
+  XSIZE 16
+  YSIZE 16
+  NOFORT
+  NOMINE
+ENDMAP
+
+MAP 8
+  NAME FROST.MAP
+  MODMUSIC COLDWIND
+  XSIZE 16
+  YSIZE 16
+  NOFORT
+  NOMINE
+ENDMAP
+
+MAP 9
+  NAME BLOOD.MAP
+  MODMUSIC FIRE
+  XSIZE 16
+  YSIZE 16
+  NOFORT
+  NOMINE
+ENDMAP
+
+MAP 10
+  NAME CASINO.MAP
+  XSIZE 16
+  YSIZE 16
+  NOFORT
+  NOMINE
+ENDMAP
+
+MAP 11
+  NAME HOSPITAL.MAP
+  XSIZE 30
+  YSIZE 30
+  NOMONSTER
+  NOFORT
+  NOMINE
+ENDMAP
+
+MAP 12
+  NAME INTSHIP.MAP
+  XSIZE 30
+  YSIZE 30
+  NOMONSTER
+  NOFORT
+  NOMINE
+ENDMAP
+
+
+PYLONTYPE 1
+  TAG 1
+  NAME U-Pylon
+  PIC TPORT
+  MODMUSIC CPU
+  NUMPRESS 3
+  COLORS Red Green Blue
+  KEY RED KEYCARD
+  TCODE
+INTROTEXT
+&BYou approach the pylon and insert your pylon key. The massive iron door opens
+to provide access to the pylon's interior. The interior of the pylon is like
+nothing you have ever seen. Huge electrical devices are lit up with a dazzling
+array of status displays and indicators. Massive generators produce a seemingly
+huge amount of power. In front of you is a control console decorated with three
+colored buttons: Red, Blue, and Green.
+
+ENDINTROTEXT
+NOKEYTEXT
+&BYou approach the pylon. A massive door prevents your entry. Next to the door is
+a small rectangular slot. Probably for a keycard of some sort. You try
+everything that you can think of, but it is no use. The door simply will not
+open.
+ENDNOKEYTEXT
+BOGUSTEXT
+&CNothing happens.
+ENDBOGUSTEXT
+TPORTTEXT
+
+&EAs you press the final button, your eyes are burned by an intense electrical
+flash - like a hundred lightning bolts all at once. You can feel the molecules
+in your body being ripped apart. Then you lose consciousness. You awake to
+find yourself in front of a different pylon!
+ENDTPORTTEXT
+
+ENDPYLON
+
+;---------------------------
+
+PYLONTYPE 2
+  TAG 1
+  NAME Excelsior Pylon Teleporter
+  PIC TELE_P1
+  MODMUSIC CPU
+  NUMPRESS 3
+  COLORS Red Green Blue Cyan Yellow Magenta
+  BOGUSDUPE 1
+  TPORTDUPE 1
+  ANIMPIC TELE_P2
+INTROTEXT
+&BYou flip the selector lever on your excelsior teleporter over to the "Pylon"
+position. An immense humming is heard from the teleporter''s capacitor array
+as it charges with power. A few seconds later, the screen reads "Pylon
+transportation system ready." A panel opens and six buttons appear: Red,
+Green, Blue, Cyan, Yellow, and Magenta. The teleporter stands ready.
+
+ENDINTROTEXT
+
+ENDPYLON
+
+;---------------------------
+
+PYLONTYPE 3
+  TAG 1
+  NAME D-Pylon
+  PIC TPORT
+  MODMUSIC CPU
+  NUMPRESS 3
+  COLORS Cyan Yellow Magenta
+  KEY GREEN KEYCARD
+  NOKEYDUPE 1
+  BOGUSDUPE 1
+  TPORTDUPE 1
+  TCODE
+INTROTEXT
+&BYou approach the pylon and insert your pylon key. The massive iron door opens
+to provide access to the pylon's interior. The interior of the pylon is like
+nothing you have ever seen. Huge electrical devices are lit up with a dazzling
+array of status displays and indicators. Massive generators produce a seemingly
+huge amount of power. In front of you is a control console decorated with three
+colored buttons: Cyan, Yellow, and Magenta.
+
+ENDINTROTEXT
+
+ENDPYLON
+
+;---------------------------
+
+PYLONTYPE 4
+  TAG 2
+  NAME Elevator
+  YESNOPROMPT
+INTROTEXT
+&BThis is an elevator. It takes you from the main level to the underground
+and back
+
+ENDINTROTEXT
+TPORTTEXT
+
+&EAfter a tremendous amount of shaking, the elevator arrives at it's
+destination
+ENDTPORTTEXT
+ENDPYLON
+
+;---------------------------
+
+PYLONTYPE 5
+  TAG 3
+  PIC SACLEAVE
+  NAME Wastelands Exit
+  SUGGEST
+  YESNOPROMPT &BExit into the wastelands (&FY&B/&FN&B) ? &F
+INTROTEXT
+&BYou stand before the great gates of Sacre Base.  The heavilly fortified
+gates are intended to keep out even the most powerful invaders.  You pause to
+think of the many soldiers and adventurers who have left Sacre Base, never
+to return again.
+
+ENDINTROTEXT
+TPORTTEXT
+
+&ETwo of Sacre's gate patrol officers open the gate and allow you to exit into
+the wastelands.
+ENDTPORTTEXT
+ENDPYLON
+
+;---------------------------
+
+PYLONTYPE 6
+  TAG 3
+  PIC CITY
+  NAME Sacre Base
+  RENTCHECK
+  YESNOPROMPT &BEnter Sacre Base (&FY&B/&FN&B) ? &F
+INTROTEXT
+&BYou stand before the mighty gates of Sacre Base.  The gate patrol officers
+watch you cautiously from within the compound, waiting for signs of a possible
+invader.  The automated security scanners verify your identity and the gate
+patrol prepares to open the gate.
+
+ENDINTROTEXT
+TPORTTEXT
+
+&EThe mighty gates open and allow you to enter.  As you pass, one of the gate
+patrol officers looks you over and shouts, "You look like a trouble causer.
+Remember there's no combat allowed in Sacre Base.  All persons may camp here
+without fear of being attacked.  I better not find you violating these rules!"
+ENDTPORTTEXT
+ENDPYLON
+;---------------------------
+
+PYLONTYPE 7
+  TAG 4
+  KEYMUNCH
+  NAME Hell Entrance #1
+  KEY BLOODRING
+  YESNOPROMPT &BGive the guardian your bloodring and enter Hell (&FY&B/&FN&B) ? &F
+
+NOKEYTEXT
+&C"Bloooooodddd! I wannnnt Bloooodddd!", booms a voice from within the pit.
+The chilling voice continues, "You will notttt be allowwwwed entrannnnce to
+Helllll untillll I have Bloooooddd!".  Apparently, you are missing a required
+item and cannot continue further.
+ENDNOKEYTEXT
+
+INTROTEXT
+&C"Bloooodddd! You havvve Blooodddd!", booms a voice from within the pit.
+Your bloodring begins to glow red-hot. "Give meee Blooood!", continues the
+voice.
+
+ENDINTROTEXT
+TPORTTEXT
+
+&CYou toss the bloodring in the direction of the spirit.  It explodes into
+a spray of blood that gushes from the pit.  "That was goooodddd! I wasss
+hunnngrrry! You mayyy passs!", booms the erie voice.  You enter the pit.
+ENDTPORTTEXT
+ENDPYLON
+;---------------------------
+
+PYLONTYPE 8
+  TAG 4
+  KEYMUNCH
+  NAME Hell Exit #2
+  KEY BLOODRING
+  YESNOPROMPT &BGive the guardian your bloodring and exit Hell (&FY&B/&FN&B) ? &F
+
+NOKEYTEXT
+&C"Hahahahaha! You willll not be allowwwed exittt Hellll until I havvve
+morrre Blood!", utters the hell guardian.  It seems you're stuck down here
+until you find another bloodring.
+ENDNOKEYTEXT
+
+INTROTEXT
+&C"Bloooodddd! You havvve Blooodddd!", booms a voice from within the pit.
+Your bloodring begins to glow red-hot. "Give meee Blooood!", continues the
+voice.
+
+ENDINTROTEXT
+TPORTTEXT
+
+&CYou toss the bloodring in the direction of the spirit.  It explodes into
+a spray of blood that gushes from the pit.  "That was goooodddd! I wasss
+hunnngrrry! You mayyy now leave Helllll! Come again sooooon! Hahaha!",
+booms the erie voice.  You exit Hell through the pit.
+ENDTPORTTEXT
+ENDPYLON
+;---------------------------
+
+PYLONTYPE 9
+  TAG 5
+  KEYMUNCH
+  NAME Hell Entrance #2
+  KEY BLOODRING
+  YESNOPROMPT &BGive the guardian your bloodring and enter Hell (&FY&B/&FN&B) ? &F
+  NOKEYDUPE 7
+  INTRODUPE 7
+  TPORTDUPE 7
+ENDPYLON
+;---------------------------
+
+PYLONTYPE 10
+  TAG 5
+  KEYMUNCH
+  NAME Hell Exit #2
+  KEY BLOODRING
+  YESNOPROMPT &BGive the guardian your bloodring and exit Hell (&FY&B/&FN&B) ? &F
+  NOKEYDUPE 8
+  INTRODUPE 8
+  TPORTDUPE 8
+ENDPYLON
+;---------------------------
+
+PYLONTYPE 12
+  TAG 12
+  NAME Freedom Entrance
+  RENTCHECK
+  SPECIAL 2
+ENDPYLON
+;---------------------------
+
+PYLONTYPE 13
+  TAG 13
+  NAME DWHQ Entrance
+  RENTCHECK
+  SPECIAL 3
+ENDPYLON
+;---------------------------
+
+PYLONTYPE 14
+  TAG 14
+  NAME Widow Entrance
+  RENTCHECK
+ENDPYLON
+;---------------------------
+
+PYLONTYPE 15
+  TAG 15
+  NAME Crashed Ship Entrance
+  RENTCHECK
+ENDPYLON
+;---------------------------
+
+PYLONTYPE 16
+  TAG 16
+  NAME City6 Entrance
+  RENTCHECK
+ENDPYLON
+;---------------------------
+
+PYLONTYPE 17
+  TAG 17
+  NAME Frostbite Entrance
+  RENTCHECK
+ENDPYLON
+;---------------------------
+
+PYLONTYPE 18
+  TAG 18
+  NAME BloodLust Entrance
+  RENTCHECK
+ENDPYLON
+;---------------------------
+
+PYLONTYPE 19
+  TAG 19
+  NAME Hospital Entrance
+  RENTCHECK
+INTROTEXT
+&BWalking forward, you have the most unsettling feeling of walking through
+a field of energy. The invisible field breaks over you like a wave from the
+sea, setting your hair on end and a hiss from the metal on your person before
+you are finally through it. Now the building that you could only detect thr-
+ough your scanner is revealed to you, the remains of a west wing of a hospital.
+Walking up, you find a steel reinforced door, no guardian and no watchman of
+any type.
+
+ENDINTROTEXT
+TPORTTEXT
+
+&EInside you find yourself in a long cooridor, the pale lights marching along
+the ceiling here.  To your left and right you hear the hum of medical devices,
+and you can see that there are a few Sacre Base soldiers under care of the 
+machines.  You try to rouse one, but she doesn't wake, and without an underst-
+anding of the devices, you dare not tamper with them.  Stepping back out into
+the hallway, you can hear the call of a guitar from far ahead and the right?
+
+ENDTPORTTEXT
+
+ENDPYLON
+;---------------------------
+
+PYLONTYPE 22
+  TAG 12
+  NAME Freedom Exit
+  YESNOPROMPT &BExit into the wastelands (&FY&B/&FN&B) ? &F
+ENDPYLON
+;---------------------------
+
+PYLONTYPE 23
+  TAG 13
+  NAME DWHQ Exit
+  YESNOPROMPT &BExit into the wastelands (&FY&B/&FN&B) ? &F
+ENDPYLON
+;---------------------------
+
+PYLONTYPE 24
+  TAG 14
+  NAME Widow Exit
+  YESNOPROMPT &BExit into the wastelands (&FY&B/&FN&B) ? &F
+ENDPYLON
+;---------------------------
+
+PYLONTYPE 25
+  TAG 15
+  NAME City5 Exit
+  YESNOPROMPT &BExit into the wastelands (&FY&B/&FN&B) ? &F
+ENDPYLON
+;---------------------------
+
+PYLONTYPE 26
+  TAG 16
+  NAME City6
+  YESNOPROMPT &BExit into the wastelands (&FY&B/&FN&B) ? &F
+ENDPYLON
+;---------------------------
+
+PYLONTYPE 27
+  TAG 17
+  NAME FrostBite Exit
+  YESNOPROMPT &BExit into the wastelands (&FY&B/&FN&B) ? &F
+ENDPYLON
+;---------------------------
+
+PYLONTYPE 28
+  TAG 18
+  NAME Bloodlust Exit
+  YESNOPROMPT &BExit into the wastelands (&FY&B/&FN&B) ? &F
+ENDPYLON
+;---------------------------
+
+PYLONTYPE 29
+  TAG 19
+  NAME Hospital Exit
+  YESNOPROMPT &BExit into the wastelands (&FY&B/&FN&B) ? &F
+INTROTEXT
+&BAgain, you walk out into knees of the mountain, exiting the
+hospital.  The truth of the Ronin was much more than you can
+ever have guessed.
+
+ENDINTROTEXT
+TPORTTEXT
+
+&EAs you pass through the Enviroblend field again, you glance
+back to where the small road and hospital once was and once 
+again, you can no tell the area from any other part of the 
+mountain, maybe Stone was right, invisibility is the best
+tactical asset.
+
+ENDTPORTTEXT
+ENDPYLON
+;---------------------------
+
+PYLONTYPE 30
+  TAG 30
+  NAME Casino Entrance
+  YESNOPROMPT &BEnter the Casino (&FY&B/&FN) ? &F
+ENDPYLON
+;---------------------------
+
+PYLONTYPE 31
+  TAG 30
+  NAME Casino Exit
+  YESNOPROMPT &BExit the Casino (&FY&B/&FN) ? &F
+ENDPYLON
+;---------------------------
+
+PYLONTYPE 32
+  TAG 32
+  KEY Subway Pass
+  NAME Subway Entrance
+NOKEYTEXT
+&CA robotic servant greets you: "Hello Sir, may I see your subway pass?". You
+stand dumbfounded, unsure of what to do next. Eventually the robotic guard
+gets bored and leaves.
+ENDNOKEYTEXT
+INTROTEXT
+&BA robotic servant greets you: "Hello Sir, may I see your subway pass?". You
+proudly present your pass. The robot scrutinizes it carefully, and after a
+brief pause returns it to you.
+
+ENDINTROTEXT
+TPORTTEXT
+
+&EThe subway trip is quick and painless. When you arrive at the other end, the
+automated robotic servants escort you back up to the surface level.
+ENDTPORTTEXT
+
+  YESNOPROMPT &BEnter the Subway (&FY&B/&FN) ? &F
+ENDPYLON
+
+;
+;The PROD1, PROD2, and PROD3 fields indicate the name of the three
+;wasteland trading commodities. Support for them is not completely
+;finished.
+;
+PROD1 Minerals
+PROD2 Fuel
+PROD3 Herbs
+
+;
+;The following keywords identify text that will be used for the words "he",
+;"she", etc in the wasteland.
+;
+HISSTR  his
+HERSTR  her
+ITSSTR  its
+HESTR   he
+SHESTR  she
+ITSTR   it
+MHIMSTR him
+FHIMSTR her
+IHIMSTR it
+;
+;The MONSTER keyword identifies the name of the file that has the definitions
+;of the wasteland monsters. Multiple MONSTER files may be used.
+;
+MONSTER MONSTER.TXT
+MONSTER ISREAL.TXT
+MONSTER ELEM.TXT
+MONSTER BOSSMON.TXT
+MONSTER ROBOMON.TXT
+MONSTER FORTROBO.TXT
+MONSTER CITYMONS.TXT
+;
+;The COMBAT keyword identifies the name of the file that has the definitions
+;of the strings used in combat. Multiple COMBAT files may be used.
+;
+COMBAT COMBAT.TXT
+;
+;The TALK keyword identifies the name of the file that has the definitions
+;of the dialog used in taverns, monsters, etc. Multiple TALK files may be
+;used.
+;
+TALK TALK.TXT
+;
+;The TAVERN keyword identifies the name of the file that identifies which
+;players are in which tavern. Multiple TAVERN files may be used.
+;
+TAVERN TAVERN.TXT
+;
+;The OBJECT keyword indicates the name of the text file which contains a
+;description of the games objectives. Only one object text file may
+;be used.
+;
+OBJECT OBJECT.TXT
+;
+;The OUTPUT keyword indicates the name of the file that COMPILE will create,
+;holding the compiled game definitions. Usually this is GAME.DEF. Only one
+;output file may be used.
+;
+OUTPUT GAME.DEF
+;
+;The following are names of EGA pictures that will be used from the
+;resource.002 file. Most of them are self explanatory.
+;
+EGASURR SURR
+EGAFORTATCK FORTATCK
+EGAFORTRET FORTRET
+EGAFORTMM1 FORTMM1
+EGATAVERN TAVERN
+EGABARTALK BARTALK
+EGATADSU TADSU
+EGATELE1 TELE_P1
+EGATELE2 TELE_P2
+
+EGAMALE DUDE
+EGAFEMALE HEROINNE
+EGAOTHER DUDE
+
+;
+;Kelp Reward - the amount of $$ the GSRZ manager provides for obtaining
+;              kelp rations for special quest #14.
+;
+KELPREWARD 10000
+;
+;
+;EMWarpMine: Defines the percentage chance that the EMWarp program will
+;            respond when the user steps on a mine. Example: 0 would
+;            be no chance to respond; 100 would be respond all the time, and
+;            80 would be respond 80% of the time.
+;
+EMWARPMINE 80
+;
+;MoneyBag:   This is the name of the device that will be used as a money
+;            bag. The money bag is used in various situations including
+;            when a player dies and in the nightly casino maintenance. It
+;            Must be a valid device in DEVICES.BIN and should be of the
+;            type devapp_chest.
+;
+MONEYBAG Money Bag

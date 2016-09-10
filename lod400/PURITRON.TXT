@@ -1,0 +1,181 @@
+; Puritron text file
+;
+; This file includes all the text messages dealing with the encounters where
+; the player wins a puritron part.
+
+; %1 = (not used)
+; %2 = Money
+; %3 = Experience
+; %4 = Finder name
+
+:PARTFOUND 1
+
+&B        As you smash another hit on the Controls, the room goes dark.    
+&BFearing another sweep of the Plasma Guns, you smash your weapon down
+&Bon the guns Silencing them for a while.
+&B        You sit down, exhausted from your battle, but knowing that the
+&Bship will be back online soon you get up and look through the equipment
+&Bon the ship.  You recognize something familiar, the PURITRON RAD
+&BEXTRACTOR!
+&B        You immediately return to Sacre Base and present the lost part to the
+&Bbase. A holiday is declared in your name! And a plaque placed in the Puritron
+&Broom to honor your success.
+&B        More importantly, you are awarded $&F%2&B and &F%3&B experience
+&Bpoints!
+
+:ALREADYFOUND 1
+
+&BA note on the controls reveals: "&F%4 was here&B". I guess you're a little
+&Blate for this mission!
+
+
+:PARTFOUND 2
+
+&E        As you prepare to leave the phony Xeboc's lair, you notice a small
+&Egadget laying in the corner. Whatever it is, Xeboc must not have realized he
+&Eleft it here. Closer inspection reveals that it is small cylindrical
+&Econtainer. Wait a minute! It's the PURITRON STORAGE VESSEL! You've located a
+&Emissing Puritron part!
+&E        You immediately return to Sacre Base to return the puritron piece to
+&Eit's rightful home. Defs Sacre is delighted as you present the missing piece
+&Eto him. A plaque dedicated to you is placed on exhibit in the Puritron Room!
+&EYou are awarded $&F%2&E and &F%3&E experience points for your bravery!
+
+:ALREADYFOUND 2
+
+&EAfter you have dealt with Xeboc, you notice a message spray-painted on one of
+&Ethe walls. It says: "&F%4 was here!&E". Guess you're not
+&Ethe first person ever to defeat the phony Xeboc!
+
+
+:PARTFOUND 3
+
+&B        As you look over the body of the slain draku leader, you notice he
+&Bdropped something on the ground..... It's the missing PURITRON FILTRON! You have
+&Blocated one of the missing Puritron parts!
+&B        You immediately return to Sacre Base and present the lost part to the
+&Bbase. A holiday is declared in your name! And a plaque placed in the Puritron
+&Broom to honor your success.
+&B        More importantly, you are awarded $&F%2&B and &F%3&B experience
+&Bpoints!
+
+:ALREADYFOUND 3
+
+&BA note on the chamber reveals: "&F%4 was here&B". I guess you're a
+&Blittle late for this mission!
+
+
+:PARTFOUND 4
+
+&B        Congradulations! You have defeated Xeboc! As you leave the chamber,
+&Ba gleaming piece of metal. It's the missing PURITRON CIRCULATOR! You have
+&BBlocated one of the missing Puritron parts!
+&B        You immediately return to Sacre Base and present the lost part to the
+&Bbase. A holiday is declared in your name! And a plaque placed in the Puritron
+&B        More importantly, you are awarded $&F%2&B and &F%3&B experience
+&Bpoints!
+
+:ALREADYFOUND 4
+
+&BA note on the chamber reveals: "&F%4 was here&B". I guess you're a
+&Blittle late for this mission!
+
+
+:PARTFOUND 5
+
+&B        Congratulations! You have defeated the Tranlius security drone. Now
+&Bthat the way is clear, you proceed down the tunnel. At the tunnel end, the
+&Bremaining nuclear missile stands in front of you. The automated repair robots
+&Bhave nearly completed your work as you enter the chamber. You reach to the
+&Bfusion electrical panel and short out the box. Sparks and flames and
+&Bexplosions burst from all over the chamber. Beams from the ceiling crash down
+&Bto the floor. You decide to make a hasty retreat from the launch chamber.
+&B        As you are running back through the access tunnel, you nearly trip
+&Bover a little black box. As prepare to finish running from the tunnel, you
+&Bremember something. Something from the briefings back at Sacre base! That
+&Blittle black box looks surprisingly like the missing PURITRON NOVA CELL! You
+&Bhave located one of the missing puritron parts!
+&B        You immediately return to Sacre base and present the part to Defs
+&BSacre! A holiday is declared in your name! And a plaque placed in the Puritron
+&Broom to honor your success.
+&B        More importantly, you are awarded $&F%2&B and &F%3&Bexperience
+&Bpoints!
+
+:ALREADYFOUND 5
+
+&BA note on the chamber reveals: "&F%4 was here&B". I guess you're a
+&Blittle late for this mission!
+
+
+:PARTFOUND 6
+
+&B        You stare over Vayderr's crushed remains... It's a pity that a being
+&Bwho once was a champion of the forces of good could be corrupted and have to
+&Bdie this way. ObiWan was right... You easily locate the missing PURITRON VENT
+&Bamongst Vayderr's posessions.
+&B        You immediately return to Sacre Base and present the lost part to the
+&Bbase. A holiday is declared in your name! And a plaque placed in the Puritron
+&Broom to honor your success.
+&B        More importantly, you are awarded $&F%2&B and &F%3&B experience
+&Bpoints!
+
+:ALREADYFOUND 6
+
+&BA note on the chamber reveals: "&F%4 was here&B". I guess you're a
+&Blittle late for this mission!
+
+
+:PARTFOUND 7
+
+&B        You stare over IcePick's torn and twisted body. In a few hours, his
+&Breamins will be completely covered by a thick layer of snow. A fitting end for
+&Bthe king of the snow demons. As you reflect on the days activities, you notice
+&Ba small metallic glimmer a few feet to your left. It is the missing Puritron
+&BRecycler!
+&B        You immediately return to Sacre Base and present the lost part to the
+&Bbase. A holiday is declared in your name! And a plaque placed in the Puritron
+&Broom to honor your success.
+&B        More importantly, you are awarded $&F%2&B and &F%3&B experience
+&Bpoints!
+
+:ALREADYFOUND 7
+
+&BA note on the chamber reveals: "&F%4 was here&B". I guess you're a
+&Blittle late for this mission!
+
+:PARTFOUND 8
+
+&B      The monotone voice of LOKI once again comes from the speaker grill:
+&B      'You have passed the test, the puritron CPU is yours.'
+&B      The air around you shimmers and you suddenly find yourself on the
+&Bsurface of Earth, with the puritron part lying at your feet.
+&B      Having survived the encounter with the 'god of chaos' and one of his
+&Bgreater servants, you feel the huge celebration back at Sacre Base as you
+&Bare given a plaque of honor in the Puritron room is totally appropriate.
+&B      Not only that, but you are awarded $&F%2&B and &F&3&B experience
+&Bpoints!
+
+:ALREADYFOUND 8
+
+&BA note on the chamber reveals: "&F%4 was here&B". I guess you're a
+&Blittle late for this mission!
+
+:PARTFOUND 9
+
+&B      The way now clear, you take the Rad Converter and take note of the
+&Btent's store of ancient artifacts, estimating how many people need to be
+&Bsent to retrieve it all.  For their part, the Serpine leave you and those
+&Bthat are sent for the items in peace.
+&B      Back at Sacre, they place a plaque to honor you in the Puritron room.
+&BAfter the celebration dies down Defs Sacre congradulates you personally, as
+&Bmuch for the recovery of so much ancient art as the recovery of the part.
+&BIt is a moment of great pride.
+&B      Not only that, but you are awarded $&F%2&B and &F&3&B experience
+&Bpoints!
+
+:ALREADYFOUND 9
+
+&BA dozen heavily armed Serpine block your entry into their camp. One points
+&Bat a sign hammered into the ground nearby: "&F%4&F was here&B".
+&BYou realise you are bit late for this mission, and leave.
+

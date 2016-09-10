@@ -1,0 +1,348 @@
+
+NAME RAD TORNADO
+
+DESC You have been noticing for sometime that the wind has been picking up.
+DESC Now, as you look up, the sky is taking on an ominous color.  A memory
+DESC tugs at your mind but you cannot seem to recall it.  Then it clicks, it
+DESC was one of the original briefings back at the Base. Something about how
+DESC radiation can interact with the natural environment.  Suddenly you
+DESC remember, and a chill runs down your spine. A RAD TORNADO!  You were
+DESC told that the best course of action is to escape and you are now glad
+DESC that you sat through those long, dull lectures.  Looking at this
+DESC powerful monstrosity you know that your weapons will be unable to
+DESC tame it.
+
+HITPTS 700
+STR 85
+DEX 60
+AGL 45
+EXP 30000
+
+SEX OTHER
+DISINT 100
+MINDIST 90
+MAXDIST 120
+
+WEAPON1 Storm Force
+WEAPON2 Radiation Blast
+TYPE 10
+COMBATPIC RADTOR
+EXCEPT0
+
+LANDWATER
+NOSELL
+
+FLEERAN Huffing and puffing you manage to escape the deadly Storm.  The
+FLEERAN weird howling of the wind will haunt you for a long time and the
+FLEERAN image of that towering mass of destruction will not soon fade
+FLEERAN from your mind.
+
+FLEETXT You are not sure how, but you manage to get away.  You brush the
+FLEETXT glowing dust from your body in a panic.  You can only hope that the
+FLEETXT Decon procedures back at the base will handle the radiation that
+FLEETXT covered you from head to toe.  'Next time', you think to yourself,
+FLEETXT 'I am going to hotfoot it away as soon as I see one of those.'
+
+KILLHIM The Storm shifts in it's course.  Your weapons have managed to break
+KILLHIM up the forces that nearly destroyed you.  This is a feat that will
+KILLHIM long be remembered.  It also shows the fine line between heroic
+KILLHIM actions and really stupid ones.  Since you survived you will be
+KILLHIM hailed as a hero, a few more moments and you would be just another
+KILLHIM dead fool.
+
+;--------------------------------------------------------------------------
+
+NAME NUKE TWISTER
+
+DESC Your first warning is a sudden gathering of clouds.  And then a strange
+DESC gust of wind carries the smell of ozone.  Rapidly the sky darkens and
+DESC the wind increases.  The ground around you begins to glow with an odd
+DESC light.  Then it begins to form.  Now you know what this is, a NUKE
+DESC TWISTER!  One of the most deadly forms of 'natural force' created by the
+DESC radiation in the wilderness.  A Nuke Twister is formed when a dust storm
+DESC picks up radioactive waste.  In some fashion the power in the waste
+DESC magnifies the storm into what you see before you.  You have been told
+DESC that there is no way to 'fight' such a storm.  Your only hope is to
+DESC EVADE!  You must run before the radioactive winds eat the flesh off of
+DESC your bones.
+
+HITPTS 1000
+STR 110
+DEX 85
+AGL 55
+EXP 40000
+
+SEX OTHER
+DISINT 100
+MINDIST 120
+MAXDIST 150
+
+LANDWATER
+NOSELL
+
+WEAPON1 Storm Force
+WEAPON2 Radiation Blast
+TYPE 10
+COMBATPIC NUKETWIS
+EXCEPT0
+
+FLEERAN You look over your shoulder as you evade the Twister.  You cannot
+FLEERAN believe the violence:  It is literally ripping everything in it's
+FLEERAN path down to bare rock.  You decide to put just a little more
+FLEERAN distance between yourself and it before you rest.
+
+FLEETXT Blinded and bleeding you manage to escape the Twister.  You know that
+FLEETXT you are lucky, a few more minutes and you would have been dead. Next
+FLEETXT time you will run at the first sight of this Storm.
+
+KILLHIM Your continuous pouring of energy into the Storm has overloaded it! In
+KILLHIM a huge explosion the Twister blows itself out!  You are amazed that
+KILLHIM you have managed to do this.  Sometimes the power of man is something
+KILLHIM that astounds even a cynical person like yourself.  You will get a
+KILLHIM lot of mileage out of this story back at base, that is if anyone
+KILLHIM believes you.
+
+
+;---------------------------------------------------------------------------
+
+NAME EARTH ELEMENTAL
+
+DESC An eery silence descends upon the rugged mountain pass. No, not entirely
+DESC silent: There is a distant rumble, almost imperceptible. It draws closer
+DESC and becomes louder till the very ground buckles with the strain, forced
+DESC meters into the air.  And then all is still once more, save for the
+DESC humanoid of pure rock that faces you, formed by the corruptive power of
+DESC the radiation on the earth itself.
+
+TRESTRICT Mountains
+
+HITPTS 750
+STR 75
+DEX 75
+AGL 75
+EXP 5000
+
+SEX OTHER
+DISINT 100
+MINDIST 30
+MAXDIST 200
+
+WEAPON1 Elemental Force
+WEAPON2 Radiation Blast
+TYPE 11
+COMBATPIC ELEMENTE
+EXCEPT0
+
+FLEERAN Running like the wind you manage to escape from the relatively
+FLEERAN slow elemental. Soon you feel safe again, though the occasional
+FLEERAN distant tremors make you rather uneasy.
+
+FLEETXT The relative slowness of the being lets you get away, but you
+FLEETXT soon discover numerous glowing rock fragments clinging to your
+FLEETXT clothes and armor.  The Decon team back at base will have their
+FLEETXT work cut out for them this time.
+
+KILLHIM You are nearly buried as the cohesive force of the being fails and
+KILLHIM pebbles and stone go flying everywhere. What else has this blasted
+KILLHIM wasteland turned into a killing force?
+
+;----------------------------------------------------------------------------
+
+NAME FIRE ELEMENTAL
+
+DESC The miraculous Cryo-Gen Device may let you pass over the lava, but it
+DESC does nothing to ease your mind.  A great deal of heat still passes
+DESC through, and the place reminds you of ancient tales of hell.  Of course
+DESC if it was hell, you'd have to fear demons, but there aren't.....Wait!
+DESC What's that?  Rising from the infernal terrain is a vaguely humanoid
+DESC mass of pure flame.  It stretches out a burning appendage and lets out
+DESC a crackling scream not unlike the sound of a hundred bon-fires.
+
+TRESTRICT Lava River
+
+HITPTS 750
+STR 75
+DEX 75
+AGL 75
+EXP 5000
+
+SEX OTHER
+DISINT 100
+MINDIST 30
+MAXDIST 200
+
+WEAPON1 Elemental Force
+WEAPON2 Radiation Blast
+TYPE 11
+COMBATPIC ELEMENTF
+EXCEPT0
+
+LANDWATER
+NOSELL
+
+FLEERAN The radiation's amazing ability to create new life has outdone
+FLEERAN itself this time.  You turn and charge into the flames, hoping
+FLEERAN to loose yourself in the writhing mass.  And it seems to succeed.
+FLEERAN At least, none of the fire here is fighting back.  Yet.
+
+FLEETXT By a miracle you avoid the flaming fiend the radiation has formed
+FLEETXT from the fires around you.  But the ill feeling in your stomach
+FLEETXT tells you the effect lingers on.  The Decon procedures back at base
+FLEETXT better be ready to negate some serious radiation or you won't live
+FLEETXT to flee from the next one of these you meet.
+
+KILLHIM The fire elemental bursts into a veritable fire storm, only to be
+KILLHIM absorbed into the burning lava from which radiation gave it life.
+
+;----------------------------------------------------------------------------
+
+NAME WATER ELEMENTAL
+
+DESC Without warning the water here has gotten choppy and violent, shaking
+DESC your raft violently.  But how could this be when just moments ago the
+DESC weather was so calm?  Then it all becomes clear, as a hulking form
+DESC bursts from the waves, a form composed entirely of water.  You don't
+DESC need a geiger counter to tell you that the radiation has managed to
+DESC bring life to yet another aberration.
+
+TRESTRICT Lake
+TRESTRICT River
+
+HITPTS 750
+STR 75
+DEX 75
+AGL 75
+EXP 5000
+
+SEX OTHER
+DISINT 100
+MINDIST 30
+MAXDIST 200
+
+WEAPON1 Elemental Force
+WEAPON2 Radiation Blast
+TYPE 11
+COMBATPIC ELEMENTW
+EXCEPT0
+
+LANDWATER
+NOSELL
+
+FLEERAN Paddling your raft as fast as you can and using what little wind
+FLEERAN there is to speed your way you somehow slip by your elemental foe
+FLEERAN downstream and apparently out of its hunting ground.  You shiver
+FLEERAN at what that virtual tidal wave could have done to you.
+
+FLEETXT Somehow slipping out of its watery clutches you paddle away from
+FLEETXT the creature.  But it may have its revenge yet, as you got rather
+FLEETXT heavily soaked by the radioactive waters that spawned it.  You
+FLEETXT swear that if the Decon team manages to fix you up, you will never
+FLEETXT be foolish enough to attack one of these again.
+
+KILLHIM The elemental rears up out of the water to a spectacular height,
+KILLHIM then collapses into it with a splash.  After the ripples pass there
+KILLHIM is no sign it ever existed.
+
+;-----------------------------------------------------------------------------
+
+NAME ICE ELEMENTAL
+
+DESC You are starting to get really sick of the endless mounds of white and
+DESC the bitter cold.  Anything to break the monotony would be of utmost joy
+DESC to you, and you almost smile when you hear a sound reminiscent of ice
+DESC being crushed behind you.  But your smile vanishes and your jaw drops
+DESC when you see the massive crystalline structure approaching. It is shaped
+DESC somewhat like a gigantic ape chiseled out of ice, but unfortunately is
+DESC no sculpture.  It attacks with the ferocity that only a radiation spawned
+DESC life form can achieve.
+
+TRESTRICT Snow Plains
+TRESTRICT Snow mntn
+TRESTRICT Snow Hills
+
+HITPTS 750
+STR 75
+DEX 75
+AGL 75
+EXP 5000
+
+SEX OTHER
+DISINT 100
+MINDIST 30
+MAXDIST 200
+
+WEAPON1 Elemental Force
+WEAPON2 Radiation Blast
+TYPE 11
+COMBATPIC ELEMENTI
+EXCEPT0
+
+LANDWATER
+NOSELL
+
+FLEERAN You plow headlong into a snow drift in your haste to escape, and
+FLEERAN hide for long freezing minutes under the snow.  Eventually you
+FLEERAN peer out and see that the creature has gone.
+
+FLEETXT Somehow extracting yourself from the combat you charge down the
+FLEETXT snowy path as fast as your chilled limbs will carry you.  For some
+FLEETXT reason the radiation born ice creature does not give chase.  You
+FLEETXT breath a sigh of relief as you attempt to determine how much
+FLEETXT radiation you soaked up from the thing.
+
+KILLHIM Huge slivers of ice tear at your skin as the ice elemental falls
+KILLHIM into the snow and shatters.  Maybe monotony isn't so bad after all.
+
+;----------------------------------------------------------------------------
+
+NAME AIR ELEMENTAL
+
+DESC A weird whistling sound echoes across the wastelands, accompanied by
+DESC a sudden rush of air.  You whirl to see a cloud-like billowy mass
+DESC floating over the broken terrain.  Though it seems to have no substance
+DESC you get the unmistakable impression that it is hunting.  Could this be
+DESC one of the dreaded elementals you have heard about?  They say radiation
+DESC is a strange force... It can change healthy humanoids into diseased
+DESC mutants. It can change a friendly recruit into a crazed insane
+DESC soldier. If the forces are just right, radiation can even change an
+DESC elemental substance into a demonic beast.  But the time to ponder
+DESC ends abruptly as it blows towards you.
+
+TRESTRICT Wastelands
+
+HITPTS 750
+STR 75
+DEX 75
+AGL 75
+EXP 5000
+
+SEX OTHER
+DISINT 100
+MINDIST 30
+MAXDIST 200
+
+WEAPON1 Elemental Force
+WEAPON2 Radiation Blast
+TYPE 10
+COMBATPIC ELEMENTA
+EXCEPT0
+
+LANDWATER
+NOSELL
+
+FLEERAN You turn and flee, the radioactive cloud pursuing at a lazy but
+FLEERAN steady pace.  Your lungs feel ready to burst and your legs begin
+FLEERAN to give out, but onwards you push.  But then, just when all hope
+FLEERAN seems lost, a strong gust of wind blows through the area and the
+FLEERAN elemental goes with it. You almost hear... Naahhh. A radioactive
+FLEERAN cloud can't giggle, can it?
+
+FLEETXT You are not sure how, but you manage to get away.  You brush the
+FLEETXT glowing dust from your body in a panic.  You can only hope that the
+FLEETXT Decon procedures back at the base will handle the radiation that
+FLEETXT covered you from head to toe.  'Next time', you think to yourself,
+FLEETXT 'I am going to hotfoot it away as soon as I see one of those'
+
+KILLHIM You are knocked over as the air elemental bursts with the pent up
+KILLHIM force of a small hurricane.  Apparently whatever radioactive
+KILLHIM energy gave it life has dissipated.  Quite a battle though.

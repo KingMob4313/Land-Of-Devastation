@@ -1,0 +1,400 @@
+;----------------------------------------------------------------------------
+
+NAME Fortress
+
+DESC The mighty %2 stands before you. Although you may have
+DESC successfully traversed the moat, the difficult part awaits. You must
+DESC hack through the fort's defense grid.
+
+;ORIGZ 255 identifies this monster as the fortress
+
+ORIGZ 255
+ORIGX 1
+
+HITPTS 58
+STR 21
+DEX 40
+AGL 40
+EXP 0
+MONEY 0
+
+DISINT 0
+NOSELL
+NOSURR
+NODROP
+NOSHOCK
+NOSTUN
+
+TYPE 8
+EXCEPT0
+
+COMBATPIC BASECMBT
+
+KILLHIM As your final blow impacts the defense field, the power cells in the
+KILLHIM fort overheat and suffer thermal shutdown, leaving the fortress open
+KILLHIM to invasion. You rush inward to take the base!
+
+FLEETXT You begin a pattern of evasive maneuvers, dodging blasts from the
+FLEETXT fort's weapons while you run to get out of range.
+
+FLEERAN Hmmm.... Moat, Defense Shield, Base Weapon... It all looks too tough
+FLEERAN at this point. You decide to make a strategic withdrawal.
+
+;----------------------------------------------------------------------------
+
+NAME RoboDefender Mark I
+
+DESC It starts as a tremendous whizzing and clanking coming from a storage
+DESC room on the southeast corner of the fortress. The noise gets closer.
+DESC Finally, you see the shape emerge and take form. You have encountered
+DESC a Fortress RoboDefender Mark I.
+
+;ORIGZ 254 identifies this monster as a robomine
+
+ORIGZ 254
+ORIGX 1
+
+HITPTS 58
+STR 24
+DEX 25
+AGL 24
+EXP 980
+MONEY 0
+
+WEAPON1 Mono Sword
+WEAPON2 .223 Rifle
+ARMOR Iron Plating
+INV Rifle Clip
+INV Power Pack
+
+DISINT 100
+NOSELL
+NOSURR
+
+COMBATPIC rcu
+
+KILLHIM Your final blow disables the robodefender. Smoke pours from burned
+KILLHIM out components. It's mangled frame lies motionless upon the sands
+KILLHIM of the wasteland. Somebody shelled out some big bucks for this
+KILLHIM thing... And they're not going to be happy that you wasted it!
+
+FLEETXT You decide to exercise a strategic withdrawal. The robodefender
+FLEETXT returns to it's storage bin where it will heal itself and prepare
+FLEETXT for another attack.
+
+FLEERAN You decide to exercise a strategic withdrawal. The robodefender
+FLEERAN returns to it's storage bin where it will heal itself and prepare
+FLEERAN for another attack.
+
+;----------------------------------------------------------------------------
+
+NAME RoboDefender Mark II
+
+DESC It starts as a tremendous whizzing and clanking coming from a storage
+DESC room on the southeast corner of the fortress. The noise gets closer.
+DESC Finally, you see the shape emerge and take form. You have encountered
+DESC a Fortress RoboDefender Mark II.
+
+;ORIGZ 252 identifies this monster as a robomine
+
+ORIGZ 254
+ORIGX 2
+
+HITPTS 90
+STR 30
+DEX 30
+AGL 30
+EXP 3000
+MONEY 0
+
+WEAPON1 Energy Sword
+WEAPON2 Laser Pistol
+ARMOR Steel Plating
+INV Power Pack
+
+DISINT 100
+NOSELL
+NOSURR
+
+COMBATPIC rcu
+
+KILLHIM Your final blow disables the robodefender. Smoke pours from burned
+KILLHIM out components. It's mangled frame lies motionless upon the sands
+KILLHIM of the wasteland. Somebody shelled out some big bucks for this
+KILLHIM thing... And they're not going to be happy that you wasted it!
+
+FLEETXT You decide to exercise a strategic withdrawal. The robodefender
+FLEETXT returns to it's storage bin where it will heal itself and prepare
+FLEETXT for another attack.
+
+FLEERAN You decide to exercise a strategic withdrawal. The robodefender
+FLEERAN returns to it's storage bin where it will heal itself and prepare
+FLEERAN for another attack.
+
+;----------------------------------------------------------------------------
+
+NAME RoboDefender Mark III
+
+DESC It starts as a tremendous whizzing and clanking coming from a storage
+DESC room on the southeast corner of the fortress. The noise gets closer.
+DESC Finally, you see the shape emerge and take form. You have encountered
+DESC a Fortress RoboDefender Mark III.
+
+;ORIGZ 254 identifies this monster as a robomine
+
+ORIGZ 254
+ORIGX 3
+
+HITPTS 135
+STR 45
+DEX 45
+AGL 45
+EXP 6500
+MONEY 0
+
+WEAPON1 Slicer-Dicer
+WEAPON2 (Burst) Force Pistol
+ARMOR Energy Armor
+INV Power Pack
+
+DISINT 100
+NOSELL
+NOSURR
+
+COMBATPIC rcu
+
+KILLHIM Your final blow disables the robodefender. Smoke pours from burned
+KILLHIM out components. It's mangled frame lies motionless upon the sands
+KILLHIM of the wasteland. Somebody shelled out some big bucks for this
+KILLHIM thing... And they're not going to be happy that you wasted it!
+
+FLEETXT You decide to exercise a strategic withdrawal. The robodefender
+FLEETXT returns to it's storage bin where it will heal itself and prepare
+FLEETXT for another attack.
+
+FLEERAN You decide to exercise a strategic withdrawal. The robodefender
+FLEERAN returns to it's storage bin where it will heal itself and prepare
+FLEERAN for another attack.
+
+;----------------------------------------------------------------------------
+
+NAME RoboDefender Mark IV
+
+DESC It starts as a tremendous whizzing and clanking coming from a storage
+DESC room on the southeast corner of the fortress. The noise gets closer.
+DESC Finally, you see the shape emerge and take form. You have encountered
+DESC a Fortress RoboDefender Mark IV.
+
+;ORIGZ 254 identifies this monster as a robomine
+
+ORIGZ 254
+ORIGX 4
+
+HITPTS 200
+STR 58
+DEX 58
+AGL 58
+EXP 11500
+MONEY 0
+
+WEAPON1 WidowBlade
+WEAPON2 WidowBlaster
+ARMOR Widow Armor
+INV WidowPack
+
+DISINT 100
+NOSELL
+NOSURR
+
+COMBATPIC rcu
+
+KILLHIM Your final blow disables the robodefender. Smoke pours from burned
+KILLHIM out components. It's mangled frame lies motionless upon the sands
+KILLHIM of the wasteland. Somebody shelled out some big bucks for this
+KILLHIM thing... And they're not going to be happy that you wasted it!
+
+FLEETXT You decide to exercise a strategic withdrawal. The robodefender
+FLEETXT returns to it's storage bin where it will heal itself and prepare
+FLEETXT for another attack.
+
+FLEERAN You decide to exercise a strategic withdrawal. The robodefender
+FLEERAN returns to it's storage bin where it will heal itself and prepare
+FLEERAN for another attack.
+
+;----------------------------------------------------------------------------
+
+NAME RoboDefender Mark V
+
+DESC It starts as a tremendous whizzing and clanking coming from a storage
+DESC room on the southeast corner of the fortress. The noise gets closer.
+DESC Finally, you see the shape emerge and take form. You have encountered
+DESC a Fortress RoboDefender Mark V.
+
+;ORIGZ 254 identifies this monster as a robomine
+
+ORIGZ 254
+ORIGX 5
+
+HITPTS 240
+STR 70
+DEX 70
+AGL 70
+EXP 21000
+MONEY 0
+
+WEAPON1 WidowBlade
+WEAPON2 WidowBlaster
+ARMOR Widow Armor
+INV WidowPack
+INV WidowPack
+
+DISINT 100
+NOSELL
+NOSURR
+
+COMBATPIC rcu
+
+KILLHIM Your final blow disables the robodefender. Smoke pours from burned
+KILLHIM out components. It's mangled frame lies motionless upon the sands
+KILLHIM of the wasteland. Somebody shelled out some big bucks for this
+KILLHIM thing... And they're not going to be happy that you wasted it!
+
+FLEETXT You decide to exercise a strategic withdrawal. The robodefender
+FLEETXT returns to it's storage bin where it will heal itself and prepare
+FLEETXT for another attack.
+
+FLEERAN You decide to exercise a strategic withdrawal. The robodefender
+FLEERAN returns to it's storage bin where it will heal itself and prepare
+FLEERAN for another attack.
+
+;----------------------------------------------------------------------------
+
+NAME RoboDefender Mark VI
+
+DESC It starts as a tremendous whizzing and clanking coming from a storage
+DESC room on the southeast corner of the fortress. The noise gets closer.
+DESC Finally, you see the shape emerge and take form. You have encountered
+DESC a Fortress RoboDefender Mark VI.
+
+;ORIGZ 254 identifies this monster as a robomine
+
+ORIGZ 254
+ORIGX 6
+
+HITPTS 300
+STR 81
+DEX 82
+AGL 81
+EXP 31000
+MONEY 0
+
+WEAPON1 DreamSabre
+WEAPON2 TachyonBlaster
+ARMOR Phase Armor
+
+DISINT 100
+NOSELL
+NOSURR
+
+COMBATPIC rcu
+
+KILLHIM Your final blow disables the robodefender. Smoke pours from burned
+KILLHIM out components. It's mangled frame lies motionless upon the sands
+KILLHIM of the wasteland. Somebody shelled out some big bucks for this
+KILLHIM thing... And they're not going to be happy that you wasted it!
+
+FLEETXT You decide to exercise a strategic withdrawal. The robodefender
+FLEETXT returns to it's storage bin where it will heal itself and prepare
+FLEETXT for another attack.
+
+FLEERAN You decide to exercise a strategic withdrawal. The robodefender
+FLEERAN returns to it's storage bin where it will heal itself and prepare
+FLEERAN for another attack.
+
+;----------------------------------------------------------------------------
+
+NAME RoboDefender Mark VII
+
+DESC It starts as a tremendous whizzing and clanking coming from a storage
+DESC room on the southeast corner of the fortress. The noise gets closer.
+DESC Finally, you see the shape emerge and take form. You have encountered
+DESC a Fortress RoboDefender Mark VII.
+
+;ORIGZ 254 identifies this monster as a robomine
+
+ORIGZ 254
+ORIGX 7
+
+HITPTS 380
+STR 100
+DEX 100
+AGL 100
+EXP 60000
+MONEY 0
+
+WEAPON1 A-Mk.II
+WEAPON2 SLM-9000 PulseRay
+ARMOR Phase Armor
+
+DISINT 100
+NOSELL
+NOSURR
+
+COMBATPIC rcu
+
+KILLHIM Your final blow disables the robodefender. Smoke pours from burned
+KILLHIM out components. It's mangled frame lies motionless upon the sands
+KILLHIM of the wasteland. Somebody shelled out some big bucks for this
+KILLHIM thing... And they're not going to be happy that you wasted it!
+
+FLEETXT You decide to exercise a strategic withdrawal. The robodefender
+FLEETXT returns to it's storage bin where it will heal itself and prepare
+FLEETXT for another attack.
+
+FLEERAN You decide to exercise a strategic withdrawal. The robodefender
+FLEERAN returns to it's storage bin where it will heal itself and prepare
+FLEERAN for another attack.
+;----------------------------------------------------------------------------
+
+NAME RoboDefender Mark VIII
+
+DESC It starts as a tremendous whizzing and clanking coming from a storage
+DESC room on the southeast corner of the fortress. The noise gets closer.
+DESC Finally, you see the shape emerge and take form. You have encountered
+DESC a Fortress RoboDefender Mark VIII.
+
+;ORIGZ 254 identifies this monster as a robomine
+
+ORIGZ 254
+ORIGX 8
+
+HITPTS 600
+STR 130
+DEX 130
+AGL 130
+EXP 80000
+MONEY 0
+
+WEAPON1 A-Mk.II
+WEAPON2 SLM-9000 PulseRay
+ARMOR Phase Armor
+
+DISINT 100
+NOSELL
+NOSURR
+
+COMBATPIC rcu
+
+KILLHIM Your final blow disables the robodefender. Smoke pours from burned
+KILLHIM out components. It's mangled frame lies motionless upon the sands
+KILLHIM of the wasteland. Somebody shelled out some big bucks for this
+KILLHIM thing... And they're not going to be happy that you wasted it!
+
+FLEETXT You decide to exercise a strategic withdrawal. The robodefender
+FLEETXT returns to it's storage bin where it will heal itself and prepare
+FLEETXT for another attack.
+
+FLEERAN You decide to exercise a strategic withdrawal. The robodefender
+FLEERAN returns to it's storage bin where it will heal itself and prepare
+FLEERAN for another attack.
+

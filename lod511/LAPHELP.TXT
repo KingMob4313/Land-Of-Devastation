@@ -1,0 +1,95 @@
+  Congratulations on your selection of the new GS-224 Laptop
+
+  You will it the finest laptop built since the collapse of civilization.
+Of course, since its the only laptop produced since then, you may be
+confused with its operation.  Here are some guidelines to get you started.
+
+RUNNING PROGRAMS
+
+  You will find that several programs are already installed on your laptop.
+To activate any of them, or those you add later, merely type the name of
+the file (without the .COM, .EXE, or .BAT that you find at the end of the
+name).  You need not type any path-names or the like.  The GS-224 will
+activate any file, no matter which directory it may lie in, by just the
+specification of the filename.  It could not be simpler.  The GS-224 will
+run a variety of programs, including text editors, games, and various
+situation analysis utilities in its roomy 640k (approximately 640 thousand
+characters) of memory.  Most of these will explain their uses when you run
+them.
+
+PRE-INSTALLED DOS UTILITIES
+
+  The DOS sub-directory on your laptop contains a number of pre-supplied
+  basic utilities. You may get a listing of the files in this directory at
+  any time by simply typing "DIR DOS".
+
+    CHKDSK Explains how much memory and space you have available
+            and used on your laptop, and reports any problems.
+
+    COPY   Copies files from ROM discs that you are carrying to
+            the laptop's storage space.
+
+    DEL    Deletes a file from the laptop.
+
+    DIR    This IMPORTANT program lists all the other programs on
+            your GS-224 and some information about them.
+
+    EXIT   Exits the laptop.
+
+    HELP   Displays this information file.
+
+    VER    Tells you the version of DOS (what allows you to run
+            the programs in the first place) your laptop uses.
+
+ADDING PROGRAMS TO YOUR LAPTOP
+
+  We know you didn't buy a laptop so you could run its diagnostic programs:
+You either have a ROM disk, or plan on buying one in the near future.  When
+you have your new ROM program, merely run COPY in your laptop.  It will
+then ask you for what inventory slot you are carrying the ROM in, and if
+you type ?, will display a list of your complete inventory.  Once you
+select a ROM, the program from it will be loaded into your laptop's roomy
+80 Megabyte (about 80 million characters) hard drive, the ROM will be
+destroyed to prevent illegal copying, and in the future you can run the
+program just like any of the pre-installed software.  Hitting the enter key
+without a selection will abort COPY.
+
+EXITING THE LAPTOP
+
+  When you are finished using your GS-224 Laptop, merely type the name
+EXIT.  This will run a program that does some minor maintenance and parks
+your hard drive (making it so you can travel through even the bumpiest
+terrain without damaging any information on the drive).  You will then
+immediately be able to continue your travels.
+
+COMMAND LINE PARAMETERS
+
+  Some laptop programs are known to accept command line parameters. These
+are options that are specified on the command line after the name of
+the command you are executing. For example, to execute the "cstats"
+program with the "/invall" parameter, you would type "cstats /invall".
+
+  Known laptop command with command line parameters:
+
+     DEL:    <fname>       Deletes a file from your laptop.
+
+     DIR:    <blank>       displays the root directory
+             "DOS"         shows files in the DOS directory
+
+     COPY:   <blank>       asks for which rom to copy
+             "/INVALL"     copies all roms in inventory
+             "/INVx"       copies rom from inventory slot #x (x is a number)
+
+     CSTATS: <blank>       combat stats summary report
+             "/INVALL"     do weapons profile of all weapons in inventory
+             "/INVx"       do weapons profile for inventory #x
+             "/ITEMALL"    do weapons profile of all weapons at current
+                           wastelands location.
+             "/ITEMx"      do weapons profile of item #x at current wastelands
+                           location.
+             "/UNIAMMO"    Shows Uni-Ammo requirements of SR and LR weapons.
+
+     EMWARP: "/ANCHOR"     Establish anchor point at current location
+             "/ANCHORHOME" Reset anchor point to Sacre Base
+
+  Once again thank you for your selection of this fine laptop.

@@ -1,0 +1,139 @@
+ACME Weapons: Weaponsmith services
+----------------------------------
+
+       ACME Weapons maintains a full-time weaponsmith to provide the public
+  with various conversions, modifications, and upgrades to existing weapons.
+  The range of our services are outlined below:
+
+
+ACCURIZE (10% or 20%)
+
+       Accurizing a weapon is simply the process of improving a weapon's
+  accuracy. We are capable of improving accuracy by 10% or 20%, depending
+  on your requirements.
+
+       Your accuracy will be improved whenever you use the accurized weapon,
+  and only when you use the accurized weapon. For example, if you had an
+  "accurized neutron rifle" and a standard "neutron sabre", then your
+  accuracy when you shoot the neutron rifle would be 10% greater, but your
+  accuracy while using the neutron savre would remain unchanged.
+
+       Accurizing can be performed only once. If a weapon is accurized to
+  10%, it cannot then be re-accurized to 20%.
+
+       Accurizing can be performed on both long range and short range
+  weapons.
+
+
+INTENSIFY (10% or 20%)
+
+       Intensification is the process of improving the damage that a weapon
+  inflicts. We are capable of improving this damage by 10% or 20%, depending
+  on your requirements.
+
+       As with accurizing, intensifying is in effect whenever you use the
+  intensified weapon, and only when you use that weapon.
+
+       Intensifying can be performed only once to a weapon. A weapon cannot
+  be re-intensified to a greater level.
+
+       Intensifying can be performed on both long range and short range
+  weapons.
+
+
+UNI-AMMO CONVERSION
+
+       Uni-Ammo conversion is a special service we offer for energy weapons.
+  You have probably experienced frustrating situations when you lacked the
+  required type of ammunition for a weapon, but had a surplus of another
+  incompatible type on hand.
+
+       Uni-Ammo will fix this problem. With a Uni-Ammo conversion package
+  installed, your energy weapon will be able to use any type of energy
+  ammunition that you may have, automatically.
+
+       The Uni-Ammo conversion works only with ENERGY WEAPONS and ENERGY
+  AMMO. For example, see the below tables:
+
+       COMPATIBLE WITH                 INCOMPATIBLE WITH
+
+       Electroblade                    Most lower
+       Electrosword                    hand weapons
+       Electrolance                    
+       Neutron Sabre                   
+       All Phasers                     Crossbow
+       Comp Blaster                    Pistols
+       Grav Blast                      SMG
+       Plasma Blast                    Rifles
+       Neutron Rifle                   Assault Rifles	
+
+       Power Pack                      Crossbow bolts
+       Power Belt                      Any Slug throwing ammo
+       Grav Pack
+       Plasma Pack
+       Neutron Pack
+
+       The above tables are not an exhaustive list; There are many other
+  weapons and ammo that the Uni-Ammo conversion may be used with. Please see
+  our weaponsmith for more information.
+
+       NOTE: A weapon with a more advanced ammunition type may require
+  more charges from a more primitive weapon type. For example, a Uni-Ammo
+  Neutron Blaster would require the following ammunition for one shot:
+
+       Power Pack or Power Belt: 5 units
+       Grav Pack...............: 3 units
+       Plasma Pack.............: 2 units
+       WidowPack...............: 2 units
+       Neutron Pack............: 1 unit
+
+       Ammunition packs with fewer than the required number of units are
+  thus unusable (i.e. in the above example, a Power Pack/4 or a Grav Pack/2
+  would be useless)
+
+       Using the CSTATS ROM with the "/uniammo" switch will display the
+  ammunition requirements for any weapons with Uni-Ammo conversions.
+
+       Uni-Ammo conversions may be performed on both long range and short
+  range weapons.
+
+
+THREE ROUND BURST CONVERSION
+
+       Our three round burst conversion allows your long range weapon to
+  fire three shots in rapid succession. By firing three shots instead of one,
+  your potential for damage is much greater.
+
+       Due to weapon vibration, the accuracy of your weapon will degrade
+  as each of the three shots is fired:
+
+       First shot...: 100% Accuracy
+       Second shot..: 80%  Accuracy
+       Third shot...: 60%  Accuracy
+
+       Even with the reduced accuracy on the second and third shots, the
+  shots are still capable of doing full damage if they hit.
+
+       Conversions may only be performed on Energy Weapons such as the
+  phasers, comp blaster, gravblast, etc. Conversions may not be performed
+  on conventional weapons such as crossbows, pistols, uzis, etc.
+
+       Three round burst conversions may only be performed on long range
+  weapons.
+
+
+USE OF THE CSTATS ROM
+
+       The GS-224 Laptop (available from Sacre Base) can be equipped with
+  a very useful program entitled "CSTATS". CSTATS will display a weapons
+  profile for your short and long range weapons. This profile will display
+  any Accurize or Intensify operations that have been performed, Uni-Ammo
+  conversions, 3 round burst conversions, etc.
+
+       The CSTATS ROM may also be used to display ammo requirements for
+  Uni-Ammo weapons by using the "CSTATS /UNIAMMO" switch.
+
+       Please see your Laptop's HELP command for more information on using
+  CSTATS.
+
+

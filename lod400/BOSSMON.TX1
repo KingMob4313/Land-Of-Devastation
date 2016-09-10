@@ -1,0 +1,396 @@
+;----------------------------------------------------------------------------
+Miscellanious Monsters Start
+;----------------------------------------------------------------------------
+
+NAME Light Cruiser: Aurora
+
+DESC You Sneak into the crashed ship Carefully.  Looking around you think
+DESC maybe you should talk to the computer first.
+
+;Note - This is a special monster. ORIGZ 5 will identify him as the
+;       monster who is guarding the Crashed ship
+
+HITPTS 300
+STR 26
+DEX 76
+AGL 10
+EXP 9000
+MONEY 9000
+
+MINDIST 0
+MAXDIST 255
+
+DISINT 100
+ORIGZ 5
+
+WEAPON1 Plasma Cannon
+WEAPON2 Pulse Cannon
+ARMOR Energy Armor
+INV Power Pack
+INV Power Pack
+INV70 Force Pistol
+INV70 Laser Pistol
+INV70 Force Carbine
+INV70 Laser Carbine
+INV70 Cryo Cutlass
+INV50 Plasma Rifle
+INV50 HMG
+INV50 .40 Pistol
+INV40 Mac 10 SMG
+INV40 M-16
+INV50 12 Gauge Shotgun
+INV40 Laptop
+INV20 Phase Armor
+INV10 Pulse Laser Rifle
+INV10 Composite Vest
+INV10 Adamantium Katana
+
+TYPE 4
+TALKTO 202
+
+KILLHIM You dodge the guns again and smash the console one more time.
+KILLHIM Finally it seems that the system is down.
+;---------------------------------------------------------------------------
+
+NAME Xeboc
+
+DESC "I am Xeboc the Almighty! Xeboc the All-Powerful! Who is it that dares
+DESC intrude upon my lair. I shall destroy you." This guy does _not_ look
+DESC happy. (Unless you are very sure of yourself, I would advise
+DESC surrendering to this guy real quick.)
+
+;Note - This is a special monster. ORIGZ 6 will identify him as the
+;       monster who is in Xeboc's lair.
+
+HITPTS 205
+STR 55
+DEX 55
+AGL 55
+EXP 10000
+MONEY 10000
+
+MINDIST 0
+MAXDIST 255
+
+ORIGZ 6
+
+WEAPON1 Photon Axe
+WEAPON2 Laser Carbine
+ARMOR Energy Armor
+INV Power Pack
+
+TYPE 4
+TALKTO 201
+COMBATPIC XEBOC
+
+KILLHIM "Xeboc the Almighty...... Xeboc the All-Powerful....." His lifeless
+KILLHIM body falls to the ground. "Xeboc the DEAD!" you exclaim as you
+KILLHIM realize your victory against this mighty foe.  Hmm, that was almost
+KILLHIM too easy...
+;---------------------------------------------------------------------------
+
+NAME Tranlius Defender
+
+DESC Tranlius defense droid initializing. Destory human.
+
+;Note - This is a special monster. ORIGZ 7 will identify him as the
+;       monster who is in Tranlius's access chamber.
+
+HITPTS 300
+STR 55
+DEX 55
+AGL 40
+EXP 25000
+MONEY 20000
+
+MINDIST 0
+MAXDIST 255
+
+ORIGZ 7
+
+WEAPON1 Tachyon Sword
+WEAPON2 Force Carbine
+ARMOR Energy Armor
+INV Power Pack
+INV Power Pack
+
+TYPE 4
+COMBATPIC TRANDFNC
+
+KILLHIM You have defeated the mighty defense droid!
+
+FLEETXT You start running and don't stop until you're well out of the Tranlius
+FLEETXT center. If a robot could laugh, the Tranlius Defender would be having
+FLEETXT a good one right now.
+
+FLEERAN You start running and don't stop until you're well out of the Tranlius
+FLEERAN center. If a robot could laugh, the Tranlius defender would be having
+FLEERAN a good one right now.
+;-------------------------------------------------------------------------
+
+NAME Draku Leader
+
+DESC You come face to face with the leader of the infamous Drakus. He pulls
+DESC out a WindowBlaster and sites it on you.
+
+HITPTS 230
+STR 75
+DEX 75
+AGL 75
+EXP 40000
+MONEY 250000
+
+MINDIST 0
+MAXDIST 255
+
+ORIGZ 9
+
+WEAPON1 WidowBlade
+WEAPON2 WidowBlaster
+ARMOR Widow Armor
+INV WidowPack
+INV WidowPack
+INV10 Medkit/30
+INV10 Medkit/100
+INV10 Rations/10
+INV10 Warper
+INV10 ROM: EM-Warp
+
+COMBATPIC DRAKULDR
+
+KILLHIM You wasted the draku leader! The death of their leader will be a
+KILLHIM serious blow to the Draku forces.
+;-------------------------------------------------------------------------
+
+NAME Xeboc
+
+DESC Well human, it seems I have underestimated you. I had figured my minions
+DESC would have been able to take care of you. But it seems that I must see
+DESC to the task myself. I am Xeboc, master of the Cabal race.... Now face
+DESC my wrath..... (He raises an energy weapon that looks as if something
+DESC you would find on a Z-12 battle tank....)
+
+;Note - This is a special monster. ORIGZ 8 will identify him as the
+;       monster who is in Xeboc's base.
+
+HITPTS 411
+STR 125
+DEX 125
+AGL 125
+EXP 80000
+MONEY 500000
+
+MINDIST 0
+MAXDIST 255
+
+ORIGZ 8
+
+WEAPON1 Cabal Axe
+WEAPON2 TerrorBlast
+ARMOR ExoSkeleton
+INV Vitron Cell
+INV ROM: Windows
+INV ROM: History
+INV ROM: EM-Warp
+INV ROM: CommLink
+INV ROM: Tcode
+INV ROM: FortInv
+
+DISINT 0
+
+TYPE 4
+
+KILLHIM Your final blow nearly rips Xeboc in half. "Save me!" he cries, but
+KILLHIM noone is there to listen. "My cabal warriors! Come to my defense!".
+KILLHIM His words are not heard. You prepare to deal the blow of death to
+KILLHIM your mortal enemy, Xeboc. His bloody mutilated body lays before you,
+KILLHIM defenseless. "Now you're time has come, Xeboc. You will trouble the
+KILLHIM planet earth no more..." you say as you raise your weapon. You strike.
+KILLHIM As the metal from your weapon glazes Xeboc's body, his body vanishes!
+KILLHIM Xeboc has escaped! As you prepare to leave the building, a voice
+KILLHIM comes across the speaker: "Mortal, .... You think you can kill me?
+KILLHIM I'll be back.... with a fleet of 30,000 cabal warships!"
+
+FLEETXT Well, Xeboc the almighty, leader of the cabal forces, initiator of the
+FLEETXT great war, invader of earth, etc, etc. seems a bit too tough to handle
+FLEETXT at this moment so you turn around and run. You don't look back until
+FLEETXT you are very far from xeboc's hideout.
+
+;----------------------------------------------------------------------------
+
+NAME Vayderr
+
+DESC "So, ObiWan has sent someone to oppose me. You must know that the Dark
+DESC side is all powerful - you can not win." Vayderr waves his hand... There
+DESC is a brilliant flash followed by a moment of darkness. You notice several
+DESC of your posessions have disappeared! "Hahahaha Human, you are in my
+DESC reality now... Prepare to be DESTROYED!"
+
+NUKEALLBUT LightSaber
+NUKEALLBUT Dreamblaster
+NUKEALLBUT MercArmor
+
+HITPTS 250
+STR 80
+DEX 80
+AGL 80
+EXP 30000
+MONEY 30000
+
+WEAPON1 LightSaber
+WEAPON2 DreamBlaster
+ARMOR MercArmor
+
+ORIGZ 10
+
+DISINT 0
+
+TYPE 4
+
+KILLHIM One final blow disconnects Vayderr's head from the rest of his body.
+KILLHIM There is a great booming voice that echos throughout the room "You
+KILLHIM may have won this battle, Human, but you have not won the war!
+KILLHIM hahahahaha!!!" The darkness clears and you find yourself once again
+KILLHIM outside Vayderr's cave.
+
+;----------------------------------------------------------------------------
+
+NAME IcePick
+
+DESC Who dares enter my lair??? I am IcePick, leader of the Snow Demons. You
+DESC are trespassing in my territory and you will DIE!
+
+HITPTS 200
+STR 60
+DEX 60
+AGL 60
+EXP 12000
+MONEY 11500
+
+ORIGZ 11
+
+DISINT 0
+
+WEAPON1 Frost Sceptre
+WEAPON2 Frost Cannon
+ARMOR Frost Vest
+
+INV WidowPack
+
+TYPE 4
+COMBATPIC icepick
+
+KILLHIM As your last blow melts through IcePick's body, the life instantly
+KILLHIM fades from his eyes. You have defeated IcePick, leader of the Snow
+KILLHIM Demons. This is a great victory for the forces of good...
+
+;----------------------------------------------------------------------------
+
+NAME Sub-Patriarch
+
+DESC 'Let the challenge begin.' says the monitone voice from the speaker as
+DESC a section of wall slides open to reveal a figure in red and black
+DESC robes.  The Sub-Patriarch of Loki floats forward from the shadows.  A
+DESC horror to behold, he has given up most of his humanity for the power
+DESC of mechanical augmentation.  Lights begin to flash on the virtual
+DESC cannon that replaces his right forearm, and you can hear the
+DESC mechanicle grinding that serves as a voice, "Now, follower of order,
+DESC we will see which of our respective philosophies is the stronger."
+
+HITPTS 305
+STR 90
+DEX 90
+AGL 90
+EXP 30000
+MONEY 25000
+
+MINDIST 0
+MAXDIST 255
+
+ORIGZ 12
+
+WEAPON1 A-Mk.II
+WEAPON2 TachyonBlaster
+ARMOR Phase Armor
+INV ROM: LR-Scan
+INV Chaos Medallion
+
+TYPE 4
+COMBATPIC LOKISPTR
+
+KILLHIM Sparks fly across the room as your weapon rips through the belly of
+KILLHIM the Sub-Patriarch.  He slams into the wall, leaking hydrolic fluid
+KILLHIM as his mechanicle joints squeel from the tremendous damage they've
+KILLHIM taken.  He is only able to utter the words "Chaos claims its own"
+KILLHIM before the systems completely fail and the red glow of his visual
+KILLHIM sensors fades.
+
+FLEETXT Unable to face the full capabilities of a the Loki cyborg, you bolt
+FLEETXT from the chamber, almost falling off the cloud in the process.  You
+FLEETXT hear a disapointed sigh from the computer, which transports you
+FLEETXT back to the surface.
+
+;----------------------------------------------------------------------------
+
+NAME Serpine Chief
+
+DESC Seconds after you enter the camp you find yourself surrounded by a
+DESC dozen heavily armed Serpine.  They stare at you with emotionless
+DESC reptilian eyes, and you get the distinct impression you aren't
+DESC welcome.  Suddenly they part to reveal a huge, green, hissing form.
+DESC The Serpine Chief's weary eyes are hazy and glossed, its scales dull
+DESC in both color and form. But apparent age is contradicted by smooth,
+DESC swift motion.  It regards you with a scholarly look as its translator
+DESC activates: "Sso human. You have at lasst come to keel me." It speaks
+DESC deliberately to decrease the effect of its sibilant hissing. "But
+DESC perhaps first we talk?"  He leads you into a small hide tent.  It is
+DESC filled with trophies of battle, ancient human artworks long thought
+DESC destroyed, and in the corner the Puritron Rad Converter hums softly as
+DESC it fills a weapon clip with energy.  The Chief observes your surprise
+DESC with satisfaction.
+
+HITPTS 320
+STR 85
+DEX 90
+AGL 80
+EXP 30000
+MONEY 200000
+
+MINDIST 0
+MAXDIST 255
+
+ORIGZ 13
+
+WEAPON1 A-Mk.II
+WEAPON2 TachyonBlaster
+ARMOR Phase Armor
+INV Vortex Cell
+INV Medkit/100
+INV Rations/10
+INV EnviroBlur
+INV ROM: LR-Scan
+INV Uni-Translator
+INV50 Warper
+INV25 ROM: CommLink
+INV25 ROM: Diet
+INV10 ROM: EM-Warp
+
+TALKTO 207
+TYPE 4
+COMBATPIC SERPNCHF
+
+KILLHIM The serpine chief falls gurgling against the Rad Converter and
+KILLHIM speaks, near incoherent from pain, "Make lannd fit for both
+KILLHIM sspeccies, sso peacce betweeen mmaybe occurss. Taake art too, lesst
+KILLHIM ssuccessorss desstroy. If could only have given iit alll to you in
+KILLHIM peacce, without loosst honor..." He collapses in pain, but rises
+KILLHIM pointing to the gathering pool on the floor "Lasst......Sserpiine
+KILLHIM cosstum. Pleesse. Take mee with yoou..." His eyes let you at once
+KILLHIM understand. Lifting his blood from the floor with cupped hands, you
+KILLHIM drink the sweet liquid and watch the Serpine nod and die content;
+KILLHIM Wherever your hunt leads, he will always be a part of it.
+
+FLEETXT You turn and shoot out of the tent, racing past the Serpines
+FLEETXT gathered outside, into the wasteland.  Eventually you get to safety
+FLEETXT and begin to wonder: He seemed so fast, how could you have escaped
+FLEETXT unless...unless...He let you.

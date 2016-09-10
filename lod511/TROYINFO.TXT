@@ -1,0 +1,136 @@
+
+Well, you brought me my steaks, so here's the information I promised:
+----------------------------------------------------------------------------
+
+Wastelands information file.
+Compiled by Troy Hadley with help from Defs Sacre. July 19, 2014.
+
+Towns:
+
+  #1: Sacre Base. Located at 7, 5.
+
+     I'm sure this one isn't news to you. It's our home camp. Both myself
+  and Defs Sacre hang out in the tavern so you may find us there.
+
+  #2: Freedom City. Located at 53, 6.
+
+     A guy named Eastwood runs this place. To my knowledge, it's the only
+  other free city left in the wasteland.
+
+  #3: Death Warrior Camp. Located at 43, 58.
+
+     Them nasty death warriors. Their camp is south on the main highway.
+  There are nuke strikes all around it - you can't miss it. Be careful of
+  them death warriors though. The won't be friendly.
+
+  #4: Black Widow Headquarters. Specific location unknown.
+
+     Rumored to be located in deadwood forest, surrounded by the dark
+  mountains. See below.
+
+Fountains:
+
+     A series of fountains were constructed by ACME Fountains & Ponds, Inc.
+  These fountains all have certain chemical properties. For example, the
+  fountain in the center of Sacre Base will nullify ones hunger.
+
+     Two fountains lie behind sealed doors within Sacre Base. Nobody around
+  here can remember what happened to the keys to these doors. It's rather
+  embarrassing. Any attempts to breach the Sacre Base security walls and
+  reach the sealed fountain rooms has failed.
+
+Pylons:
+
+     We don't know much about the pylons. They're some sort of transportation
+  device -- that much is certain. Pylons come in two varieties: Red and
+  Green. Different keys are used to access the different colored pylons.
+
+     Rumor has it that the pylons are controlled by a series of colored
+  buttons. There is a supposedly a laptop program to determine these color
+  mappings, but as of yet, we have no copy of this laptop ROM.
+
+     Two pylons (one green and one red) may be found close to Sacre Base.
+  Follow the main highway east and then take the first branch to the
+  north.
+
+Subway:
+
+     A subway has been constructed between Sacre base and the neighboring
+  village of Freedom City. Unfortunately, the mayor there was obsessed
+  with charging for Subway access and a subway pass is required to access
+  the subway. The mayor of freedom city has yet to supply us with any of
+  the required passes. You may be able to locate some source of them in
+  Freedom City.
+
+Places of interest:
+
+  Deadwood Forest.
+
+     This place is the home of the dreaded black widows. It's true location
+  is not known, but both the BW Pylon and the BW headquarters are located
+  here. It's rumored to be in the dark mountains, in the south-central
+  portion of the map.
+
+  Quasar Mountain
+
+     Located somewhere to the right of deadwood forest. Rumor is there is
+  no way to get into the place except traveling through the pylons.
+  Supposed to be many pylon's there, but I've never had the chance to see
+  it.
+
+  Crashed Ship
+
+     Rumored that some kind of space craft crashed here. Don't know where it
+  is, but the logical assumption is that the crash would have left a large
+  radioactive scar on the landscape. Look for large concentrations of
+  radiation.
+
+  EEEE
+
+     Ed's Exquisite Equipment Emporium. A nice place to buy some rather
+  high-tech weapons. I can't tell you where it's located, but if you
+  explore enough, you should be able to locate it.
+
+  Hospital
+
+     Persistant Rumors of some recruits being carted off to a hospital 
+   after being mortally wounded and left for dead, especially after
+   fighting any of the gang known as Ronin.
+
+Major Groups:
+
+  Death Warriors: The Death Warriors are a band of anarchistic raiders.
+     They'll attack anyone, and for damn little reason. They do have a rather
+     sizable headquarters located southeast of Sacre Base.
+
+  Black Widows: These fierce female warriors should be handled with caution.
+     Many of our recruits have ventured into their territory never to be
+     heard from again....
+
+  Drakus: The Drakus are highly technological. They may be the source for
+     some of the technology available at EEEE and other high-tech weapons
+     outlets.
+
+  Priesthood of Loki: All attempts to contact the priesthood of Loki have
+     failed. The priests will invariably attack anyone within their
+     range.
+
+  Ronin:  A mystery really.  Some say they appeared with the crashed ship.
+          They are tough though and they wander everywhere.
+
+Weapons:
+
+  Defs Sacre and I have come across a few unusual items:
+
+  -> Black widow weapons, armor, and ammo. The black widows have some
+     interesting weapons. They appear to be some new technology. Finding
+     ammo for them is quite difficult.
+
+  -> Slicer dicer and Torpex cannon. Rumored to be possessed by some robot
+     being. Weapon operation unknown - appear to not require ammo.
+
+  -> Warper. Rumored to have the power to teleport persons. Also appears
+     that there is a "Em-Warp" rom out there somewhere that will
+     automatically activate a warper if/when in danger.
+
+

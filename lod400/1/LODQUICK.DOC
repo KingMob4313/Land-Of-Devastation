@@ -1,0 +1,71 @@
+             Land Of Devastation Quick Description
+
+       Land Of Devastation is a bbs door game in which players
+compete to save the remains of a world devastated by Nuclear
+War by assembling a air-purifying "Puritron" Device.
+
+       To make a long story short, this device was stolen,
+disassembled, and now rests in the hands of several bad guys
+who the player must locate and defeat. These bad guys as well
+as the players are located in a "wasteland" of nuclear decay.
+
+       The wasteland is similar to your typical role playing
+environment. It's a large map with multiple cities and special
+locations the player may investigate, mountain ranges to
+navigate around, high radiation zones to avoid, etc. It is also
+populated by a large array of monsters which the player must
+deal with.
+
+       A wide selection of objects may be purchased in the
+cities or acquired in the wasteland to aid the user in his quest.
+From exotic weapons and armor to the unique "laptop" computer to
+destructive mines, there are over 150 different objects which
+the user may encounter. Each one with it's own properties.
+
+       Various monsters and an array of friendly NPCs may also
+be talked to in the interactive communication mode. The player
+can probe the monster for information which he may need. Some
+friendly NPCs will also inform the player of "special quests"
+which he may attempt to accomplish for additional experience
+and special items.
+
+       To create a bit of friendly (or unfriendly!) competition,
+players may battle other players who they locate camped out
+in the wasteland. Players may form into teams to aid them in their
+quest for the puritron. Fortresses may be constructed to provide
+trading capabilities as well as protection.
+
+       LOD supports three forms of graphics. For the non-IBM
+or low speed users, there is a straight-ASCII display. For the
+IBM users, a full enhanced ANSI map display is available. And
+finally, with the use of the optional GTERM graphics terminal, IBM
+players may see the entire world in EGA graphics! All of the
+inventory items as well as the map will now show up as graphical
+pictures! Once a player has tried GTERM, he won't ever go
+back!
+
+       If the sysop has EGA or greater graphics capability, then
+he may also use the special EGA version of LOD to watch his
+players in EGA regardless of what mode the players are using!
+
+       One of LOD's strong advantages is it's customization
+capabilities. Included is a full editor program which will let you
+create new weapons, armor, and other devices. You can modify
+the game's parameters to make it easier or harder. You can edit
+the wasteland map to add new locations or new obstacles. You can
+create your own monsters as well as modify any existing monster.
+You can change the dialog that monsters/characters use in the
+interactive communication mode. With LOD's configurable string
+definition file, you can edit almost every text message or
+prompt used in the game!
+
+       Well, that's about all the room I have here for this
+message. The first LOD distribution archive (LODxxxA.ARJ) includes
+the full sysop and player docs which should explain any additional
+things you may be curious about.
+
+       [File request / download / update information will follow
+in another message]
+
+Scott Baker, Author of Land Of Devastation
+

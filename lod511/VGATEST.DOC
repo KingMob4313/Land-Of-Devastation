@@ -1,0 +1,174 @@
+VGATEST: Utility for testing LOD's VGA support on your hardware
+(c) Scott M. Baker, 1995
+
+Description
+-----------
+
+LOD versions 4.20 and above include support for SVGA graphics, in the
+modes 800x600x256 and 640x480x256. This program is designed specifically
+to test the operation of the 800x600x256 mode.
+
+VGATEST should be operated from within your LOD directory because it makes
+use of several of LOD's files including FONT8x8.FNT, FONT8x12.FNT,
+LODVGA.PAL, BMPSTD.RES, and BMPBIG.RES.
+
+Command Line Parameters
+-----------------------
+
+  /NOACCEL  ... disable S3 accelerator checking & tests
+
+  /DUMPVESA ... dump VESA data to VESA.TXT
+
+  /NOVESA   ... skip VESA check and autodetect actual card
+
+Benchmarks/tests
+----------------
+
+The tests in VGATEST's benchmark section are listed below in order of
+occurrence:
+
+[compatibility tests. These are automatic tests used by VGATEST to ensure
+ that certain portions are working correctly. They are only executed once
+ and probably occur too fast to be seen]
+
+  - S3 test. If your video card has an S3 coprocessor, then VGATEST will
+    tell the S3 to draw a horizonatal line at coordinates (0,0) and check
+    to make sure the S3 did what it was supposed to. This test happens
+    very quickly and you probably won't notice it.
+
+  - Flipper test. The flipper test will draw approximately 10 rectangles
+    along the left hand side of the screen. VGATEST will use this to
+    determine if the page flipper is working properly. This test executes
+    very fast and has only one iteration, so you probably won't even
+    see it.
+
+[multiple iteration tests. These tests are executed repeatedly for a total
+ of 5 seconds per test. The number of iterations that occurred during the
+ 5 second interval is recorded and used as a benchmark]
+
+  - Cleardevice test. The entire screen is repeatedly cleared to a random
+    color.
+
+  - Fillrect test. Random filled rectangles are drawn.
+
+  - Horizontal line test. Horizontal lines are drawn in random colors.
+
+  - Vertical line test. Vertical lines are drawn in random colors.
+
+  - Terrain bitmap test. Small (51x31) terrain bitmaps are drawn randomly
+    in the top of the screen.
+
+  - Bigpic bitmap test. Large (181x121) bigpic bitmaps are drawn randomly
+    in the top of the screen.
+
+  - 8x8 font test. An 80x25 text window is defined in the middle of the
+    screen and text is written and scrolled through it. The message
+    should read:
+      "Screen scrolling simulation. ****** TESTING ****** TESTING ******"
+
+  - 8x12 font test. Same as the 8x8 test, but with a larger font.
+
+  - 8x14 font test.
+
+
+Warning Messages
+----------------
+
+ - "WARNING: S3 coprocessor test FAILED. Perhaps no S3 is present?"
+
+    VGATEST detected an S3 coprocessor, however when VGATEST tried to use
+    it, the coprocessor didn't work. Either VGATEST was wrong and you never
+    had one to start with, or some incompatibility is present.
+
+    You should probably use the /NOACCEL switch when using LOD and/or GTERM.
+
+
+ - "WARNING: VESA flipper had to be forced to int mode!"
+
+    VGATEST had to switch the VESA flipper to interrupt mode to get pages
+    to flip. VBE supports two methods of switching pages: By use of a far
+    call and by an interrupt instruction. The far call is more efficient,
+    but not all VBE adapters work properly with it. Thus, using the interrupt
+    mode flipper may be necessary for compatibility reasons.
+
+    You will need to use the /FORCEINT switch when using LOD and/or GTERM.
+
+
+ - "WARNING: VESA flipper had to be forced to dual mode!"
+
+    VGATEST had to switch the VESA flipper to dual mode to get pages to
+    flip. The VBE standard supports up to two "windows" into video memory.
+    Some VBE adapters designate one window as read and one as write. In this
+    case, both windows may need to be moved to perform the desired graphics
+    operations.
+
+    You will need to use the /FORCEDUAL switch when using LOD and/or GTERM.
+
+
+VGATEST revision history
+------------------------
+
+5/16/1995
+
+  - S3 coprocessor code added. Tested on Diamond Stealth 64 & Stealth ISA
+
+  - OAK support added. Untested.
+
+  - Support for dual window VBE adapters added. Dual window is selected if
+    (WinAAttr and 7)!=7. (i.e. WinA is not supported, not readable, or
+    not writable)
+
+  - VGATest will detect page flipper failure.
+
+  - If Page Flipper Failure occurs on a VBE system, then VGATest will
+    attempt Dual and Int mode VBE flippers.
+
+  - Removed a confusing and possibly erroneous function call.
+
+  - Modified TSENG flippers to flip both windows.
+
+  - Modified benchmarks to run for a specified amount of time (5 seconds)
+    rather than a specified number of iterations.
+
+  - Fixed support for VBE adapters which use 1024 bytes/line in 800x600
+    mode (incl. Diamond Stealth ISA)
+
+5/22/1995
+
+  - Added error checking to exit gracefully if fonts or palette cannot be
+    loaded
+
+  - Tests 8x12 font and 8x14 font in addition to 8x8 font
+
+  - Correct palette (LODVGA.PAL) file is now loaded
+
+  - Documentation update
+
+7/11/1995
+
+  - Added /DUMPVESA switch to dump vesa information to VESA.TXT. We're
+    still having problems with vesa page flipping on some systems. I'm
+    hoping this will fix it.
+
+7/12/1995
+
+  - Added /NOVESA switch to skip VESA check and try to autodetect the
+    actual card.
+
+  - Added support for cirrus 54xx and cirrus 64xx.
+
+  - "Autodetection success!" is no longer reported when autodetection
+    fails! :)
+
+  - Fixed problem with improper video mode (i.e. not 800x600) being
+    selected.
+
+7/16/1995
+
+  - I was not taking the VESA Granularity into account when doing bank
+    switches. This has been fixed, and hopefully support is fixed with
+    cards that use a granularity not equal to 64.
+
+
+
+

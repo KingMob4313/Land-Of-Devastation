@@ -1,0 +1,14 @@
+#
+# This is a sample trivia file that could be processed by TRIVCOMP.EXE. If
+# you create any trivia questions of your own, then you must use this
+# format.
+#
+# (Note, TRIVCOMP will only compile a file named "TRIVIA.TXT")
+#
+What is the red planet?                                    Mars
+What US state doesn't have borders?                        Hawaii
+How many fingers are used to draw a bow?                   Three
+How many zeros are there in a billion?                     Nine
+What is the largest satellite orbiting earth?              The Moon
+What is the capitol of East Germany?                       East Berlin
+How many engines does a Boeing 737 have?                   Two

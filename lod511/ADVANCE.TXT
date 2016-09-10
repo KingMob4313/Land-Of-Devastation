@@ -1,0 +1,31 @@
+This file is for informational purposes only. To alter the advancement
+settings, use the advancement editor in CUSTOM.EXE.
+Advancement Table: (Generated using values in Advancement Setup)
+
+Level          Experience
+-----          ----------
+  1                     0
+  2                  1125
+  3                  1969
+  4                  3445
+  5                  6029
+  6                 10551
+  7                 18465
+  8                 32313
+  9                 56548
+ 10                 98959
+ 11                197918
+ 12                296877
+ 13                395836
+ 14                494795
+ 15                593754
+ 16                692713
+ 17                791672
+ 18                890631
+ 19                989590
+ 20               1088549
+ 21               1187508
+ 22               1286467
+ 23               1385426
+ 24               1484385
+ 25               1583344

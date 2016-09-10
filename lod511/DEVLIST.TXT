@@ -1,0 +1,907 @@
+This is just a text listing of devices. You MAY NOT edit this text file.
+Changes made to this file will NOT take effect. You may only edit devices
+using the device editor option in CUSTOM.EXE.
+
+Num Name              Cost       App Variable-1 Variable-2 Var-3            U ANSI     EGA MaxUse U-Left DU Store(s)
+--- ----------------- ---------- --- ---------- ---------- ---------------- - -------- --- ------ ------ -- ----------------
+  1 Battery                   10   8          3          5                  N          151      0      0 N 
+  2 Crossbow bolts            50   8          1         20                  N BOLTS     31      0      0 N  4
+  3 Arrows                    50   8          2         20                  N            0      0      0 N  4
+  4 Power Pack               250   8          3         70                  N PPACK     23      0      0 N  4 17 18 19 28
+  5 GravPack               10000   8          4         70                  N GRAVPACK  54      0      0 N  4 28
+  6 PlasmaPack             15000   8          5         80                  N PLASPACK  51      0      0 N  4 28
+  7 Power Belt              5000   8          3        300                  N BELT      57      0      0 N  4 28
+  8 WidowPack              20000   8          6        120                  N WPACK     34      0      0 N  19
+  9 Neutron Pack           25000   8          7        160                  N NPACK     56      0      0 N  4 28
+ 10 Trivex Pack           125000   8          8         75                  N TPACK     92      0      0 N  16
+ 11 Nuke Shell            200000   8          9         30                  N NSHELL    94      0      0 N  16
+ 12 DreamStuff            250000   8         11         35                  N            0      0      0 N 
+ 13 FortShell            1500000   8         10          1                  N          107      0      0 N  30
+ 14 Apron                     10   4          0          5                  N APRON     65      8      8 N 
+ 15 Cheerldr Suit            200   4          0          5                  N CHEERLDR  26     10     10 N 
+ 16 Clothing                  10   4          0          5                  N            0     10     10 N  2
+ 17 Leather Jacket           100   4          0         10                  N            0     30     30 N 
+ 18 Leather Suit             200   4          0         17                  N            0     50     50 N  2
+ 19 Chain Mail               400   4          0         24                  N            0     75     75 N  2 17
+ 20 Kevlar Vest              750   4          0         28                  N KEVLAR     0    200    200 N  2 17 24
+ 21 PlasmaVest            100000   4          1         54                  N PVEST     46    600    600 N  18 19 24
+ 22 Energy Armor          250000   4          1         58                  N ENARMR    47   1300   1300 N  18 19 24
+ 23 Widow Armor           350000   4          1         65                  N WARMR     48   2000   2000 N  19
+ 24 Frost Vest            350000   4          1         65                  N          104   2250   2250 N 
+ 25 DreamArmor           1500000   4          1         70                  N DREAMARM  71   2500   2500 N 
+ 26 Phase Armor          2500000   4          1         75                  N PHASEARM  97   3000   3000 N  16 24
+ 27 Quantum Field        7500000   4          1         80                  N QFIELD   135   4000   4000 N 
+ 28 Iron Plating           20000  15          0         50                  N IPLATING  37    175    175 N 
+ 29 Steel Plating          50000  15          0         60                  N SPLATING  45    250    250 N 
+ 30 Thick Weeds           100000  15          0         60                  N            0    250    250 N 
+ 31 Home-made Raft         25000  35          0          0                  Y          157      0      0 N 
+ 32 MiniRaft               50000  35      72035          0                  Y MRAFT     82      0      0 N  3 17 18
+ 33 Boat Plans                 0  53          0          0                  Y          154      0      0 N 
+ 34 Love Potion #9             0  45          0          0                  Y          169      1      1 N 
+ 35 AGL Bonus +35              0  45          0          0                  Y          186      1      1 N 
+ 36 Dex Maximizer              0  45          0          0                  Y          188      1      1 N 
+ 37 Herculean Strengt          0  45          0          0                  Y          190      1      1 N 
+ 38 Hormone Supplimen       1500  45         11          0                  Y          191      1      1 N  34
+ 39 Str Inhibitor           5000  45          6         16                  Y          169      1      1 N  34
+ 40 Dex Inhibitor           5000  45          7         16                  Y          186      1      1 N  34
+ 41 Agl Inhibitor           5000  45          8         16                  Y          188      1      1 N  34
+ 42 Neural Inhibitor       25000  45         10         10                  Y          190      1      1 N  34
+ 43 Strength Enhancer     100000  45          1          8                  Y          191      1      1 N  34
+ 44 Dexterity Enhance     100000  45          2          8                  Y          169      1      1 N  34
+ 45 Agility Enhancer      100000  45          3          8                  Y          186      1      1 N  34
+ 46 Money Bag                  0  52          0          0                  Y          159      0      0 N 
+ 47 Chest                      0  52          0         35                  Y          120      0      0 N 
+ 48 Cryo-Unit             250000  37          0          0                  Y          113      0      0 N  22
+ 49 Cyclops Eye              500  17          0          0                  N CYCEYE    39      0      0 N 
+ 50 Death Badge             5000  18          0          0                  N Dbadge    38      0      0 N 
+ 51 DNA Container           2500  51          0          0                  Y          148      0      0 N  25
+ 52 Flashbomb                750  41       5020          0                  N          145     10     10 N  3
+ 53 Loki Summoner              0  40          5          0                  Y          125      0      0 N 
+ 54 Worthless Junk             5  40          4          0                  Y          123      0      0 N 
+ 55 Technical Tools         2000  40          3          0                  Y          128      0      0 N 
+ 56 MedGen                     0  40        254          0                  Y            0      0      0 N 
+ 57 Test-O-Matic               0  40        253          0                  Y            0      0      0 N 
+ 58 Replicator                 0  40        255          0                  Y            0      0      0 N 
+ 59 Sonic Whistle              0  40          6          0                  Y          132      0      0 N 
+ 60 FCUCC Book                25  40          7          0                  Y          105      0      0 N 
+ 61 Chaos Medallion          100  40          1          0                  Y          106      0      0 N 
+ 62 Ghetto Blaster           250  40          2          0                  Y GBLASTER  11      0      0 N 
+ 63 Communicator            1000  40          0          0                  Y COMMUN    49      0      0 N 
+ 64 Grenade Pack           20000  16      15030          0                  N GRENADE   13     25     25 N  11 17 18
+ 65 HyperVault           1000000  43          0          0                  Y          146      0      0 N  16
+ 66 Key Ring                5000  49          0          0                  Y          153      0      0 N  17
+ 67 Chem Labeller         250000  46          0          0                  Y            0      0      0 N  25
+ 68 Laptop                  5000  26          0          0                  Y LAPTOP    50      0      0 N  10
+ 69 LR Scan                32000   7          0          0                  Y LRSCAN     2      0      0 N  3
+ 70 Sacre Map                100  39    2010011          0                  Y SACREMAP 101      0      0 N  3
+ 71 Mapper               6000000  36          0          0                  Y          118      0      0 N  25
+ 72 MedKit                   100   1          0          0                  Y MEDKIT10  17     20     20 Y  3 29
+ 73 MedKit                   150   1          0          0                  Y MEDKIT15  17     30     30 Y  3 29
+ 74 MedKit                   250   1          0          0                  Y MEDKIT25  17     50     50 Y  3 17 18 19 22 24 29
+ 75 MedKit                   500   1          0          0                  Y MEDKIT50  17    100    100 Y  3 17 18 19 22 24 29
+ 76 Std Medline            15000   9          1          0                  N STDMED   100      0      0 N  2
+ 77 Adv Medline            50000   9          5          0                  N ADVMED    99      0      0 N  2
+ 78 Zilpox Medline        130000   9         15          0                  N ZILMED    90      0      0 N  16
+ 79 Stilzi Medline        290000   9         25          0                  N STIMED    91      0      0 N  16
+ 80 Dumb Mine              75000  34       1040          0                  Y DMINE     79      1      1 N  16
+ 81 Smart Mine            200000  34       1040          0                1 Y SMINE     80      1      1 N  16
+ 82 Day Ruiner            750000  34      10045          0                  Y DRMINE    83      5      5 N  25
+ 83 MegaMine             2000000  34      35070          0                1 Y MMINE     84      5      5 N  25
+ 84 MicroNuke            5000000  34      70150          0                1 Y NMINE     87      2      2 N  25
+ 85 Draku Mine           7000000  34  700005010          0                B Y            0      1      1 N 
+ 86 TeleMine             8000000  34      20035          0                5 Y TMINE     85      5      5 N  25
+ 87 Zapper Mine          8000000  34      20035          0                3 Y ZMINE     88      5      5 N  25
+ 88 Protector           15000000  34      20035          0                7 Y PMINE     81      5      5 N  25
+ 89 Robomine 2           2000000  34  100005010          0                9 Y            0      1      1 N  25
+ 90 Robomine 3           4000000  34  200005010          0                9 Y            0      1      1 N  25
+ 91 Robomine 4           7000000  34  300005010          0                9 Y            0      1      1 N  25
+ 92 Robomine 5          11000000  34  400005010          0                9 Y            0      1      1 N  25
+ 93 Robomine 6          16000000  34  500005010          0                9 Y            0      1      1 N  25
+ 94 Xeboc Mine          22000000  34  800020035          0                B Y            0      1      1 N 
+ 95 Guardian            22000000  34  600020035          0                B Y            0      1      1 N  25
+ 96 Casino Key               100  31          0          0                  N STDKEY_6 160      0      0 N 
+ 97 Silo Key                 100  31          0          0                  N STDKEY_2 160      0      0 N 
+ 98 Kill Key                 100  31          0          0                  N STDKEY_1 160      0      0 N 
+ 99 Fountain Key            1000  31          0          0                  N STDKEY_3 160      0      0 N 
+100 Bloodring               5000  31          0          0                  N PKEY     136      0      0 N 
+101 Green Keycard           5000  31          0          0                  N PKEY     134      0      0 N 
+102 Red Keycard             5000  31          0          0                  N PKEY     133      0      0 N  17
+103 Animal Hide               25   4         11          0                  N            0    100    100 N 
+104 Subway Pass             5000  31          0          0                  N          152      0      0 N  17
+105 DW Bypass Key         250000  31          0          0                  N STDKEY_4 160      0      0 N  18
+106 Hercules Key         1000000  31          0          0                  N STDKEY_5 160      0      0 N 
+107 Radio                   1000   0          0          0                  Y RADIO     15      0      0 N  3
+108 Radiation Blast            0   3      28061          0               40 N            0      0      0 N 
+109 SlingShot                500   3       4007          0          FC00000 N SLING     43      0      0 N 
+110 Stun Gun                 200   3    3001004          0          FC03A40 N          150      0      0 N 
+111 Crossbow                2100   3    1006009          0          FC00000 N CROSSBOW  30      0      0 N  11
+112 (unused)                   1  10          0          0                  N            0      0      0 N 
+113 Force Pistol          200000   3    3020038          0          1400000 N            0      0      0 N  17
+114 Laser Pistol          250000   3    3024042          0          1400000 N            0      0      0 N  17
+115 Force Carbine         300000   3    3026046          0           400000 N            0      0      0 N  17
+116 Laser Carbine         350000   3    3029050          0           200000 N            0      0      0 N  17
+117 Medkit                    40   1          0          0                  N            0     10     10 N 
+118 (unused)                   0  10          0          0          FC00080 N            0      0      0 N 
+119 Torpx Cannon          550000   3      22050          0          FC00000 N TORPX     40      0      0 N  18
+120 GravBlast             600000   3    4036052          0                  N GRAVBLST   1      0      0 N  11
+121 (unused)                   0  10          0          0          FC00080 N            0      0      0 N 
+122 Sniper Laser         5000000   3    3026092          0          9400007 N SNPPHAS  111      0      0 N  31
+123 Plasma Ripper        5500000   3    5024046          0               80 N RIPPHAS  110      0      0 N  31
+124 Plasma Rifle         1500000   3    5023055          0          9000000 N PBLAST    24      0      0 N  11
+125 (unused)                   0  10          0          0          FC00480 N            0      0      0 N 
+126 Frost Cannon         2000000   3      45064          0                  N          115      0      0 N 
+127 WidowBlaster         2000000   3    6020058          0          9000000 N WBLAST    44      0      0 N  19
+128 Combat Phaser        2500000   3    3016022          0              1C0 N CMBTPHAS 121      0      0 N  31
+129 Neutron Rifle        2500000   3    7042062          0          9000000 N NEUTRIF   69      0      0 N  11
+130 Pulse Rifle          5000000   3    8023038          0          1000080 N PRIFLE    86      0      0 N  16
+131 Pulse Bazooka        7500000   3    8035042          0               80 N PBAZOO    89      0      0 N  16
+132 Xenon's Surprise    10000000   3    8060090          0          9000000 N XENON    119      0      0 N  16
+133 Devastator          10000000   3    3016042          0              3C0 N          139      0      0 N  31
+134 Stone Bow           10000000   3   11037100          0              240 N          161      0      0 N 
+135 Nuke-O-Matic        15000000   3    9027052          0              280 N NUKEO    103      0      0 N  16
+136 DreamBlaster        20000000   3   11055105          0          FC00000 N DREAMBLA 114      0      0 N 
+137 TachyonBlaster      20000000   3    7070115          0                  N TACHBLAS  93      0      0 N 
+138 FortSlayer MK1      30000000   3   10160240          0                  N          108      0      0 N  30
+139 FortSlayer Deluxe   60000000   3   10150330          0                  N          109      0      0 N  30
+140 SLM-9000 PulseRay  100000000   3      40070          0               83 N SLM9000  126      0      0 N 
+141 TerrorBlast        250000000   3      50110          0               83 N TERBLAST  98      0      0 N 
+142 Soda                       2  11          0          0                  Y          127      1      1 Y 
+143 McDonwald's Meal         250  11          0          0                  Y          144      8      8 Y 
+144 Rations                  200  11          0          0                  Y RATION5   18      5      5 Y  3 17 18 19
+145 Rations                  350  11          0          0                  Y RATION10  18     10     10 Y  3
+146 Kelp Rations            3000  11          1          0                  Y          124     25     25 Y 
+147 GSRZ Rations            2000  11          0          0                  Y GRATN25   68     25     25 Y  14
+148 Rations                  700  11          0          0                  Y RATION20  18     20     20 Y  3 24
+149 GSRZ Rations            4000  11          0          0                  Y GRATN50   68     50     50 Y  14
+150 Dunk-N-Donuts          25000  11          0          0                  Y          180     50     50 Y 
+151 Recharger             250000  30          0          0                  Y RECHRGE   66   1000   1000 N  3
+152 UltraCharger         1250000  30          0          0                  Y          129   7000   7000 N 
+153 ROM: Commlink              0  27          0          0             2000 N ROMDISK   53      0      0 N 
+154 ROM: TroyInfo              0  27          0          0             1000 N ROMDISK   53      0      0 N  13
+155 ROM: Weapsmith           250  27          0          0           400000 N ROMDISK   53      0      0 N  32
+156 ROM: Rankings            750  27          0          0               10 N ROMDISK   53      0      0 N  10
+157 ROM: ViewLog             750  27          0          0               20 N ROMDISK   53      0      0 N  10
+158 ROM: C-Stats            1000  27          0          0              200 N ROMDISK   53      0      0 N  10
+159 ROM: FortList           1500  27          0          0               80 N ROMDISK   53      0      0 N  10
+160 ROM: Appraise           1500  27          0          0             8000 N ROMDISK   53      0      0 N  10
+161 ROM: Macro              2500  27          0          0         20000000 N ROMDISK   53      0      0 N  10
+162 ROM: Diet               5000  27          0          0              100 N ROMDISK   53      0      0 N  10
+163 ROM: Tetris             5000  27          0          0             4000 N ROMDISK   53      0      0 N 
+164 ROM: Bartalk            5000  27          0          0           100000 N ROMDISK   53      0      0 N 
+165 ROM: Notes              5000  27          0          0                2 N ROMDISK   53      0      0 N  10
+166 ROM: Windows            5000  27          0          0            40000 N ROMDISK   53      0      0 N 
+167 ROM: Fortinv            5000  27          0          0            80000 N ROMDISK   53      0      0 N 
+168 ROM: History            5000  27          0          0            20000 N ROMDISK   53      0      0 N 
+169 ROM: SPWeap            15000  27          0          0           200000 N ROMDISK   53      0      0 N 
+170 ROM: FortSpy           25000  27          0          0          8000000 N ROMDISK   53      0      0 N  18
+171 ROM: AutoNav           25000  27          0          0                4 N ROMDISK   53      0      0 N  10
+172 ROM: TCode             25000  27          0          0            10000 N ROMDISK   53      0      0 N 
+173 ROM: Samlist           25000  27          0          0           800000 N ROMDISK   53      0      0 N  18
+174 ROM: Transfer          55000  27          0          0                8 N ROMDISK   53      0      0 N  10
+175 ROM: Em-Warp           60000  27          0          0               40 N ROMDISK   53      0      0 N 
+176 ROM: Scanner           75000  27          0          0              800 N ROMDISK   53      0      0 N  10
+177 ROM: LR-Scan           75000  27          0          0              400 N ROMDISK   53      0      0 N  10
+178 ROM: Ping             250000  27          0          0          2000000 N ROMDISK   53      0      0 N  23
+179 ROM: SlotHack         250000  27          0          0          1000000 N ROMDISK   53      0      0 N 
+180 ROM: MineScan         250000  27          0          0         10000000 N ROMDISK   53      0      0 N  23
+181 ROM: AntiPing        2500000  27          0          0          4000000 N ROMDISK   53      0      0 N  23
+182 Rope                     250  10          0          0                  Y ROPE      14      0      0 N 
+183 SamLink                25000  50          0          0                  Y          176      5      5 N 
+184 Scanner                25000  12          0          0                  Y SCANNER   25      0      0 N  3 17
+185 Pom-Pom                   75  47          0         35                  N          149     15     15 N 
+186 Polycarb Shield          500  47          0          5                  N          143     50     50 N  2
+187 Steel Shield            2500  47          0          8                  N          142    100    100 N  2
+188 Plasma Shield          10000  47          0         12                  N          141    200    200 N  2
+189 Cabal Shield           25000  47          0         20                  N          147    500    500 N 
+190 Stone Shield           75000  47          0         25                  N          179    750    750 N 
+191 Stealth Field           2000  13          0         50                  Y STEALTH    8      0      0 N  3 17
+192 EnviroBlur             60000  13          0         70                  Y EVLUR     95      0      0 N 
+193 UltraCloak            350000  13          0         80                  Y          130      0      0 N 
+194 Spectral              250000  44          0          0                  Y          137      0      0 N  16
+195 Troy's Steaks              0  28          0          0                  N STEAK     58      0      0 N  12
+196 B.A.D. Device              0  28          0          0                  N BAD       55      0      0 N 
+197 Uni-Translator         50000  33          0          0                  Y UTRAN     75      0      0 N 
+198 User Manual              100  48          0          0                  Y          105      0      0 N 
+199 Vortex Cell           150000  32         50       2000                  Y VORTCELL  76      0      0 N  16
+200 Kralox Cell           300000  32         75       2500                  Y KRALCELL  78      1      0 N  16
+201 Vitron Cell           800000  32         90       3000                  Y VITRCELL  77      2      0 N  16
+202 Warper                100000  19          0          0                  Y WARPER    36      5      5 Y 
+203 UltraWarper          1000000  19          0          0                  Y          131     25     25 Y 
+204 Waypoint mgr         1000000  42          0          0                  Y          138      0      0 N  16
+205 Sticks                   250   2       2005          0          FC00000 N          155      0      0 N 
+206 Rolling Pin              350   2       1003          0          FC00000 N RPIN      64      0      0 N 
+207 (unused)                   0  10          0          0          FC00000 N            0      0      0 N  0
+208 Ice Pick                 500   2       2005          0          FC00000 N          158      0      0 N 
+209 (Unused)                   0  10          0          0          FC00000 N            0      0      0 N  0
+210 (unused)                   0  10          0          0          FC00000 N            0      0      0 N 
+211 Elemental Force          666   2      15060          0                  N            0      0      0 N 
+212 Storm Force              666   2      10050          0                  N            0      0      0 N 
+213 (unused)                   0  10          0          0          FC00000 N            0      0      0 N  0
+214 Kelp Stinger            7500   2       5012          0                  N            0      0      0 N 
+215 (unused)                   1  10          0          0                  N            0      0      0 N 
+216 (unused)                   1  10          0          0                  N            0      0      0 N  0
+217 (unused)                   0  10          0          0                  N            0      0      0 N  0
+218 Slicer-Dicer           50000   2      16032          0          FC00000 N SDICER    33      0      0 N  18
+219 DeathSword            100000   2    3007020          0           240000 N          140      0      0 N 
+220 GravSword             100000   2    4018036          0                  N GSWORD    67      0      0 N  18
+221 WidowBlade            200000   2    6020044          0                  N WLANCE    41      0      0 N  19
+222 Frost Sceptre         300000   2      20040          0                  N          116      0      0 N 
+223 Neutron Sabre         750000   2    7026052          0          8000000 N NSABRE    59      0      0 N  1 18
+224 Fire Sabre           1000000   2    7028066          0                  N FSABRE    72      0      0 N  16
+225 Stone Axe            1500000   2   10010040          0            E0000 N          162      0      0 N 
+226 DreamSabre           2000000   2   11036053          0                  N DREAMSAB  74      0      0 N 
+227 A-Mk.II              5000000   2      45060          0                  N AMKII     96      0      0 N 
+228 Cabal Axe           22225500   2      48082          0                  N CABSCEP   73      0      0 N 
+229 Windmill                5000  21         25          0                  N BRWMILL    0      0      0 N  5
+230 Solar Cells            25000  21        100          0                  N BRSCELL    0      0      0 N  5
+231 Solar Array            40000  21        135          0                  N BRSARRAY   0      0      0 N  5
+232 Fusion                 75000  21        200          0                  N BRFUSION   0      0      0 N  5
+233 Cold Fusion           200000  21        300          0                  N BRCFUS     0      0      0 N  5
+234 Neutron Turbine       300000  21        350          0                  N BRNTURB    0      0      0 N  5
+235 Hot Fusion           1000000  21        500          0                  N BRHFUS     0      0      0 N  5
+236 Mass Energizer       5000000  21        750          0                  N BRMASSE    0      0      0 N  5
+237 Energy Bars            10000  23         50         50                  N BDEBARS    0      0      0 N  7
+238 Energy Screen          20000  23         75         75                  N BDESCRN    0      0      0 N  7
+239 Energy Wall           100000  23        150        150                  N BDEWALL    0      0      0 N  7
+240 Neutron Zone          250000  23        200        200                  N BDNZONE    0      0      0 N  7
+241 Dimensional Wall      750000  23        250        250                  N BDDWALL    0      0      0 N  7
+242 Vortex Barrier       1000000  23        300        300                  N BDVBAR     0      0      0 N  7
+243 Vitronic Shield      2500000  23        400        400                  N BDVIT      0      0      0 N  7
+244 Force Wall           5000000  23        500        500                  N BDFORCE    0      0      0 N  7
+245 Sonic Shield        10000000  23        600        600                  N BDSONIC    0      0      0 N  7
+246 Zone Shield         15000000  23        750        750                  N BDZONE     0      0      0 N  7
+247 Black Globe         25000000  23        900        900                  N BDGLOBE    0      0      0 N  7
+248 Dirty Water             5000  24       5010          0                  N BMDWATR    0      0      0 N  8
+249 Water/Aligater         15000  24       9024          0                  N BMALIG     0      0      0 N  8
+250 Acid                   30000  24      12030          0                  N BMACID     0      0      0 N  8
+251 Flaming Acid           75000  24      14036          0                  N BMFLAME    0      0      0 N  8
+252 Energy Swamp          250000  24      20050          0                  N BMESWAMP   0      0      0 N  8
+253 Disolver             1000000  24      30080          0                  N BMDIS      0      0      0 N  8
+254 Charged Acid         5000000  24      40100          0                  N BMCACID    0      0      0 N  8
+255 Neutron Swamp       10000000  24      50120          0                  N BMNSWAMP   0      0      0 N  8
+256 RoboPistol             10000  25       5012          0                  N BWRPIST    0      0      0 N  9
+257 RoboCannon             20000  25      10021          0                  N BWRCAN     0      0      0 N  9
+258 RoboPhaser             60000  25      10030          0                  N BWRPHAS    0      0      0 N  9
+259 RoboGrav              150000  25      13040          0                  N BWRGRAV    0      0      0 N  9
+260 Neutron Torch         500000  25      18050          0                  N BWNTORCH   0      0      0 N  9
+261 Phase Cannon         1500000  25      22060          0                  N BWPCAN     0      0      0 N  9
+262 Destructor           4000000  25      25070          0                  N BWDEST     0      0      0 N  9
+263 Phaser Thrasher     10000000  25      30080          0                  N BWTHRASH   0      0      0 N  9
+264 Fort Comset            10000  38          0          0                8 N BCOMSET    0      0      0 N  6
+265 Teleporter            100000  38          0          0                1 N BTSTD      0      0      0 N  6
+266 Excelsior Telepor     350000  38          0          0                2 N BTEXC      0      0      0 N  6
+267 Transporter         20000000  38          0          0                4 N BTTRANS    0      0      0 N  6
+268 Defender Pack        2500000  38          0        150       4400020110 N BDPACK     0      0      0 N  26
+269 Convenience Pack      500000  38          0          0     10000020000A N BCPACK     0      0      0 N  26
+270 Profit Pack         13000000  38          0          0             1802 N BPPACK     0      0      0 N  26
+271 Hostility Pack      22000000  38          0         83      20000010350 N BHPACK     0      0      0 N  26
+272 Fact: Plas Shield      30000  38          0        188               40 N BGFACT     0      0      0 N  15
+273 Fact: Grenade Pac      60000  38          0         64               40 N BGFACT     0      0      0 N  15
+274 Fact: Warper          300000  38          0        202               40 N BGFACT     0      0      0 N  15
+275 Fact: Recharger       750000  38          0        151               40 N BGFACT     0      0      0 N  15
+276 Fact: FortShell      4500000  38          0         13               40 N BGFACT     0      0      0 N  15
+277 Fact: Dumb Mine       225000  38          0         80               40 N BGFACT     0      0      0 N  15
+278 Fact: Smart Mine      225000  38          0         81               40 N BGFACT     0      0      0 N  15
+279 Fact: Day Ruiner     2250000  38          0         82               40 N BGFACT     0      0      0 N  15
+280 Fact: MegaMine       6000000  38          0         83               40 N BGFACT     0      0      0 N  15
+281 Fact: MicroNuke     15000000  38          0         84               40 N BGFACT     0      0      0 N  15
+282 Fact: Zapper Mine   24000000  38          0         87               40 N BGFACT     0      0      0 N  15
+283 Fact: TeleMine      24000000  38          0         86               40 N BGFACT     0      0      0 N  15
+284 Fact: Protector     45000000  38          0         88               40 N BGFACT     0      0      0 N  15
+285 Fact: Robomine 2     6000000  38          0         89               40 N BGFACT     0      0      0 N  15
+286 Fact: Robomine 3    12000000  38          0         90               40 N BGFACT     0      0      0 N  15
+287 Fact: Robomine 4    21000000  38          0         91               40 N BGFACT     0      0      0 N  15
+288 Fact: Robomine 5    33000000  38          0         92               40 N BGFACT     0      0      0 N  15
+289 Fact: Robomine 6    48000000  38          0         93               40 N BGFACT     0      0      0 N  15
+290 Fact: Guardian      66000000  38          0         95               40 N BGFACT     0      0      0 N  15
+291 Fact: Draku Mine    21000000  38          0         85               40 N BGFACT     0      0      0 N 
+292 Fact: Xeboc Mine    66000000  38          0         94               40 N BGFACT     0      0      0 N 
+293 Wanderer            99000000  38          0          0               20 N BGWANDER   0      0      0 N  6
+294 Mine Spreader R0      100000  38          0          0             4000 N BGSPREAD   0      0      0 N  6
+295 Mine Spreader R1      500000  38          0          0             8000 N BGSPREAD   0      0      0 N  6
+296 Mine Spreader R2     2500000  38          0          0             C000 N BGSPREAD   0      0      0 N  6
+297 Mine Spreader R3    12500000  38          0          0            10000 N BGSPREAD   0      0      0 N  6
+298 Proximity Trip R0     100000  38          0          0              100 N BGPROX     0      0      0 N  6
+299 Proximity Trip R1     500000  38          0          0              200 N BGPROX     0      0      0 N  6
+300 Proximity Trip R2    2500000  38          0          0              300 N BGPROX     0      0      0 N  6
+301 Toll Station R0       500000  38          0          0              800 N BGTOLL     0      0      0 N  6
+302 Toll Station R1      2500000  38          0          0             1000 N BGTOLL     0      0      0 N  6
+303 Toll Station R2     12500000  38          0          0             1800 N BGTOLL     0      0      0 N  6
+304 Fortress SFG          100000  38          0          0               10 N BGSFG      0      0      0 N  6
+305 UltraScan              50000  38          0          0           200000 Y BULTRA     0      0      0 N  6
+306 Sacre Pack           1000000  38          0        100           C20001 Y BSPACK     0      0      0 N 
+307 Terra Labs Pack      1000000  38          0          0           D40024 Y            0      0      0 N 
+308 Terra Seller A       1000000  38          0        203          1400000 Y            0      0      0 N 
+309 Terra Seller B       1000000  38          0        152          2400000 Y            0      0      0 N 
+310 Terra Seller C       1000000  38          0        193          4400000 Y            0      0      0 N 
+311 Anti Self Destruc    1000000  38          0          0           C00000 Y BGANTISD   0      0      0 N  6
+312 Scavenger R0           40000  38          0          0            40000 N BGSCAV     0      0      0 N  27
+313 Scavenger R1          100000  38          0          0            80000 N BGSCAV     0      0      0 N  27
+314 Scavenger R2          250000  38          0          0            C0000 N BGSCAV     0      0      0 N  27
+315 Scavenger R3          625000  38          0          0           100000 N BGSCAV     0      0      0 N  27
+316 Scavenger R4         1562500  38          0          0           140000 N BGSCAV     0      0      0 N  27
+317 Scavenger R5         3906250  38          0          0           180000 N BGSCAV     0      0      0 N  27
+318 Smart Scav R0          50000  38          0          0         10040000 N BGSMSCAV   0      0      0 N  27
+319 Smart Scav R1         125000  38          0          0         10080000 N BGSMSCAV   0      0      0 N  27
+320 Smart Scav R2         312500  38          0          0         100C0000 N BGSMSCAV   0      0      0 N  27
+321 Smart Scav R3         781250  38          0          0         10100000 N BGSMSCAV   0      0      0 N  27
+322 Smart Scav R4        1953125  38          0          0         10140000 N BGSMSCAV   0      0      0 N  27
+323 Smart Scav R5        4882812  38          0          0         10180000 N BGSMSCAV   0      0      0 N  27
+324 Defender Mark I       500000  38          0          0         20000000 N            0      0      0 N  33
+325 Defender Mark II     1000000  38          0          0         40000000 N            0      0      0 N  33
+326 Defender Mark III    2000000  38          0          0         60000000 N            0      0      0 N  33
+327 Defender Mark IV     4000000  38          0          0         80000000 N            0      0      0 N  33
+328 Defender Mark V      8000000  38          0          0         A0000000 N            0      0      0 N  33
+329 Defender Mark VI    16000000  38          0          0         C0000000 N            0      0      0 N  33
+330 Defender Mark VII   32000000  38          0          0         E0000000 N            0      0      0 N  33
+331 Defender Mark VII   64000000  38          0          0        100000000 N            0      0      0 N  33
+332 Sacre Seller A       1000000  38          0        125          3400000 Y            0      0      0 N 
+333 Sacre Seller B       1000000  38          0        219          C400000 Y            0      0      0 N 
+334 Sacre Seller C       1000000  38          0        194          3400000 Y            0      0      0 N 
+335 Sacre Seller D       1000000  38          0        202          C400000 Y            0      0      0 N 
+336 Target Comp +20       100000  38          0          0       4000000000 N TCOMP_1    0      0      0 N  35
+337 Target Comp +40       250000  38          0          0       8000000000 N TCOMP_2    0      0      0 N  35
+338 Target Comp +60      1000000  38          0          0       C000000000 N TCOMP_3    0      0      0 N  35
+339 Target Comp +80      2000000  38          0          0      10000000000 N TCOMP_4    0      0      0 N  35
+340 Target Comp +100     5000000  38          0          0      14000000000 N TCOMP_5    0      0      0 N  35
+341 Target Comp +120    15000000  38          0          0      18000000000 N TCOMP_6    0      0      0 N  35
+342 Shield Enhance +2     100000  38          0          0        400000000 N ACOMP_1    0      0      0 N  35
+343 Shield Enhance +4     250000  38          0          0        800000000 N ACOMP_2    0      0      0 N  35
+344 Shield Enhance +6    1000000  38          0          0        C00000000 N ACOMP_3    0      0      0 N  35
+345 Shield Enhance +8    2000000  38          0          0       1000000000 N ACOMP_4    0      0      0 N  35
+346 Shld. Enhance +10    5000000  38          0          0       1400000000 N ACOMP_5    0      0      0 N  35
+347 Shld. Enhance +12   15000000  38          0          0       1800000000 N ACOMP_6    0      0      0 N  35
+348 Multi Comp +20        300000  38          0          0       4400000000 N MCOMP_1    0      0      0 N  35
+349 Multi Comp +40        750000  38          0          0       8800000000 N MCOMP_2    0      0      0 N  35
+350 Multi Comp +60       3000000  38          0          0       CC00000000 N MCOMP_3    0      0      0 N  35
+351 Multi Comp +80       6000000  38          0          0      11000000000 N MCOMP_4    0      0      0 N  35
+352 Multi Comp +100     15000000  38          0          0      15400000000 N MCOMP_5    0      0      0 N  35
+353 Multi Comp +120     45000000  38          0          0      19800000000 N MCOMP_6    0      0      0 N  35
+354 Armor Burner 200%     250000  38          0          0      20000000000 N BGBURN_1   0      0      0 N  6
+355 Armor Burner 400%     750000  38          0          0      60000000000 N BGBURN_2   0      0      0 N  6
+356 Armor Burner 800%    2000000  38          0          0      E0000000000 N BGBURN_3   0      0      0 N  6
+357 Vortex Link           100000  38          0          0     100000000000 N BGVLINK    0      0      0 N  6
+358 Mega-Hostile Pack   75000000  38          0         95      E0000014550 N BMHPACK    0      0      0 N  26
+359 Ultra-Hostile Pac  150000000  38          0         95      F9900014550 N BUHPACK    0      0      0 N  26
+360 Super Defender       6000000  38          0        450      2CC00020110 N BSDPACK    0      0      0 N  26
+361 Corbomite Device     1000000  38          0          0     200000000000 N BGCORBO    0      0      0 N  6
+362 Single Energy Sin     500000  47          0         10                  N BSINK1     0    500    500 N  6
+363 Double Energy Sin    1500000  47          0         20                  N BSINK2     0   1000   1000 N  6
+364 Quad Energy Sink     5000000  47          0         40                  N BSINK3     0   2000   2000 N  6
+365 Massive Hide           25000   4          0         75                  N          156   1500   1500 N 
+366 Thief's Kit           250000  54          0         75                  Y          199      0      0 N  25
+367 Alarm                 250000  55          0         75                  Y          197      0      0 N  17
+368 Scythe               1250000   2   11030070          0                  N          185      0      0 N 
+369 Riot Vest               1000   4          0         33                  N            0    400    400 N  2 17 24
+370 Hard Vest               1250   4          0         38                  N            0    500    500 N  2 17 24
+371 Riot Jacket             2500   4          0         42                  N            0    700    700 N  2 17 24
+372 Riot Armor              5000   4          0         51                  N            0    900    900 N  2 17 24
+373 Adamantium Katana   20000000   2      25082          0          F4E0003 N            0      0      0 N 
+374 Vehicle Stopper     20000000   3   26030250          0          D2E0240 N            0      0      0 N 
+375 Bag of Weed            30000  10          0          0                  N            0      0      0 N 
+376 Quick Load                50   8         21          6                  N            0      0      0 N  4 17 18 19
+377 Pistol Clip               75   8         22         20                  N            0      0      0 N  4 17 18 19
+378 Rifle Clip               100   8         23         40                  N            0      0      0 N  4 17 18 19
+379 Shotgun Shells           100   8         24          8                  N            0      0      0 N  4 17 18 19
+380 3.5' Shells            10000   8         26          2                  N            0      0      0 N 
+381 ROM: FF2              100000  27          0          0   40000000000000 N            0      0      0 N 
+382 Cruster Buster      23456789   3    5029059          0          74E00BF N            0      0      0 N 
+383 Knife                     50   2       1003          0          FC00000 N            0      0      0 N  1
+384 Jo Staff                  75   2       1004          0          FC00000 N            0      0      0 N  1
+385 Dagger                   100   2       1005          0          FC00000 N            0      0      0 N  1
+386 Long Dagger              150   2       2005          0          FC00000 N            0      0      0 N  1
+387 Bo Staff                 175   2       1006          0          FC00000 N            0      0      0 N  1
+388 Chain                    200   2       2006          0          FC00000 N            0      0      0 N  1
+389 Short Sword              300   2       3006          0          FC00000 N            0      0      0 N  1
+390 Baseball Bat             400   2       1007          0          FC00000 N            0      0      0 N  1
+391 Cutlass                  500   2       2007          0          FC00000 N            0      0      0 N  1
+392 Spear                    750   2       2008          0          FC00000 N            0      0      0 N  1
+393 Longsword               1000   2       1009          0          FC00000 N            0      0      0 N  1 24
+394 Broadsword              1250   2       2009          0          FC00000 N            0      0      0 N  1
+395 Fireman's Axe           1500   2       3010          0          FC00000 N            0      0      0 N  1
+396 Talon Glove             1750   2       2011          0          FC00000 N            0      0      0 N  1 24
+397 Katana                  2000   2       4012          0          FC00000 N            0      0      0 N  1 24
+398 Energy Dagger           2250   2    3005013          0          9400000 N            0      0      0 N  1 17
+399 Power Baton             2500   2    3007014          0          9400000 N            0      0      0 N  1 17
+400 Energy Sword            5000   2    3007016          0          9400000 N            0      0      0 N  1 17 24
+401 Force Blade             7500   2    3005020          0          9400000 N            0      0      0 N  1 17
+402 Mono Sword             10000   2       5017          0          F420000 N            0      0      0 N  1 17 24
+403 Laser Axe              15000   2    3011024          0          9400000 N            0      0      0 N  1 17
+404 Tachyon Sword          30000   2    3012028          0                  N            0      0      0 N  1 17
+405 Photon Axe             50000   2    3014032          0          9400000 N            0      0      0 N  1 17
+406 Neutron Sword         100000   2    7021038          0          9400000 N            0      0      0 N  1 17
+407 Cryo Cutlass           10000   2       5021          0          FC00000 N            0      0      0 N  24
+408 Belted Ammo              500   8         25         50                  N            0      0      0 N  4 17 18 19 24
+409 .25 Pistol               100   3   22001005          0          7C00000 N            0      0      0 N  11 17
+410 Bow                      250   3    2001008          0          FC00000 N            0      0      0 N  11
+411 .38 Revolver             500   3   21003007          0          FC00000 N            0      0      0 N  11 17
+412 Crossbow                 750   3    1001009          0          FC00000 N            0      0      0 N  11
+413 9mm Pistol              1000   3   22002009          0          7C00000 N            0      0      0 N  11 17 24
+414 .357 Revolver           1250   3   21003013          0          FC00000 N            0      0      0 N  11 17 24
+415 .40 Pistol              1350   3   22004011          0          7C00000 N            0      0      0 N  11 17 24
+416 .45 Pistol              1500   3   22005012          0          7C00000 N            0      0      0 N  11 17
+417 .44 Revolver            2500   3   21007014          0          FC00000 N            0      0      0 N  11 17
+418 .50 Pistol              3000   3   22006016          0          FC00000 N            0      0      0 N  11 17
+419 .30 Carbine             5000   3   23005017          0          7C00000 N            0      0      0 N  11 17
+420 .223 Rifle              7000   3   23010018          0          EC00000 N            0      0      0 N  11 17
+421 .308 Rifle             15000   3   23014026          0          EC00000 N            0      0      0 N  11 17
+422 Scorpion SMG           12500   3   22003008          0          7C00880 N            0      0      0 N  11 17
+423 .30-06 Rifle           17500   3   23016030          0          EC00000 N            0      0      0 N  11 17
+424 12 Gauge Shotgun       20000   3   24014025          0          FC00003 N            0      0      0 N  11 17 24
+425 Uzi SMG                30000   3   22003009          0          7C00080 N            0      0      0 N  11 17
+426 .50 Rifle              40000   3   23021036          0          FC00800 N            0      0      0 N  11 17
+427 Mac 10 SMG             50000   3   22005012          0          7C00880 N            0      0      0 N  11 17 24
+428 8 Gauge Shotgun        65000   3   24015030          0          FC00003 N            0      0      0 N  11 17
+429 AK-47                  75000   3   23013020          0          6C00880 N            0      0      0 N  11 17 24
+430 M-16                   80000   3   23010018          0          6C00080 N            0      0      0 N  11 17
+431 .308 Galil            150000   3   23010026          0          6C00880 N            0      0      0 N  11 17 24
+432 Street Sweeper        300000   3   24014025          0          7C00083 N            0      0      0 N  11 17 24
+433 LMG                   500000   3   25012019          0          7C00099 N            0      0      0 N  11 17 24
+434 GPMG                  750000   3   25021026          0          7C00099 N            0      0      0 N  11 17
+435 AK-5 Bofors           125000   3   23010018          0          6C00089 N            0      0      0 N  24
+436 Pulse Laser Rifle    3000000   3    3046062          0          74E00BF N            0      0      0 N 
+437 Composite Vest       1000000   4          0         60                  N            0   1500   1500 N 
+438 Composite Armor      2000000   4          0         75                  N            0   3000   3000 N 
+439 Large Stun Gun        500000   3          0   30050012          3C000C9 N            0      0      0 N  24
+440 Zutli Medline         150000   9         50          0                  N            0      0      0 N  16 17 24 25
+441 Ronin Medline         500000   9         75          0                  N            0      0      0 N  24
+442 Double Shotgun        500000   3   24028050          0          FC00007 N            0      0      0 N  24
+443 MP-5                  250000   3   22004009          0          7C00089 N            0      0      0 N  24
+444 Plasma Cannon       99999999   2      22051          0            E0000 N            0      0      0 N 
+445 Pulse Cannon        99999999   3      22051          0            E0080 N            0      0      0 N 
+446 Energy Talons          75000   2    3012018          0            20000 N            0      0      0 N  24
+447 HMG                  2000000   3   25014036          0          7460099 N            0      0      0 N  24
+448 ExoSkeleton         20000000   4          1         80                  N            0   8000   8000 N 
+
+
+Sorted by device application:
+
+Num Name              Cost       App Variable-1 Variable-2 Var-3            U ANSI     EGA MaxUse U-Left DU Store(s)
+--- ----------------- ---------- --- ---------- ---------- ---------------- - -------- --- ------ ------ -- ----------------
+ 72 MedKit                   100   1          0          0                  Y MEDKIT10  17     20     20 Y  3 29
+ 73 MedKit                   150   1          0          0                  Y MEDKIT15  17     30     30 Y  3 29
+ 74 MedKit                   250   1          0          0                  Y MEDKIT25  17     50     50 Y  3 17 18 19 22 24 29
+ 75 MedKit                   500   1          0          0                  Y MEDKIT50  17    100    100 Y  3 17 18 19 22 24 29
+117 Medkit                    40   1          0          0                  N            0     10     10 N 
+205 Sticks                   250   2       2005          0          FC00000 N          155      0      0 N 
+206 Rolling Pin              350   2       1003          0          FC00000 N RPIN      64      0      0 N 
+208 Ice Pick                 500   2       2005          0          FC00000 N          158      0      0 N 
+211 Elemental Force          666   2      15060          0                  N            0      0      0 N 
+212 Storm Force              666   2      10050          0                  N            0      0      0 N 
+214 Kelp Stinger            7500   2       5012          0                  N            0      0      0 N 
+218 Slicer-Dicer           50000   2      16032          0          FC00000 N SDICER    33      0      0 N  18
+219 DeathSword            100000   2    3007020          0           240000 N          140      0      0 N 
+220 GravSword             100000   2    4018036          0                  N GSWORD    67      0      0 N  18
+221 WidowBlade            200000   2    6020044          0                  N WLANCE    41      0      0 N  19
+222 Frost Sceptre         300000   2      20040          0                  N          116      0      0 N 
+223 Neutron Sabre         750000   2    7026052          0          8000000 N NSABRE    59      0      0 N  1 18
+224 Fire Sabre           1000000   2    7028066          0                  N FSABRE    72      0      0 N  16
+225 Stone Axe            1500000   2   10010040          0            E0000 N          162      0      0 N 
+226 DreamSabre           2000000   2   11036053          0                  N DREAMSAB  74      0      0 N 
+227 A-Mk.II              5000000   2      45060          0                  N AMKII     96      0      0 N 
+228 Cabal Axe           22225500   2      48082          0                  N CABSCEP   73      0      0 N 
+368 Scythe               1250000   2   11030070          0                  N          185      0      0 N 
+373 Adamantium Katana   20000000   2      25082          0          F4E0003 N            0      0      0 N 
+383 Knife                     50   2       1003          0          FC00000 N            0      0      0 N  1
+384 Jo Staff                  75   2       1004          0          FC00000 N            0      0      0 N  1
+385 Dagger                   100   2       1005          0          FC00000 N            0      0      0 N  1
+386 Long Dagger              150   2       2005          0          FC00000 N            0      0      0 N  1
+387 Bo Staff                 175   2       1006          0          FC00000 N            0      0      0 N  1
+388 Chain                    200   2       2006          0          FC00000 N            0      0      0 N  1
+389 Short Sword              300   2       3006          0          FC00000 N            0      0      0 N  1
+390 Baseball Bat             400   2       1007          0          FC00000 N            0      0      0 N  1
+391 Cutlass                  500   2       2007          0          FC00000 N            0      0      0 N  1
+392 Spear                    750   2       2008          0          FC00000 N            0      0      0 N  1
+393 Longsword               1000   2       1009          0          FC00000 N            0      0      0 N  1 24
+394 Broadsword              1250   2       2009          0          FC00000 N            0      0      0 N  1
+395 Fireman's Axe           1500   2       3010          0          FC00000 N            0      0      0 N  1
+396 Talon Glove             1750   2       2011          0          FC00000 N            0      0      0 N  1 24
+397 Katana                  2000   2       4012          0          FC00000 N            0      0      0 N  1 24
+398 Energy Dagger           2250   2    3005013          0          9400000 N            0      0      0 N  1 17
+399 Power Baton             2500   2    3007014          0          9400000 N            0      0      0 N  1 17
+400 Energy Sword            5000   2    3007016          0          9400000 N            0      0      0 N  1 17 24
+401 Force Blade             7500   2    3005020          0          9400000 N            0      0      0 N  1 17
+402 Mono Sword             10000   2       5017          0          F420000 N            0      0      0 N  1 17 24
+403 Laser Axe              15000   2    3011024          0          9400000 N            0      0      0 N  1 17
+404 Tachyon Sword          30000   2    3012028          0                  N            0      0      0 N  1 17
+405 Photon Axe             50000   2    3014032          0          9400000 N            0      0      0 N  1 17
+406 Neutron Sword         100000   2    7021038          0          9400000 N            0      0      0 N  1 17
+407 Cryo Cutlass           10000   2       5021          0          FC00000 N            0      0      0 N  24
+444 Plasma Cannon       99999999   2      22051          0            E0000 N            0      0      0 N 
+446 Energy Talons          75000   2    3012018          0            20000 N            0      0      0 N  24
+108 Radiation Blast            0   3      28061          0               40 N            0      0      0 N 
+109 SlingShot                500   3       4007          0          FC00000 N SLING     43      0      0 N 
+110 Stun Gun                 200   3    3001004          0          FC03A40 N          150      0      0 N 
+111 Crossbow                2100   3    1006009          0          FC00000 N CROSSBOW  30      0      0 N  11
+113 Force Pistol          200000   3    3020038          0          1400000 N            0      0      0 N  17
+114 Laser Pistol          250000   3    3024042          0          1400000 N            0      0      0 N  17
+115 Force Carbine         300000   3    3026046          0           400000 N            0      0      0 N  17
+116 Laser Carbine         350000   3    3029050          0           200000 N            0      0      0 N  17
+119 Torpx Cannon          550000   3      22050          0          FC00000 N TORPX     40      0      0 N  18
+120 GravBlast             600000   3    4036052          0                  N GRAVBLST   1      0      0 N  11
+122 Sniper Laser         5000000   3    3026092          0          9400007 N SNPPHAS  111      0      0 N  31
+123 Plasma Ripper        5500000   3    5024046          0               80 N RIPPHAS  110      0      0 N  31
+124 Plasma Rifle         1500000   3    5023055          0          9000000 N PBLAST    24      0      0 N  11
+126 Frost Cannon         2000000   3      45064          0                  N          115      0      0 N 
+127 WidowBlaster         2000000   3    6020058          0          9000000 N WBLAST    44      0      0 N  19
+128 Combat Phaser        2500000   3    3016022          0              1C0 N CMBTPHAS 121      0      0 N  31
+129 Neutron Rifle        2500000   3    7042062          0          9000000 N NEUTRIF   69      0      0 N  11
+130 Pulse Rifle          5000000   3    8023038          0          1000080 N PRIFLE    86      0      0 N  16
+131 Pulse Bazooka        7500000   3    8035042          0               80 N PBAZOO    89      0      0 N  16
+132 Xenon's Surprise    10000000   3    8060090          0          9000000 N XENON    119      0      0 N  16
+133 Devastator          10000000   3    3016042          0              3C0 N          139      0      0 N  31
+134 Stone Bow           10000000   3   11037100          0              240 N          161      0      0 N 
+135 Nuke-O-Matic        15000000   3    9027052          0              280 N NUKEO    103      0      0 N  16
+136 DreamBlaster        20000000   3   11055105          0          FC00000 N DREAMBLA 114      0      0 N 
+137 TachyonBlaster      20000000   3    7070115          0                  N TACHBLAS  93      0      0 N 
+138 FortSlayer MK1      30000000   3   10160240          0                  N          108      0      0 N  30
+139 FortSlayer Deluxe   60000000   3   10150330          0                  N          109      0      0 N  30
+140 SLM-9000 PulseRay  100000000   3      40070          0               83 N SLM9000  126      0      0 N 
+141 TerrorBlast        250000000   3      50110          0               83 N TERBLAST  98      0      0 N 
+374 Vehicle Stopper     20000000   3   26030250          0          D2E0240 N            0      0      0 N 
+382 Cruster Buster      23456789   3    5029059          0          74E00BF N            0      0      0 N 
+409 .25 Pistol               100   3   22001005          0          7C00000 N            0      0      0 N  11 17
+410 Bow                      250   3    2001008          0          FC00000 N            0      0      0 N  11
+411 .38 Revolver             500   3   21003007          0          FC00000 N            0      0      0 N  11 17
+412 Crossbow                 750   3    1001009          0          FC00000 N            0      0      0 N  11
+413 9mm Pistol              1000   3   22002009          0          7C00000 N            0      0      0 N  11 17 24
+414 .357 Revolver           1250   3   21003013          0          FC00000 N            0      0      0 N  11 17 24
+415 .40 Pistol              1350   3   22004011          0          7C00000 N            0      0      0 N  11 17 24
+416 .45 Pistol              1500   3   22005012          0          7C00000 N            0      0      0 N  11 17
+417 .44 Revolver            2500   3   21007014          0          FC00000 N            0      0      0 N  11 17
+418 .50 Pistol              3000   3   22006016          0          FC00000 N            0      0      0 N  11 17
+419 .30 Carbine             5000   3   23005017          0          7C00000 N            0      0      0 N  11 17
+420 .223 Rifle              7000   3   23010018          0          EC00000 N            0      0      0 N  11 17
+421 .308 Rifle             15000   3   23014026          0          EC00000 N            0      0      0 N  11 17
+422 Scorpion SMG           12500   3   22003008          0          7C00880 N            0      0      0 N  11 17
+423 .30-06 Rifle           17500   3   23016030          0          EC00000 N            0      0      0 N  11 17
+424 12 Gauge Shotgun       20000   3   24014025          0          FC00003 N            0      0      0 N  11 17 24
+425 Uzi SMG                30000   3   22003009          0          7C00080 N            0      0      0 N  11 17
+426 .50 Rifle              40000   3   23021036          0          FC00800 N            0      0      0 N  11 17
+427 Mac 10 SMG             50000   3   22005012          0          7C00880 N            0      0      0 N  11 17 24
+428 8 Gauge Shotgun        65000   3   24015030          0          FC00003 N            0      0      0 N  11 17
+429 AK-47                  75000   3   23013020          0          6C00880 N            0      0      0 N  11 17 24
+430 M-16                   80000   3   23010018          0          6C00080 N            0      0      0 N  11 17
+431 .308 Galil            150000   3   23010026          0          6C00880 N            0      0      0 N  11 17 24
+432 Street Sweeper        300000   3   24014025          0          7C00083 N            0      0      0 N  11 17 24
+433 LMG                   500000   3   25012019          0          7C00099 N            0      0      0 N  11 17 24
+434 GPMG                  750000   3   25021026          0          7C00099 N            0      0      0 N  11 17
+435 AK-5 Bofors           125000   3   23010018          0          6C00089 N            0      0      0 N  24
+436 Pulse Laser Rifle    3000000   3    3046062          0          74E00BF N            0      0      0 N 
+439 Large Stun Gun        500000   3          0   30050012          3C000C9 N            0      0      0 N  24
+442 Double Shotgun        500000   3   24028050          0          FC00007 N            0      0      0 N  24
+443 MP-5                  250000   3   22004009          0          7C00089 N            0      0      0 N  24
+445 Pulse Cannon        99999999   3      22051          0            E0080 N            0      0      0 N 
+447 HMG                  2000000   3   25014036          0          7460099 N            0      0      0 N  24
+ 14 Apron                     10   4          0          5                  N APRON     65      8      8 N 
+ 15 Cheerldr Suit            200   4          0          5                  N CHEERLDR  26     10     10 N 
+ 16 Clothing                  10   4          0          5                  N            0     10     10 N  2
+ 17 Leather Jacket           100   4          0         10                  N            0     30     30 N 
+ 18 Leather Suit             200   4          0         17                  N            0     50     50 N  2
+ 19 Chain Mail               400   4          0         24                  N            0     75     75 N  2 17
+ 20 Kevlar Vest              750   4          0         28                  N KEVLAR     0    200    200 N  2 17 24
+ 21 PlasmaVest            100000   4          1         54                  N PVEST     46    600    600 N  18 19 24
+ 22 Energy Armor          250000   4          1         58                  N ENARMR    47   1300   1300 N  18 19 24
+ 23 Widow Armor           350000   4          1         65                  N WARMR     48   2000   2000 N  19
+ 24 Frost Vest            350000   4          1         65                  N          104   2250   2250 N 
+ 25 DreamArmor           1500000   4          1         70                  N DREAMARM  71   2500   2500 N 
+ 26 Phase Armor          2500000   4          1         75                  N PHASEARM  97   3000   3000 N  16 24
+ 27 Quantum Field        7500000   4          1         80                  N QFIELD   135   4000   4000 N 
+103 Animal Hide               25   4         11          0                  N            0    100    100 N 
+365 Massive Hide           25000   4          0         75                  N          156   1500   1500 N 
+369 Riot Vest               1000   4          0         33                  N            0    400    400 N  2 17 24
+370 Hard Vest               1250   4          0         38                  N            0    500    500 N  2 17 24
+371 Riot Jacket             2500   4          0         42                  N            0    700    700 N  2 17 24
+372 Riot Armor              5000   4          0         51                  N            0    900    900 N  2 17 24
+437 Composite Vest       1000000   4          0         60                  N            0   1500   1500 N 
+438 Composite Armor      2000000   4          0         75                  N            0   3000   3000 N 
+448 ExoSkeleton         20000000   4          1         80                  N            0   8000   8000 N 
+ 69 LR Scan                32000   7          0          0                  Y LRSCAN     2      0      0 N  3
+  1 Battery                   10   8          3          5                  N          151      0      0 N 
+  2 Crossbow bolts            50   8          1         20                  N BOLTS     31      0      0 N  4
+  3 Arrows                    50   8          2         20                  N            0      0      0 N  4
+  4 Power Pack               250   8          3         70                  N PPACK     23      0      0 N  4 17 18 19 28
+  5 GravPack               10000   8          4         70                  N GRAVPACK  54      0      0 N  4 28
+  6 PlasmaPack             15000   8          5         80                  N PLASPACK  51      0      0 N  4 28
+  7 Power Belt              5000   8          3        300                  N BELT      57      0      0 N  4 28
+  8 WidowPack              20000   8          6        120                  N WPACK     34      0      0 N  19
+  9 Neutron Pack           25000   8          7        160                  N NPACK     56      0      0 N  4 28
+ 10 Trivex Pack           125000   8          8         75                  N TPACK     92      0      0 N  16
+ 11 Nuke Shell            200000   8          9         30                  N NSHELL    94      0      0 N  16
+ 12 DreamStuff            250000   8         11         35                  N            0      0      0 N 
+ 13 FortShell            1500000   8         10          1                  N          107      0      0 N  30
+376 Quick Load                50   8         21          6                  N            0      0      0 N  4 17 18 19
+377 Pistol Clip               75   8         22         20                  N            0      0      0 N  4 17 18 19
+378 Rifle Clip               100   8         23         40                  N            0      0      0 N  4 17 18 19
+379 Shotgun Shells           100   8         24          8                  N            0      0      0 N  4 17 18 19
+380 3.5' Shells            10000   8         26          2                  N            0      0      0 N 
+408 Belted Ammo              500   8         25         50                  N            0      0      0 N  4 17 18 19 24
+ 76 Std Medline            15000   9          1          0                  N STDMED   100      0      0 N  2
+ 77 Adv Medline            50000   9          5          0                  N ADVMED    99      0      0 N  2
+ 78 Zilpox Medline        130000   9         15          0                  N ZILMED    90      0      0 N  16
+ 79 Stilzi Medline        290000   9         25          0                  N STIMED    91      0      0 N  16
+440 Zutli Medline         150000   9         50          0                  N            0      0      0 N  16 17 24 25
+441 Ronin Medline         500000   9         75          0                  N            0      0      0 N  24
+112 (unused)                   1  10          0          0                  N            0      0      0 N 
+118 (unused)                   0  10          0          0          FC00080 N            0      0      0 N 
+121 (unused)                   0  10          0          0          FC00080 N            0      0      0 N 
+125 (unused)                   0  10          0          0          FC00480 N            0      0      0 N 
+182 Rope                     250  10          0          0                  Y ROPE      14      0      0 N 
+207 (unused)                   0  10          0          0          FC00000 N            0      0      0 N  0
+209 (Unused)                   0  10          0          0          FC00000 N            0      0      0 N  0
+210 (unused)                   0  10          0          0          FC00000 N            0      0      0 N 
+213 (unused)                   0  10          0          0          FC00000 N            0      0      0 N  0
+215 (unused)                   1  10          0          0                  N            0      0      0 N 
+216 (unused)                   1  10          0          0                  N            0      0      0 N  0
+217 (unused)                   0  10          0          0                  N            0      0      0 N  0
+375 Bag of Weed            30000  10          0          0                  N            0      0      0 N 
+142 Soda                       2  11          0          0                  Y          127      1      1 Y 
+143 McDonwald's Meal         250  11          0          0                  Y          144      8      8 Y 
+144 Rations                  200  11          0          0                  Y RATION5   18      5      5 Y  3 17 18 19
+145 Rations                  350  11          0          0                  Y RATION10  18     10     10 Y  3
+146 Kelp Rations            3000  11          1          0                  Y          124     25     25 Y 
+147 GSRZ Rations            2000  11          0          0                  Y GRATN25   68     25     25 Y  14
+148 Rations                  700  11          0          0                  Y RATION20  18     20     20 Y  3 24
+149 GSRZ Rations            4000  11          0          0                  Y GRATN50   68     50     50 Y  14
+150 Dunk-N-Donuts          25000  11          0          0                  Y          180     50     50 Y 
+184 Scanner                25000  12          0          0                  Y SCANNER   25      0      0 N  3 17
+191 Stealth Field           2000  13          0         50                  Y STEALTH    8      0      0 N  3 17
+192 EnviroBlur             60000  13          0         70                  Y EVLUR     95      0      0 N 
+193 UltraCloak            350000  13          0         80                  Y          130      0      0 N 
+ 28 Iron Plating           20000  15          0         50                  N IPLATING  37    175    175 N 
+ 29 Steel Plating          50000  15          0         60                  N SPLATING  45    250    250 N 
+ 30 Thick Weeds           100000  15          0         60                  N            0    250    250 N 
+ 64 Grenade Pack           20000  16      15030          0                  N GRENADE   13     25     25 N  11 17 18
+ 49 Cyclops Eye              500  17          0          0                  N CYCEYE    39      0      0 N 
+ 50 Death Badge             5000  18          0          0                  N Dbadge    38      0      0 N 
+202 Warper                100000  19          0          0                  Y WARPER    36      5      5 Y 
+203 UltraWarper          1000000  19          0          0                  Y          131     25     25 Y 
+229 Windmill                5000  21         25          0                  N BRWMILL    0      0      0 N  5
+230 Solar Cells            25000  21        100          0                  N BRSCELL    0      0      0 N  5
+231 Solar Array            40000  21        135          0                  N BRSARRAY   0      0      0 N  5
+232 Fusion                 75000  21        200          0                  N BRFUSION   0      0      0 N  5
+233 Cold Fusion           200000  21        300          0                  N BRCFUS     0      0      0 N  5
+234 Neutron Turbine       300000  21        350          0                  N BRNTURB    0      0      0 N  5
+235 Hot Fusion           1000000  21        500          0                  N BRHFUS     0      0      0 N  5
+236 Mass Energizer       5000000  21        750          0                  N BRMASSE    0      0      0 N  5
+237 Energy Bars            10000  23         50         50                  N BDEBARS    0      0      0 N  7
+238 Energy Screen          20000  23         75         75                  N BDESCRN    0      0      0 N  7
+239 Energy Wall           100000  23        150        150                  N BDEWALL    0      0      0 N  7
+240 Neutron Zone          250000  23        200        200                  N BDNZONE    0      0      0 N  7
+241 Dimensional Wall      750000  23        250        250                  N BDDWALL    0      0      0 N  7
+242 Vortex Barrier       1000000  23        300        300                  N BDVBAR     0      0      0 N  7
+243 Vitronic Shield      2500000  23        400        400                  N BDVIT      0      0      0 N  7
+244 Force Wall           5000000  23        500        500                  N BDFORCE    0      0      0 N  7
+245 Sonic Shield        10000000  23        600        600                  N BDSONIC    0      0      0 N  7
+246 Zone Shield         15000000  23        750        750                  N BDZONE     0      0      0 N  7
+247 Black Globe         25000000  23        900        900                  N BDGLOBE    0      0      0 N  7
+248 Dirty Water             5000  24       5010          0                  N BMDWATR    0      0      0 N  8
+249 Water/Aligater         15000  24       9024          0                  N BMALIG     0      0      0 N  8
+250 Acid                   30000  24      12030          0                  N BMACID     0      0      0 N  8
+251 Flaming Acid           75000  24      14036          0                  N BMFLAME    0      0      0 N  8
+252 Energy Swamp          250000  24      20050          0                  N BMESWAMP   0      0      0 N  8
+253 Disolver             1000000  24      30080          0                  N BMDIS      0      0      0 N  8
+254 Charged Acid         5000000  24      40100          0                  N BMCACID    0      0      0 N  8
+255 Neutron Swamp       10000000  24      50120          0                  N BMNSWAMP   0      0      0 N  8
+256 RoboPistol             10000  25       5012          0                  N BWRPIST    0      0      0 N  9
+257 RoboCannon             20000  25      10021          0                  N BWRCAN     0      0      0 N  9
+258 RoboPhaser             60000  25      10030          0                  N BWRPHAS    0      0      0 N  9
+259 RoboGrav              150000  25      13040          0                  N BWRGRAV    0      0      0 N  9
+260 Neutron Torch         500000  25      18050          0                  N BWNTORCH   0      0      0 N  9
+261 Phase Cannon         1500000  25      22060          0                  N BWPCAN     0      0      0 N  9
+262 Destructor           4000000  25      25070          0                  N BWDEST     0      0      0 N  9
+263 Phaser Thrasher     10000000  25      30080          0                  N BWTHRASH   0      0      0 N  9
+ 68 Laptop                  5000  26          0          0                  Y LAPTOP    50      0      0 N  10
+153 ROM: Commlink              0  27          0          0             2000 N ROMDISK   53      0      0 N 
+154 ROM: TroyInfo              0  27          0          0             1000 N ROMDISK   53      0      0 N  13
+155 ROM: Weapsmith           250  27          0          0           400000 N ROMDISK   53      0      0 N  32
+156 ROM: Rankings            750  27          0          0               10 N ROMDISK   53      0      0 N  10
+157 ROM: ViewLog             750  27          0          0               20 N ROMDISK   53      0      0 N  10
+158 ROM: C-Stats            1000  27          0          0              200 N ROMDISK   53      0      0 N  10
+159 ROM: FortList           1500  27          0          0               80 N ROMDISK   53      0      0 N  10
+160 ROM: Appraise           1500  27          0          0             8000 N ROMDISK   53      0      0 N  10
+161 ROM: Macro              2500  27          0          0         20000000 N ROMDISK   53      0      0 N  10
+162 ROM: Diet               5000  27          0          0              100 N ROMDISK   53      0      0 N  10
+163 ROM: Tetris             5000  27          0          0             4000 N ROMDISK   53      0      0 N 
+164 ROM: Bartalk            5000  27          0          0           100000 N ROMDISK   53      0      0 N 
+165 ROM: Notes              5000  27          0          0                2 N ROMDISK   53      0      0 N  10
+166 ROM: Windows            5000  27          0          0            40000 N ROMDISK   53      0      0 N 
+167 ROM: Fortinv            5000  27          0          0            80000 N ROMDISK   53      0      0 N 
+168 ROM: History            5000  27          0          0            20000 N ROMDISK   53      0      0 N 
+169 ROM: SPWeap            15000  27          0          0           200000 N ROMDISK   53      0      0 N 
+170 ROM: FortSpy           25000  27          0          0          8000000 N ROMDISK   53      0      0 N  18
+171 ROM: AutoNav           25000  27          0          0                4 N ROMDISK   53      0      0 N  10
+172 ROM: TCode             25000  27          0          0            10000 N ROMDISK   53      0      0 N 
+173 ROM: Samlist           25000  27          0          0           800000 N ROMDISK   53      0      0 N  18
+174 ROM: Transfer          55000  27          0          0                8 N ROMDISK   53      0      0 N  10
+175 ROM: Em-Warp           60000  27          0          0               40 N ROMDISK   53      0      0 N 
+176 ROM: Scanner           75000  27          0          0              800 N ROMDISK   53      0      0 N  10
+177 ROM: LR-Scan           75000  27          0          0              400 N ROMDISK   53      0      0 N  10
+178 ROM: Ping             250000  27          0          0          2000000 N ROMDISK   53      0      0 N  23
+179 ROM: SlotHack         250000  27          0          0          1000000 N ROMDISK   53      0      0 N 
+180 ROM: MineScan         250000  27          0          0         10000000 N ROMDISK   53      0      0 N  23
+181 ROM: AntiPing        2500000  27          0          0          4000000 N ROMDISK   53      0      0 N  23
+381 ROM: FF2              100000  27          0          0   40000000000000 N            0      0      0 N 
+195 Troy's Steaks              0  28          0          0                  N STEAK     58      0      0 N  12
+196 B.A.D. Device              0  28          0          0                  N BAD       55      0      0 N 
+151 Recharger             250000  30          0          0                  Y RECHRGE   66   1000   1000 N  3
+152 UltraCharger         1250000  30          0          0                  Y          129   7000   7000 N 
+ 96 Casino Key               100  31          0          0                  N STDKEY_6 160      0      0 N 
+ 97 Silo Key                 100  31          0          0                  N STDKEY_2 160      0      0 N 
+ 98 Kill Key                 100  31          0          0                  N STDKEY_1 160      0      0 N 
+ 99 Fountain Key            1000  31          0          0                  N STDKEY_3 160      0      0 N 
+100 Bloodring               5000  31          0          0                  N PKEY     136      0      0 N 
+101 Green Keycard           5000  31          0          0                  N PKEY     134      0      0 N 
+102 Red Keycard             5000  31          0          0                  N PKEY     133      0      0 N  17
+104 Subway Pass             5000  31          0          0                  N          152      0      0 N  17
+105 DW Bypass Key         250000  31          0          0                  N STDKEY_4 160      0      0 N  18
+106 Hercules Key         1000000  31          0          0                  N STDKEY_5 160      0      0 N 
+199 Vortex Cell           150000  32         50       2000                  Y VORTCELL  76      0      0 N  16
+200 Kralox Cell           300000  32         75       2500                  Y KRALCELL  78      1      0 N  16
+201 Vitron Cell           800000  32         90       3000                  Y VITRCELL  77      2      0 N  16
+197 Uni-Translator         50000  33          0          0                  Y UTRAN     75      0      0 N 
+ 80 Dumb Mine              75000  34       1040          0                  Y DMINE     79      1      1 N  16
+ 81 Smart Mine            200000  34       1040          0                1 Y SMINE     80      1      1 N  16
+ 82 Day Ruiner            750000  34      10045          0                  Y DRMINE    83      5      5 N  25
+ 83 MegaMine             2000000  34      35070          0                1 Y MMINE     84      5      5 N  25
+ 84 MicroNuke            5000000  34      70150          0                1 Y NMINE     87      2      2 N  25
+ 85 Draku Mine           7000000  34  700005010          0                B Y            0      1      1 N 
+ 86 TeleMine             8000000  34      20035          0                5 Y TMINE     85      5      5 N  25
+ 87 Zapper Mine          8000000  34      20035          0                3 Y ZMINE     88      5      5 N  25
+ 88 Protector           15000000  34      20035          0                7 Y PMINE     81      5      5 N  25
+ 89 Robomine 2           2000000  34  100005010          0                9 Y            0      1      1 N  25
+ 90 Robomine 3           4000000  34  200005010          0                9 Y            0      1      1 N  25
+ 91 Robomine 4           7000000  34  300005010          0                9 Y            0      1      1 N  25
+ 92 Robomine 5          11000000  34  400005010          0                9 Y            0      1      1 N  25
+ 93 Robomine 6          16000000  34  500005010          0                9 Y            0      1      1 N  25
+ 94 Xeboc Mine          22000000  34  800020035          0                B Y            0      1      1 N 
+ 95 Guardian            22000000  34  600020035          0                B Y            0      1      1 N  25
+ 31 Home-made Raft         25000  35          0          0                  Y          157      0      0 N 
+ 32 MiniRaft               50000  35      72035          0                  Y MRAFT     82      0      0 N  3 17 18
+ 71 Mapper               6000000  36          0          0                  Y          118      0      0 N  25
+ 48 Cryo-Unit             250000  37          0          0                  Y          113      0      0 N  22
+264 Fort Comset            10000  38          0          0                8 N BCOMSET    0      0      0 N  6
+265 Teleporter            100000  38          0          0                1 N BTSTD      0      0      0 N  6
+266 Excelsior Telepor     350000  38          0          0                2 N BTEXC      0      0      0 N  6
+267 Transporter         20000000  38          0          0                4 N BTTRANS    0      0      0 N  6
+268 Defender Pack        2500000  38          0        150       4400020110 N BDPACK     0      0      0 N  26
+269 Convenience Pack      500000  38          0          0     10000020000A N BCPACK     0      0      0 N  26
+270 Profit Pack         13000000  38          0          0             1802 N BPPACK     0      0      0 N  26
+271 Hostility Pack      22000000  38          0         83      20000010350 N BHPACK     0      0      0 N  26
+272 Fact: Plas Shield      30000  38          0        188               40 N BGFACT     0      0      0 N  15
+273 Fact: Grenade Pac      60000  38          0         64               40 N BGFACT     0      0      0 N  15
+274 Fact: Warper          300000  38          0        202               40 N BGFACT     0      0      0 N  15
+275 Fact: Recharger       750000  38          0        151               40 N BGFACT     0      0      0 N  15
+276 Fact: FortShell      4500000  38          0         13               40 N BGFACT     0      0      0 N  15
+277 Fact: Dumb Mine       225000  38          0         80               40 N BGFACT     0      0      0 N  15
+278 Fact: Smart Mine      225000  38          0         81               40 N BGFACT     0      0      0 N  15
+279 Fact: Day Ruiner     2250000  38          0         82               40 N BGFACT     0      0      0 N  15
+280 Fact: MegaMine       6000000  38          0         83               40 N BGFACT     0      0      0 N  15
+281 Fact: MicroNuke     15000000  38          0         84               40 N BGFACT     0      0      0 N  15
+282 Fact: Zapper Mine   24000000  38          0         87               40 N BGFACT     0      0      0 N  15
+283 Fact: TeleMine      24000000  38          0         86               40 N BGFACT     0      0      0 N  15
+284 Fact: Protector     45000000  38          0         88               40 N BGFACT     0      0      0 N  15
+285 Fact: Robomine 2     6000000  38          0         89               40 N BGFACT     0      0      0 N  15
+286 Fact: Robomine 3    12000000  38          0         90               40 N BGFACT     0      0      0 N  15
+287 Fact: Robomine 4    21000000  38          0         91               40 N BGFACT     0      0      0 N  15
+288 Fact: Robomine 5    33000000  38          0         92               40 N BGFACT     0      0      0 N  15
+289 Fact: Robomine 6    48000000  38          0         93               40 N BGFACT     0      0      0 N  15
+290 Fact: Guardian      66000000  38          0         95               40 N BGFACT     0      0      0 N  15
+291 Fact: Draku Mine    21000000  38          0         85               40 N BGFACT     0      0      0 N 
+292 Fact: Xeboc Mine    66000000  38          0         94               40 N BGFACT     0      0      0 N 
+293 Wanderer            99000000  38          0          0               20 N BGWANDER   0      0      0 N  6
+294 Mine Spreader R0      100000  38          0          0             4000 N BGSPREAD   0      0      0 N  6
+295 Mine Spreader R1      500000  38          0          0             8000 N BGSPREAD   0      0      0 N  6
+296 Mine Spreader R2     2500000  38          0          0             C000 N BGSPREAD   0      0      0 N  6
+297 Mine Spreader R3    12500000  38          0          0            10000 N BGSPREAD   0      0      0 N  6
+298 Proximity Trip R0     100000  38          0          0              100 N BGPROX     0      0      0 N  6
+299 Proximity Trip R1     500000  38          0          0              200 N BGPROX     0      0      0 N  6
+300 Proximity Trip R2    2500000  38          0          0              300 N BGPROX     0      0      0 N  6
+301 Toll Station R0       500000  38          0          0              800 N BGTOLL     0      0      0 N  6
+302 Toll Station R1      2500000  38          0          0             1000 N BGTOLL     0      0      0 N  6
+303 Toll Station R2     12500000  38          0          0             1800 N BGTOLL     0      0      0 N  6
+304 Fortress SFG          100000  38          0          0               10 N BGSFG      0      0      0 N  6
+305 UltraScan              50000  38          0          0           200000 Y BULTRA     0      0      0 N  6
+306 Sacre Pack           1000000  38          0        100           C20001 Y BSPACK     0      0      0 N 
+307 Terra Labs Pack      1000000  38          0          0           D40024 Y            0      0      0 N 
+308 Terra Seller A       1000000  38          0        203          1400000 Y            0      0      0 N 
+309 Terra Seller B       1000000  38          0        152          2400000 Y            0      0      0 N 
+310 Terra Seller C       1000000  38          0        193          4400000 Y            0      0      0 N 
+311 Anti Self Destruc    1000000  38          0          0           C00000 Y BGANTISD   0      0      0 N  6
+312 Scavenger R0           40000  38          0          0            40000 N BGSCAV     0      0      0 N  27
+313 Scavenger R1          100000  38          0          0            80000 N BGSCAV     0      0      0 N  27
+314 Scavenger R2          250000  38          0          0            C0000 N BGSCAV     0      0      0 N  27
+315 Scavenger R3          625000  38          0          0           100000 N BGSCAV     0      0      0 N  27
+316 Scavenger R4         1562500  38          0          0           140000 N BGSCAV     0      0      0 N  27
+317 Scavenger R5         3906250  38          0          0           180000 N BGSCAV     0      0      0 N  27
+318 Smart Scav R0          50000  38          0          0         10040000 N BGSMSCAV   0      0      0 N  27
+319 Smart Scav R1         125000  38          0          0         10080000 N BGSMSCAV   0      0      0 N  27
+320 Smart Scav R2         312500  38          0          0         100C0000 N BGSMSCAV   0      0      0 N  27
+321 Smart Scav R3         781250  38          0          0         10100000 N BGSMSCAV   0      0      0 N  27
+322 Smart Scav R4        1953125  38          0          0         10140000 N BGSMSCAV   0      0      0 N  27
+323 Smart Scav R5        4882812  38          0          0         10180000 N BGSMSCAV   0      0      0 N  27
+324 Defender Mark I       500000  38          0          0         20000000 N            0      0      0 N  33
+325 Defender Mark II     1000000  38          0          0         40000000 N            0      0      0 N  33
+326 Defender Mark III    2000000  38          0          0         60000000 N            0      0      0 N  33
+327 Defender Mark IV     4000000  38          0          0         80000000 N            0      0      0 N  33
+328 Defender Mark V      8000000  38          0          0         A0000000 N            0      0      0 N  33
+329 Defender Mark VI    16000000  38          0          0         C0000000 N            0      0      0 N  33
+330 Defender Mark VII   32000000  38          0          0         E0000000 N            0      0      0 N  33
+331 Defender Mark VII   64000000  38          0          0        100000000 N            0      0      0 N  33
+332 Sacre Seller A       1000000  38          0        125          3400000 Y            0      0      0 N 
+333 Sacre Seller B       1000000  38          0        219          C400000 Y            0      0      0 N 
+334 Sacre Seller C       1000000  38          0        194          3400000 Y            0      0      0 N 
+335 Sacre Seller D       1000000  38          0        202          C400000 Y            0      0      0 N 
+336 Target Comp +20       100000  38          0          0       4000000000 N TCOMP_1    0      0      0 N  35
+337 Target Comp +40       250000  38          0          0       8000000000 N TCOMP_2    0      0      0 N  35
+338 Target Comp +60      1000000  38          0          0       C000000000 N TCOMP_3    0      0      0 N  35
+339 Target Comp +80      2000000  38          0          0      10000000000 N TCOMP_4    0      0      0 N  35
+340 Target Comp +100     5000000  38          0          0      14000000000 N TCOMP_5    0      0      0 N  35
+341 Target Comp +120    15000000  38          0          0      18000000000 N TCOMP_6    0      0      0 N  35
+342 Shield Enhance +2     100000  38          0          0        400000000 N ACOMP_1    0      0      0 N  35
+343 Shield Enhance +4     250000  38          0          0        800000000 N ACOMP_2    0      0      0 N  35
+344 Shield Enhance +6    1000000  38          0          0        C00000000 N ACOMP_3    0      0      0 N  35
+345 Shield Enhance +8    2000000  38          0          0       1000000000 N ACOMP_4    0      0      0 N  35
+346 Shld. Enhance +10    5000000  38          0          0       1400000000 N ACOMP_5    0      0      0 N  35
+347 Shld. Enhance +12   15000000  38          0          0       1800000000 N ACOMP_6    0      0      0 N  35
+348 Multi Comp +20        300000  38          0          0       4400000000 N MCOMP_1    0      0      0 N  35
+349 Multi Comp +40        750000  38          0          0       8800000000 N MCOMP_2    0      0      0 N  35
+350 Multi Comp +60       3000000  38          0          0       CC00000000 N MCOMP_3    0      0      0 N  35
+351 Multi Comp +80       6000000  38          0          0      11000000000 N MCOMP_4    0      0      0 N  35
+352 Multi Comp +100     15000000  38          0          0      15400000000 N MCOMP_5    0      0      0 N  35
+353 Multi Comp +120     45000000  38          0          0      19800000000 N MCOMP_6    0      0      0 N  35
+354 Armor Burner 200%     250000  38          0          0      20000000000 N BGBURN_1   0      0      0 N  6
+355 Armor Burner 400%     750000  38          0          0      60000000000 N BGBURN_2   0      0      0 N  6
+356 Armor Burner 800%    2000000  38          0          0      E0000000000 N BGBURN_3   0      0      0 N  6
+357 Vortex Link           100000  38          0          0     100000000000 N BGVLINK    0      0      0 N  6
+358 Mega-Hostile Pack   75000000  38          0         95      E0000014550 N BMHPACK    0      0      0 N  26
+359 Ultra-Hostile Pac  150000000  38          0         95      F9900014550 N BUHPACK    0      0      0 N  26
+360 Super Defender       6000000  38          0        450      2CC00020110 N BSDPACK    0      0      0 N  26
+361 Corbomite Device     1000000  38          0          0     200000000000 N BGCORBO    0      0      0 N  6
+ 70 Sacre Map                100  39    2010011          0                  Y SACREMAP 101      0      0 N  3
+ 53 Loki Summoner              0  40          5          0                  Y          125      0      0 N 
+ 54 Worthless Junk             5  40          4          0                  Y          123      0      0 N 
+ 55 Technical Tools         2000  40          3          0                  Y          128      0      0 N 
+ 56 MedGen                     0  40        254          0                  Y            0      0      0 N 
+ 57 Test-O-Matic               0  40        253          0                  Y            0      0      0 N 
+ 58 Replicator                 0  40        255          0                  Y            0      0      0 N 
+ 59 Sonic Whistle              0  40          6          0                  Y          132      0      0 N 
+ 60 FCUCC Book                25  40          7          0                  Y          105      0      0 N 
+ 61 Chaos Medallion          100  40          1          0                  Y          106      0      0 N 
+ 62 Ghetto Blaster           250  40          2          0                  Y GBLASTER  11      0      0 N 
+ 63 Communicator            1000  40          0          0                  Y COMMUN    49      0      0 N 
+ 52 Flashbomb                750  41       5020          0                  N          145     10     10 N  3
+204 Waypoint mgr         1000000  42          0          0                  Y          138      0      0 N  16
+ 65 HyperVault           1000000  43          0          0                  Y          146      0      0 N  16
+194 Spectral              250000  44          0          0                  Y          137      0      0 N  16
+ 34 Love Potion #9             0  45          0          0                  Y          169      1      1 N 
+ 35 AGL Bonus +35              0  45          0          0                  Y          186      1      1 N 
+ 36 Dex Maximizer              0  45          0          0                  Y          188      1      1 N 
+ 37 Herculean Strengt          0  45          0          0                  Y          190      1      1 N 
+ 38 Hormone Supplimen       1500  45         11          0                  Y          191      1      1 N  34
+ 39 Str Inhibitor           5000  45          6         16                  Y          169      1      1 N  34
+ 40 Dex Inhibitor           5000  45          7         16                  Y          186      1      1 N  34
+ 41 Agl Inhibitor           5000  45          8         16                  Y          188      1      1 N  34
+ 42 Neural Inhibitor       25000  45         10         10                  Y          190      1      1 N  34
+ 43 Strength Enhancer     100000  45          1          8                  Y          191      1      1 N  34
+ 44 Dexterity Enhance     100000  45          2          8                  Y          169      1      1 N  34
+ 45 Agility Enhancer      100000  45          3          8                  Y          186      1      1 N  34
+ 67 Chem Labeller         250000  46          0          0                  Y            0      0      0 N  25
+185 Pom-Pom                   75  47          0         35                  N          149     15     15 N 
+186 Polycarb Shield          500  47          0          5                  N          143     50     50 N  2
+187 Steel Shield            2500  47          0          8                  N          142    100    100 N  2
+188 Plasma Shield          10000  47          0         12                  N          141    200    200 N  2
+189 Cabal Shield           25000  47          0         20                  N          147    500    500 N 
+190 Stone Shield           75000  47          0         25                  N          179    750    750 N 
+362 Single Energy Sin     500000  47          0         10                  N BSINK1     0    500    500 N  6
+363 Double Energy Sin    1500000  47          0         20                  N BSINK2     0   1000   1000 N  6
+364 Quad Energy Sink     5000000  47          0         40                  N BSINK3     0   2000   2000 N  6
+198 User Manual              100  48          0          0                  Y          105      0      0 N 
+ 66 Key Ring                5000  49          0          0                  Y          153      0      0 N  17
+183 SamLink                25000  50          0          0                  Y          176      5      5 N 
+ 51 DNA Container           2500  51          0          0                  Y          148      0      0 N  25
+ 46 Money Bag                  0  52          0          0                  Y          159      0      0 N 
+ 47 Chest                      0  52          0         35                  Y          120      0      0 N 
+ 33 Boat Plans                 0  53          0          0                  Y          154      0      0 N 
+366 Thief's Kit           250000  54          0         75                  Y          199      0      0 N  25
+367 Alarm                 250000  55          0         75                  Y          197      0      0 N  17

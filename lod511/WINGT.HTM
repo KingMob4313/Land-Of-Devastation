@@ -1,0 +1,123 @@
+<HTML><HEAD>
+<TITLE>Please title this page. (Page 1)</TITLE>
+</HEAD><BODY><H1>Gterm for Windows
+</H1><P>By Scott M. Baker
+<P><HR>
+<P>Warning! This is an _EXTREME BETA_ version of Gterm for Windows. By "Extreme
+Beta", I mean that it has been very poorly tested. It might not work right.
+It might not work at all. It might crash windows. It might do just about
+anything! 
+<P>This version is missing several key features and is in need of significant
+polishing. It has been released because several users wanted to take a look
+at it. 
+<P>The executable is a Windows 3.1 application, but I have been testing it
+under Win95 without any difficulty.
+<P><HR>
+<H3>Requirements
+</H3><P>       Windows: version 3.1 or Windows-95
+<P>Video: 640x480 or greater, 256 color support recommended.
+<P>Sound: Shareware MOD player required, I suggest MOD4WIN 
+<P>           CPU: 386 or above, 486 or Pentium recommended
+<P>         Modem: 2400 baud and up, 9600+ strongly recommended 
+<P><HR>
+<H3>Installation
+</H3><P><I>Gterm for windows must be installed into the same directory as
+Gterm for DOS. This means you will need the file GTERM511.ZIP (or later).</I>
+<P>Just unzip the required files into the appropriate directory... If you
+wish to set up a program group or something, then you'll need to do that
+yourself.
+<P><HR>
+<H3>Documentation
+</H3><P>You may wish to look to the DOS version documentation: GTERM.DOC
+in the distribution archive GTERM511.ZIP. It is for the DOS version, so it
+will be somewhat inconsistant with this Windows version, but may provide
+some
+insight if you have problems. 
+<P><HR>
+<H3>Running Gterm for Windows
+</H3><P>There are two ways to load GTERM/Windows: 
+<P>
+<UL><LI>STANDALONE: "wingt.exe"
+<P>     This will load up Gterm/Windows in standalone mode. The baud rate
+will be set to the rate specified by "initial rate" in Setup:Modem. You can
+then use the dialing directory to call out to the bbs. 
+<P>
+<LI>EXTERNAL PROTOCOL: "wingt.exe COM x BAUD yyyy" 
+<P>      This will load up Gterm/Windows setting the com port to "x" and
+the baud rate to "y". This is intended for use as an external protocol from
+a comm program.... however, most (if not all) windows comm programs don't
+support external protocols, so I suggest the previous method. 
+</UL><P><HR>
+<H3>Setting Up
+</H3><P>     By default, Gterm/Win will assume you are using a 2400 baud
+modem on COM1. If this isn't the case, then you'll have to change a few options.
+
+<P>       COM PORT: 
+<P>       Go into Setup:Modem and set "initial port" to the com port that
+you wish to use most of the time. 
+<P>       BAUD RATE: 
+<P>       Go into Setup:Modem and set "intial baud" to the baud rate that
+you wish to use most of the time, or the rate to lock at if you wish to use
+a locked baud rate. 
+<P>       AUTO-BAUD OPTION: 
+<P>       The Auto-Baud rate option (three checkboxes in the lower left of
+the Setup:Modem screen) are somewhat confusing. Let me explain what they
+do: 
+<P>           "Do not alter baud rate" 
+<P>       When you dial out, the baud rate will be set to the rate specified
+in the dialing directory. After you connect, your modem will send a string
+like "CONNECT 19200" or something similar. This option _ignores_ that message
+and leaves the baud rate at what it was previously set to. 
+<P>           "Lock baud at initial rate" 
+<P>       This will force the baud rate to what is specified in the "initial
+rate" box. The modem will _always_ be locked at this rate, regardless of
+any baud rates specified in the dialing directory or any messages the modem
+sends. This option is useful for high-speed error-correcting modems. 
+<P>           "Use connect string rate" 
+<P>       This will set the baud rate to whatever the modem's connect string
+says. For example, if the modem responds with "connect 2400", the baud rate
+will be set to 2400 baud. 
+<P>       FOR EXAMPLE: 
+<P>       Assume you have set "initial baud = 38400" and you are dialing
+"joe's place" which has a dialing directory set to 9600 baud. 
+<P>                                  Do not alter    Lock baud     Use connect
+
+<P> &gt;You hit "Dial".                     9600          38400         
+9600 
+<P> &gt; (modem dials)                   (no change)    (no change)    (no
+change) 
+<P> &gt;modem responds with              (no change)    (no change)     19200
+    "CONNECT 19200" 
+<P><HR>
+<H3>Dialing the BBS
+</H3><P>I have created a simple, yet functional dialing system. You may access
+it via the "Dialing Directory" and/or "Manual Dial" options from the session
+menu. 
+<P>       The screen should be largely self-explanatory, so try to play around
+with the options if you get stuck somewhere. 
+<P>       DIALING: 
+<P>       Select the desired number in the list box and click on the "dial"
+button. 
+<P>       NEW ENTRIES: 
+<P>       Hit the NEW button; a new entry will be added to the end of the
+dialing        directory. Then move to it and edit the data. 
+<P>       EDITING: 
+<P>       Just select the entry and move over to the edit box on the right.
+
+<P><HR>
+<H3>Mod Sound
+</H3><P>You can coerce Gterm/Win into playing MOD music by using an external
+mod player and adding the following to the command line: 
+<P>       "/AUDIOMOD &lt;playername&gt;" 
+<P>       For example, "/AUDIOMOD d:\winmod\m4win.exe" 
+<P>       Include the full path name! I have only tested this with M4WIN,
+other mod players may or (more likely) may not work. 
+<P><HR>
+<P>Contacting the author:
+<UL><LI>email: smbaker@primenet.com
+<LI>web homepage: http://www.primenet.com/~smbaker
+<LI>bbs: (520)-544-4655, (520)-797-8573
+<LI>address:
+<BLOCKQUOTE><CITE>Scott M Baker<BR>2241 W Labriego<BR>Tucson, AZ 85741</CITE>
+</BLOCKQUOTE></UL><P><HR>
+</BODY></HTML>

@@ -1,0 +1,561 @@
+Land Of Devastation Sysop Customization Manual
+----------------------------------------------
+
+By Scott M Baker
+
+Section 1: Purpose
+------------------
+       This manual is intended for sysops who wish to modify their Land
+Of Devastation games from the default setup. Land Of Devastation allows
+the sysop (or Game Master) to change almost every aspect of the game. You
+can create your own maps, monsters, weapons & armor, etc.
+
+Section 2: Required files
+-------------------------
+       All of the files required for creating custom LOD games are
+contained in the archive LODxxxE.ARJ (with xxx representing the current
+LOD version number).
+
+Section 3: Programs included
+----------------------------
+       LOD includes several utilities to help you customize the game.
+These are:
+
+       CUSTOM.EXE   - Customization editor. Used to edit some of the
+                      more complex fields of the game.
+
+       COMPILE.EXE  - Used to compile a new game data set for LOD. (What
+                      is a data set? Look below!)
+
+Section 4: Data Sets
+--------------------
+       To make things as easy as possible for both the customizer and
+the customizee (the poor guy who tries to run the customized version), LOD
+will "compile" most of the game data into a single "data set". This data
+set is contained in the file GAME.DEF. For most customized versions, the
+only file that needs to be changed is this GAME.DEF
+
+       Basically, the data set (GAME.DEF) is a compiled package of the
+following text files:
+
+       STRINGS.TXT - All of LOD's internal text strings
+       MONSTER.TXT - Monster definitions
+       COMBAT.TXT  - Combat strings (i.e. "You poke x's eye with your sword")
+       TALK.TXT    - Conversations of characters in Tavern & wasteland
+       TAVERN.TXT  - Tells who is in what tavern
+       TROYINFO.TXT- \
+       TRELLNOT.TXT-  > Special purpose text files
+       HISTORY.TXT - /
+       OBJECT.TXT  - Outlines the object of the game
+
+       DATASET.TXT - Data Set identification & misc data
+
+       The data set file (GAME.DEF) also includes the following binary
+files. These are NOT text files and may not be edited with a text editor. You
+must use the customization tool, CUSTOM.EXE to edit these files.
+
+       MAIN.MAP    - The main game map
+       TERRAIN.BIN - Terrain definitions
+       MISC.BIN    - Miscellaneous stuff
+       DEVICES.BIN - Main device library
+
+       As mentioned above, COMPILE.EXE will take all of those files and
+spit out one big GAME.DEF file from them. Therefore, you need not distribute
+any of the above text files - just the completed GAME.DEF.
+
+Section 5: Locating the default text/binary files
+-------------------------------------------------
+       The default text and binary files are stored in the archive
+STANDARD.ARJ inside of LODxxxE.ARJ. Unarchive this file and it'll dump
+out strings.txt, monster.txt, combat.txt, main.map, devices.bin, and
+all of the other stuff. Then you can load these up and customize
+whatever you want according to section 6 below.
+
+Section 6: Customizing the Text files
+-------------------------------------
+       What follows is a description of how to customize the text files
+listed in section four above. To edit these files, use any plain text
+editor.
+
+  STRINGS.TXT: The master string file
+  -----------------------------------
+            Almost all of the text strings contained within LOD are taken
+     from this file. Everything from "you enter the tavern" to "what do you
+     wish to buy" to "there is new mail in the message system" is in here.
+     In fact, if you wanted to translate LOD into another language, once
+     you translated this one file, you would be about 80% done!
+
+            Here's what to do:
+
+            1) Load up STRINGS.TXT using any plain-ascii text editor. You can
+               now edit the strings and customize them as you wish. Please
+               note, the strings are specified one string to each line - if
+               you mess up this format, you could possibly shift all of the
+               strings and really screw things up. Here is the format:
+
+               - Each line is one string definition in the game; So DO NOT
+                DELETE OR INSERT LINES. You'll really mess things up.
+
+               - A tilde (~) has been placed at the end of each line as a
+                 simple indicator to the user of where the line ends. (i.e.
+                 Otherwise lines that ended with a trailing space would be
+                 indistinguishable from lines that didn't)
+
+               - The ampersand (&) is used to indicate the Land Of
+                 Devastation should change colors at that position. The "&"
+                 sign is followed by a hexadecimal digit, "0"-"F" specifying
+                 the color to change to.
+
+                   &0 Black     &6 Brown         &C Light Red
+                   &1 Blue      &7 Light Gray    &D Light Magenta
+                   &2 Green     &8 Dark Gray     &E Yellow
+                   &3 Cyan      &9 Light Blue    &F White
+                   &4 Red       &A Light Green
+                   &5 Magenta   &B Light Cyan
+
+              - The "|" sign is used to indicate a carriage return.
+
+              - String may be up to 255 characters in length. (You could use
+                one string entry with multiple "|"'s to specify multiple
+                lines of text)
+
+            2) Remember, just editing the file won't have any effect by
+               itself. You still need to run COMPILE.EXE to create a new
+               GAME.DEF file.
+
+            So what needs to be edited in strings.txt? In reality, not a
+     whole lot. If you don't like the way something is said in the game
+     (or, heaven-forbid, you catch one of my ten thousand misspelled
+     words), you can change it. You'll find most of the fun work down
+     in the monsters.txt below.
+
+  MONSTER.TXT: All the bad guys
+  -----------------------------
+            Here's where you will get a chance to have some fun. You can
+     create any monster you want in here. You can put him in any zone,
+     give him whatever weapons you want, and make up a nice description
+     of him.
+
+            All of the instructions for editing monsters.txt are contained
+     at the top of the file. It's really pretty self explanatory - the best
+     thing to do is take one of the default monsters, and copy him to another
+     section of the file and make your changes to the copy.
+
+  COMBAT.TXT: Combat strings
+  --------------------------
+            In the wasteland, we have all kinds of neat phrases for what
+      happens in combat. The combat.txt file is where it all is. Instructions
+      for this file are contained up at the top (like in the monster.txt
+      file). I'll leave it to you to look at the default stuff and figure
+      out how the format works.
+
+  TALK.TXT: Character Dialog
+  --------------------------
+            No customized game is complete without a bunch of cool characters
+      that the player can talk to. Here is where you can decide what they
+      will say. You can make them say whatever you want and create
+      your own "keywords" that their responses will match.
+
+            NOTE: If you create any new characters and want them placed in
+      a tavern, you will also have to edit the tavern.txt file below.
+
+  TAVERN.TXT: People in Taverns
+  -----------------------------
+            This rather simple file just tells which players are in what
+      tavern. For example, say your create a character in the talk.txt file
+      above named "weird joe". If you want wierd joe to be in the freedom
+      city tavern, then you'll have to add an entry to this file to put
+      him there.
+
+  TROYINFO.TXT: Troy Hadley's info file
+  -------------------------------------
+            One of the special quests ends up with the player receiving
+      a special rom-disk for his laptop which contains some hints on
+      locations, monsters, etc. This text file contains those hints. There's
+      no real format to this file - it's just a flat text file. If you
+      go moving towns around on the map, you'll probably have to change
+      some of the hints in here.
+
+  TRELLNOT.TXT: Sergeant Trell's note
+  -----------------------------------
+            This is Sergeant Trell's note from the Tranlius Nuclear Facility.
+      If you want, you can edit it and change the theme a bit.
+
+  HISTORY.TXT: History of the War
+  -------------------------------
+            There's a history rom that the players can get for their laptop.
+      It tells about the history of the nuclear war. This is it. Edit it to
+      your delight.
+
+  OBJECT.TXT: Game Objectives
+  ---------------------------
+            This is a straight text file which should outline the object of
+      the game. Information on the central quest, etc. It is displayed by
+      the Game Objectives command in the documentation center of Sacre
+      Base.
+
+  DATASET.TXT: Data set file
+  --------------------------
+            This contains some miscellanious "glue" information. Stuff
+      that needs to hold the whole package together, but doesn't really fit
+      in any of the other files above.
+
+            Some minimal instructions are given inside the file - read them
+      and make your changes.
+
+            The one important thing in here is the NAME and AUTHOR fields.
+      If you create a customized LOD data set, then you probably want to
+      give it a name and put yourself down as the author. This is where
+      you do it. The name/author information will appear on the WORLD
+      menu at the documentation center.
+
+  GENOBJ.TXT: Generic Object System
+  ---------------------------------
+            The Generic Object System is intended to allow you to create
+      fairly complex objects. This system is fairly complicated and you
+      should look to the "Technical Tools" and "Loki Summoner" as
+      examples of GENOBJS.
+
+            To Create a GENOBJ:
+
+              1) Create an item in the device editor with the devapp set
+                 to GenObj (40), and set its VAR1 to a unique number (tag)
+                 that will be used to link your object to the GENOBJ file.
+
+              2) Create an object definition in GENOBJ by using the "TAG x"
+                 field, with x being the number you used in VAR1 in step
+                 1 above.
+
+            GENOBJs will do the following:
+
+              a) display all HEADER statements for which the IF's are true.
+
+              b) display one RANDOM statement for which the IF's are true.
+
+              c) display all FOOTER statements for which the IF's are true.
+
+              d) process all CONVERT/REPLICATE/ADDITEM statements in
+                 order if their IF's are true.
+
+            If any statement listed above has "modifiers" attached to it,
+      then the modifier will be applied immediately after the action
+      has been executed.
+
+            For your GENOBJ to work, there must be one or more "ACTION"
+      entries. These are things such as "HEADER", "FOOTER", "CONVERT x > y",
+      etc. IF statements and modifiers are completely optional and only need
+      to be used if you have a specified purpose for them.
+
+            A Few notes about IFs (and MODIFIERS):
+
+              - All IF's apply to the action statement that follows the
+                IF's and ONLY that action statement.
+
+              - If multiple action statements are present, then any (and all)
+                action statements that have true IF's will be executed.
+
+            For Example:
+
+              IFTESTX 10
+              HEADER
+              You are at X coordinate 10.
+
+              IFTESTY 15
+              HEADER
+              You are standing at Y coordinate 15
+
+              IFTESTX 10
+              IFTESTY 15
+              You are standing at x=10 and y=15.
+
+            Suppose, that the user is standing at...
+
+              X=10, Y=anything but 15: "You are at X coordinate 10"
+
+              X=anything but 10, Y=15: "You are standing at Y coordinate 15"
+
+              X=10, Y=15: "You are at X coordinate 10",             / Yes, all
+                          "You are standing at X coordinate 15",   <  3 are
+                          "You are standing at x=10 and y=15"       \ output
+
+Section 7: Using CUSTOM.EXE
+---------------------------
+       The external editor, NEWLODED.EXE, includes a variety of external editors
+and tools to allow the sysop to customize and configure his/her version of
+Land of Devastation. I will discuss each of the editor options in order
+below:
+
+   UTILITIES
+        There are a few little utility features which will provide you with
+     some information about the game.
+
+   EDITORS
+        Editors are included for device definitions, terrain, and the
+     wasteland map.
+
+   SETUP
+        This section has options for configuring and setting up lod - what
+     new players start with, how much bases cost, etc.
+
+     The external editor has an extensive context-sensitive help system which
+  can be of great use to you. Simply hit F1 at any time and a help window will
+  pop up.
+
+
+  NOTE #1: The external editor uses the TAB and SHIFT-TAB keys to move around
+           in some areas. Sometimes people find this difficult to understand,
+           but it is part of the design of the Turbo Vision tool kit which the
+           editor was written with.
+
+Section 8: Editing Device Definitions
+-------------------------------------
+       To edit devices, you will need to use the Device Editor command under
+the Editors menu in CUSTOM.EXE.
+
+       The following are a list of the various parameters that each device
+definition includes:
+
+     NAME:     The name of the device; Should not be longer than 15 chars
+
+     USES:     Number of uses LEFT on the device. Usually the same as MAXUSE
+     MAXUSE:   Maximum number of uses the device has.
+     DEV USE:  If "Y", then decrement the USES variable each time the
+               device is used.
+
+     VAR1:     General purpose variable #1; varies from device to device.
+     VAR2:     General purpose variable #2; varies from device to device.
+
+     APPLICAT: Code corresponding to what the device does.
+
+     USABLE:   "Y" if the device can be used with the U command.
+
+     STORE:    Code(s) corresponding to store at which device will be sold.
+     COST:     Price of device when sold at store.
+
+     ANSI:     8 character string corresponding to attached ansi picture.
+     EGA:      Attached EGA graphics picture.
+
+     Listing of APPLICAT codes:
+
+     0 Radio         9 AML (medline)   18 Death Badge   27 Rom Disk
+     1 Medical Kit  10 Rope            19 Warper        28 <Internal>
+     2 SR Weapon    11 Rations         20 Communicator  29 B-Teleporter
+     3 LR Weapon    12 Scanner         21 B-React       30 Recharger
+     4 Armor        13 Stealth         22 B-Comm        31 Pylon Key
+     5 <reserved>   14 G-Blaster       23 B-Defense     32 Energy Cell
+     6 B.A.D.       15 Unusable Armor  24 B-Moat        33 Unitran
+     7 LRScan       16 Grenade         25 B-Weapon      34 Mine
+     8 Ammunition   17 Cyclops Eye     26 Laptop        35 Boat
+
+     36 Mapper
+     37 Cryo-Unit
+     38 BaseGeneric
+     39 MapPack
+     40 Genobj
+
+     Listing of store codes:
+
+     0 No Store      9 B-Weapon        18 Town #3       27 BaseScav
+     1 SR Weapons   10 Computer        19 Town #4       28 BaseEne
+     2 Armor        11 LR Weapons      20 Town #5       29 BaseMed
+     3 Supply       12 <internal>      21 Town #6       30 Acme Fort
+     4 Ammo         13 <internal>      22 Town #7       31 Acme Weapons
+     5 B-React      14 GSRZ Hort.      23 Town #8       32 Acme ROM
+     6 B-Comm       15 B-Teleporter    24 Town #9
+     7 B-Def        16 EEEE            25 Kill, Inc
+     8 B-Moat       17 Town #2         26 BasePack
+
+     Note: A device may be present at more than one store. If this is the
+           case, then list all of the store codes with SPACES inbetween
+           them. If a device is not to be present at any store, then leave
+           it's store line blank.
+
+     Here are some of the definitions for the VAR1/VAR2 parameters for
+ some of the various device types.
+
+     Weapons: The VAR1 parameter is divided into three fields corresponding
+              to the ammo type, minimum, and maximum damage. For example,
+              consider the following:
+
+              NAME: Rad-Axe
+                .
+                .
+              VAR1: 03020030
+                .   \/\:/\:/
+                .   A Min Max
+
+              The three fields are 3, 020, and 030. "3" is the ammo type;
+              020 is the minimum damage done and 030 is the maximum damage
+              done.
+
+              For weapons not requiring ammo, use a "0" for the ammo type.
+              Always use three digit numbers (i.e. for a 4-6 damage weapon
+              requiring power packs, use 03004006, NOT 0346)
+
+              This includes SR Weapons (#2), LR Weapons (#3), Base Moats
+              (#24), Base Weapons (#25), and Grenades (#16).
+
+        Ammo: The VAR1 parameter is the ammo type and the VAR2 parameter
+              is the number of shots. For example,
+
+              NAME: Power Pack
+              VAR1: 3
+              VAR2: 35
+
+              This is for a power pack - ammo type 3; 35 shots.
+
+       Armor: The USELEFT parameter is the amount of damage the armor can
+              absorb; The VAR2 is the percentage chance of the armor
+              deflecting a hit. (i.e. VAR2=0 means the armor deflects
+              nothing; VAR2=100 means the armor deflects everything)
+
+              The VAR1 parameter holds some specialty flags. These flags
+              are bit mapped. Right now, the flags are as follows:
+
+                 Bit 1: If set, then armor is rechargable.
+
+ Stlth Field: The SFG (Stealth Field Generator) uses both variables. VAR1
+              is 0 if neutral, 1 if noisy, or 2 if quiet. This should normally
+              be set to zero.
+
+              VAR2 is the SFG's effectiveness. This is a percentage. The
+              higher the percentage, the more powerful the SFG is. The
+              default is 50.
+
+        Mine: The VAR1 variable of the mine defines it's capabilities.
+              Example: 03020035. The "03" indicates the mines capabilities,
+              the 020 is the minimum damage, and the 035 is the maximum
+              damage.
+
+              example:
+
+              var1: 611020035;
+                    :\/\:/\:/
+                    :: Min Max
+                    ::
+                    :Features (Bits 1+2+8)
+                    :
+                    Robomine number (or empty for non-robomines)
+
+              Mine Capabilities: This is setup as a bitmap. Bit #1 is
+              for a smart mine, bit #2 is for a energy-drainer mine,
+              and bit #3 is for a teleporter mine.
+
+              Mine Uses: the Useleft parameter tells how many charges
+              the mine contains.
+
+
+
+     Note: If/when I bring out a newer version of LOD, it will include a
+           replacement DEVICES.DEF file which will overwrite yours. For this
+           reason, it will be necessary for you to re-type your custom
+           device information back into device.def.
+
+           Since I may also add devices to DEVICES.DEF in a future release,
+           it may be wise for you to place your custom entries from the
+           last position backwards to avoid conflicts with mine.
+
+Section 9: Editing Terrain
+--------------------------
+       To edit Terrain, you will need to use the Terrain Editor option in
+the CUSTOM.EXE program.
+
+       The terrain editor has the following parameters:
+
+     NAME:     The name of the terrain type
+     DANGER:   Percentage chance of finding monster there.
+     SYMBOL:   2 character symbol for ansi/ascii maps
+     COLOR:    Numeric color code for ascii/ansi
+     PASSABLE: "Y" if you can walk through it. "N" if you can't.
+               Use a "W" to indicate water. (requires miniraft to pass)
+
+       NOTE: For compatability (and simplicity) reasons, I would suggest
+that you stick with the standard terrain classes if at all possible. We've
+tried to throw in just about every possible kind of terrain you might want.
+
+Section 10: Creating Trivia
+---------------------------
+       You can create your own trivia questions if you use the same format
+as in TSAMP1.TXT. Name your text file "TRIVIA.TXT" and run TRIVCOMP to
+compile it into TRIVIA.DEF.
+
+       A complete 300 question library is provided in the default TRIVIA.DEF
+file, but to make sure users don't get a hold of the questions, I had to
+keep the non-encrypted text version here!
+
+Section 11: The GTSTRS.DEF file
+-------------------------------
+       Included with both GTERM and LOD, there is a GTSTRS.DEF file which
+defines the strings that will be used by the graphical interface. i.e. the
+help menus and screens inside the graphics window when using GAMEEGA
+or GTERM. Normally, there should be no reason to modify these strings. They
+were provided only for very extreme situations, such as the project to
+translate LOD into German.
+
+       The format is very similar to LOD's strings.txt file, except that
+the color codes (&1, &2, ..., &F) are not allowed. You must have one
+string per line. You may not add or delete any lines. The "~" symbol is
+simply a marker for the end of each line - it is not actually displayed
+to the user.
+
+       Both GAMEEGA and GTERM have seperate copies of this file. If you
+want remote users (with GTERM) to see the changes, then they will have
+to obtain their own copy of the file.
+
+Section 12: Packaging Considerations
+------------------------------------
+       For the purpose in maintaining some kind of standardization in naming
+conventions, this is what I would suggest. None of the following is
+required, but it establishind a standard really helps everyone out.
+
+       1] Place your dataset (GAME.DEF, readme's, text files, whatever) into
+          an archive (.ARJ, .ZIP, etc) to keep all of the files together.
+
+       2] For the name of your archive, use the following:
+
+            a] First four letters identify your data set (i.e. STND for my
+               LOD standard data set)
+
+            b] Next three letters indicate the version of LOD you compiled
+               the set for (i.e. 361)
+
+            c] The last letter is a revision letter for your dataset (in case
+               you made changes and re-released). Start with "a" every time
+               you release for a new version of LOD, increment the indicator
+               every time you re-release YOUR data set for that version of
+               LOD.
+
+            d] Of course, the extension would be .ZIP, .ARJ, .LZH, etc
+
+            e] Examples:
+
+                 STND361a.ARJ - LOD standard data set, for version 3.61,
+                                revision "a".
+
+                 FUTR395f.ARJ - FUTURE data set, compiled for LOD version
+                                3.95, revision "f".
+
+       3] Inside your archive, include the following files:
+
+            README.TXT  -=-  Whatever you want in here - who you are, what
+                             the data set is about, special considerations,
+                             etc.
+
+            GAME.DEF    -=-  The compiled dataset. The sysop just drops
+                             it in to use your data.
+
+            ANSI.DEF    -=-  Optional. Only distribute if you modified some
+                             of the ansi screens.
+
+            TRIVIA.DEF  -=-  Optional. Only distribute if you created some
+                             custom trivia.
+
+            SOURCE.ARJ  -=-  The "source code" for your data set. All of
+                             your customized .TXT files (monster.txt,
+                             combat.txt, etc), your maps (MAIN.MAP), device
+                             definitions (devices.bin), etc. This is
+                             optional - only distribute it if you want
+                             other sysops to view/edit your data set.
+
+
+
